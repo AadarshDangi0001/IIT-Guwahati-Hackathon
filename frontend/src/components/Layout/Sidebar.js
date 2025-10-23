@@ -12,6 +12,7 @@ import {
   ShieldCheckIcon,
   DocumentTextIcon,
   EyeSlashIcon,
+  CameraIcon,
   XMarkIcon
 } from '@heroicons/react/24/outline';
 
@@ -26,7 +27,7 @@ const Sidebar = ({ isOpen, onClose }) => {
     { name: 'Timeline', href: '/timeline', icon: ClockIcon, current: location.pathname === '/timeline' },
     { name: 'Campus Map', href: '/map', icon: MapIcon, current: location.pathname === '/map' },
     { name: 'Alerts', href: '/alerts', icon: ExclamationTriangleIcon, current: location.pathname === '/alerts' },
-    { name: 'CCTV', href: '/cctv', icon: MapIcon, current: location.pathname === '/cctv' },
+  { name: 'CCTV', href: '/cctv', icon: CameraIcon, current: location.pathname === '/cctv' },
   ];
 
   // Add conditional navigation items based on permissions
