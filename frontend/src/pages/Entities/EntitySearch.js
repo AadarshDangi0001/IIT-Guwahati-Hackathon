@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { entitiesAPI, handleAPIError } from '../../services/api';
 import { useAlert } from '../../contexts/AlertContext';
 import LoadingSpinner from '../../components/Common/LoadingSpinner';
+import ProfilePhoto from '../../components/Common/ProfilePhoto';
 import { 
   MagnifyingGlassIcon,
   UserIcon,
@@ -378,7 +379,13 @@ const EntitySearch = () => {
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center space-x-3">
                         <div className="flex-shrink-0">
-                          <UserIcon className="h-8 w-8 text-gray-400" />
+                          <ProfilePhoto
+                            entityId={entity._id}
+                            size="sm"
+                            className="h-8 w-8"
+                            alt={`${entity.profile?.name || 'Entity'} profile photo`}
+                            fallbackIcon={UserIcon}
+                          />
                         </div>
                         <div className="flex-1 min-w-0">
                           <p className="text-sm font-medium text-gray-900 dark:text-white truncate">
