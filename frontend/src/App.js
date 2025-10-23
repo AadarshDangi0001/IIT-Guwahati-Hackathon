@@ -24,6 +24,7 @@ import CampusMap from './pages/Map/CampusMap';
 import Analytics from './pages/Analytics/Analytics';
 import Alerts from './pages/Alerts/Alerts';
 import Users from './pages/Users/Users';
+import Cctv from './pages/Cctv/Cctv';
 import Settings from './pages/Settings/Settings';
 import AuditLogs from './pages/Audit/AuditLogs';
 import Privacy from './pages/Privacy/Privacy';
@@ -161,6 +162,16 @@ function App() {
                   </ProtectedRoute>
                 } />
                 
+                <Route path="/cctv" element={
+                  <ProtectedRoute requiredRole={['ADMIN', 'SECURITY_OFFICER', 'OPERATOR']}>
+                    <SocketProvider>
+                      <Layout>
+                        <Cctv />
+                      </Layout>
+                    </SocketProvider>
+                  </ProtectedRoute>
+                } />
+
                 <Route path="/alerts" element={
                   <ProtectedRoute>
                     <SocketProvider>
