@@ -233,6 +233,10 @@ export const handleAPIError = (error) => {
   }
 };
 
+export const getToken = () => {
+  return localStorage.getItem('token');
+};
+
 export const downloadFile = (blob, filename) => {
   const url = window.URL.createObjectURL(blob);
   const link = document.createElement('a');

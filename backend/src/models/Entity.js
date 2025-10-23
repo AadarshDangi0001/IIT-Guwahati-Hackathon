@@ -65,6 +65,16 @@ const IdentifiersSchema = new mongoose.Schema({
     face_embedding: {
         type: mongoose.Schema.Types.Mixed, // Encrypted field
         sparse: true
+    },
+    face_id: {
+        type: String,
+        sparse: true,
+        index: true
+    },
+    system_user_email: {
+        type: String,
+        sparse: true,
+        index: true
     }
 }, { _id: false });
 

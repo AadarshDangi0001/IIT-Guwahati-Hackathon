@@ -41,6 +41,7 @@ const ingestionRoutes = require('./routes/ingestion');
 const auditRoutes = require('./routes/audit');
 const privacyRoutes = require('./routes/privacy');
 const settingsRoutes = require('./routes/settings');
+const photosRoutes = require('./routes/photos');
 
 // Import middleware
 const { auditLogger } = require('./middleware/auditLogger');
@@ -380,6 +381,7 @@ class CampusSecurityServer {
         this.app.use('/api/users', authenticateToken, authorize(['users:read']), userRoutes);
         this.app.use('/api/analytics', authenticateToken, authorize(['analytics:read']), 
             differentialPrivacyMiddleware(), analyticsRoutes);
+        this.app.use('/api/photos', authenticateToken, photosRoutes); // Profile photos routes
         this.app.use('/api/ingestion', authenticateToken, authorize(['data:write']), ingestionRoutes);
         this.app.use('/api/audit', authenticateToken, auditRoutes); // Apply authentication to audit routes
         this.app.use('/api/privacy', privacyRoutes); // Privacy routes have their own auth middleware

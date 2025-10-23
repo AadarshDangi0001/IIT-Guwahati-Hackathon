@@ -3,6 +3,7 @@ import { usersAPI, handleAPIError } from '../../services/api';
 import { useAlert } from '../../contexts/AlertContext';
 import { useAuth } from '../../contexts/AuthContext';
 import LoadingSpinner from '../../components/Common/LoadingSpinner';
+import ProfilePhoto from '../../components/Common/ProfilePhoto';
 import {
   UserIcon,
   PlusIcon,
@@ -179,6 +180,7 @@ const Users = () => {
             <div className="flex items-center space-x-3">
               <div className="flex-shrink-0">
                 <UsersIcon className="h-8 w-8 text-blue-600 dark:text-blue-400" />
+              
               </div>
               <div>
                 <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
@@ -444,10 +446,13 @@ const Users = () => {
                   <tr key={user._id} className="hover:bg-gray-50 dark:hover:bg-gray-700">
                     <td className="px-6 py-4 whitespace-nowrap">
                       <div className="flex items-center">
-                        <div className="flex-shrink-0 h-10 w-10">
-                          <div className="h-10 w-10 rounded-full bg-gray-300 dark:bg-gray-600 flex items-center justify-center">
-                            <UserIcon className="h-5 w-5 text-gray-500 dark:text-gray-400" />
-                          </div>
+                        <div className="flex-shrink-0">
+                          <ProfilePhoto 
+                            userId={user._id}
+                            size="md"
+                            alt={`${user.profile?.name || 'User'} profile photo`}
+                            fallbackIcon={UserIcon}
+                          />
                         </div>
                         <div className="ml-4">
                           <div className="text-sm font-medium text-gray-900 dark:text-white">

@@ -6,6 +6,7 @@ import LoadingSpinner from '../../components/Common/LoadingSpinner';
 import Timeline from '../../components/Timeline/Timeline';
 import TimelineSummary from '../../components/Timeline/TimelineSummary';
 import PredictiveInsights from '../../components/Predictions/PredictiveInsights';
+import ProfilePhoto from '../../components/Common/ProfilePhoto';
 import {
   UserIcon,
   MapPinIcon,
@@ -140,7 +141,13 @@ const EntityDetails = () => {
         <div className="px-6 py-4 border-b border-gray-200 dark:border-gray-700">
           <div className="flex items-center space-x-4">
             <div className="flex-shrink-0">
-              <UserIcon className="h-12 w-12 text-gray-400" />
+              <ProfilePhoto
+                entityId={entity._id}
+                size="lg"
+                className="h-12 w-12"
+                alt={`${entity.profile?.name || 'Entity'} profile photo`}
+                fallbackIcon={UserIcon}
+              />
             </div>
             <div className="flex-1 min-w-0">
               <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
