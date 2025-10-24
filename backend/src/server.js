@@ -43,6 +43,7 @@ const privacyRoutes = require('./routes/privacy');
 const settingsRoutes = require('./routes/settings');
 const photosRoutes = require('./routes/photos');
 const simpleCctvRoutes = require('./routes/simple_cctv');
+const notesRoutes = require('./routes/notes');
 
 // Import middleware
 const { auditLogger } = require('./middleware/auditLogger');
@@ -389,6 +390,7 @@ class CampusSecurityServer {
             differentialPrivacyMiddleware(), analyticsRoutes);
         this.app.use('/api/photos', authenticateToken, photosRoutes); // Profile photos routes
         this.app.use('/api/cctv', authenticateToken, authorize(['entities:read']), simpleCctvRoutes); // Simplified CCTV image recognition
+    this.app.use('/api/notes', authenticateToken, authorize(['entities:read']), notesRoutes); // Free text notes
         this.app.use('/api/ingestion', authenticateToken, authorize(['data:write']), ingestionRoutes);
         this.app.use('/api/audit', authenticateToken, auditRoutes); // Apply authentication to audit routes
         this.app.use('/api/privacy', privacyRoutes); // Privacy routes have their own auth middleware

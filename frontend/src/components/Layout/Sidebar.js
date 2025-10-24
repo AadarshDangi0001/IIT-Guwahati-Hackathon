@@ -23,11 +23,13 @@ const Sidebar = ({ isOpen, onClose }) => {
   const navigation = [
     { name: 'Dashboard', href: '/dashboard', icon: HomeIcon, current: location.pathname === '/dashboard' },
   { name: 'Entity Search', href: '/entities', icon: UsersIcon, current: location.pathname === '/entities' },
+ 
   
     { name: 'Timeline', href: '/timeline', icon: ClockIcon, current: location.pathname === '/timeline' },
     { name: 'Campus Map', href: '/map', icon: MapIcon, current: location.pathname === '/map' },
     { name: 'Alerts', href: '/alerts', icon: ExclamationTriangleIcon, current: location.pathname === '/alerts' },
   { name: 'CCTV', href: '/cctv', icon: CameraIcon, current: location.pathname === '/cctv' },
+   { name: 'Notes', href: '/notes', icon: DocumentTextIcon, current: location.pathname === '/notes' },
   ];
 
   // Add conditional navigation items based on permissions

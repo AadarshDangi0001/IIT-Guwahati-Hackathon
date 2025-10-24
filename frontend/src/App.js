@@ -25,6 +25,7 @@ import Analytics from './pages/Analytics/Analytics';
 import Alerts from './pages/Alerts/Alerts';
 import Users from './pages/Users/Users';
 import Cctv from './pages/Cctv/Cctv';
+import Notes from './pages/Notes/Notes';
 import Settings from './pages/Settings/Settings';
 import AuditLogs from './pages/Audit/AuditLogs';
 import Privacy from './pages/Privacy/Privacy';
@@ -167,6 +168,16 @@ function App() {
                     <SocketProvider>
                       <Layout>
                         <Cctv />
+                      </Layout>
+                    </SocketProvider>
+                  </ProtectedRoute>
+                } />
+
+                <Route path="/notes" element={
+                  <ProtectedRoute>
+                    <SocketProvider>
+                      <Layout>
+                        <Notes />
                       </Layout>
                     </SocketProvider>
                   </ProtectedRoute>
