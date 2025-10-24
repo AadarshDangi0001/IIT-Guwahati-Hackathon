@@ -17,11 +17,12 @@ const Notes = () => {
 
   const apiBase = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
 
-  const loadNotes = async (resetPage = false) => {
+  // loadNotes accepts an optional explicit page to avoid race conditions with setState
+  const loadNotes = async (resetPage = false, pageOverride = null) => {
     setLoading(true);
     try {
       const token = getToken();
-      const currentPage = resetPage ? 1 : pagination.page;
+      const currentPage = pageOverride !== null ? pageOverride : (resetPage ? 1 : pagination.page);
       const params = new URLSearchParams({ page: currentPage, limit: pagination.limit, ...filters });
 
       const res = await fetch(`${apiBase}/notes?${params.toString()}`, {
@@ -31,9 +32,9 @@ const Notes = () => {
       if (!res.ok) throw new Error('Failed to fetch notes');
 
       const data = await res.json();
-      setNotes(data.notes || []);
-      setPagination(prev => ({ ...prev, page: data.page || currentPage, total: data.total || 0, pages: data.pages || 0 }));
-      if (resetPage) setPagination(prev => ({ ...prev, page: 1 }));
+  setNotes(data.notes || []);
+  setPagination(prev => ({ ...prev, page: data.page || currentPage, total: data.total || 0, pages: data.pages || 0 }));
+  if (resetPage) setPagination(prev => ({ ...prev, page: 1 }));
     } catch (err) {
       console.error('Load notes error', err);
       showError('Failed to load notes');
@@ -47,7 +48,10 @@ const Notes = () => {
   const handleFilterChange = (k, v) => setFilters(prev => ({ ...prev, [k]: v }));
   const applyFilters = () => loadNotes(true);
   const resetFilters = () => { setFilters({ category: '', entity_id: '', q: '', date_from: '', date_to: '' }); setPagination(prev => ({ ...prev, page: 1 })); loadNotes(true); };
-  const changePage = (p) => { setPagination(prev => ({ ...prev, page: p })); setTimeout(() => loadNotes(), 0); };
+  const changePage = (p) => { 
+    // load specific page directly to avoid relying on async state update
+    loadNotes(false, p);
+  };
 
   return (
     <div className="space-y-6">
