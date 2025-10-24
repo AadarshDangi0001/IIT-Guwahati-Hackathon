@@ -13,7 +13,8 @@ import {
   DocumentTextIcon,
   EyeSlashIcon,
   CameraIcon,
-  XMarkIcon
+  XMarkIcon,
+  ShieldExclamationIcon
 } from '@heroicons/react/24/outline';
 
 const Sidebar = ({ isOpen, onClose }) => {
@@ -28,6 +29,7 @@ const Sidebar = ({ isOpen, onClose }) => {
     { name: 'Timeline', href: '/timeline', icon: ClockIcon, current: location.pathname === '/timeline' },
     { name: 'Campus Map', href: '/map', icon: MapIcon, current: location.pathname === '/map' },
     { name: 'Alerts', href: '/alerts', icon: ExclamationTriangleIcon, current: location.pathname === '/alerts' },
+    { name: 'Advanced Alerts', href: '/alert2', icon: ShieldExclamationIcon, current: location.pathname === '/alert2' },
   { name: 'CCTV', href: '/cctv', icon: CameraIcon, current: location.pathname === '/cctv' },
    { name: 'Notes', href: '/notes', icon: DocumentTextIcon, current: location.pathname === '/notes' },
   ];

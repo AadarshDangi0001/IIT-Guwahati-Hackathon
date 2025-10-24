@@ -2,6 +2,9 @@ const express = require('express');
 const router = express.Router();
 const Alert = require('../models/Alert');
 const winston = require('winston');
+const fs = require('fs');
+const path = require('path');
+const csv = require('csv-parser');
 
 const logger = winston.createLogger({
     level: 'info',
@@ -949,6 +952,337 @@ router.get('/history', async (req, res) => {
         res.status(500).json({
             success: false,
             error: 'Failed to fetch alert history'
+        });
+    }
+});
+
+/**
+ * GET /api/alerts/advanced
+ * Advanced alert detection from CSV data
+ * Detects: 
+ * 1. Users inactive for 24+ hours - HIGH PRIORITY
+ * 2. Users with 2+ simultaneous activities - MEDIUM PRIORITY
+ * 3. Admin block access - LOW PRIORITY
+ */
+router.get('/advanced', async (req, res) => {
+    try {
+        // Check if user is authenticated
+        if (!req.user) {
+            return res.status(401).json({
+                success: false,
+                error: 'Authentication required'
+            });
+        }
+
+        const { priority, page = 1, limit = 20 } = req.query;
+        
+        // Read CSV files
+        const dataPath = path.join(__dirname, '../data');
+        const advancedAlerts = [];
+
+        // Helper function to read CSV with timeout and error handling
+        const readCSV = (filePath, timeout = 5000) => {
+            return new Promise((resolve, reject) => {
+                const results = [];
+                const timeoutId = setTimeout(() => {
+                    reject(new Error(`CSV read timeout: ${filePath}`));
+                }, timeout);
+
+                if (!fs.existsSync(filePath)) {
+                    clearTimeout(timeoutId);
+                    resolve(results);
+                    return;
+                }
+
+                const stream = fs.createReadStream(filePath)
+                    .pipe(csv())
+                    .on('data', (data) => {
+                        // Limit data processing to prevent memory issues
+                        if (results.length < 10000) {
+                            results.push(data);
+                        }
+                    })
+                    .on('end', () => {
+                        clearTimeout(timeoutId);
+                        resolve(results);
+                    })
+                    .on('error', (error) => {
+                        clearTimeout(timeoutId);
+                        logger.error(`Error reading CSV ${filePath}:`, error);
+                        resolve(results); // Return partial results instead of failing
+                    });
+            });
+        };
+
+        // Read all CSV files with error handling
+        const [cardSwipes, wifiLogs, libCheckouts, labBookings, cctvFrames] = await Promise.all([
+            readCSV(path.join(dataPath, 'campus card_swipes.csv')).catch(() => []),
+            readCSV(path.join(dataPath, 'wifi_associations_logs.csv')).catch(() => []),
+            readCSV(path.join(dataPath, 'library_checkouts.csv')).catch(() => []),
+            readCSV(path.join(dataPath, 'lab_bookings.csv')).catch(() => []),
+            readCSV(path.join(dataPath, 'cctv_frames.csv')).catch(() => [])
+        ]);
+
+        // Get current time for analysis
+        const now = new Date();
+        const twentyFourHoursAgo = new Date(now.getTime() - 24 * 60 * 60 * 1000);
+
+        // Create entity activity map with optimized processing
+        const entityActivities = new Map();
+        
+        // Helper function to process activity
+        const processActivity = (entityId, timestamp, location, type, action) => {
+            if (!entityId || !timestamp) return;
+            
+            const ts = new Date(timestamp);
+            if (isNaN(ts.getTime())) return; // Skip invalid dates
+            
+            if (!entityActivities.has(entityId)) {
+                entityActivities.set(entityId, {
+                    lastSeen: ts,
+                    activities: [],
+                    locations: new Set()
+                });
+            }
+            
+            const entity = entityActivities.get(entityId);
+            entity.activities.push({
+                type,
+                timestamp: ts,
+                location: location || 'Unknown',
+                action: action || 'unknown'
+            });
+            entity.locations.add(location || 'Unknown');
+            if (ts > entity.lastSeen) {
+                entity.lastSeen = ts;
+            }
+        };
+        
+        // Process card swipes
+        cardSwipes.forEach(swipe => {
+            const entityId = swipe.entity_id || swipe.user_id || swipe.student_id;
+            const timestamp = swipe.timestamp || swipe.swipe_time;
+            const location = swipe.location || swipe.building || swipe.gate_id;
+            processActivity(entityId, timestamp, location, 'card_swipe', swipe.action);
+        });
+
+        // Process WiFi associations
+        wifiLogs.forEach(log => {
+            const entityId = log.entity_id || log.user_id || log.mac_address;
+            const timestamp = log.timestamp || log.connection_time;
+            const location = log.location || log.ap_location || log.building;
+            processActivity(entityId, timestamp, location, 'wifi', log.event_type);
+        });
+
+        // Process library checkouts
+        libCheckouts.forEach(checkout => {
+            const entityId = checkout.entity_id || checkout.user_id || checkout.student_id;
+            const timestamp = checkout.timestamp || checkout.checkout_time;
+            processActivity(entityId, timestamp, 'Library', 'library', checkout.action);
+        });
+
+        // Process lab bookings
+        labBookings.forEach(booking => {
+            const entityId = booking.entity_id || booking.user_id || booking.student_id;
+            const timestamp = booking.timestamp || booking.booking_time || booking.start_time;
+            const location = booking.location || booking.lab_name || booking.lab_id;
+            processActivity(entityId, timestamp, location, 'lab_booking', booking.status);
+        });
+
+        // Process CCTV frames
+        cctvFrames.forEach(frame => {
+            const entityId = frame.entity_id || frame.person_id;
+            const timestamp = frame.timestamp || frame.frame_time;
+            const location = frame.location || frame.camera_location || frame.building;
+            processActivity(entityId, timestamp, location, 'cctv', 'detected');
+        });
+
+        // ALERT TYPE 1: Users inactive for 24+ hours - HIGH PRIORITY
+        entityActivities.forEach((entity, entityId) => {
+            if (entity.lastSeen < twentyFourHoursAgo) {
+                const hoursSinceLastSeen = Math.floor((now - entity.lastSeen) / (60 * 60 * 1000));
+                advancedAlerts.push({
+                    id: `INACTIVE_${entityId}_${Date.now()}`,
+                    type: 'INACTIVITY',
+                    entityId,
+                    priority: 'HIGH',
+                    title: `User Inactive for ${hoursSinceLastSeen} hours`,
+                    description: `Entity ${entityId} has not been detected in any system for ${hoursSinceLastSeen} hours`,
+                    lastSeen: entity.lastSeen,
+                    details: {
+                        lastLocation: Array.from(entity.locations).pop(),
+                        activityCount: entity.activities.length,
+                        hoursSinceLastSeen
+                    },
+                    timestamp: now,
+                    status: 'active'
+                });
+            }
+        });
+
+        // ALERT TYPE 2: Simultaneous activities (2+ activities at same time) - MEDIUM PRIORITY
+        entityActivities.forEach((entity, entityId) => {
+            if (entity.activities.length < 2) return; // Skip if less than 2 activities
+            
+            // Sort activities by timestamp
+            const sortedActivities = entity.activities.sort((a, b) => a.timestamp - b.timestamp);
+            
+            // Optimized check - only check first occurrence
+            let found = false;
+            for (let i = 0; i < sortedActivities.length - 1 && !found; i++) {
+                const activity1 = sortedActivities[i];
+                
+                // Only check next few activities to optimize performance
+                const checkLimit = Math.min(i + 10, sortedActivities.length);
+                for (let j = i + 1; j < checkLimit; j++) {
+                    const activity2 = sortedActivities[j];
+                    const timeDiff = Math.abs(activity2.timestamp - activity1.timestamp) / (60 * 1000); // minutes
+                    
+                    if (timeDiff > 5) break; // Stop checking if time difference too large
+                    
+                    if (activity1.location !== activity2.location) {
+                        advancedAlerts.push({
+                            id: `SIMULT_${entityId}_${activity1.timestamp.getTime()}`,
+                            type: 'SIMULTANEOUS_ACTIVITY',
+                            entityId,
+                            priority: 'MEDIUM',
+                            title: 'Simultaneous Activities Detected',
+                            description: `Entity ${entityId} recorded at different locations within ${Math.round(timeDiff)} minutes`,
+                            details: {
+                                activity1: {
+                                    type: activity1.type,
+                                    location: activity1.location,
+                                    timestamp: activity1.timestamp,
+                                    action: activity1.action
+                                },
+                                activity2: {
+                                    type: activity2.type,
+                                    location: activity2.location,
+                                    timestamp: activity2.timestamp,
+                                    action: activity2.action
+                                },
+                                timeDifferenceMinutes: Math.round(timeDiff)
+                            },
+                            timestamp: activity1.timestamp,
+                            status: 'active'
+                        });
+                        found = true; // Only report once per entity
+                        break;
+                    }
+                }
+            }
+        });
+
+        // ALERT TYPE 3: Admin block access - LOW PRIORITY (limit to most recent per entity)
+        const adminLocations = ['admin'];
+        const adminAccessMap = new Map(); // Track one per entity
+        
+        entityActivities.forEach((entity, entityId) => {
+            // Only check the most recent admin access per entity
+            for (let i = entity.activities.length - 1; i >= 0; i--) {
+                const activity = entity.activities[i];
+                const isAtAdmin = activity.location && 
+                    adminLocations.some(loc => activity.location.toLowerCase().includes(loc));
+                
+                if (isAtAdmin && !adminAccessMap.has(entityId)) {
+                    adminAccessMap.set(entityId, true);
+                    const hour = activity.timestamp.getHours();
+                    advancedAlerts.push({
+                        id: `ADMIN_${entityId}_${activity.timestamp.getTime()}`,
+                        type: 'ADMIN_ACCESS',
+                        entityId,
+                        priority: 'LOW',
+                        title: 'Access to Admin Block',
+                        description: `Entity ${entityId} accessed ${activity.location}`,
+                        details: {
+                            location: activity.location,
+                            hour: hour,
+                            activityType: activity.type,
+                            action: activity.action
+                        },
+                        timestamp: activity.timestamp,
+                        status: 'active'
+                    });
+                    break; // Only one per entity
+                }
+            }
+        });
+
+        // Remove duplicates based on similar alerts
+        const uniqueAlerts = [];
+        const alertKeys = new Set();
+        
+        advancedAlerts.forEach(alert => {
+            const key = `${alert.type}_${alert.entityId}_${Math.floor(alert.timestamp.getTime() / (60 * 60 * 1000))}`; // Hour-based grouping
+            if (!alertKeys.has(key)) {
+                alertKeys.add(key);
+                uniqueAlerts.push(alert);
+            }
+        });
+
+        // Filter by priority if specified
+        let filteredAlerts = uniqueAlerts;
+        if (priority) {
+            filteredAlerts = uniqueAlerts.filter(alert => 
+                alert.priority.toLowerCase() === priority.toLowerCase()
+            );
+        }
+
+        // Sort by priority and timestamp
+        const priorityOrder = { 'HIGH': 0, 'MEDIUM': 1, 'LOW': 2 };
+        filteredAlerts.sort((a, b) => {
+            const priorityDiff = priorityOrder[a.priority] - priorityOrder[b.priority];
+            if (priorityDiff !== 0) return priorityDiff;
+            return new Date(b.timestamp) - new Date(a.timestamp);
+        });
+
+        // Limit total alerts to prevent performance issues (max 1000)
+        const maxAlerts = 1000;
+        if (filteredAlerts.length > maxAlerts) {
+            filteredAlerts = filteredAlerts.slice(0, maxAlerts);
+        }
+
+        // Pagination
+        const startIndex = (parseInt(page) - 1) * parseInt(limit);
+        const endIndex = startIndex + parseInt(limit);
+        const paginatedAlerts = filteredAlerts.slice(startIndex, endIndex);
+
+        // Get summary statistics
+        const summary = {
+            total: filteredAlerts.length,
+            byPriority: {
+                high: filteredAlerts.filter(a => a.priority === 'HIGH').length,
+                medium: filteredAlerts.filter(a => a.priority === 'MEDIUM').length,
+                low: filteredAlerts.filter(a => a.priority === 'LOW').length
+            },
+            byType: {
+                inactivity: filteredAlerts.filter(a => a.type === 'INACTIVITY').length,
+                simultaneous: filteredAlerts.filter(a => a.type === 'SIMULTANEOUS_ACTIVITY').length,
+                adminAccess: filteredAlerts.filter(a => a.type === 'ADMIN_ACCESS').length
+            }
+        };
+
+        res.json({
+            success: true,
+            data: {
+                alerts: paginatedAlerts,
+                summary,
+                pagination: {
+                    page: parseInt(page),
+                    limit: parseInt(limit),
+                    total: filteredAlerts.length,
+                    pages: Math.ceil(filteredAlerts.length / parseInt(limit)),
+                    hasMore: endIndex < filteredAlerts.length
+                }
+            }
+        });
+
+    } catch (error) {
+        logger.error('Error generating advanced alerts:', error);
+        res.status(500).json({
+            success: false,
+            error: 'Failed to generate advanced alerts',
+            message: error.message
         });
     }
 });

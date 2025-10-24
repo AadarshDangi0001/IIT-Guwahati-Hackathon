@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { getToken } from '../../services/api';
 import LoadingSpinner from '../../components/Common/LoadingSpinner';
 import { useAlert } from '../../contexts/AlertContext';
-import { Link } from 'react-router-dom';
 import { CameraIcon, EyeIcon, CalendarIcon, MapPinIcon } from '@heroicons/react/24/outline';
 
 const Cctv = () => {
+  const navigate = useNavigate();
   const [file, setFile] = useState(null);
   const [preview, setPreview] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -282,7 +283,12 @@ const Cctv = () => {
                       <p className="text-sm text-gray-500">ID: {result.entity._id}</p>
                       <p className="text-sm text-gray-500">Face ID: {result.match?.face_id || 'N/A'}</p>
                       <p className="text-sm text-gray-500">Confidence: {(result.confidence * 100).toFixed(1)}%</p>
-                      <Link to={`/entities/${result.entity._id}`} className="text-sm text-blue-600 hover:underline">View Details</Link>
+                      <button 
+                        onClick={() => navigate(`/entities/${result.entity._id}`, { state: { from: '/cctv' } })} 
+                        className="text-sm text-blue-600 hover:underline"
+                      >
+                        View Details
+                      </button>
                     </div>
                   </div>
                 </div>

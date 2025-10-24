@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { entitiesAPI, analyticsAPI, handleAPIError } from '../../services/api';
 import { useAlert } from '../../contexts/AlertContext';
 import LoadingSpinner from '../../components/Common/LoadingSpinner';
@@ -20,6 +20,8 @@ import {
 
 const EntityDetails = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
+  const location = useLocation();
   const [entity, setEntity] = useState(null);
   const [timeline, setTimeline] = useState([]);
   const [predictions, setPredictions] = useState(null);
@@ -82,9 +84,35 @@ const EntityDetails = () => {
     }
   };
 
+  const handleBack = () => {
+    // Check if there's a referrer path in location state
+    const from = location.state?.from;
+    
+    if (from) {
+      // Navigate back to the page they came from
+      navigate(from);
+    } else if (window.history.length > 2) {
+      // If there's browser history, go back
+      navigate(-1);
+    } else {
+      // Default fallback to entity search
+      navigate('/entities');
+    }
+  };
 
-
-
+  const getBackButtonLabel = () => {
+    const from = location.state?.from;
+    
+    if (from?.includes('/alert2')) {
+      return 'Back to Alerts';
+    } else if (from?.includes('/cctv')) {
+      return 'Back to CCTV';
+    } else if (from?.includes('/entities')) {
+      return 'Back to Search';
+    } else {
+      return 'Back';
+    }
+  };
 
   const getConfidenceColor = (confidence) => {
     if (confidence >= 0.9) return 'text-green-600 dark:text-green-400';
@@ -111,13 +139,13 @@ const EntityDetails = () => {
           The entity you're looking for doesn't exist or you don't have permission to view it.
         </p>
         <div className="mt-6">
-          <Link
-            to="/entities"
+          <button
+            onClick={handleBack}
             className="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
           >
             <ArrowLeftIcon className="h-4 w-4 mr-2" />
-            Back to Search
-          </Link>
+            {getBackButtonLabel()}
+          </button>
         </div>
       </div>
     );
@@ -127,13 +155,13 @@ const EntityDetails = () => {
     <div className="space-y-6">
       {/* Header */}
       <div className="flex items-center justify-between">
-        <Link
-          to="/entities"
+        <button
+          onClick={handleBack}
           className="inline-flex items-center text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
         >
           <ArrowLeftIcon className="h-4 w-4 mr-1" />
-          Back to Search
-        </Link>
+          {getBackButtonLabel()}
+        </button>
       </div>
 
       {/* Entity Profile */}

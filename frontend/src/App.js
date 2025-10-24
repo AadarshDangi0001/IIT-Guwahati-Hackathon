@@ -23,6 +23,7 @@ import Timeline from './pages/Timeline/Timeline';
 import CampusMap from './pages/Map/CampusMap';
 import Analytics from './pages/Analytics/Analytics';
 import Alerts from './pages/Alerts/Alerts';
+import Alert2 from './pages/Alert2/Alert2';
 import Users from './pages/Users/Users';
 import Cctv from './pages/Cctv/Cctv';
 import Notes from './pages/Notes/Notes';
@@ -188,6 +189,16 @@ function App() {
                     <SocketProvider>
                       <Layout>
                         <Alerts />
+                      </Layout>
+                    </SocketProvider>
+                  </ProtectedRoute>
+                } />
+                
+                <Route path="/alert2" element={
+                  <ProtectedRoute>
+                    <SocketProvider>
+                      <Layout>
+                        <Alert2 />
                       </Layout>
                     </SocketProvider>
                   </ProtectedRoute>
