@@ -20,6 +20,7 @@
     "bcryptjs": "^2.4.3",
     "bull": "^4.12.2",
     "compression": "^1.7.4",
+    "concurrently": "^9.2.1",
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
     "csv-parser": "^3.2.0",

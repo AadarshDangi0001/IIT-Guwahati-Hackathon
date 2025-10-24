@@ -26,7 +26,7 @@ export const SocketProvider = ({ children }) => {
     }
 
     // Create socket connection
-    const newSocket = io(process.env.REACT_APP_API_URL || 'http://localhost:5000', {
+    const newSocket = io(process.env.REACT_APP_API_URL || 'http://localhost:3001', {
       transports: ['websocket'],
       upgrade: true,
       rememberUpgrade: true,

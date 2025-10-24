@@ -2,8 +2,20 @@ const express = require('express');
 const multer = require('multer');
 const axios = require('axios');
 const Entity = require('../models/Entity');
+const fs = require('fs');
+const path = require('path');
+const csv = require('csv-parser');
 const router = express.Router();
-
+ 
+// Lightweight CORS for this router to avoid browser "Failed to fetch" errors
+router.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', process.env.CORS_ORIGIN || '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET,POST,OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With');
+  // quick reply for preflight
+  if (req.method === 'OPTIONS') return res.sendStatus(204);
+  next();
+});
 // Multer memory storage for uploads
 const storage = multer.memoryStorage();
 const upload = multer({ storage, limits: { fileSize: 10 * 1024 * 1024 } }); // 10MB
@@ -155,6 +167,129 @@ router.get('/status', async (req, res) => {
     return res.status(500).json({ 
       success: false, 
       message: 'Failed to check status',
+      error: error.message 
+    });
+  }
+});
+
+/**
+ * @route GET /api/cctv/frames
+ * @desc Get CCTV frame records with optional filters
+ * @access Private
+ */
+router.get('/frames', async (req, res) => {
+  try {
+    // Normalize and parse query params early
+    const {
+      location,
+      date_from,
+      date_to,
+      has_face,
+    } = req.query;
+
+    const page = Math.max(1, parseInt(req.query.page, 10) || 1);
+    const limit = Math.max(1, parseInt(req.query.limit, 10) || 50);
+
+    // Try multiple likely CSV locations (robust lookup)
+    const possiblePaths = [
+      path.join(__dirname, '..', '..', 'data', 'cctv_frames.csv'), // backend/data
+      path.join(__dirname, '..', 'data', 'cctv_frames.csv'), // backend/src/data (fallback)
+      path.resolve(process.cwd(), 'backend', 'data', 'cctv_frames.csv'),
+      path.resolve(process.cwd(), 'data', 'cctv_frames.csv')
+    ];
+
+    const csvPath = possiblePaths.find(p => fs.existsSync(p));
+
+    if (!csvPath) {
+      console.error('CCTV frames CSV not found. Checked paths:', possiblePaths);
+      return res.status(404).json({
+        success: false,
+        message: 'CCTV frames data not found'
+      });
+    }
+
+    const frames = [];
+
+    return new Promise((resolve, reject) => {
+      fs.createReadStream(csvPath)
+        .pipe(csv())
+        .on('data', (row) => {
+          // Parse the timestamp
+          const timestamp = new Date(row.timestamp);
+          
+          // Apply filters
+          if (location && !((row.location_id || '').toLowerCase().includes(location.toLowerCase()))) {
+            return;
+          }
+          
+          if (date_from && timestamp < new Date(date_from)) {
+            return;
+          }
+          
+          if (date_to && timestamp > new Date(date_to)) {
+            return;
+          }
+          
+          if (has_face === 'true' && !row.face_id.trim()) {
+            return;
+          }
+          
+          if (has_face === 'false' && row.face_id.trim()) {
+            return;
+          }
+          
+          frames.push({
+            frame_id: row.frame_id,
+            location_id: row.location_id,
+            timestamp: row.timestamp,
+            face_id: row.face_id.trim() || null,
+            parsed_timestamp: timestamp
+          });
+        })
+        .on('end', () => {
+          // Sort by timestamp descending (newest first)
+          frames.sort((a, b) => b.parsed_timestamp - a.parsed_timestamp);
+          
+          // Pagination
+          const startIndex = (page - 1) * limit;
+          const endIndex = startIndex + limit;
+          const paginatedFrames = frames.slice(startIndex, endIndex);
+          
+          // Remove parsed_timestamp from response
+          const responseFrames = paginatedFrames.map(frame => ({
+            frame_id: frame.frame_id,
+            location_id: frame.location_id,
+            timestamp: frame.timestamp,
+            face_id: frame.face_id
+          }));
+          
+          // Return response in the shape the frontend expects
+          res.json({
+            success: true,
+            frames: responseFrames,
+            page: parseInt(page, 10),
+            limit: parseInt(limit, 10),
+            total: frames.length,
+            pages: Math.ceil(frames.length / limit)
+          });
+          resolve();
+        })
+        .on('error', (error) => {
+          console.error('Error reading CCTV frames CSV:', error);
+          res.status(500).json({
+            success: false,
+            message: 'Failed to read CCTV frames data',
+            error: error.message
+          });
+          reject(error);
+        });
+    });
+    
+  } catch (error) {
+    console.error('CCTV frames error:', error);
+    return res.status(500).json({ 
+      success: false, 
+      message: 'Failed to fetch CCTV frames',
       error: error.message 
     });
   }
