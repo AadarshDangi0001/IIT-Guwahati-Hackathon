@@ -16,6 +16,7 @@ import uvicorn
 import os
 import json
 from pathlib import Path
+import hashlib
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -109,6 +110,11 @@ class MLService:
                 'activity_predictor': self.create_activity_predictor(),
                 'similarity_calculator': self.create_similarity_calculator()
             }
+            # Load face embeddings dataset for real face matching
+            self.face_index = None
+            self.face_meta = []
+            self.face_embeddings = None
+            self.load_face_embeddings()
             self.logger.info("ML models loaded successfully")
         except Exception as e:
             self.logger.error(f"Error loading models: {e}")
@@ -164,6 +170,161 @@ class MLService:
             'jaccard': self.jaccard_similarity,
             'composite': self.composite_similarity
         }
+
+    def load_face_embeddings(self):
+        """Attempt to load face embeddings CSV into memory.
+
+        The loader is flexible: it supports either a single column containing a
+        JSON/list string named `embedding` (or `vector`) or many numeric columns
+        representing embedding dimensions. It also expects at least `face_id`
+        and optionally `entity_id`/`name` columns.
+        """
+        try:
+            csv_path = os.getenv('FACE_EMBEDDINGS_CSV') or '../backend/src/data/face_embeddings.csv'
+            # Resolve path relative to this file
+            base = Path(__file__).resolve().parent
+            candidate = (base / csv_path).resolve()
+            if not candidate.exists():
+                # Try absolute path as provided
+                candidate = Path(csv_path)
+            if not candidate.exists():
+                self.logger.warning(f"Face embeddings CSV not found at {csv_path}")
+                # Attempt to build embeddings from face image files as a fallback
+                try:
+                    images_dir = (base.parent / 'backend' / 'src' / 'data' / 'face_images').resolve()
+                    if images_dir.exists() and images_dir.is_dir():
+                        self.logger.info(f"Building face embeddings from images in {images_dir}")
+                        metas = []
+                        embeddings_list = []
+                        for img_file in sorted(images_dir.iterdir()):
+                            if img_file.suffix.lower() not in ('.jpg', '.jpeg', '.png'):
+                                continue
+                            try:
+                                with open(img_file, 'rb') as f:
+                                    img_bytes = f.read()
+                                emb = self.image_bytes_to_embedding(img_bytes)
+                                embeddings_list.append(emb)
+                                face_id = img_file.stem
+                                metas.append({'face_id': face_id, 'entity_id': None, 'name': None})
+                            except Exception as e:
+                                self.logger.warn(f"Failed to process image {img_file}: {e}")
+                                continue
+
+                        if embeddings_list:
+                            self.face_embeddings = np.vstack(embeddings_list)
+                            self.face_meta = metas
+                            self._face_embeddings_normed = True
+                            self.logger.info(f"Built {len(self.face_meta)} embeddings from images")
+                            return
+                except Exception as e:
+                    self.logger.error(f"Fallback image-based embedding construction failed: {e}")
+                return
+
+            self.logger.info(f"Loading face embeddings from {candidate}")
+            # Read a small sample to inspect columns
+            df_sample = pd.read_csv(candidate, nrows=5)
+            cols = list(df_sample.columns)
+
+            # Determine embedding column
+            embed_col = None
+            for c in cols:
+                if c.lower() in ('embedding', 'vector'):
+                    embed_col = c
+                    break
+
+            meta_cols = ['face_id', 'entity_id', 'name']
+            meta_present = {c: c for c in cols if c in meta_cols}
+
+            if embed_col:
+                # Embedding column contains a stringified list; parse with json
+                df = pd.read_csv(candidate, converters={embed_col: lambda x: json.loads(x)})
+                embeddings = np.vstack(df[embed_col].values)
+                metas = []
+                for _, row in df.iterrows():
+                    metas.append({
+                        'face_id': row.get('face_id'),
+                        'entity_id': row.get('entity_id'),
+                        'name': row.get('name')
+                    })
+            else:
+                # Assume the remaining numeric columns are embedding dims
+                # Heuristics: find first numeric column index after meta columns
+                possible_meta = [c for c in cols if c in meta_cols]
+                numeric_cols = [c for c in cols if c not in possible_meta]
+                # Read numeric columns as embeddings
+                df = pd.read_csv(candidate, usecols=cols)
+                # Ensure numeric columns
+                embed_df = df[numeric_cols].select_dtypes(include=[np.number])
+                if embed_df.shape[1] < 2:
+                    # couldn't detect numeric embedding columns
+                    self.logger.warning('No numeric embedding columns detected in face embeddings CSV')
+                    return
+                embeddings = embed_df.values.astype(float)
+                metas = []
+                for _, row in df.iterrows():
+                    metas.append({
+                        'face_id': row.get('face_id') if 'face_id' in df.columns else None,
+                        'entity_id': row.get('entity_id') if 'entity_id' in df.columns else None,
+                        'name': row.get('name') if 'name' in df.columns else None
+                    })
+
+            # Store embeddings and meta
+            self.face_embeddings = np.array(embeddings, dtype=float)
+            self.face_meta = metas
+            self._face_embeddings_normed = False
+            self.logger.info(f"Loaded {len(self.face_meta)} face embeddings")
+
+        except Exception as e:
+            self.logger.error(f"Failed to load face embeddings: {e}")
+            # don't raise during init; the service can still run with mock behaviour
+            return
+
+    def image_bytes_to_embedding(self, img_bytes: bytes, dim: int = None):
+        """Create a deterministic embedding vector from raw image bytes.
+
+        This is not a deep model — it is a deterministic, hash-based embedding
+        useful for demos. It ensures the same image always maps to the same
+        embedding, which allows matching against a dataset built the same way.
+        """
+        try:
+            # Determine target dimension: prefer provided dim, otherwise match loaded dataset if available
+            if dim is None:
+                try:
+                    if hasattr(self, 'face_embeddings') and self.face_embeddings is not None:
+                        dim = int(self.face_embeddings.shape[1])
+                    else:
+                        dim = 128
+                except Exception:
+                    dim = 128
+
+            # Use SHA256 seed and expand via repeated hashing to collect enough bytes
+            hasher = hashlib.sha256()
+            hasher.update(img_bytes)
+            seed = hasher.digest()
+
+            # Generate dim floats by repeated hashing of seed+counter
+            vals = []
+            counter = 0
+            while len(vals) < dim:
+                h = hashlib.sha256(seed + counter.to_bytes(4, 'little')).digest()
+                for b in h:
+                    # map byte 0..255 to float in [-0.5, 0.5]
+                    vals.append((b / 255.0) - 0.5)
+                    if len(vals) >= dim:
+                        break
+                counter += 1
+
+            vec = np.array(vals[:dim], dtype=float)
+            # Normalize to unit length
+            norm = np.linalg.norm(vec)
+            if norm == 0:
+                return vec
+            return vec / norm
+
+        except Exception as e:
+            self.logger.error(f"Error computing image embedding: {e}")
+            # Return zero vector on failure
+            return np.zeros(dim, dtype=float)
 
     def jaro_winkler_similarity(self, s1: str, s2: str) -> float:
         """Calculate Jaro-Winkler similarity between two strings"""
@@ -436,25 +597,59 @@ class MLService:
             raise HTTPException(status_code=500, detail=f"Activity prediction error: {str(e)}")
     
     def match_face_embedding(self, query_embedding: List[float], threshold: float = 0.8) -> Dict:
-        """Match face embedding against known faces (mock implementation)"""
+        """Match face embedding against known faces using cosine similarity.
+
+        This implementation loads the `face_embeddings.csv` dataset at startup and
+        performs a simple nearest-neighbour search using cosine similarity. It is
+        intentionally simple (no FAISS dependency) and works for demo/prototype
+        purposes. If `face_embeddings.csv` is not available or failed to load,
+        the function falls back to returning no matches.
+        """
         try:
-            # Mock face database for demo
-            mock_faces = [
-                {'face_id': 'F100001', 'entity_id': 'E100001', 'name': 'Neha Kumar', 'confidence': 0.92},
-                {'face_id': 'F100002', 'entity_id': 'E100002', 'name': 'Neha Singh', 'confidence': 0.87},
-                {'face_id': 'F100003', 'entity_id': 'E100003', 'name': 'Ishaan Desai', 'confidence': 0.95}
-            ]
-            
-            # Filter matches above threshold
-            matches = [face for face in mock_faces if face['confidence'] >= threshold]
-            best_match = max(matches, key=lambda x: x['confidence']) if matches else None
-            
+            if self.face_embeddings is None or len(self.face_meta) == 0:
+                self.logger.warning("Face embeddings not loaded; cannot perform real matching")
+                return {'matches': [], 'best_match': None, 'confidence': 0.0}
+
+            q = np.array(query_embedding, dtype=float)
+            if q.ndim != 1:
+                q = q.flatten()
+
+            # Normalize query and dataset for cosine similarity
+            q_norm = np.linalg.norm(q)
+            if q_norm == 0:
+                return {'matches': [], 'best_match': None, 'confidence': 0.0}
+            q_unit = q / q_norm
+
+            # Compute dot product with all embeddings (assumes dataset is already normalized)
+            # If dataset is not normalized, normalize now
+            embeddings = self.face_embeddings
+            if not hasattr(self, '_face_embeddings_normed') or not self._face_embeddings_normed:
+                norms = np.linalg.norm(embeddings, axis=1, keepdims=True)
+                norms[norms == 0] = 1.0
+                embeddings = embeddings / norms
+                self.face_embeddings = embeddings
+                self._face_embeddings_normed = True
+
+            sims = np.dot(embeddings, q_unit)
+
+            # Gather matches above threshold
+            indices = np.where(sims >= threshold)[0]
+            matches = []
+            for idx in indices:
+                meta = self.face_meta[idx].copy()
+                meta['similarity'] = float(sims[idx])
+                matches.append(meta)
+
+            # Sort matches by similarity desc
+            matches = sorted(matches, key=lambda x: x.get('similarity', 0.0), reverse=True)
+            best = matches[0] if matches else None
+
             return {
                 'matches': matches,
-                'best_match': best_match,
-                'confidence': best_match['confidence'] if best_match else 0.0
+                'best_match': best,
+                'confidence': best.get('similarity', 0.0) if best else 0.0
             }
-            
+
         except Exception as e:
             self.logger.error(f"Error in face matching: {e}")
             raise HTTPException(status_code=500, detail=f"Face matching error: {str(e)}")
@@ -584,6 +779,58 @@ async def match_face(request: FaceMatchRequest):
     except Exception as e:
         logger.error(f"Error in face matching: {e}")
         raise HTTPException(status_code=500, detail=f"Face matching error: {str(e)}")
+
+
+@app.post("/embeddings/face")
+async def generate_face_embeddings(request: Dict):
+    """Generate deterministic face embeddings from base64 image data.
+
+    Expected input: { "images": [ { "data": "<base64>" }, ... ], "model": "facenet" }
+    Returns: { "embeddings": [ [...], ... ] }
+    """
+    try:
+        images = request.get('images') if isinstance(request, dict) else request.images
+        model = request.get('model', 'facenet') if isinstance(request, dict) else 'facenet'
+
+        if not images or not isinstance(images, list):
+            raise HTTPException(status_code=400, detail='images array is required')
+
+        embeddings = []
+        for img in images:
+            # img may be {"data": base64} or raw base64 string
+            b64 = img.get('data') if isinstance(img, dict) else img
+            if not b64:
+                embeddings.append(None)
+                continue
+            # Decode base64
+            try:
+                img_bytes = np.frombuffer(json.loads(json.dumps(b64)).encode('latin1'), dtype=np.uint8)
+                # above is just a safe path; prefer actual decode
+                import base64
+                img_raw = base64.b64decode(b64)
+            except Exception:
+                # if decode fails, treat as None
+                embeddings.append(None)
+                continue
+
+            # Ensure generated embedding uses same dimension as loaded dataset (if present)
+            target_dim = None
+            try:
+                if hasattr(ml_service, 'face_embeddings') and ml_service.face_embeddings is not None:
+                    target_dim = int(ml_service.face_embeddings.shape[1])
+            except Exception:
+                target_dim = None
+
+            emb = ml_service.image_bytes_to_embedding(img_raw, dim=target_dim)
+            embeddings.append(emb.tolist())
+
+        return { 'embeddings': embeddings }
+
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error generating face embeddings: {e}")
+        raise HTTPException(status_code=500, detail=f"Embedding generation error: {str(e)}")
 
 @app.post("/batch/entity-resolution")
 async def batch_entity_resolution(entities: List[EntityRecord]):

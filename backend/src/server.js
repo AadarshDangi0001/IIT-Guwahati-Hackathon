@@ -42,7 +42,7 @@ const auditRoutes = require('./routes/audit');
 const privacyRoutes = require('./routes/privacy');
 const settingsRoutes = require('./routes/settings');
 const photosRoutes = require('./routes/photos');
-const cctvRoutes = require('./routes/cctv');
+const simpleCctvRoutes = require('./routes/simple_cctv');
 
 // Import middleware
 const { auditLogger } = require('./middleware/auditLogger');
@@ -259,6 +259,11 @@ class CampusSecurityServer {
             });
         });
 
+        // Lightweight unauthenticated ping for CCTV route debugging
+        this.app.get('/api/cctv/ping', (req, res) => {
+            res.json({ ok: true, path: '/api/cctv' });
+        });
+
         // Authentication middleware
         const authenticateToken = async (req, res, next) => {
             try {
@@ -382,8 +387,8 @@ class CampusSecurityServer {
         this.app.use('/api/users', authenticateToken, authorize(['users:read']), userRoutes);
         this.app.use('/api/analytics', authenticateToken, authorize(['analytics:read']), 
             differentialPrivacyMiddleware(), analyticsRoutes);
-    this.app.use('/api/photos', authenticateToken, photosRoutes); // Profile photos routes
-    this.app.use('/api/cctv', authenticateToken, authorize(['entities:read']), cctvRoutes); // CCTV image recognition
+        this.app.use('/api/photos', authenticateToken, photosRoutes); // Profile photos routes
+        this.app.use('/api/cctv', authenticateToken, authorize(['entities:read']), simpleCctvRoutes); // Simplified CCTV image recognition
         this.app.use('/api/ingestion', authenticateToken, authorize(['data:write']), ingestionRoutes);
         this.app.use('/api/audit', authenticateToken, auditRoutes); // Apply authentication to audit routes
         this.app.use('/api/privacy', privacyRoutes); // Privacy routes have their own auth middleware

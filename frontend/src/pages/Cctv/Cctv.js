@@ -9,6 +9,7 @@ const Cctv = () => {
   const [preview, setPreview] = useState(null);
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
+  const [photoUrl, setPhotoUrl] = useState(null);
   const { showError, showSuccess } = useAlert();
 
   const onFileChange = (e) => {
@@ -17,6 +18,28 @@ const Cctv = () => {
     setFile(f);
     setPreview(URL.createObjectURL(f));
     setResult(null);
+    setPhotoUrl(null); // Reset photo URL when changing files
+  };
+
+  const loadEntityPhoto = async (entityId) => {
+    try {
+      const token = getToken();
+      if (!token) return;
+
+      const response = await fetch(`${process.env.REACT_APP_API_URL || 'http://localhost:5001/api'}/photos/entity/${entityId}`, {
+        headers: {
+          'Authorization': `Bearer ${token}`
+        }
+      });
+
+      if (response.ok) {
+        const blob = await response.blob();
+        const url = URL.createObjectURL(blob);
+        setPhotoUrl(url);
+      }
+    } catch (error) {
+      console.warn('Failed to load entity photo:', error);
+    }
   };
 
   const onSubmit = async (e) => {
@@ -33,7 +56,7 @@ const Cctv = () => {
       const fd = new FormData();
       fd.append('image', file);
 
-      const response = await fetch(`${process.env.REACT_APP_API_URL || 'http://localhost:5001'}/cctv/recognize`, {
+      const response = await fetch(`${process.env.REACT_APP_API_URL || 'http://localhost:5001/api'}/cctv/recognize`, {
         method: 'POST',
         body: fd,
         headers: {
@@ -50,7 +73,14 @@ const Cctv = () => {
       }
 
       setResult(data);
-      showSuccess('Recognition complete', `Confidence: ${(data.confidence * 100).toFixed(1)}%`);
+      
+      // Load the photo with authentication if entity is found
+      if (data.entity && data.confidence > 0) {
+        loadEntityPhoto(data.entity._id);
+        showSuccess('Recognition complete', `Match found with ${(data.confidence * 100).toFixed(1)}% confidence`);
+      } else {
+        showSuccess('Recognition complete', 'No matching face found in database');
+      }
     } catch (err) {
       console.error(err);
       showError('Upload error', err.message || String(err));
@@ -80,7 +110,15 @@ const Cctv = () => {
             <button type="submit" disabled={loading} className="px-4 py-2 bg-blue-600 text-white rounded-md">
               {loading ? <span className="flex items-center"><LoadingSpinner size="small" /> Processing...</span> : 'Find Match'}
             </button>
-            <button type="button" onClick={() => { setFile(null); setPreview(null); setResult(null); }} className="px-4 py-2 border rounded-md">Clear</button>
+            <button type="button" onClick={() => { 
+              if (photoUrl) {
+                URL.revokeObjectURL(photoUrl);
+                setPhotoUrl(null);
+              }
+              setFile(null); 
+              setPreview(null); 
+              setResult(null); 
+            }} className="px-4 py-2 border rounded-md">Clear</button>
           </div>
         </form>
       </div>
@@ -92,13 +130,24 @@ const Cctv = () => {
             <div className="mt-4">
               <div className="flex items-center space-x-4">
                 <div className="w-16 h-16 rounded-full overflow-hidden bg-gray-200">
-                  <img src={`${process.env.REACT_APP_API_URL || 'http://localhost:5001'}/photos/entity/${result.entity._id}`} alt="matched" className="w-full h-full object-cover" />
+                  {photoUrl ? (
+                    <img 
+                      src={photoUrl} 
+                      alt="matched person" 
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="w-full h-full bg-gray-300 flex items-center justify-center text-gray-600 text-xs">
+                      No Photo
+                    </div>
+                  )}
                 </div>
                 <div>
-                  <p className="text-lg font-semibold">{result.entity.profile?.name}</p>
+                  <p className="text-lg font-semibold">{result.entity.profile?.name || 'Unknown Person'}</p>
                   <p className="text-sm text-gray-500">ID: {result.entity._id}</p>
+                  <p className="text-sm text-gray-500">Face ID: {result.match?.face_id || 'N/A'}</p>
                   <p className="text-sm text-gray-500">Confidence: {(result.confidence * 100).toFixed(1)}%</p>
-                  <Link to={`/entities/${result.entity._id}`} className="text-sm text-blue-600">View Details</Link>
+                  <Link to={`/entities/${result.entity._id}`} className="text-sm text-blue-600 hover:underline">View Details</Link>
                 </div>
               </div>
             </div>
