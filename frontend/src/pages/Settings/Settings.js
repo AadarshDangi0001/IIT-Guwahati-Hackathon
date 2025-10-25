@@ -152,34 +152,24 @@ const Settings = () => {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row gap-6">
-        {/* Sidebar */}
-        <div className="lg:w-64">
-          <nav className="space-y-1">
-            {tabs.map(tab => {
-              const IconComponent = tab.icon;
-              return (
+      <div>
+        {/* Horizontal tabs (matches EntitySearch / Users style) */}
+        <div className="bg-white dark:bg-gray-800 shadow rounded-lg">
+          <div className="px-6 pt-4">
+            <div className="flex -mb-px space-x-1 overflow-auto">
+              {tabs.map(tab => (
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`w-full flex items-center px-3 py-2 text-sm font-medium rounded-md ${activeTab === tab.id
-                    ? 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200'
-                    : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white'
-                    }`}
-                >
-                  <IconComponent className="h-5 w-5 mr-3" />
+                  className={`py-2 px-4 text-sm font-medium rounded-t-md ${activeTab === tab.id ? 'bg-blue-50 text-blue-700 dark:bg-blue-900 dark:text-blue-200' : 'text-gray-500 hover:text-gray-700 dark:text-gray-300'}`}>
                   {tab.name}
                 </button>
-              );
-            })}
-          </nav>
-        </div>
-
-        {/* Content */}
-        <div className="flex-1">
-          <div className="bg-white dark:bg-gray-800 shadow rounded-lg">
+              ))}
+            </div>
+          </div>
+          <div className="p-6 bg-white dark:bg-gray-800 rounded-b-lg">
             {activeTab === 'general' && (
-              <div className="p-6">
+              <div>
                 <h2 className="text-lg font-medium text-gray-900 dark:text-white mb-6">
                   General Settings
                 </h2>
