@@ -160,17 +160,17 @@ const Notes = ({ embedded = false } = {}) => {
             {/* Pagination */}
             {pagination.pages > 1 && (
               <div className="mt-4 flex items-center justify-between">
-                <div className="text-sm text-gray-700">Showing page {pagination.page} of {pagination.pages} ({pagination.total} notes)</div>
+                <div className="text-sm text-gray-900">Showing page {pagination.page} of {pagination.pages} ({pagination.total} notes)</div>
                 <div className="flex space-x-1">
-                  <button disabled={pagination.page === 1} onClick={() => changePage(pagination.page - 1)} className="px-3 py-2 border rounded-md">Previous</button>
+                  <button disabled={pagination.page === 1} onClick={() => changePage(pagination.page - 1)} className="px-3 py-2 border rounded-md text-gray-700 hover:bg-gray-50 dark:border-gray-600 dark:hover:bg-gray-700">Previous</button>
                   {[...Array(Math.min(5, pagination.pages))].map((_, i) => {
                     const pageNum = Math.max(1, pagination.page - 2) + i;
                     if (pageNum > pagination.pages) return null;
                     return (
-                      <button key={pageNum} onClick={() => changePage(pageNum)} className={`px-3 py-2 border rounded-md ${pageNum === pagination.page ? 'bg-blue-600 text-white' : ''}`}>{pageNum}</button>
+                      <button key={pageNum} onClick={() => changePage(pageNum)} className={`px-3 py-2 border rounded-md ${pageNum === pagination.page ? 'bg-blue-600 text-white' : 'text-gray-700 hover:bg-gray-50 dark:border-gray-600 dark:hover:bg-gray-700'}`}>{pageNum}</button>
                     );
                   })}
-                  <button disabled={pagination.page === pagination.pages} onClick={() => changePage(pagination.page + 1)} className="px-3 py-2 border rounded-md">Next</button>
+                  <button disabled={pagination.page === pagination.pages} onClick={() => changePage(pagination.page + 1)} className="px-3 py-2 border rounded-md text-gray-700 hover:bg-gray-50 dark:border-gray-600 dark:hover:bg-gray-700">Next</button>
                 </div>
               </div>
             )}

@@ -273,7 +273,7 @@ const Cctv = ({ initialTab, embedded = false } = {}) => {
                   setFile(null); 
                   setPreview(null); 
                   setResult(null); 
-                }} className="px-4 py-2 border rounded-md">Clear</button>
+                }} className="px-4 py-2 border rounded-md text-gray-700 dark:text-gray-300">Clear</button>
               </div>
             </form>
           </div>
@@ -339,7 +339,7 @@ const Cctv = ({ initialTab, embedded = false } = {}) => {
                   value={filters.location}
                   onChange={(e) => handleFilterChange('location', e.target.value)}
                   placeholder="e.g., Building A"
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
                 />
               </div>
               <div>
@@ -351,7 +351,7 @@ const Cctv = ({ initialTab, embedded = false } = {}) => {
                   type="date"
                   value={filters.date_from}
                   onChange={(e) => handleFilterChange('date_from', e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
                 />
               </div>
               <div>
@@ -363,7 +363,7 @@ const Cctv = ({ initialTab, embedded = false } = {}) => {
                   type="date"
                   value={filters.date_to}
                   onChange={(e) => handleFilterChange('date_to', e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
                 />
               </div>
               <div>
@@ -374,7 +374,7 @@ const Cctv = ({ initialTab, embedded = false } = {}) => {
                 <select
                   value={filters.has_face}
                   onChange={(e) => handleFilterChange('has_face', e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
                 >
                   <option value="">All Frames</option>
                   <option value="true">With Face</option>
@@ -391,7 +391,7 @@ const Cctv = ({ initialTab, embedded = false } = {}) => {
               </button>
               <button
                 onClick={resetFilters}
-                className="px-4 py-2 border border-gray-300 text-gray-700 rounded-md hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
+                className="px-4 py-2 border border-gray-300 text-gray-800 rounded-md hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
               >
                 Reset
               </button>
@@ -470,28 +470,28 @@ const Cctv = ({ initialTab, embedded = false } = {}) => {
                     {/* Pagination */}
                     {pagination.pages > 1 && (
                       <div className="mt-6 flex items-center justify-between">
-                        <div className="text-sm text-gray-700 dark:text-gray-300">
-                          Showing page {pagination.page} of {pagination.pages}
-                        </div>
+            <div className="text-sm text-gray-900 dark:text-gray-300">
+              Showing page {pagination.page} of {pagination.pages}
+            </div>
                         <div className="flex space-x-1">
                           <button
                             onClick={() => changePage(pagination.page - 1)}
                             disabled={pagination.page === 1}
-                            className="px-3 py-2 text-sm border rounded-md disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 dark:border-gray-600 dark:hover:bg-gray-700"
+                            className="px-3 py-2 text-sm border rounded-md text-gray-700 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 dark:border-gray-600 dark:hover:bg-gray-700"
                           >
                             Previous
                           </button>
                           {[...Array(Math.min(5, pagination.pages))].map((_, i) => {
                             const pageNum = Math.max(1, pagination.page - 2) + i;
                             if (pageNum > pagination.pages) return null;
-                            return (
+                              return (
                               <button
                                 key={pageNum}
                                 onClick={() => changePage(pageNum)}
                                 className={`px-3 py-2 text-sm border rounded-md ${
                                   pageNum === pagination.page
                                     ? 'bg-blue-600 text-white border-blue-600'
-                                    : 'hover:bg-gray-50 dark:border-gray-600 dark:hover:bg-gray-700'
+                                    : 'text-gray-700 hover:bg-gray-50 dark:border-gray-600 dark:hover:bg-gray-700'
                                 }`}
                               >
                                 {pageNum}
@@ -501,7 +501,7 @@ const Cctv = ({ initialTab, embedded = false } = {}) => {
                           <button
                             onClick={() => changePage(pagination.page + 1)}
                             disabled={pagination.page === pagination.pages}
-                            className="px-3 py-2 text-sm border rounded-md disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 dark:border-gray-600 dark:hover:bg-gray-700"
+                            className="px-3 py-2 text-sm border rounded-md text-gray-700 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 dark:border-gray-600 dark:hover:bg-gray-700"
                           >
                             Next
                           </button>

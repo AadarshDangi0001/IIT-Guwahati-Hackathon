@@ -343,7 +343,7 @@ const EntitySearch = () => {
             />
             <button
               onClick={clearFilters}
-              className="px-4 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 border border-gray-300 dark:border-gray-600 rounded-md hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+              className="px-4 py-2 text-sm text-gray-800 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 border border-gray-300 dark:border-gray-600 rounded-md hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
             >
               <FunnelIcon className="h-4 w-4" />
             </button>
@@ -471,7 +471,7 @@ const EntitySearch = () => {
                         <Link
                           to={`/entities/${entity._id}`}
                           state={{ from: '/entities' }}
-                          className="inline-flex items-center px-3 py-2 border border-gray-300 dark:border-gray-600 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                          className="inline-flex items-center px-3 py-2 border border-gray-300 dark:border-gray-600 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-800 dark:text-gray-300 bg-white dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                         >
                           <EyeIcon className="h-4 w-4 mr-1" />
                           View Details
@@ -485,11 +485,11 @@ const EntitySearch = () => {
               {/* Load more */}
               {pagination.hasMore && (
                 <div className="px-6 py-4 border-t border-gray-200 dark:border-gray-700">
-                  <button
-                    onClick={loadMore}
-                    disabled={loading}
-                    className="w-full flex justify-center items-center px-4 py-2 border border-gray-300 dark:border-gray-600 shadow-sm text-sm font-medium rounded-md text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50"
-                  >
+                          <button
+                            onClick={loadMore}
+                            disabled={loading}
+                            className="w-full flex justify-center items-center px-4 py-2 border border-gray-300 dark:border-gray-600 shadow-sm text-sm font-medium rounded-md text-gray-800 dark:text-gray-300 bg-white dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50"
+                          >
                     {loading ? (
                       <LoadingSpinner size="small" />
                     ) : (

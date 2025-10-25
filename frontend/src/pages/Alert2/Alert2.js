@@ -778,9 +778,9 @@ const Alert2 = () => {
 
       {/* Alert Detail Modal */}
       {selectedAlert && (
-        <div className="fixed inset-0 bg-gray-500 bg-opacity-75 dark:bg-gray-900 dark:bg-opacity-75 flex items-center justify-center p-4 z-50">
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-            <div className="px-6 py-4 border-b border-gray-200 dark:border-gray-700 flex justify-between items-center">
+        <div onClick={() => setSelectedAlert(null)} className="fixed inset-0 bg-gray-500 bg-opacity-75 dark:bg-gray-900 dark:bg-opacity-75 flex items-center justify-center p-4 z-50">
+          <div onClick={(e) => e.stopPropagation()} className="bg-white dark:bg-gray-800 rounded-lg shadow-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div className="px-6 py-4 flex justify-between items-center">
               <h3 className="text-lg font-medium text-gray-900 dark:text-white">Alert Details</h3>
               <button
                 onClick={() => setSelectedAlert(null)}
