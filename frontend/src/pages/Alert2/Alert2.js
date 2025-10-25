@@ -18,6 +18,13 @@ import {
   XMarkIcon
 } from '@heroicons/react/24/outline';
 
+
+const WHATSAPP_RECIPIENTS = [
+  { name: 'Hostel Helper', number: '7828027332' },
+  { name: 'Father', number: '919516010257' },
+  { name: 'HOD', number: '919165926808' }
+];
+
 const Alert2 = () => {
   const navigate = useNavigate();
   const [alerts, setAlerts] = useState([]);
@@ -40,6 +47,10 @@ const Alert2 = () => {
   });
   const [selectedAlert, setSelectedAlert] = useState(null);
   const [actionLoading, setActionLoading] = useState({});
+  const [showReportModal, setShowReportModal] = useState(false);
+  const [reportMessage, setReportMessage] = useState('');
+  const [selectedRecipients, setSelectedRecipients] = useState(() => WHATSAPP_RECIPIENTS.filter(r => r.number && !r.number.includes('PHONE_NUMBER')).map(r => r.name));
+  const [openingChats, setOpeningChats] = useState(false);
 
   const { showError, showSuccess } = useAlert();
   const { user } = useAuth();
@@ -225,6 +236,62 @@ const Alert2 = () => {
         minute: '2-digit'
       });
     }
+  };
+
+  // Build a professional message for WhatsApp using available alert data.
+  const generateWhatsAppMessage = (alert) => {
+    if (!alert) return '';
+
+    const lines = [];
+    lines.push(`Alert Report: ${getTypeLabel(alert.type)}`);
+    if (alert.title) lines.push(`Title: ${alert.title}`);
+    if (alert.description) lines.push(`Details: ${alert.description}`);
+
+    // Try common fields for person/entity
+    const name = alert.details?.name || alert.details?.fullName || alert.entityName || '';
+    if (name) lines.push(`Name: ${name}`);
+
+    if (alert.entityId) lines.push(`Entity ID: ${alert.entityId}`);
+
+    // Last seen / timestamp
+    if (alert.details?.lastSeen || alert.details?.last_seen) {
+      lines.push(`Last seen: ${alert.details.lastSeen || alert.details.last_seen}`);
+    } else if (alert.timestamp) {
+      lines.push(`Timestamp: ${new Date(alert.timestamp).toLocaleString()}`);
+    }
+
+    if (alert.details?.location) lines.push(`Location: ${alert.details.location}`);
+    if (alert.status) lines.push(`Status: ${alert.status}`);
+
+    // Provide a human-friendly footer with requester info
+    lines.push('Please take necessary action. - Campus Security System');
+
+    return lines.join('\n');
+  };
+
+  // Open WhatsApp chats for configured recipients using wa.me links. This will
+  // open one tab/window per recipient. Some browsers may block multiple popups;
+  // the preview modal also provides a copy button so a user can paste the
+  // message manually if needed.
+  const openWhatsAppChats = (message, recipients) => {
+    if (!message || !recipients || recipients.length === 0) return;
+    setOpeningChats(true);
+    recipients.forEach((r, idx) => {
+      if (!r.number || r.number.includes('PHONE_NUMBER')) return; // skip placeholders
+      const url = `https://wa.me/${r.number}?text=${encodeURIComponent(message)}`;
+      // open with a tiny delay to reduce popup blocking
+      setTimeout(() => {
+        try {
+          window.open(url, '_blank');
+        } catch (err) {
+          console.warn('Failed to open WhatsApp chat for', r, err);
+        }
+        if (idx === recipients.length - 1) {
+          // small delay before marking done so UI feels responsive
+          setTimeout(() => setOpeningChats(false), 300);
+        }
+      }, idx * 350);
+    });
   };
 
   const getStatusColor = (status) => {
@@ -779,7 +846,7 @@ const Alert2 = () => {
       {/* Alert Detail Modal */}
       {selectedAlert && (
         <div onClick={() => setSelectedAlert(null)} className="fixed inset-0 bg-gray-500 bg-opacity-75 dark:bg-gray-900 dark:bg-opacity-75 flex items-center justify-center p-4 z-50">
-          <div onClick={(e) => e.stopPropagation()} className="bg-white dark:bg-gray-800 rounded-lg shadow-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+          <div onClick={(e) => e.stopPropagation()} className="bg-white dark:bg-gray-800 rounded-lg shadow-xl max-w-3xl w-full max-h-[90vh] overflow-y-auto">
             <div className="px-6 py-4 flex justify-between items-center">
               <h3 className="text-lg font-medium text-gray-900 dark:text-white">Alert Details</h3>
               <button
@@ -846,81 +913,176 @@ const Alert2 = () => {
                 </div>
               )}
             </div>
-            <div className="px-6 py-4 border-t border-gray-200 dark:border-gray-700 flex justify-between items-center">
-              <div className="flex items-center space-x-2">
-                {(() => {
-                  const id = selectedAlert.id || selectedAlert._id || '';
-                  const ackAllowed = canPerformAction(selectedAlert, 'acknowledge') && selectedAlert.status === 'active';
-                  const resolveAllowed = canPerformAction(selectedAlert, 'resolve');
-                  const dismissAllowed = canPerformAction(selectedAlert, 'dismiss');
-                  return (
-                    <>
-                      <button
-                        onClick={() => { if (ackAllowed) handleAlertAction(id, 'acknowledge'); }}
-                        disabled={!ackAllowed || actionLoading[id] === 'acknowledge'}
-                        title={!ackAllowed ? 'Action unavailable: insufficient permissions or alert already handled' : undefined}
-                        className="inline-flex items-center px-3 py-2 border border-yellow-300 dark:border-yellow-600 text-sm font-medium rounded text-yellow-700 dark:text-yellow-300 bg-yellow-50 dark:bg-yellow-900/30 hover:bg-yellow-100 dark:hover:bg-yellow-900/50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 disabled:opacity-50"
-                      >
-                        {actionLoading[id] === 'acknowledge' ? (
-                          <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-yellow-700 dark:border-yellow-300"></div>
-                        ) : (
-                          <>
-                            <ClockIcon className="h-4 w-4 mr-2" />
-                            Acknowledge
-                          </>
-                        )}
-                      </button>
+            <div className="px-6 py-4 border-t border-gray-200 dark:border-gray-700 flex justify-end items-center space-x-3">
+              <button
+                onClick={handleViewProfile}
+                className="inline-flex items-center justify-center px-3 py-2 rounded-md bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium shadow-sm transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400"
+              >
+                <UserIcon className="h-4 w-4 mr-2" />
+                <span>See Profile</span>
+              </button>
 
-                      <button
-                        onClick={() => { if (resolveAllowed) handleAlertAction(id, 'resolve'); }}
-                        disabled={!resolveAllowed || actionLoading[id] === 'resolve'}
-                        title={!resolveAllowed ? 'Action unavailable: insufficient permissions or alert already handled' : undefined}
-                        className="inline-flex items-center px-3 py-2 border border-green-300 dark:border-green-600 text-sm font-medium rounded text-green-700 dark:text-green-300 bg-green-50 dark:bg-green-900/30 hover:bg-green-100 dark:hover:bg-green-900/50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 disabled:opacity-50"
-                      >
-                        {actionLoading[id] === 'resolve' ? (
-                          <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-green-700 dark:border-green-300"></div>
-                        ) : (
-                          <>
-                            <CheckCircleIcon className="h-4 w-4 mr-2" />
-                            Resolve
-                          </>
-                        )}
-                      </button>
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  const msg = generateWhatsAppMessage(selectedAlert);
+                  setReportMessage(msg);
+                  setSelectedRecipients(WHATSAPP_RECIPIENTS.filter(r => r.number && !r.number.includes('PHONE_NUMBER')).map(r => r.name));
+                  setSelectedAlert(null); // Close alert details modal
+                  setShowReportModal(true);
+                }}
+                aria-label="Send report via WhatsApp"
+                title="Send report via WhatsApp"
+                className="inline-flex items-center justify-center px-3 py-2 rounded-md bg-[#25D366] hover:bg-[#1ebc55] text-white text-sm font-medium shadow-sm transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-300"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4 mr-2" fill="#ffffff"><path d="M20.52 3.48A11.92 11.92 0 0 0 12 0C5.373 0 .086 4.98.01 11.6a11.8 11.8 0 0 0 2.04 6.22L0 24l6.47-2.04A11.82 11.82 0 0 0 12 23.6c6.627 0 11.92-4.98 11.99-11.6a11.92 11.92 0 0 0-3.47-8.52zM12 21.6c-1.05 0-2.08-.18-3.04-.52l-.21-.08-3.84 1.21 1.24-3.74-.07-.23A8.58 8.58 0 0 1 3.36 11.6 8.64 8.64 0 0 1 12 3c4.8 0 8.68 3.72 8.76 8.4.08 4.74-3.6 8.2-8.76 8.2z"/></svg>
+                <span>Send Report</span>
+              </button>
 
-                      <button
-                        onClick={() => { if (dismissAllowed) handleAlertAction(id, 'dismiss'); }}
-                        disabled={!dismissAllowed || actionLoading[id] === 'dismiss'}
-                        title={!dismissAllowed ? 'Action unavailable: insufficient permissions or alert already handled' : undefined}
-                        className="inline-flex items-center px-3 py-2 border border-gray-300 dark:border-gray-600 text-sm font-medium rounded text-gray-700 dark:text-gray-300 bg-gray-50 dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 disabled:opacity-50"
-                      >
-                        {actionLoading[id] === 'dismiss' ? (
-                          <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-gray-700 dark:border-gray-300"></div>
-                        ) : (
-                          <>
-                            <XMarkIcon className="h-4 w-4 mr-2" />
-                            Dismiss
-                          </>
-                        )}
-                      </button>
-                    </>
-                  );
-                })()}
+              <button
+                onClick={() => setSelectedAlert(null)}
+                className="inline-flex items-center justify-center px-3 py-2 rounded-md bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 border border-gray-300 hover:bg-gray-50 text-sm shadow-sm focus:outline-none"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Send Report / WhatsApp Preview Modal */}
+      {showReportModal && (
+        <div onClick={() => setShowReportModal(false)} className="fixed inset-0 bg-black bg-opacity-50 dark:bg-black dark:bg-opacity-70 flex items-center justify-center p-4 z-60">
+          <div onClick={(e) => e.stopPropagation()} className="bg-white dark:bg-gray-800 rounded-xl shadow-2xl max-w-2xl w-full border border-gray-200 dark:border-gray-600">
+            <div className="px-6 py-4 flex justify-between items-center border-b border-gray-100 dark:border-gray-700">
+              <div className="flex items-center space-x-3">
+                <div className="flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-6 w-6" fill="#25D366">
+                    <path d="M20.52 3.48A11.92 11.92 0 0 0 12 0C5.373 0 .086 4.98.01 11.6a11.8 11.8 0 0 0 2.04 6.22L0 24l6.47-2.04A11.82 11.82 0 0 0 12 23.6c6.627 0 11.92-4.98 11.99-11.6a11.92 11.92 0 0 0-3.47-8.52zM12 21.6c-1.05 0-2.08-.18-3.04-.52l-.21-.08-3.84 1.21 1.24-3.74-.07-.23A8.58 8.58 0 0 1 3.36 11.6 8.64 8.64 0 0 1 12 3c4.8 0 8.68 3.72 8.76 8.4.08 4.74-3.6 8.2-8.76 8.2z"/>
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">WhatsApp Report Preview</h3>
+              </div>
+              <button onClick={() => setShowReportModal(false)} className="text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-200 transition-colors">
+                <XCircleIcon className="h-6 w-6" />
+              </button>
+            </div>
+            
+            <div className="px-6 py-6 space-y-6">
+              <div className="space-y-3">
+                <label className="text-sm font-semibold text-gray-700 dark:text-gray-200">Message Preview</label>
+                <textarea 
+                  readOnly 
+                  value={reportMessage} 
+                  rows={8} 
+                  className="w-full p-4 bg-gray-50 dark:bg-gray-900 rounded-lg border border-gray-200 dark:border-gray-600 text-sm text-gray-800 dark:text-gray-200 font-mono leading-relaxed resize-none focus:outline-none focus:ring-2 focus:ring-green-500 dark:focus:ring-green-400" 
+                />
               </div>
 
-              <div className="flex items-center space-x-2">
-                <button
-                  onClick={handleViewProfile}
-                  className="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-                >
-                  <UserIcon className="h-5 w-5 mr-2" />
-                  See Profile
-                </button>
-                <button
-                  onClick={() => setSelectedAlert(null)}
-                  className="px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm text-sm font-medium text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-                >
-                  Close
-                </button>
+              <div className="space-y-3">
+                <label className="text-sm font-semibold text-gray-700 dark:text-gray-200">Recipients</label>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                  {WHATSAPP_RECIPIENTS.map(r => {
+                    const disabled = !r.number || r.number.includes('PHONE_NUMBER');
+                    const checked = selectedRecipients.includes(r.name);
+                    return (
+                      <label 
+                        key={r.name} 
+                        className={`relative flex items-start p-4 rounded-lg border-2 transition-all cursor-pointer ${
+                          disabled 
+                            ? 'opacity-40 cursor-not-allowed border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800' 
+                            : checked 
+                              ? 'border-green-500 dark:border-green-400 bg-green-50 dark:bg-green-900/20 shadow-sm' 
+                              : 'border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 hover:border-green-300 dark:hover:border-green-500 hover:bg-green-50 dark:hover:bg-green-900/10'
+                        }`}
+                      >
+                        <div className="flex items-center h-5">
+                          <input
+                            type="checkbox"
+                            disabled={disabled}
+                            checked={checked}
+                            onChange={() => {
+                              if (disabled) return;
+                              setSelectedRecipients(prev => prev.includes(r.name) ? prev.filter(x => x !== r.name) : [...prev, r.name]);
+                            }}
+                            className="w-4 h-4 text-green-600 border-gray-300 dark:border-gray-500 rounded focus:ring-green-500 dark:focus:ring-green-400 dark:bg-gray-600"
+                          />
+                        </div>
+                        <div className="ml-3 flex-1">
+                          <div className="text-sm font-medium text-gray-900 dark:text-white">{r.name}</div>
+                          <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
+                            {r.number ? `+${r.number}` : 'Not configured'}
+                          </div>
+                        </div>
+                        {checked && !disabled && (
+                          <div className="absolute top-2 right-2">
+                            <CheckCircleIcon className="h-5 w-5 text-green-600 dark:text-green-400" />
+                          </div>
+                        )}
+                      </label>
+                    );
+                  })}
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pt-4 border-t border-gray-100 dark:border-gray-700">
+                <div className="flex items-center space-x-3">
+                  <button
+                    onClick={async () => {
+                      try {
+                        await navigator.clipboard.writeText(reportMessage || '');
+                        showSuccess('Copied', 'Message copied to clipboard');
+                      } catch (err) {
+                        showError('Copy Failed', 'Failed to copy message to clipboard');
+                      }
+                    }}
+                    className="inline-flex items-center px-4 py-2 border border-gray-300 dark:border-gray-500 rounded-lg text-sm font-medium bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+                  >
+                    <svg className="h-4 w-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                    </svg>
+                    Copy Message
+                  </button>
+
+                  <button
+                    onClick={() => {
+                      const recipients = WHATSAPP_RECIPIENTS.filter(r => selectedRecipients.includes(r.name));
+                      if (recipients.length === 0) {
+                        showError('No recipients', 'Please select at least one recipient');
+                        return;
+                      }
+                      openWhatsAppChats(reportMessage, recipients);
+                    }}
+                    disabled={openingChats}
+                    className="inline-flex items-center px-4 py-2 rounded-lg text-sm font-medium text-white bg-[#25D366] hover:bg-[#1ebc55] disabled:opacity-70 transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 shadow-md"
+                  >
+                    {openingChats ? (
+                      <>
+                        <LoadingSpinner size="small" />
+                        <span className="ml-2">Opening chats...</span>
+                      </>
+                    ) : (
+                      <>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-4 w-4 mr-2" fill="currentColor">
+                          <path d="M20.52 3.48A11.92 11.92 0 0 0 12 0C5.373 0 .086 4.98.01 11.6a11.8 11.8 0 0 0 2.04 6.22L0 24l6.47-2.04A11.82 11.82 0 0 0 12 23.6c6.627 0 11.92-4.98 11.99-11.6a11.92 11.92 0 0 0-3.47-8.52zM12 21.6c-1.05 0-2.08-.18-3.04-.52l-.21-.08-3.84 1.21 1.24-3.74-.07-.23A8.58 8.58 0 0 1 3.36 11.6 8.64 8.64 0 0 1 12 3c4.8 0 8.68 3.72 8.76 8.4.08 4.74-3.6 8.2-8.76 8.2z"/>
+                        </svg>
+                        Open Chats
+                      </>
+                    )}
+                  </button>
+                </div>
+
+                <div className="flex items-center justify-between sm:justify-end">
+                  <div className="text-sm text-gray-600 dark:text-gray-400 mr-4">
+                    Selected: <span className="font-medium text-gray-900 dark:text-white">{selectedRecipients.length}</span>
+                  </div>
+                  <button 
+                    onClick={() => setShowReportModal(false)} 
+                    className="px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-500 transition-colors text-sm font-medium"
+                  >
+                    Close
+                  </button>
+                </div>
               </div>
             </div>
           </div>
