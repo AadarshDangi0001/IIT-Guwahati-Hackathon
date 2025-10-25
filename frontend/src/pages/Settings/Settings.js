@@ -484,19 +484,19 @@ const Settings = () => {
             )}
 
             {/* Save Button */}
-            <div className="px-6 py-4 bg-gray-50 dark:bg-gray-700 border-t border-gray-200 dark:border-gray-600 rounded-b-lg">
-              <div className="flex justify-end space-x-3">
-                <button 
+            <div className="px-6 py-4  border-t border-gray-200 dark:border-gray-600 rounded-b-lg">
+              <div className="flex items-center justify-end space-x-3">
+                <button
                   onClick={handleResetSettings}
                   disabled={saving}
-                  className="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-600 border border-gray-300 dark:border-gray-500 rounded-md hover:bg-gray-50 dark:hover:bg-gray-500 disabled:opacity-50"
+                  className="h-10 px-4 text-sm font-medium text-gray-700 dark:text-gray-200 bg-transparent dark:bg-transparent border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors disabled:opacity-50"
                 >
                   {saving ? 'Resetting...' : 'Reset'}
                 </button>
-                <button 
+                <button
                   onClick={handleSaveAllSettings}
                   disabled={saving}
-                  className="px-4 py-2 text-sm font-medium text-white bg-blue-600 border border-transparent rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50"
+                  className="h-10 px-5 text-sm font-semibold text-white bg-blue-600 dark:bg-blue-600 rounded-lg shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors disabled:opacity-50"
                 >
                   {saving ? 'Saving...' : 'Save Changes'}
                 </button>
