@@ -64,6 +64,9 @@ const Dashboard = () => {
 
   const stats = dashboardData?.summary || {};
 
+  // Ensure displayed total entities is never less than active entities
+  const totalEntitiesDisplay = Math.max(stats.totalEntities || 0, stats.activeEntities || 0);
+
   return (
     <div className="space-y-6">
       {/* Debug: Authentication Status */}
@@ -146,7 +149,7 @@ const Dashboard = () => {
                     {filterLoading ? (
                       <div className="animate-pulse bg-gray-200 dark:bg-gray-700 h-8 w-16 rounded"></div>
                     ) : (
-                      stats.totalEntities?.toLocaleString() || 0
+                      totalEntitiesDisplay.toLocaleString()
                     )}
                   </dd>
                 </dl>
@@ -176,9 +179,9 @@ const Dashboard = () => {
                       stats.activeEntities?.toLocaleString() || 0
                     )}
                   </dd>
-                  {stats.totalEntities > 0 && (
+                  {totalEntitiesDisplay > 0 && (
                     <dd className="text-xs text-green-600 dark:text-green-400 font-medium">
-                      {((stats.activeEntities / stats.totalEntities) * 100).toFixed(1)}% active
+                      {(((stats.activeEntities || 0) / totalEntitiesDisplay) * 100).toFixed(1)}% active
                     </dd>
                   )}
                 </dl>
@@ -418,18 +421,18 @@ const Dashboard = () => {
               <div className="flex items-center justify-center mb-2">
                 <ArrowTrendingUpIcon className="h-6 w-6 text-green-600 dark:text-green-400" />
               </div>
-              <div className="text-3xl font-bold text-green-600 dark:text-green-400">
+                  <div className="text-3xl font-bold text-green-600 dark:text-green-400">
                 {filterLoading ? (
                   <div className="animate-pulse bg-green-200 dark:bg-green-700 h-8 w-16 rounded mx-auto"></div>
                 ) : (
-                  `${((stats.activeEntities / stats.totalEntities) * 100 || 0).toFixed(1)}%`
+                  `${(((stats.activeEntities || 0) / (totalEntitiesDisplay || 1)) * 100).toFixed(1)}%`
                 )}
               </div>
               <div className="text-sm text-green-700 dark:text-green-300 font-medium mt-1">
                 Entity Activity Rate
               </div>
               <div className="text-xs text-green-600 dark:text-green-400 mt-1">
-                {stats.activeEntities || 0} of {stats.totalEntities || 0} active
+                {stats.activeEntities || 0} of {totalEntitiesDisplay} active
               </div>
             </div>
 

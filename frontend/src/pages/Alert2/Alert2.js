@@ -21,6 +21,7 @@ const Alert2 = () => {
   const [loading, setLoading] = useState(true);
   const [priorityFilter, setPriorityFilter] = useState('');
   const [summary, setSummary] = useState(null);
+  const [overallSummary, setOverallSummary] = useState(null);
   const [pagination, setPagination] = useState({
     page: 1,
     limit: 20,
@@ -34,26 +35,44 @@ const Alert2 = () => {
   useEffect(() => {
     loadAdvancedAlerts();
   }, [priorityFilter, pagination.page]);
-
-  const loadAdvancedAlerts = async () => {
+  const loadAdvancedAlerts = async (overrides = {}) => {
     try {
       setLoading(true);
-      
       const params = {
-        page: pagination.page,
-        limit: pagination.limit
+        page: overrides.page ?? pagination.page,
+        limit: overrides.limit ?? pagination.limit
       };
 
       if (priorityFilter) {
         params.priority = priorityFilter;
       }
 
-      const response = await api.get('/alerts/advanced', { params });
-      
-      if (response.data.success) {
-        setAlerts(response.data.data.alerts || []);
-        setSummary(response.data.data.summary || {});
-        setPagination(response.data.data.pagination || {});
+      // If a priority filter is active, fetch overall summary too so the top cards show global counts
+      if (priorityFilter) {
+        const overallParams = { page: 1, limit: 1 }; // small, just to get summary
+        const [overallResp, filteredResp] = await Promise.all([
+          api.get('/alerts/advanced', { params: overallParams }),
+          api.get('/alerts/advanced', { params })
+        ]);
+
+        if (overallResp.data.success) {
+          setOverallSummary(overallResp.data.data.summary || {});
+        }
+
+        if (filteredResp.data.success) {
+          setAlerts(filteredResp.data.data.alerts || []);
+          setSummary(filteredResp.data.data.summary || {}); // keep filtered summary for context
+          setPagination(filteredResp.data.data.pagination || {});
+        }
+      } else {
+        const response = await api.get('/alerts/advanced', { params });
+
+        if (response.data.success) {
+          setAlerts(response.data.data.alerts || []);
+          setSummary(response.data.data.summary || {});
+          setPagination(response.data.data.pagination || {});
+          setOverallSummary(response.data.data.summary || {}); // no filter => overall == summary
+        }
       }
     } catch (error) {
       const errorInfo = handleAPIError(error);
@@ -65,8 +84,14 @@ const Alert2 = () => {
   };
 
   const handleRefresh = () => {
-    setPagination(prev => ({ ...prev, page: 1 }));
-    loadAdvancedAlerts();
+    // If already on page 1, force a reload immediately with overrides so we use correct page
+    if (pagination.page === 1) {
+      setAlerts([]);
+      loadAdvancedAlerts({ page: 1, limit: pagination.limit });
+    } else {
+      // Otherwise set page to 1 and let the useEffect trigger loadAdvancedAlerts
+      setPagination(prev => ({ ...prev, page: 1 }));
+    }
   };
 
   const handlePriorityFilter = (priority) => {
@@ -125,11 +150,19 @@ const Alert2 = () => {
       case 'SIMULTANEOUS_ACTIVITY':
         return 'Simultaneous Activity';
       case 'ADMIN_ACCESS':
-        return 'Admin Access';
+        return 'Students Not in College';
       default:
         return type;
     }
   };
+
+  // Compute totals from priority breakdown (prefer overallSummary when available)
+  const visibleSummary = overallSummary || summary || {};
+  const totalAlertsCount = (
+    (visibleSummary?.byPriority?.high || 0) +
+    (visibleSummary?.byPriority?.medium || 0) +
+    (visibleSummary?.byPriority?.low || 0)
+  );
 
   const formatTimestamp = (timestamp) => {
     const date = new Date(timestamp);
@@ -195,7 +228,7 @@ const Alert2 = () => {
                 <div className="ml-5 w-0 flex-1">
                   <dl>
                     <dt className="text-sm font-medium text-gray-500 dark:text-gray-400 truncate">Total Alerts</dt>
-                    <dd className="text-lg font-semibold text-gray-900 dark:text-white">{summary.total || 0}</dd>
+                    <dd className="text-lg font-semibold text-gray-900 dark:text-white">{totalAlertsCount}</dd>
                   </dl>
                 </div>
               </div>
@@ -217,7 +250,7 @@ const Alert2 = () => {
                   <dl>
                     <dt className="text-sm font-medium text-gray-500 dark:text-gray-400 truncate">High Priority</dt>
                     <dd className="text-lg font-semibold text-red-600 dark:text-red-500">
-                      {summary.byPriority?.high || 0}
+                      {(overallSummary || summary)?.byPriority?.high || 0}
                     </dd>
                   </dl>
                 </div>
@@ -240,7 +273,7 @@ const Alert2 = () => {
                   <dl>
                     <dt className="text-sm font-medium text-gray-500 dark:text-gray-400 truncate">Medium Priority</dt>
                     <dd className="text-lg font-semibold text-yellow-600 dark:text-yellow-500">
-                      {summary.byPriority?.medium || 0}
+                      {(overallSummary || summary)?.byPriority?.medium || 0}
                     </dd>
                   </dl>
                 </div>
@@ -263,7 +296,7 @@ const Alert2 = () => {
                   <dl>
                     <dt className="text-sm font-medium text-gray-500 dark:text-gray-400 truncate">Low Priority</dt>
                     <dd className="text-lg font-semibold text-blue-600 dark:text-blue-500">
-                      {summary.byPriority?.low || 0}
+                      {(overallSummary || summary)?.byPriority?.low || 0}
                     </dd>
                   </dl>
                 </div>
@@ -279,20 +312,20 @@ const Alert2 = () => {
           <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-4">Alert Types Distribution</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="text-center">
-              <div className="text-2xl font-bold text-gray-900 dark:text-white">{summary.byType.inactivity || 0}</div>
+              <div className="text-2xl font-bold text-gray-900 dark:text-white">{(overallSummary || summary)?.byType?.inactivity || 0}</div>
               <div className="text-sm text-gray-500 dark:text-gray-400">Inactivity</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-gray-900 dark:text-white">{summary.byType.simultaneous || 0}</div>
+              <div className="text-2xl font-bold text-gray-900 dark:text-white">{(overallSummary || summary)?.byType?.simultaneous || 0}</div>
               <div className="text-sm text-gray-500 dark:text-gray-400">Simultaneous</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-gray-900 dark:text-white">{summary.byType.suspicious || 0}</div>
+              <div className="text-2xl font-bold text-gray-900 dark:text-white">{(overallSummary || summary)?.byType?.suspicious || 0}</div>
               <div className="text-sm text-gray-500 dark:text-gray-400">Suspicious</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-gray-900 dark:text-white">{summary.byType.adminAccess || 0}</div>
-              <div className="text-sm text-gray-500 dark:text-gray-400">Admin Access</div>
+              <div className="text-2xl font-bold text-gray-900 dark:text-white">{(overallSummary || summary)?.byType?.adminAccess || 0}</div>
+              <div className="text-sm text-gray-500 dark:text-gray-400">Students Not in College</div>
             </div>
           </div>
         </div>

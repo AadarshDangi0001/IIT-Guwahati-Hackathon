@@ -1014,8 +1014,9 @@ router.get('/advanced', async (req, res) => {
             });
         };
 
-        // Read all CSV files with error handling
-        const [cardSwipes, wifiLogs, libCheckouts, labBookings, cctvFrames] = await Promise.all([
+        // Read profiles and all CSV files with error handling
+        const [profiles, cardSwipes, wifiLogs, libCheckouts, labBookings, cctvFrames] = await Promise.all([
+            readCSV(path.join(dataPath, 'student or staff profiles.csv')).catch(() => []),
             readCSV(path.join(dataPath, 'campus card_swipes.csv')).catch(() => []),
             readCSV(path.join(dataPath, 'wifi_associations_logs.csv')).catch(() => []),
             readCSV(path.join(dataPath, 'library_checkouts.csv')).catch(() => []),
@@ -1023,9 +1024,23 @@ router.get('/advanced', async (req, res) => {
             readCSV(path.join(dataPath, 'cctv_frames.csv')).catch(() => [])
         ]);
 
+        // Build card_id -> entity_id map from profiles CSV
+        const cardToEntity = new Map();
+        try {
+            profiles.forEach(p => {
+                const card = (p.card_id || p.cardId || p.card || p.card_number || '').toString().trim();
+                const eid = (p.entity_id || p.entityId || p.id || '').toString().trim();
+                if (card && eid) {
+                    cardToEntity.set(card, eid);
+                }
+            });
+        } catch (e) {
+            logger.warn('Failed to build card->entity map from profiles CSV', e);
+        }
+
         // Get current time for analysis
-        const now = new Date();
-        const twentyFourHoursAgo = new Date(now.getTime() - 24 * 60 * 60 * 1000);
+        // Use September 23, 2025 23:59:59 as reference date to match dataset end date
+        const now = new Date('2025-09-23T23:59:59');
 
         // Create entity activity map with optimized processing
         const entityActivities = new Map();
@@ -1059,12 +1074,30 @@ router.get('/advanced', async (req, res) => {
         };
         
         // Process card swipes
+        // Some CSVs use card_id or cardNumber instead of entity_id — include those as fallback
+        let mappedSwipesCount = 0;
         cardSwipes.forEach(swipe => {
-            const entityId = swipe.entity_id || swipe.user_id || swipe.student_id;
+            let rawId = swipe.entity_id || swipe.user_id || swipe.student_id || swipe.card_id || swipe.cardId || swipe.card_number || swipe.card;
+            if (rawId) rawId = rawId.toString().trim();
+
+            // If the raw id looks like a card id (e.g., starts with 'C') and we have a mapping, use the canonical entity id
+            let entityId = rawId;
+            if (rawId) {
+                const isCardLike = /^C\d+/i.test(rawId) || rawId.toUpperCase().startsWith('C');
+                if (isCardLike && cardToEntity.has(rawId)) {
+                    entityId = cardToEntity.get(rawId);
+                    mappedSwipesCount++;
+                }
+            }
+
             const timestamp = swipe.timestamp || swipe.swipe_time;
-            const location = swipe.location || swipe.building || swipe.gate_id;
+            const location = swipe.location || swipe.building || swipe.gate_id || swipe.location_id || swipe.locationId;
             processActivity(entityId, timestamp, location, 'card_swipe', swipe.action);
         });
+
+        if (mappedSwipesCount > 0) {
+            logger.info(`Mapped ${mappedSwipesCount} card swipe(s) to canonical entity IDs using profiles.csv`);
+        }
 
         // Process WiFi associations
         wifiLogs.forEach(log => {
@@ -1097,10 +1130,17 @@ router.get('/advanced', async (req, res) => {
             processActivity(entityId, timestamp, location, 'cctv', 'detected');
         });
 
-        // ALERT TYPE 1: Users inactive for 24+ hours - HIGH PRIORITY
+        // ALERT TYPE 1: Users inactive for 10-20 hours - HIGH PRIORITY
+        // Only show entities inactive between 10-20 hours (not less than 10, not more than 20)
         entityActivities.forEach((entity, entityId) => {
-            if (entity.lastSeen < twentyFourHoursAgo) {
-                const hoursSinceLastSeen = Math.floor((now - entity.lastSeen) / (60 * 60 * 1000));
+            const hoursSinceLastSeen = Math.floor((now - entity.lastSeen) / (60 * 60 * 1000));
+            
+            // Only flag if inactive for exactly 10-20 hours
+            if (hoursSinceLastSeen >= 10 && hoursSinceLastSeen <= 20) {
+                // Get the most recent activity to find last location
+                const sortedActivities = entity.activities.sort((a, b) => b.timestamp - a.timestamp);
+                const lastLocation = sortedActivities[0]?.location || 'Unknown';
+                
                 advancedAlerts.push({
                     id: `INACTIVE_${entityId}_${Date.now()}`,
                     type: 'INACTIVITY',
@@ -1110,7 +1150,7 @@ router.get('/advanced', async (req, res) => {
                     description: `Entity ${entityId} has not been detected in any system for ${hoursSinceLastSeen} hours`,
                     lastSeen: entity.lastSeen,
                     details: {
-                        lastLocation: Array.from(entity.locations).pop(),
+                        lastLocation: lastLocation,
                         activityCount: entity.activities.length,
                         hoursSinceLastSeen
                     },
@@ -1173,32 +1213,46 @@ router.get('/advanced', async (req, res) => {
             }
         });
 
-        // ALERT TYPE 3: Admin block access - LOW PRIORITY (limit to most recent per entity)
-        const adminLocations = ['admin'];
+    // ALERT TYPE 3: Admin block access - LOW PRIORITY (limit to most recent per entity)
+    // Include CCTV / location-based admin areas (ADMIN_LOBBY, CAF_01, GYM, HOSTEL_GATE)
+    // Only flag admin access during college hours (09:00 - 18:00) and before reference date
+    const adminLocations = ['admin', 'admin_lobby', 'caf_01', 'caf', 'gym', 'hostel_gate', 'hostel'];
         const adminAccessMap = new Map(); // Track one per entity
+        let adminMatches = 0; // debug counter for matched admin activities
         
         entityActivities.forEach((entity, entityId) => {
-            // Only check the most recent admin access per entity
+            // Only check admin access within dataset timeframe
             for (let i = entity.activities.length - 1; i >= 0; i--) {
                 const activity = entity.activities[i];
-                const isAtAdmin = activity.location && 
-                    adminLocations.some(loc => activity.location.toLowerCase().includes(loc));
                 
-                if (isAtAdmin && !adminAccessMap.has(entityId)) {
+                // Check if activity is within valid time range (before reference date)
+                if (activity.timestamp > now) {
+                    continue; // Skip activities after reference date
+                }
+                
+                const hour = activity.timestamp.getHours();
+                const locLower = (activity.location || '').toLowerCase();
+                const isAtAdmin = locLower && adminLocations.some(loc => locLower.includes(loc));
+
+                // Check if during college hours (09:00 - 18:00)
+                const isDuringCollegeHours = hour >= 9 && hour < 18;
+                
+                if (isAtAdmin && isDuringCollegeHours && !adminAccessMap.has(entityId)) {
                     adminAccessMap.set(entityId, true);
-                    const hour = activity.timestamp.getHours();
+                    adminMatches++;
                     advancedAlerts.push({
                         id: `ADMIN_${entityId}_${activity.timestamp.getTime()}`,
                         type: 'ADMIN_ACCESS',
                         entityId,
                         priority: 'LOW',
-                        title: 'Access to Admin Block',
-                        description: `Entity ${entityId} accessed ${activity.location}`,
+                        title: 'Doing otherthings in college time',
+                        description: `Entity ${entityId} accessed ${activity.location} at ${hour}:00`,
                         details: {
                             location: activity.location,
                             hour: hour,
                             activityType: activity.type,
-                            action: activity.action
+                            action: activity.action,
+                            timestamp: activity.timestamp.toISOString()
                         },
                         timestamp: activity.timestamp,
                         status: 'active'
@@ -1207,6 +1261,9 @@ router.get('/advanced', async (req, res) => {
                 }
             }
         });
+
+        // Log how many admin matches were found (helps debugging why LOW may be zero)
+        logger.info(`Admin access candidate count: ${adminMatches}`);
 
         // Remove duplicates based on similar alerts
         const uniqueAlerts = [];

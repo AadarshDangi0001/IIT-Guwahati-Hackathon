@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getToken } from '../../services/api';
 import LoadingSpinner from '../../components/Common/LoadingSpinner';
@@ -172,6 +172,14 @@ const Cctv = () => {
       }
 
       setResult(data);
+      // Scroll to the result area after rendering so the user sees the match
+      setTimeout(() => {
+        if (resultRef.current) {
+          resultRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+          window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        }
+      }, 100);
       
       // Load the photo with authentication if entity is found
       if (data.entity && data.confidence > 0) {
@@ -187,6 +195,8 @@ const Cctv = () => {
       setLoading(false);
     }
   };
+
+  const resultRef = useRef(null);
 
   return (
     <div className="space-y-6">
@@ -260,7 +270,7 @@ const Cctv = () => {
           </div>
 
           {result && (
-            <div className="bg-white dark:bg-gray-800 shadow rounded-lg p-6">
+            <div ref={resultRef} className="bg-white dark:bg-gray-800 shadow rounded-lg p-6">
               <h3 className="text-md font-medium text-gray-900 dark:text-white">Result</h3>
               {result.entity ? (
                 <div className="mt-4">
