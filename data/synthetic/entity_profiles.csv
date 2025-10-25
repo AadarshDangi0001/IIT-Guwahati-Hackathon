@@ -1,0 +1,1001 @@
+entity_id,name,role,email,department,student_id,staff_id,card_id,device_hash,face_id,phone,year,status
+E100000,Riya Modi,student,riya.modi@iitg.ac.in,Civil Engineering,S21763,,C2655,DH04CcbdFFaeEA,F100000,+91 9361789002,1,active
+E100001,Siya Malhotra,student,siya.malhotra@iitg.ac.in,Chemistry,S82883,,C9171,DHDcFCf1eBfEa8,F100001,+91 9364178936,3,active
+E100002,Arjun Jain,student,arjun.jain@iitg.ac.in,Computer Science,S81547,,C8203,DHfDC0DaCbEdF1,F100002,+91 9688718253,4,active
+E100003,Ananya Patel,student,ananya.patel@iitg.ac.in,Chemical Engineering,S33284,,C6747,DHaAacff3Eb03C,F100003,+91 9739260144,3,active
+E100004,Pari Tiwari,student,pari.tiwari@iitg.ac.in,Management,S11263,,C4454,DH567cB4E22fAB,F100004,+91 9957996984,2,active
+E100005,Tara Kapoor,student,tara.kapoor@iitg.ac.in,Chemical Engineering,S55353,,C1744,DH4D5BBfa9EAEe,F100005,+91 9532376304,1,active
+E100006,Shaurya Mehta,student,shaurya.mehta@iitg.ac.in,Chemistry,S15877,,C3816,DH4A3BeC2E529E,F100006,+91 9133838700,1,active
+E100007,Ishaan Arora,student,ishaan.arora@iitg.ac.in,Physics,S17760,,C3436,DH3Bb9f1C1e7c4,F100007,+91 9782095450,2,inactive
+E100008,Anika Agarwal,student,anika.agarwal@iitg.ac.in,Mathematics,S89600,,C7141,DH9aFEBbE18c8d,F100008,+91 9294472503,2,active
+E100009,Myra Sharma,student,myra.sharma@iitg.ac.in,Management,S72484,,C5788,DHfbA2920eD9B1,F100009,+91 9113068311,4,active
+E100010,Nisha Mehta,student,nisha.mehta@iitg.ac.in,Civil Engineering,S37317,,C6266,DH59A9fDDfE641,F100010,+91 9411928899,1,active
+E100011,Atharv Tiwari,student,atharv.tiwari@iitg.ac.in,Mechanical Engineering,S11953,,C8517,DH8B9AdCeFC9Bd,F100011,+91 9477287299,4,active
+E100012,Myra Reddy,student,myra.reddy@iitg.ac.in,Chemical Engineering,S37268,,C8949,DHdD3FC0f016bF,F100012,+91 9514157308,3,active
+E100013,Sai Sharma,student,sai.sharma@iitg.ac.in,Mechanical Engineering,S79734,,C5266,DHBE3F0dAE4850,F100013,+91 9462154873,4,active
+E100014,Pari Singh,student,pari.singh@iitg.ac.in,Chemical Engineering,S27740,,C1364,DH0cd9af485C4a,F100014,+91 9857604269,1,active
+E100015,Pranav Jain,student,pranav.jain@iitg.ac.in,Humanities,S27535,,C5791,DH5c5536A05921,F100015,+91 9604364613,2,active
+E100016,Reyansh Tiwari,student,reyansh.tiwari@iitg.ac.in,Electronics & Communication,S73379,,C1334,DHf0d5F5edDD9B,F100016,+91 9771323215,4,active
+E100017,Ayaan Shah,student,ayaan.shah@iitg.ac.in,Mechanical Engineering,S41402,,C8111,DHB829fdEeB976,F100017,+91 9294145440,1,active
+E100018,Myra Joshi,student,myra.joshi@iitg.ac.in,Humanities,S14430,,C4433,DH8B2a0fA459fC,F100018,+91 9688170675,2,active
+E100019,Aditya Chopra,student,aditya.chopra@iitg.ac.in,Physics,S96659,,C4603,DHDc29B5fdb5D5,F100019,+91 9790430410,2,active
+E100020,Saanvi Bansal,student,saanvi.bansal@iitg.ac.in,Chemical Engineering,S66203,,C4568,DHBaac03fFfb6a,F100020,+91 9810267027,3,active
+E100021,Diya Modi,student,diya.modi@iitg.ac.in,Physics,S36868,,C7067,DHDCE63673ffEC,F100021,+91 9110045970,3,inactive
+E100022,Kavya Patel,student,kavya.patel@iitg.ac.in,Electronics & Communication,S80461,,C3846,DH9df45fb56e4a,F100022,+91 9927229227,4,active
+E100023,Krishna Agarwal,student,krishna.agarwal@iitg.ac.in,Humanities,S95196,,C5015,DHbC8E04dE786a,F100023,+91 9023706090,2,active
+E100024,Aditya Malhotra,student,aditya.malhotra@iitg.ac.in,Mathematics,S68317,,C2941,DHAFd5feeba9Ee,F100024,+91 9019741560,1,active
+E100025,Anika Arora,student,anika.arora@iitg.ac.in,Physics,S67794,,C4458,DHe0DA759Fd2Ea,F100025,+91 9161311749,3,inactive
+E100026,Diya Malhotra,student,diya.malhotra@iitg.ac.in,Civil Engineering,S51200,,C2446,DHaf3AFFF8efBF,F100026,+91 9310711280,3,active
+E100027,Sai Rao,student,sai.rao@iitg.ac.in,Civil Engineering,S49091,,C8664,DHaeeBd62B7Ddf,F100027,+91 9970803482,4,active
+E100028,Priya Gupta,student,priya.gupta@iitg.ac.in,Physics,S77947,,C2942,DHf534CeCCEECB,F100028,+91 9263207261,2,active
+E100029,Advik Pandey,student,advik.pandey@iitg.ac.in,Management,S90370,,C3906,DHCF5FCf3ea03B,F100029,+91 9456674607,3,active
+E100030,Arjun Kapoor,student,arjun.kapoor@iitg.ac.in,Electronics & Communication,S73336,,C3933,DH40Ff2A47EdEF,F100030,+91 9329610104,4,active
+E100031,Kavya Bansal,student,kavya.bansal@iitg.ac.in,Mechanical Engineering,S39758,,C3995,DHa3CFa192caA8,F100031,+91 9096561006,3,active
+E100032,Priya Bansal,student,priya.bansal@iitg.ac.in,Physics,S69422,,C4183,DHCEF5F6Ab6efF,F100032,+91 9503455879,1,active
+E100033,Myra Pandey,student,myra.pandey@iitg.ac.in,Humanities,S90349,,C2763,DH8ce314A881Ee,F100033,+91 9386382419,2,active
+E100034,Tara Gupta,student,tara.gupta@iitg.ac.in,Biology,S66711,,C9391,DHcE1F12DF05d4,F100034,+91 9351562835,2,active
+E100035,Aarav Joshi,student,aarav.joshi@iitg.ac.in,Humanities,S29542,,C2279,DH8F6E3546FD99,F100035,+91 9895562733,3,active
+E100036,Pari Yadav,student,pari.yadav@iitg.ac.in,Humanities,S86612,,C8528,DHb4179a3FecfC,F100036,+91 9504515595,2,inactive
+E100037,Shaurya Singh,student,shaurya.singh@iitg.ac.in,Chemistry,S18925,,C1794,DHF1E6d81b1E7f,F100037,+91 9337582573,1,active
+E100038,Vihaan Jain,student,vihaan.jain@iitg.ac.in,Electronics & Communication,S67646,,C7708,DHDDd55f5770DA,F100038,+91 9249312852,2,inactive
+E100039,Advik Gupta,student,advik.gupta@iitg.ac.in,Management,S89496,,C2486,DHcc11De4bBCB7,F100039,+91 9086468027,1,active
+E100040,Pranav Saxena,student,pranav.saxena@iitg.ac.in,Electronics & Communication,S36268,,C6128,DH38Bc0AbDa8f6,F100040,+91 9659581401,3,active
+E100041,Nisha Verma,student,nisha.verma@iitg.ac.in,Mechanical Engineering,S81817,,C8492,DH5aB26Ca0E2Ee,F100041,+91 9185469646,2,active
+E100042,Vihaan Saxena,student,vihaan.saxena@iitg.ac.in,Mathematics,S32667,,C3717,DH54BcEdc03Ff2,F100042,+91 9240601220,3,active
+E100043,Myra Saxena,student,myra.saxena@iitg.ac.in,Humanities,S27782,,C7812,DHBcB9ffEAC4Fc,F100043,+91 9444856983,1,active
+E100044,Kavya Modi,student,kavya.modi@iitg.ac.in,Mathematics,S15623,,C2066,DH38540B9Ad30f,F100044,+91 9395479644,1,active
+E100045,Vihaan Kumar,student,vihaan.kumar@iitg.ac.in,Biology,S23349,,C6224,DH4aD7Bad6F629,F100045,+91 9613587634,2,active
+E100046,Reyansh Pandey,student,reyansh.pandey@iitg.ac.in,Computer Science,S61861,,C3526,DH9d1a5fa3DE0F,F100046,+91 9793067165,1,inactive
+E100047,Arjun Saxena,student,arjun.saxena@iitg.ac.in,Management,S70702,,C3720,DHfec5b63D5884,F100047,+91 9077134948,2,active
+E100048,Myra Arora,student,myra.arora@iitg.ac.in,Computer Science,S46925,,C4441,DH10E15eaF3eC9,F100048,+91 9800827741,1,active
+E100049,Ishaan Malhotra,student,ishaan.malhotra@iitg.ac.in,Chemical Engineering,S99530,,C6232,DHd0C939D8bEF8,F100049,+91 9780526260,2,active
+E100050,Reyansh Rao,student,reyansh.rao@iitg.ac.in,Mathematics,S12594,,C7927,DH3436e72Ffe2E,F100050,+91 9300252181,4,active
+E100051,Ishaan Arora,student,ishaan.arora@iitg.ac.in,Design,S47889,,C8729,DH13Aac37b5969,F100051,+91 9784421202,2,active
+E100052,Arjun Sharma,student,arjun.sharma@iitg.ac.in,Civil Engineering,S32936,,C6326,DHeF70f5af658E,F100052,+91 9955507765,2,active
+E100053,Vivaan Joshi,student,vivaan.joshi@iitg.ac.in,Mechanical Engineering,S85691,,C2403,DHaAB59F8fDED5,F100053,+91 9772238217,1,active
+E100054,Aditya Reddy,student,aditya.reddy@iitg.ac.in,Physics,S43948,,C3259,DH9DBDef855E2F,F100054,+91 9551283160,4,active
+E100055,Ananya Malhotra,student,ananya.malhotra@iitg.ac.in,Computer Science,S48125,,C2393,DH7Fd4BdaE10ad,F100055,+91 9504439791,4,active
+E100056,Tara Malhotra,student,tara.malhotra@iitg.ac.in,Management,S62763,,C3013,DH5dA1a55a6eD4,F100056,+91 9848925148,3,active
+E100057,Advik Yadav,student,advik.yadav@iitg.ac.in,Electronics & Communication,S84175,,C8559,DH2A3f338f2483,F100057,+91 9893180948,1,inactive
+E100058,Priya Mehta,student,priya.mehta@iitg.ac.in,Electronics & Communication,S41712,,C8882,DHA7aD429e8D60,F100058,+91 9639085916,3,active
+E100059,Aarav Mishra,student,aarav.mishra@iitg.ac.in,Management,S78381,,C5217,DHDfb3a914A6CF,F100059,+91 9818840043,4,active
+E100060,Riya Shah,student,riya.shah@iitg.ac.in,Civil Engineering,S66244,,C2680,DH6D98bdFd07fe,F100060,+91 9042611615,2,active
+E100061,Nisha Chopra,student,nisha.chopra@iitg.ac.in,Civil Engineering,S27357,,C4382,DHFA7FCABcD2Ae,F100061,+91 9330654911,2,active
+E100062,Vivaan Kapoor,student,vivaan.kapoor@iitg.ac.in,Mechanical Engineering,S73950,,C5682,DH3abBB2cDf379,F100062,+91 9913628811,3,active
+E100063,Kavya Tiwari,student,kavya.tiwari@iitg.ac.in,Management,S33575,,C2248,DHAa7Aee14DDb4,F100063,+91 9258141649,3,active
+E100064,Neha Verma,student,neha.verma@iitg.ac.in,Management,S99352,,C1603,DHa6a4b9e93FEE,F100064,+91 9891319950,3,active
+E100065,Diya Kumar,student,diya.kumar@iitg.ac.in,Design,S50390,,C1061,DH72bfb60B6F3A,F100065,+91 9982986775,3,active
+E100066,Reyansh Singh,student,reyansh.singh@iitg.ac.in,Biology,S93991,,C6594,DHbf33a2eEC83e,F100066,+91 9992881453,1,active
+E100067,Atharv Modi,student,atharv.modi@iitg.ac.in,Humanities,S33943,,C6005,DH13a1Bbc72B8D,F100067,+91 9215291828,2,active
+E100068,Vihaan Saxena,student,vihaan.saxena@iitg.ac.in,Electronics & Communication,S90266,,C8871,DH61B824294CaF,F100068,+91 9708567337,2,active
+E100069,Shaurya Kapoor,student,shaurya.kapoor@iitg.ac.in,Mathematics,S82080,,C2732,DHF8DEd36Dbacc,F100069,+91 9914691549,4,active
+E100070,Vivaan Joshi,student,vivaan.joshi@iitg.ac.in,Management,S45726,,C7725,DHEcEd2C5Da9e2,F100070,+91 9888822344,3,active
+E100071,Ayaan Mishra,student,ayaan.mishra@iitg.ac.in,Chemical Engineering,S90416,,C3068,DHd4DD14dECfdf,F100071,+91 9636294811,3,active
+E100072,Aarav Bansal,student,aarav.bansal@iitg.ac.in,Humanities,S49036,,C8308,DHC49bbBBb4F5a,F100072,+91 9142869367,4,active
+E100073,Aditya Arora,student,aditya.arora@iitg.ac.in,Mathematics,S84377,,C1146,DH09dD408a7cFA,F100073,+91 9779858201,2,active
+E100074,Pari Modi,student,pari.modi@iitg.ac.in,Biology,S52856,,C4275,DH92bdE4B4b6CA,F100074,+91 9744986825,2,active
+E100075,Siya Verma,student,siya.verma@iitg.ac.in,Chemical Engineering,S34125,,C6952,DH82d7d3FFB372,F100075,+91 9017053610,4,active
+E100076,Riya Chopra,student,riya.chopra@iitg.ac.in,Biology,S30955,,C2482,DHb52a4A6ceAf2,F100076,+91 9687253636,2,active
+E100077,Saanvi Bansal,student,saanvi.bansal@iitg.ac.in,Biology,S39169,,C8829,DH35A79bd92ac3,F100077,+91 9146160817,4,active
+E100078,Ishaan Singh,student,ishaan.singh@iitg.ac.in,Chemistry,S42777,,C7429,DH149B4425e73B,F100078,+91 9850660391,3,inactive
+E100079,Riya Patel,student,riya.patel@iitg.ac.in,Humanities,S59776,,C6530,DH5a482E20387E,F100079,+91 9303633165,2,active
+E100080,Sana Malhotra,student,sana.malhotra@iitg.ac.in,Computer Science,S31814,,C3120,DH4CbDA5c4807d,F100080,+91 9985868678,2,inactive
+E100081,Atharv Gupta,student,atharv.gupta@iitg.ac.in,Chemical Engineering,S71876,,C6178,DH8dA3ABEa9680,F100081,+91 9311738132,2,active
+E100082,Aarav Gupta,student,aarav.gupta@iitg.ac.in,Management,S32725,,C8712,DH3fD2b603f0BB,F100082,+91 9983310039,1,active
+E100083,Kavya Modi,student,kavya.modi@iitg.ac.in,Electronics & Communication,S44450,,C4736,DH2Bd5a6812cD9,F100083,+91 9802800801,3,active
+E100084,Saanvi Joshi,student,saanvi.joshi@iitg.ac.in,Mathematics,S24889,,C7811,DH88Cf00Bf5464,F100084,+91 9493411777,2,active
+E100085,Nisha Tiwari,student,nisha.tiwari@iitg.ac.in,Chemical Engineering,S62392,,C7525,DH1d3Ea3A6d6f7,F100085,+91 9233143923,2,active
+E100086,Vivaan Verma,student,vivaan.verma@iitg.ac.in,Chemical Engineering,S70256,,C9451,DHEbee46EBfFf9,F100086,+91 9524568409,1,active
+E100087,Siya Sharma,student,siya.sharma@iitg.ac.in,Mathematics,S44096,,C9616,DHF93Bf8c56e2d,F100087,+91 9024995572,3,active
+E100088,Saanvi Verma,student,saanvi.verma@iitg.ac.in,Chemistry,S81592,,C5374,DH10b45Da9c54d,F100088,+91 9952919952,1,active
+E100089,Diya Sharma,student,diya.sharma@iitg.ac.in,Chemical Engineering,S49453,,C9921,DH22e502798D66,F100089,+91 9372592303,3,active
+E100090,Arjun Pandey,student,arjun.pandey@iitg.ac.in,Design,S97401,,C4555,DH5A12d2859eA7,F100090,+91 9903141028,2,active
+E100091,Ayaan Desai,student,ayaan.desai@iitg.ac.in,Mathematics,S68002,,C1448,DHeb30b18eA6DB,F100091,+91 9242564473,1,active
+E100092,Ishaan Verma,student,ishaan.verma@iitg.ac.in,Management,S17296,,C8328,DHdadD8D7B922c,F100092,+91 9104684725,2,inactive
+E100093,Priya Kapoor,student,priya.kapoor@iitg.ac.in,Chemistry,S12718,,C4217,DHEaDC2Ea206Cb,F100093,+91 9145721081,2,active
+E100094,Pari Kumar,student,pari.kumar@iitg.ac.in,Mathematics,S72213,,C6224,DHD61Ea8b28BBD,F100094,+91 9644038843,2,active
+E100095,Sai Tiwari,student,sai.tiwari@iitg.ac.in,Mechanical Engineering,S93143,,C9521,DHD59EFdD2bfff,F100095,+91 9052211518,4,active
+E100096,Diya Mehta,student,diya.mehta@iitg.ac.in,Management,S47666,,C6660,DH5ED290c4EFe1,F100096,+91 9458881846,3,active
+E100097,Myra Modi,student,myra.modi@iitg.ac.in,Chemical Engineering,S29042,,C6528,DHD8c9c9FfB017,F100097,+91 9629182520,2,active
+E100098,Myra Tiwari,student,myra.tiwari@iitg.ac.in,Electronics & Communication,S18104,,C1958,DHA1c8C44882e1,F100098,+91 9839228801,1,inactive
+E100099,Pranav Kapoor,student,pranav.kapoor@iitg.ac.in,Electronics & Communication,S18633,,C2036,DH9A7ECBD9C72a,F100099,+91 9085660171,4,active
+E100100,Ayaan Mehta,student,ayaan.mehta@iitg.ac.in,Mechanical Engineering,S43792,,C6445,DH85eC1D3cF773,F100100,+91 9466238816,3,active
+E100101,Neha Kumar,student,neha.kumar@iitg.ac.in,Computer Science,S95801,,C1471,DHDa82ab45B83f,F100101,+91 9244229654,1,active
+E100102,Reyansh Reddy,student,reyansh.reddy@iitg.ac.in,Computer Science,S71062,,C3751,DH49306eFfBb67,F100102,+91 9158255711,1,active
+E100103,Ananya Srivastava,student,ananya.srivastava@iitg.ac.in,Chemistry,S26163,,C4489,DHB482a68Ee4e5,F100103,+91 9629804268,1,active
+E100104,Vivaan Mishra,student,vivaan.mishra@iitg.ac.in,Physics,S34631,,C4623,DH9192E6A3CDE7,F100104,+91 9125177644,4,active
+E100105,Ayaan Chopra,student,ayaan.chopra@iitg.ac.in,Electronics & Communication,S86544,,C8933,DHdD00ECbE8DaE,F100105,+91 9402927400,1,active
+E100106,Vihaan Chopra,student,vihaan.chopra@iitg.ac.in,Humanities,S71399,,C4491,DHb6C2F166e7AE,F100106,+91 9574193700,3,inactive
+E100107,Ishaan Bansal,student,ishaan.bansal@iitg.ac.in,Mechanical Engineering,S19030,,C7379,DH5Be8Eac787C0,F100107,+91 9780954770,4,active
+E100108,Myra Bansal,student,myra.bansal@iitg.ac.in,Management,S55710,,C9116,DHB7537D9B08e2,F100108,+91 9902837291,3,active
+E100109,Krishna Verma,student,krishna.verma@iitg.ac.in,Mathematics,S18748,,C4183,DH49daB2D90B3E,F100109,+91 9763121446,3,active
+E100110,Reyansh Kumar,student,reyansh.kumar@iitg.ac.in,Civil Engineering,S40090,,C7241,DHC1ACafdaFea0,F100110,+91 9503725046,2,inactive
+E100111,Atharv Reddy,student,atharv.reddy@iitg.ac.in,Management,S54477,,C9403,DHF8eE2E7DccaF,F100111,+91 9616878642,4,active
+E100112,Atharv Bansal,student,atharv.bansal@iitg.ac.in,Biology,S72695,,C7235,DH0bAbFb5E7AF8,F100112,+91 9158565346,2,active
+E100113,Neha Bansal,student,neha.bansal@iitg.ac.in,Management,S53780,,C2540,DHc2a83bCD72ff,F100113,+91 9413612902,3,active
+E100114,Shaurya Srivastava,student,shaurya.srivastava@iitg.ac.in,Physics,S58222,,C3971,DHC3De791FadAf,F100114,+91 9184233416,2,active
+E100115,Shaurya Pandey,student,shaurya.pandey@iitg.ac.in,Humanities,S62653,,C5850,DH7bc14dCCae63,F100115,+91 9631667713,4,active
+E100116,Ishaan Patel,student,ishaan.patel@iitg.ac.in,Chemical Engineering,S39939,,C7765,DHACde16eF640D,F100116,+91 9442842498,2,active
+E100117,Ishaan Gupta,student,ishaan.gupta@iitg.ac.in,Electronics & Communication,S12200,,C4862,DH8F4a7bf6fD5E,F100117,+91 9332662547,3,active
+E100118,Nisha Tiwari,student,nisha.tiwari@iitg.ac.in,Mechanical Engineering,S92124,,C6703,DHBd792119DF84,F100118,+91 9319774235,1,active
+E100119,Siya Kapoor,student,siya.kapoor@iitg.ac.in,Chemical Engineering,S59317,,C7722,DH13a1a14d4ffe,F100119,+91 9503980419,1,active
+E100120,Ayaan Mishra,student,ayaan.mishra@iitg.ac.in,Chemistry,S19269,,C6258,DH851BA213cDfb,F100120,+91 9765690478,4,inactive
+E100121,Kavya Tiwari,student,kavya.tiwari@iitg.ac.in,Electronics & Communication,S14100,,C3485,DH82dfa9852A6D,F100121,+91 9976419281,2,active
+E100122,Riya Kapoor,student,riya.kapoor@iitg.ac.in,Biology,S27688,,C9230,DH3E4f1EAA6eB6,F100122,+91 9821748858,3,active
+E100123,Vihaan Mehta,student,vihaan.mehta@iitg.ac.in,Biology,S82152,,C4772,DHfc3840BDA17c,F100123,+91 9925167123,1,active
+E100124,Sai Sharma,student,sai.sharma@iitg.ac.in,Mechanical Engineering,S86411,,C3922,DH09EEF8bCEF2b,F100124,+91 9073391432,3,active
+E100125,Riya Mehta,student,riya.mehta@iitg.ac.in,Chemical Engineering,S94172,,C5542,DHD5FEE422Ff3D,F100125,+91 9714263000,4,active
+E100126,Atharv Tiwari,student,atharv.tiwari@iitg.ac.in,Computer Science,S92080,,C1744,DH68D8A201E1aB,F100126,+91 9566613047,2,active
+E100127,Ayaan Bansal,student,ayaan.bansal@iitg.ac.in,Electronics & Communication,S79998,,C3573,DH55eef5B3feba,F100127,+91 9455526047,3,inactive
+E100128,Pranav Joshi,student,pranav.joshi@iitg.ac.in,Civil Engineering,S56965,,C3800,DH08feDfEF93Eb,F100128,+91 9445913769,2,active
+E100129,Sai Saxena,student,sai.saxena@iitg.ac.in,Chemistry,S79719,,C9107,DH2EAE3bC3EaC4,F100129,+91 9677542078,1,active
+E100130,Priya Yadav,student,priya.yadav@iitg.ac.in,Civil Engineering,S72458,,C1722,DHda0351CeA54A,F100130,+91 9749188857,2,active
+E100131,Myra Gupta,student,myra.gupta@iitg.ac.in,Chemistry,S71671,,C9577,DHE0EE72Ed1fe3,F100131,+91 9475213297,3,inactive
+E100132,Aarav Rao,student,aarav.rao@iitg.ac.in,Biology,S70281,,C3356,DHFBBC7e015C69,F100132,+91 9005899732,4,active
+E100133,Sai Saxena,student,sai.saxena@iitg.ac.in,Chemistry,S96409,,C8047,DHeaEa80Ce74d3,F100133,+91 9631362499,2,active
+E100134,Atharv Joshi,student,atharv.joshi@iitg.ac.in,Mathematics,S64457,,C7271,DHF1D370C62CA6,F100134,+91 9234584534,3,inactive
+E100135,Aarav Reddy,student,aarav.reddy@iitg.ac.in,Physics,S44381,,C3310,DH50Eb1bE8e9CB,F100135,+91 9691583433,3,active
+E100136,Tara Kumar,student,tara.kumar@iitg.ac.in,Chemistry,S67244,,C8481,DHE6eD4dce0e90,F100136,+91 9613440915,2,active
+E100137,Kavya Desai,student,kavya.desai@iitg.ac.in,Biology,S71709,,C9436,DH76C30C9B98D0,F100137,+91 9485056906,1,active
+E100138,Ananya Verma,student,ananya.verma@iitg.ac.in,Humanities,S89276,,C9730,DH99F5CAf84Bf7,F100138,+91 9680375963,2,active
+E100139,Atharv Joshi,student,atharv.joshi@iitg.ac.in,Mechanical Engineering,S44122,,C6432,DH66dE72Dad9De,F100139,+91 9582784705,4,inactive
+E100140,Shaurya Tiwari,student,shaurya.tiwari@iitg.ac.in,Computer Science,S81331,,C4066,DH4B3CeDFccbc2,F100140,+91 9397311536,1,inactive
+E100141,Neha Joshi,student,neha.joshi@iitg.ac.in,Computer Science,S86117,,C7142,DH904a2DA9E3D2,F100141,+91 9585394950,3,active
+E100142,Aarav Rao,student,aarav.rao@iitg.ac.in,Electronics & Communication,S43945,,C1940,DHcA6c511a3353,F100142,+91 9218773347,2,active
+E100143,Ishaan Mehta,student,ishaan.mehta@iitg.ac.in,Humanities,S81526,,C3488,DH5fF9bB3EAdcE,F100143,+91 9375836134,4,active
+E100144,Diya Modi,student,diya.modi@iitg.ac.in,Chemistry,S72587,,C1426,DHe9996fd8DE87,F100144,+91 9746057531,2,active
+E100145,Priya Pandey,student,priya.pandey@iitg.ac.in,Biology,S77152,,C3566,DHcAc3cF0a6eBb,F100145,+91 9459726860,1,inactive
+E100146,Vihaan Yadav,student,vihaan.yadav@iitg.ac.in,Electronics & Communication,S95862,,C9704,DH0d0f944Ec9a3,F100146,+91 9400859008,4,active
+E100147,Saanvi Patel,student,saanvi.patel@iitg.ac.in,Mathematics,S43677,,C8878,DH4D1Fdf9677dF,F100147,+91 9712014351,4,active
+E100148,Sana Verma,student,sana.verma@iitg.ac.in,Management,S32744,,C1403,DHdCF3288ec14f,F100148,+91 9277633408,2,inactive
+E100149,Kavya Mehta,student,kavya.mehta@iitg.ac.in,Management,S32737,,C3602,DHdC7FBbf0d1d0,F100149,+91 9038094017,1,active
+E100150,Krishna Joshi,student,krishna.joshi@iitg.ac.in,Civil Engineering,S40745,,C8462,DH7732fa830cAa,F100150,+91 9649316194,3,active
+E100151,Kavya Kumar,student,kavya.kumar@iitg.ac.in,Biology,S68436,,C5425,DH1CABb8dAd9Bf,F100151,+91 9494057823,4,active
+E100152,Krishna Singh,student,krishna.singh@iitg.ac.in,Humanities,S47602,,C9963,DHba9Ee4d91cEf,F100152,+91 9748132187,3,active
+E100153,Myra Reddy,student,myra.reddy@iitg.ac.in,Chemical Engineering,S19527,,C7650,DH5bBFD1dC324a,F100153,+91 9543363554,4,active
+E100154,Siya Mehta,student,siya.mehta@iitg.ac.in,Chemistry,S24795,,C5247,DH69e7E291b8b1,F100154,+91 9456027437,4,active
+E100155,Vihaan Tiwari,student,vihaan.tiwari@iitg.ac.in,Computer Science,S82069,,C8464,DH044D43B6cDcB,F100155,+91 9291383613,3,active
+E100156,Diya Shah,student,diya.shah@iitg.ac.in,Humanities,S43004,,C5627,DHB7df5FDEec75,F100156,+91 9654446868,3,active
+E100157,Neha Rao,student,neha.rao@iitg.ac.in,Mechanical Engineering,S15566,,C7687,DHe09BCA96C9a7,F100157,+91 9101598211,2,active
+E100158,Advik Saxena,student,advik.saxena@iitg.ac.in,Humanities,S70260,,C1692,DH5bd6bA959243,F100158,+91 9361901347,2,inactive
+E100159,Sai Kumar,student,sai.kumar@iitg.ac.in,Mechanical Engineering,S10981,,C6754,DHcBD0D47d6f10,F100159,+91 9748993274,1,active
+E100160,Atharv Desai,student,atharv.desai@iitg.ac.in,Humanities,S36027,,C1254,DH21F1C8ab71fe,F100160,+91 9106043943,1,active
+E100161,Saanvi Pandey,student,saanvi.pandey@iitg.ac.in,Mathematics,S27174,,C1139,DH9eeEb71Ef3fF,F100161,+91 9879839033,1,active
+E100162,Diya Srivastava,student,diya.srivastava@iitg.ac.in,Civil Engineering,S41168,,C4421,DHdEf5EeDbd0eD,F100162,+91 9760666237,3,active
+E100163,Ira Mehta,student,ira.mehta@iitg.ac.in,Computer Science,S10612,,C7251,DH9c30e6e0D34C,F100163,+91 9299473301,1,active
+E100164,Nisha Mishra,student,nisha.mishra@iitg.ac.in,Chemical Engineering,S45241,,C9742,DH0Fe9a292BC55,F100164,+91 9368637570,1,active
+E100165,Tara Patel,student,tara.patel@iitg.ac.in,Mathematics,S89426,,C7238,DH44e5Cb5D5EFf,F100165,+91 9325976033,2,inactive
+E100166,Riya Bansal,student,riya.bansal@iitg.ac.in,Mechanical Engineering,S94520,,C7222,DH62BceC2f7B4B,F100166,+91 9816023395,3,active
+E100167,Nisha Yadav,student,nisha.yadav@iitg.ac.in,Mechanical Engineering,S92955,,C6086,DHCfdd4B3719B8,F100167,+91 9249918412,3,active
+E100168,Riya Mishra,student,riya.mishra@iitg.ac.in,Physics,S94080,,C7366,DH7DE42eacfbAf,F100168,+91 9627050561,2,active
+E100169,Shaurya Joshi,student,shaurya.joshi@iitg.ac.in,Physics,S89018,,C8012,DHbbE6C4cd5e6E,F100169,+91 9434090696,2,active
+E100170,Sai Tiwari,student,sai.tiwari@iitg.ac.in,Physics,S24341,,C3786,DH5bFCF3209CBE,F100170,+91 9333485635,3,active
+E100171,Shaurya Joshi,student,shaurya.joshi@iitg.ac.in,Chemistry,S47917,,C8665,DHe7beAe63eD85,F100171,+91 9492003869,3,active
+E100172,Siya Reddy,student,siya.reddy@iitg.ac.in,Design,S41772,,C4106,DHEee4a27beaDf,F100172,+91 9540238069,3,active
+E100173,Krishna Mishra,student,krishna.mishra@iitg.ac.in,Design,S82443,,C7940,DHdFdB3c9Af36F,F100173,+91 9483605563,2,active
+E100174,Kavya Kapoor,student,kavya.kapoor@iitg.ac.in,Biology,S95485,,C2978,DHB3dfCdbC9D34,F100174,+91 9072224531,4,active
+E100175,Sai Yadav,student,sai.yadav@iitg.ac.in,Civil Engineering,S41910,,C9579,DHD940EeDD9d86,F100175,+91 9765225149,4,active
+E100176,Shaurya Gupta,student,shaurya.gupta@iitg.ac.in,Computer Science,S91406,,C4264,DHFbeCA5A380CE,F100176,+91 9706502966,4,active
+E100177,Aarav Sharma,student,aarav.sharma@iitg.ac.in,Management,S89189,,C5988,DH4CB7246a4FD1,F100177,+91 9552704403,2,active
+E100178,Neha Saxena,student,neha.saxena@iitg.ac.in,Electronics & Communication,S39967,,C1945,DHFBb3ff0fDde8,F100178,+91 9336998683,2,active
+E100179,Anika Yadav,student,anika.yadav@iitg.ac.in,Chemistry,S80792,,C1864,DHef4F8416C184,F100179,+91 9198655381,2,inactive
+E100180,Sana Gupta,student,sana.gupta@iitg.ac.in,Physics,S16637,,C7250,DHeB7DcBFaAae3,F100180,+91 9434844958,1,inactive
+E100181,Diya Joshi,student,diya.joshi@iitg.ac.in,Mechanical Engineering,S84370,,C3190,DHAB5F72E8E08E,F100181,+91 9633030867,1,active
+E100182,Riya Chopra,student,riya.chopra@iitg.ac.in,Mathematics,S90591,,C3385,DHbd686F95dDb7,F100182,+91 9091505514,2,active
+E100183,Pranav Verma,student,pranav.verma@iitg.ac.in,Design,S96724,,C3204,DHb6B5D83A38bE,F100183,+91 9037649990,3,active
+E100184,Priya Mishra,student,priya.mishra@iitg.ac.in,Mathematics,S60274,,C4036,DHc47da0BA8116,F100184,+91 9761987876,2,active
+E100185,Siya Patel,student,siya.patel@iitg.ac.in,Design,S21629,,C4163,DHeF58b488BF91,F100185,+91 9901228858,2,active
+E100186,Shaurya Yadav,student,shaurya.yadav@iitg.ac.in,Mathematics,S78889,,C2953,DH4D7E460F10E3,F100186,+91 9471478060,3,active
+E100187,Ananya Tiwari,student,ananya.tiwari@iitg.ac.in,Chemical Engineering,S13705,,C1682,DH35Bc1B7c6d2e,F100187,+91 9592635029,4,inactive
+E100188,Diya Rao,student,diya.rao@iitg.ac.in,Humanities,S62196,,C4658,DH51C7EB87edA5,F100188,+91 9670167434,4,active
+E100189,Priya Pandey,student,priya.pandey@iitg.ac.in,Civil Engineering,S97832,,C3025,DHAdD29B7BBa3c,F100189,+91 9437661578,1,inactive
+E100190,Pari Sharma,student,pari.sharma@iitg.ac.in,Humanities,S50779,,C2380,DHe058C32ee3b5,F100190,+91 9924995463,4,active
+E100191,Arjun Singh,student,arjun.singh@iitg.ac.in,Chemistry,S69572,,C8070,DHcdBDe8fcc1C5,F100191,+91 9358997227,4,active
+E100192,Ira Mehta,student,ira.mehta@iitg.ac.in,Biology,S94860,,C2413,DH96FBCa738d61,F100192,+91 9034844482,3,active
+E100193,Siya Desai,student,siya.desai@iitg.ac.in,Chemical Engineering,S60198,,C2623,DHFB1ffB9fa1b1,F100193,+91 9703166306,1,active
+E100194,Siya Kapoor,student,siya.kapoor@iitg.ac.in,Computer Science,S62915,,C2218,DHceFde347a569,F100194,+91 9577467416,2,active
+E100195,Ishaan Mehta,student,ishaan.mehta@iitg.ac.in,Humanities,S93041,,C2660,DHd0c77D9d2cC3,F100195,+91 9490634158,2,active
+E100196,Pari Singh,student,pari.singh@iitg.ac.in,Electronics & Communication,S37994,,C8940,DH4bA0a64A4F5B,F100196,+91 9837313412,1,active
+E100197,Atharv Singh,student,atharv.singh@iitg.ac.in,Chemical Engineering,S43448,,C2884,DH2EE23d100DAc,F100197,+91 9698272783,1,active
+E100198,Ira Shah,student,ira.shah@iitg.ac.in,Computer Science,S39015,,C2449,DHa03eA9A2c4f6,F100198,+91 9473008450,4,active
+E100199,Siya Agarwal,student,siya.agarwal@iitg.ac.in,Mechanical Engineering,S18066,,C9634,DH9Ff79f0aC334,F100199,+91 9231918078,2,active
+E100200,Myra Srivastava,student,myra.srivastava@iitg.ac.in,Computer Science,S77295,,C6821,DHDacfC5fEb555,F100200,+91 9064860095,1,active
+E100201,Ayaan Sharma,student,ayaan.sharma@iitg.ac.in,Physics,S29144,,C1865,DH6f7c856979aB,F100201,+91 9038452574,2,active
+E100202,Sana Sharma,student,sana.sharma@iitg.ac.in,Physics,S63157,,C2147,DH4aE6859dA266,F100202,+91 9117209084,1,active
+E100203,Sana Singh,student,sana.singh@iitg.ac.in,Electronics & Communication,S66866,,C6646,DHBF9FED0c18eA,F100203,+91 9516946603,3,active
+E100204,Reyansh Kapoor,student,reyansh.kapoor@iitg.ac.in,Chemistry,S54348,,C4781,DHAb8b3AEAC5E9,F100204,+91 9643561957,2,inactive
+E100205,Reyansh Mishra,student,reyansh.mishra@iitg.ac.in,Mechanical Engineering,S36064,,C6402,DHE2cEc7E2e4aa,F100205,+91 9790746536,1,active
+E100206,Kavya Chopra,student,kavya.chopra@iitg.ac.in,Humanities,S90837,,C6863,DHaB94Ea35EbD6,F100206,+91 9970664713,4,active
+E100207,Ananya Chopra,student,ananya.chopra@iitg.ac.in,Biology,S24103,,C9746,DH42a4B4dD4bFC,F100207,+91 9525295166,3,inactive
+E100208,Tara Jain,student,tara.jain@iitg.ac.in,Physics,S37044,,C7354,DH46F0A6AB5aC2,F100208,+91 9087264529,1,active
+E100209,Myra Joshi,student,myra.joshi@iitg.ac.in,Chemical Engineering,S73017,,C1177,DH3aAb2383F3A5,F100209,+91 9878988718,1,active
+E100210,Sai Verma,student,sai.verma@iitg.ac.in,Humanities,S58761,,C3085,DH39d478CD7bae,F100210,+91 9290052265,3,active
+E100211,Arjun Patel,student,arjun.patel@iitg.ac.in,Computer Science,S76548,,C8389,DHD47dc72B1e1f,F100211,+91 9859194490,2,active
+E100212,Advik Pandey,student,advik.pandey@iitg.ac.in,Physics,S28973,,C6184,DHabb89a45FD9d,F100212,+91 9730723045,2,active
+E100213,Ira Agarwal,student,ira.agarwal@iitg.ac.in,Chemical Engineering,S66090,,C4357,DHe8cefefABD1B,F100213,+91 9611484099,3,active
+E100214,Sai Agarwal,student,sai.agarwal@iitg.ac.in,Chemistry,S48633,,C7259,DH2e0952a88f24,F100214,+91 9125909310,3,active
+E100215,Nisha Malhotra,student,nisha.malhotra@iitg.ac.in,Mathematics,S56524,,C7683,DH2E463bdbcAe7,F100215,+91 9202715290,4,active
+E100216,Siya Gupta,student,siya.gupta@iitg.ac.in,Computer Science,S26196,,C4755,DH6f677B09Be1a,F100216,+91 9615412966,2,active
+E100217,Sana Rao,student,sana.rao@iitg.ac.in,Civil Engineering,S82376,,C4485,DH36272Ce496Ed,F100217,+91 9152726692,1,active
+E100218,Sai Shah,student,sai.shah@iitg.ac.in,Humanities,S75409,,C4356,DHCcB1FDA9cDfa,F100218,+91 9136471567,1,active
+E100219,Ayaan Agarwal,student,ayaan.agarwal@iitg.ac.in,Computer Science,S36672,,C2149,DH9e9ceDE3776b,F100219,+91 9948086307,2,active
+E100220,Nisha Saxena,student,nisha.saxena@iitg.ac.in,Electronics & Communication,S99154,,C4923,DH1EcFC42D2566,F100220,+91 9532321684,3,active
+E100221,Aditya Agarwal,student,aditya.agarwal@iitg.ac.in,Mechanical Engineering,S64628,,C4086,DH7a2BDE1d05Aa,F100221,+91 9250609702,4,active
+E100222,Shaurya Tiwari,student,shaurya.tiwari@iitg.ac.in,Chemistry,S67161,,C9793,DHcFc3A03FBE89,F100222,+91 9454100343,1,active
+E100223,Aditya Saxena,student,aditya.saxena@iitg.ac.in,Chemical Engineering,S24773,,C1682,DHBCDf9d9E24dD,F100223,+91 9442971778,2,active
+E100224,Saanvi Chopra,student,saanvi.chopra@iitg.ac.in,Mathematics,S37648,,C7047,DHba6eee335b6f,F100224,+91 9352974458,4,active
+E100225,Ananya Patel,student,ananya.patel@iitg.ac.in,Mechanical Engineering,S64707,,C4374,DH76DDd95E54fF,F100225,+91 9555982686,4,active
+E100226,Ayaan Reddy,student,ayaan.reddy@iitg.ac.in,Physics,S27402,,C2703,DHf5FB3D1858e5,F100226,+91 9579447205,2,active
+E100227,Atharv Bansal,student,atharv.bansal@iitg.ac.in,Design,S86089,,C9647,DHDc9ba514A25C,F100227,+91 9537290448,2,active
+E100228,Krishna Chopra,student,krishna.chopra@iitg.ac.in,Chemistry,S59936,,C1387,DHF96be5Fcf6eA,F100228,+91 9757800689,3,active
+E100229,Arjun Singh,student,arjun.singh@iitg.ac.in,Humanities,S56011,,C3120,DH0310ccfdf426,F100229,+91 9904496404,3,inactive
+E100230,Pari Arora,student,pari.arora@iitg.ac.in,Management,S10647,,C6365,DHCcaE9B6DA90C,F100230,+91 9484444218,2,active
+E100231,Pari Rao,student,pari.rao@iitg.ac.in,Mathematics,S90127,,C8962,DHd8a1Ff86D09c,F100231,+91 9708851948,2,active
+E100232,Tara Agarwal,student,tara.agarwal@iitg.ac.in,Chemistry,S36481,,C2991,DH9FfD3e5B6a21,F100232,+91 9763634101,1,active
+E100233,Shaurya Patel,student,shaurya.patel@iitg.ac.in,Electronics & Communication,S37036,,C3586,DHBA2B7caF1BAe,F100233,+91 9548693924,4,active
+E100234,Diya Tiwari,student,diya.tiwari@iitg.ac.in,Mechanical Engineering,S95904,,C1010,DH03551e2e8FAA,F100234,+91 9566001480,2,active
+E100235,Sai Patel,student,sai.patel@iitg.ac.in,Biology,S86666,,C8642,DH1bCC5D0aD40F,F100235,+91 9834779507,1,active
+E100236,Arjun Srivastava,student,arjun.srivastava@iitg.ac.in,Chemistry,S19300,,C4255,DHd5b3Eb6BEC3a,F100236,+91 9356282991,4,active
+E100237,Tara Chopra,student,tara.chopra@iitg.ac.in,Computer Science,S48924,,C3481,DHAd0EF1071EBa,F100237,+91 9292471547,4,inactive
+E100238,Saanvi Joshi,student,saanvi.joshi@iitg.ac.in,Computer Science,S19349,,C5160,DHD73A2FF9edBc,F100238,+91 9097724243,1,active
+E100239,Ishaan Agarwal,student,ishaan.agarwal@iitg.ac.in,Management,S99481,,C3168,DH4e37A92B1eA2,F100239,+91 9204915694,4,active
+E100240,Shaurya Chopra,student,shaurya.chopra@iitg.ac.in,Humanities,S26044,,C6092,DH62Ac1Ba48e76,F100240,+91 9228498206,4,active
+E100241,Atharv Shah,student,atharv.shah@iitg.ac.in,Design,S13300,,C9644,DH9648c4cFB9B5,F100241,+91 9033150536,2,active
+E100242,Pari Kapoor,student,pari.kapoor@iitg.ac.in,Mechanical Engineering,S73901,,C6283,DHdE8C64aD1fAB,F100242,+91 9943066761,4,active
+E100243,Sai Arora,student,sai.arora@iitg.ac.in,Design,S81718,,C7333,DHAb21BFb5Dd14,F100243,+91 9703077067,1,active
+E100244,Aditya Arora,student,aditya.arora@iitg.ac.in,Computer Science,S93591,,C5837,DHCa335c2E83ce,F100244,+91 9513102475,1,active
+E100245,Ayaan Arora,student,ayaan.arora@iitg.ac.in,Chemistry,S25516,,C3968,DH114223eF6c26,F100245,+91 9898709289,3,active
+E100246,Anika Patel,student,anika.patel@iitg.ac.in,Design,S91831,,C8666,DHD1e42dFA3A27,F100246,+91 9422223793,2,active
+E100247,Sai Reddy,student,sai.reddy@iitg.ac.in,Mechanical Engineering,S76208,,C3559,DH9F9D8Dbe7a9f,F100247,+91 9685274111,3,active
+E100248,Pranav Agarwal,student,pranav.agarwal@iitg.ac.in,Mathematics,S19068,,C8417,DHF46BC4B854d5,F100248,+91 9890465308,4,active
+E100249,Siya Saxena,student,siya.saxena@iitg.ac.in,Chemistry,S85110,,C1910,DHFbfbeA13C8B2,F100249,+91 9774067761,4,active
+E100250,Sana Jain,student,sana.jain@iitg.ac.in,Mechanical Engineering,S78862,,C8007,DH5a15CBE13bEC,F100250,+91 9585276722,1,inactive
+E100251,Myra Bansal,student,myra.bansal@iitg.ac.in,Chemistry,S89535,,C7892,DHf04047Fd7B0F,F100251,+91 9699308461,2,active
+E100252,Tara Agarwal,student,tara.agarwal@iitg.ac.in,Mechanical Engineering,S29189,,C3259,DHB115E5f728e6,F100252,+91 9473929440,2,active
+E100253,Saanvi Malhotra,student,saanvi.malhotra@iitg.ac.in,Chemical Engineering,S32750,,C4466,DH0Ad53bf7fA69,F100253,+91 9603547115,2,active
+E100254,Myra Kumar,student,myra.kumar@iitg.ac.in,Biology,S51467,,C6523,DH830bff2B7982,F100254,+91 9832946258,3,inactive
+E100255,Saanvi Kapoor,student,saanvi.kapoor@iitg.ac.in,Civil Engineering,S80055,,C9910,DH5Ad9aadF1fD3,F100255,+91 9721263471,4,active
+E100256,Riya Jain,student,riya.jain@iitg.ac.in,Design,S42717,,C6144,DHdeFb83FaF18B,F100256,+91 9027082360,1,active
+E100257,Aditya Gupta,student,aditya.gupta@iitg.ac.in,Mechanical Engineering,S93205,,C2190,DHC96eCf0dbdeB,F100257,+91 9227183980,4,active
+E100258,Priya Verma,student,priya.verma@iitg.ac.in,Electronics & Communication,S37468,,C7559,DHf7ee44F3ebCF,F100258,+91 9765458228,1,active
+E100259,Arjun Sharma,student,arjun.sharma@iitg.ac.in,Humanities,S82505,,C5410,DH2A0f9CE3507A,F100259,+91 9159677504,4,active
+E100260,Nisha Desai,student,nisha.desai@iitg.ac.in,Design,S33064,,C9436,DHf38BBeDefDeb,F100260,+91 9126843706,2,active
+E100261,Aditya Agarwal,student,aditya.agarwal@iitg.ac.in,Mathematics,S79721,,C9610,DHa77fC660FC89,F100261,+91 9091506180,4,active
+E100262,Arjun Gupta,student,arjun.gupta@iitg.ac.in,Civil Engineering,S15543,,C1865,DHccDeC0bDc36F,F100262,+91 9175795789,3,active
+E100263,Pari Bansal,student,pari.bansal@iitg.ac.in,Design,S14671,,C2355,DHcb1aB45Cfc52,F100263,+91 9505495666,3,active
+E100264,Sai Malhotra,student,sai.malhotra@iitg.ac.in,Electronics & Communication,S92322,,C9385,DHC7CDff8D2EBC,F100264,+91 9894274053,1,active
+E100265,Arjun Rao,student,arjun.rao@iitg.ac.in,Humanities,S12780,,C1145,DHBfa65aBCF353,F100265,+91 9775124371,4,active
+E100266,Aarav Kumar,student,aarav.kumar@iitg.ac.in,Biology,S95084,,C1695,DH9AC2ba89bEB6,F100266,+91 9165693062,3,active
+E100267,Ananya Sharma,student,ananya.sharma@iitg.ac.in,Chemistry,S93822,,C6009,DH96bb7CbB5375,F100267,+91 9770692173,3,active
+E100268,Sai Singh,student,sai.singh@iitg.ac.in,Management,S75894,,C6923,DH6dF8B11C45a8,F100268,+91 9001850133,3,active
+E100269,Diya Mishra,student,diya.mishra@iitg.ac.in,Chemical Engineering,S86745,,C1796,DHB3Dc90ACfbC9,F100269,+91 9671013295,2,active
+E100270,Sana Shah,student,sana.shah@iitg.ac.in,Humanities,S68096,,C5946,DHd33210f4cbbA,F100270,+91 9575571149,1,active
+E100271,Myra Malhotra,student,myra.malhotra@iitg.ac.in,Humanities,S36540,,C1654,DHABCebEfCaa62,F100271,+91 9947622348,3,inactive
+E100272,Aditya Desai,student,aditya.desai@iitg.ac.in,Management,S23264,,C3644,DH68B4DD0Aa00C,F100272,+91 9280183726,4,active
+E100273,Shaurya Verma,student,shaurya.verma@iitg.ac.in,Electronics & Communication,S90042,,C8835,DHaBaCd0ADC7CE,F100273,+91 9152690657,4,active
+E100274,Sai Jain,student,sai.jain@iitg.ac.in,Chemistry,S88235,,C9323,DHEaddE6Fb1afd,F100274,+91 9840525387,4,active
+E100275,Ira Rao,student,ira.rao@iitg.ac.in,Computer Science,S76041,,C3440,DHaD158EA8bce0,F100275,+91 9691673068,4,active
+E100276,Kavya Modi,student,kavya.modi@iitg.ac.in,Biology,S32664,,C9019,DHeD9A726cA895,F100276,+91 9436600767,3,active
+E100277,Vivaan Modi,student,vivaan.modi@iitg.ac.in,Management,S51307,,C1070,DH0EacA7C0EFDb,F100277,+91 9729777620,4,active
+E100278,Sana Tiwari,student,sana.tiwari@iitg.ac.in,Civil Engineering,S74406,,C6752,DH054AeBEf7f2c,F100278,+91 9791581295,2,active
+E100279,Shaurya Patel,student,shaurya.patel@iitg.ac.in,Humanities,S90826,,C5221,DHa2a196c13dE8,F100279,+91 9316131781,1,active
+E100280,Ishaan Tiwari,student,ishaan.tiwari@iitg.ac.in,Chemistry,S24111,,C2512,DH0B3ACB31Ca3E,F100280,+91 9367949395,1,active
+E100281,Vihaan Patel,student,vihaan.patel@iitg.ac.in,Electronics & Communication,S24382,,C8696,DHC19f9842E3a4,F100281,+91 9557932164,1,active
+E100282,Pranav Srivastava,student,pranav.srivastava@iitg.ac.in,Civil Engineering,S87565,,C7857,DHDBD8Cb9F9a7E,F100282,+91 9405742332,4,active
+E100283,Myra Singh,student,myra.singh@iitg.ac.in,Computer Science,S19189,,C7448,DH112D2e8DAC86,F100283,+91 9045373253,3,active
+E100284,Priya Kapoor,student,priya.kapoor@iitg.ac.in,Civil Engineering,S49335,,C2296,DHcd1d120BAa0C,F100284,+91 9246565398,2,active
+E100285,Pranav Chopra,student,pranav.chopra@iitg.ac.in,Mathematics,S34866,,C9360,DH8EC191ba2BEa,F100285,+91 9219382077,1,active
+E100286,Aditya Yadav,student,aditya.yadav@iitg.ac.in,Mechanical Engineering,S23831,,C6626,DHf3e6a0E17c49,F100286,+91 9706322076,4,active
+E100287,Nisha Agarwal,student,nisha.agarwal@iitg.ac.in,Management,S86672,,C3831,DHe0434Cbaee74,F100287,+91 9669154437,3,active
+E100288,Vihaan Joshi,student,vihaan.joshi@iitg.ac.in,Management,S32780,,C7538,DH76dD5eea75a6,F100288,+91 9022950224,3,inactive
+E100289,Vivaan Chopra,student,vivaan.chopra@iitg.ac.in,Physics,S49775,,C8559,DH98EEb9aBD093,F100289,+91 9454877190,1,active
+E100290,Aarav Agarwal,student,aarav.agarwal@iitg.ac.in,Mathematics,S23300,,C5922,DHEC36A1C5C3bc,F100290,+91 9451780002,1,active
+E100291,Shaurya Rao,student,shaurya.rao@iitg.ac.in,Design,S70090,,C8084,DHcEB949bEDE9D,F100291,+91 9870349462,2,inactive
+E100292,Ishaan Tiwari,student,ishaan.tiwari@iitg.ac.in,Management,S95191,,C2550,DHf811B4facF1B,F100292,+91 9743183443,1,active
+E100293,Pari Tiwari,student,pari.tiwari@iitg.ac.in,Chemical Engineering,S95707,,C6738,DH41f25050B0fA,F100293,+91 9284260281,4,active
+E100294,Reyansh Mishra,student,reyansh.mishra@iitg.ac.in,Humanities,S79873,,C3526,DHb14Cba9FE4b0,F100294,+91 9602135629,2,active
+E100295,Pari Malhotra,student,pari.malhotra@iitg.ac.in,Humanities,S81375,,C3791,DHF899fC7AC442,F100295,+91 9329321221,1,active
+E100296,Saanvi Rao,student,saanvi.rao@iitg.ac.in,Electronics & Communication,S40951,,C4568,DHa05bABB0b3ad,F100296,+91 9465067339,3,active
+E100297,Neha Modi,student,neha.modi@iitg.ac.in,Electronics & Communication,S68260,,C8345,DHd80eF0E832e0,F100297,+91 9052098612,2,active
+E100298,Sana Pandey,student,sana.pandey@iitg.ac.in,Biology,S95717,,C6505,DHDDa00b283AeC,F100298,+91 9125380503,4,active
+E100299,Riya Singh,student,riya.singh@iitg.ac.in,Chemical Engineering,S28531,,C1928,DH769CFA7bB5c5,F100299,+91 9804876298,2,active
+E100300,Atharv Kumar,student,atharv.kumar@iitg.ac.in,Biology,S51566,,C3507,DHD5fb832a0637,F100300,+91 9845528586,3,active
+E100301,Neha Gupta,student,neha.gupta@iitg.ac.in,Chemistry,S31736,,C1067,DH2B5CE5dE5Cd9,F100301,+91 9151546877,4,active
+E100302,Tara Agarwal,student,tara.agarwal@iitg.ac.in,Design,S60175,,C5876,DHF3c8c1eC6e4c,F100302,+91 9061802113,1,active
+E100303,Ayaan Tiwari,student,ayaan.tiwari@iitg.ac.in,Chemical Engineering,S18017,,C9391,DHFB0471FE7273,F100303,+91 9096350016,4,active
+E100304,Myra Mehta,student,myra.mehta@iitg.ac.in,Physics,S26082,,C1318,DH9cCC53C12ADA,F100304,+91 9109555651,4,active
+E100305,Shaurya Chopra,student,shaurya.chopra@iitg.ac.in,Design,S40807,,C3157,DHC3eFBCce0c84,F100305,+91 9173027882,2,active
+E100306,Aditya Malhotra,student,aditya.malhotra@iitg.ac.in,Design,S70214,,C3266,DHCa67bD1E97c9,F100306,+91 9940843867,4,active
+E100307,Atharv Shah,student,atharv.shah@iitg.ac.in,Chemical Engineering,S32175,,C2498,DHA5aFd0aD1D4C,F100307,+91 9517549701,2,active
+E100308,Advik Verma,student,advik.verma@iitg.ac.in,Biology,S47768,,C5645,DH9FEd03D6FFF5,F100308,+91 9767154387,2,inactive
+E100309,Myra Chopra,student,myra.chopra@iitg.ac.in,Computer Science,S40160,,C8292,DHc5F9C1Ed0BFD,F100309,+91 9032586143,4,active
+E100310,Reyansh Bansal,student,reyansh.bansal@iitg.ac.in,Computer Science,S29432,,C1322,DH01DC3A474E90,F100310,+91 9032774903,1,active
+E100311,Riya Patel,student,riya.patel@iitg.ac.in,Chemistry,S33652,,C1579,DH2950CCE6b332,F100311,+91 9981533055,4,active
+E100312,Vivaan Kapoor,student,vivaan.kapoor@iitg.ac.in,Design,S19627,,C4103,DH5f12ee104575,F100312,+91 9228456902,3,active
+E100313,Sana Saxena,student,sana.saxena@iitg.ac.in,Mechanical Engineering,S54626,,C4780,DHbCfFeeF844B2,F100313,+91 9676071213,1,active
+E100314,Kavya Srivastava,student,kavya.srivastava@iitg.ac.in,Civil Engineering,S13496,,C2739,DH544B0aD1DDE6,F100314,+91 9021720835,4,inactive
+E100315,Sana Singh,student,sana.singh@iitg.ac.in,Electronics & Communication,S92477,,C7030,DHDBaACC9ccd8F,F100315,+91 9345043405,3,active
+E100316,Aarav Mishra,student,aarav.mishra@iitg.ac.in,Mechanical Engineering,S62623,,C1571,DHcDE4ade67b0A,F100316,+91 9285355844,1,inactive
+E100317,Diya Kapoor,student,diya.kapoor@iitg.ac.in,Electronics & Communication,S24980,,C9463,DH4b6BEAEbF5f5,F100317,+91 9334249567,4,active
+E100318,Nisha Yadav,student,nisha.yadav@iitg.ac.in,Mechanical Engineering,S29942,,C5182,DH1fAfe37fFdFA,F100318,+91 9092371217,3,active
+E100319,Tara Jain,student,tara.jain@iitg.ac.in,Chemistry,S29314,,C9343,DHE0A7442FCbCF,F100319,+91 9488703418,3,active
+E100320,Sai Mishra,student,sai.mishra@iitg.ac.in,Electronics & Communication,S78642,,C3396,DH437AcfBcaaa8,F100320,+91 9689503398,3,inactive
+E100321,Nisha Bansal,student,nisha.bansal@iitg.ac.in,Chemistry,S59469,,C8190,DHc80aa6Ab70C6,F100321,+91 9112910370,1,inactive
+E100322,Atharv Saxena,student,atharv.saxena@iitg.ac.in,Electronics & Communication,S65831,,C5956,DHB9EC76944fae,F100322,+91 9440305531,2,active
+E100323,Arjun Shah,student,arjun.shah@iitg.ac.in,Electronics & Communication,S69814,,C5321,DH986CE53d416C,F100323,+91 9630827838,1,active
+E100324,Nisha Arora,student,nisha.arora@iitg.ac.in,Chemical Engineering,S61138,,C7426,DH4ec3D2C145dB,F100324,+91 9641581151,2,active
+E100325,Priya Singh,student,priya.singh@iitg.ac.in,Computer Science,S13898,,C4501,DHF7C8Bb3cf248,F100325,+91 9872705843,4,active
+E100326,Nisha Mishra,student,nisha.mishra@iitg.ac.in,Chemistry,S92556,,C3985,DH519De6dABd8b,F100326,+91 9956655334,3,active
+E100327,Myra Patel,student,myra.patel@iitg.ac.in,Civil Engineering,S97132,,C8968,DHf07597E5D6E0,F100327,+91 9869504153,2,active
+E100328,Sana Shah,student,sana.shah@iitg.ac.in,Humanities,S86867,,C2573,DHcaf8bB108AE3,F100328,+91 9261151430,4,active
+E100329,Krishna Kapoor,student,krishna.kapoor@iitg.ac.in,Civil Engineering,S93499,,C7947,DHEd3ecc7bd102,F100329,+91 9074079142,1,active
+E100330,Pranav Singh,student,pranav.singh@iitg.ac.in,Chemistry,S58946,,C5244,DH877FF0af82dF,F100330,+91 9858106398,2,active
+E100331,Anika Patel,student,anika.patel@iitg.ac.in,Mathematics,S20064,,C4914,DHca6C4c8234E8,F100331,+91 9456227472,2,active
+E100332,Myra Bansal,student,myra.bansal@iitg.ac.in,Mathematics,S43419,,C9368,DH73fb47664fB1,F100332,+91 9294559427,1,active
+E100333,Diya Desai,student,diya.desai@iitg.ac.in,Management,S21201,,C4904,DH50bc52eA4DB4,F100333,+91 9575549851,2,active
+E100334,Reyansh Patel,student,reyansh.patel@iitg.ac.in,Physics,S85606,,C5630,DHC998e2D57990,F100334,+91 9612028342,3,active
+E100335,Myra Patel,student,myra.patel@iitg.ac.in,Civil Engineering,S95266,,C4684,DH0BDb4D3d5F63,F100335,+91 9989616976,4,active
+E100336,Siya Tiwari,student,siya.tiwari@iitg.ac.in,Mathematics,S47350,,C2626,DH9E3A97D9aFDA,F100336,+91 9071071022,1,inactive
+E100337,Nisha Mehta,student,nisha.mehta@iitg.ac.in,Mathematics,S13071,,C7443,DHeDccFECDD9ed,F100337,+91 9895758752,1,active
+E100338,Diya Verma,student,diya.verma@iitg.ac.in,Mathematics,S33303,,C8723,DHFd10d1bFEFCE,F100338,+91 9437912553,2,active
+E100339,Ayaan Malhotra,student,ayaan.malhotra@iitg.ac.in,Physics,S14593,,C4314,DHCAbe23aEcB15,F100339,+91 9195344351,1,active
+E100340,Krishna Rao,student,krishna.rao@iitg.ac.in,Electronics & Communication,S25926,,C4694,DHcC5fFD3A9d9C,F100340,+91 9945759132,3,active
+E100341,Pranav Modi,student,pranav.modi@iitg.ac.in,Biology,S84697,,C3403,DHC4F3C6Ae7B2b,F100341,+91 9221482928,4,active
+E100342,Vivaan Jain,student,vivaan.jain@iitg.ac.in,Design,S40989,,C7617,DH30D72Cca9bfE,F100342,+91 9184365584,3,active
+E100343,Diya Modi,student,diya.modi@iitg.ac.in,Mechanical Engineering,S74415,,C3982,DH1dD3aCEca6f8,F100343,+91 9742274564,2,inactive
+E100344,Vihaan Tiwari,student,vihaan.tiwari@iitg.ac.in,Biology,S34706,,C1260,DH899a0cdD79F3,F100344,+91 9915716364,3,active
+E100345,Riya Srivastava,student,riya.srivastava@iitg.ac.in,Electronics & Communication,S83204,,C6698,DH9C60CCdBE8C2,F100345,+91 9242231047,4,inactive
+E100346,Pari Desai,student,pari.desai@iitg.ac.in,Management,S27712,,C4448,DHB9bCcAeB0c3C,F100346,+91 9367414607,4,inactive
+E100347,Aarav Reddy,student,aarav.reddy@iitg.ac.in,Chemistry,S12115,,C7487,DH7d8eEfEecF84,F100347,+91 9986649103,2,active
+E100348,Sana Tiwari,student,sana.tiwari@iitg.ac.in,Chemistry,S96515,,C7070,DHfA46bf917baC,F100348,+91 9432310495,1,active
+E100349,Riya Sharma,student,riya.sharma@iitg.ac.in,Mathematics,S97721,,C7804,DH9DeFd3bD3Aa3,F100349,+91 9120825913,3,active
+E100350,Neha Srivastava,student,neha.srivastava@iitg.ac.in,Computer Science,S39169,,C2302,DHE2b2bd317928,F100350,+91 9961710878,3,active
+E100351,Priya Malhotra,student,priya.malhotra@iitg.ac.in,Biology,S73206,,C1570,DHceD9fF91Bdf0,F100351,+91 9150643854,1,active
+E100352,Neha Singh,student,neha.singh@iitg.ac.in,Chemistry,S79841,,C1893,DHe1F3C4DE32ba,F100352,+91 9979553176,1,active
+E100353,Myra Gupta,student,myra.gupta@iitg.ac.in,Mathematics,S30753,,C4590,DH81Ef40e5be42,F100353,+91 9260699777,2,active
+E100354,Advik Tiwari,student,advik.tiwari@iitg.ac.in,Design,S35304,,C9450,DH39EB8B73216C,F100354,+91 9376954577,2,active
+E100355,Aarav Pandey,student,aarav.pandey@iitg.ac.in,Mathematics,S91083,,C6774,DH4F3765B4eaab,F100355,+91 9183192064,4,inactive
+E100356,Atharv Verma,student,atharv.verma@iitg.ac.in,Management,S12543,,C6902,DHcf77bE3ca4f7,F100356,+91 9940896336,3,active
+E100357,Nisha Chopra,student,nisha.chopra@iitg.ac.in,Chemical Engineering,S11107,,C8087,DH4bFF4C4f8A20,F100357,+91 9456837513,4,inactive
+E100358,Vihaan Patel,student,vihaan.patel@iitg.ac.in,Mechanical Engineering,S51977,,C5064,DHB8C71F6D33E7,F100358,+91 9909133491,4,active
+E100359,Ishaan Bansal,student,ishaan.bansal@iitg.ac.in,Mathematics,S36001,,C5482,DH3F86D8cef1EE,F100359,+91 9631581779,1,active
+E100360,Kavya Reddy,student,kavya.reddy@iitg.ac.in,Design,S48656,,C5711,DH55DFcfCC1CAc,F100360,+91 9951268761,2,active
+E100361,Reyansh Jain,student,reyansh.jain@iitg.ac.in,Mathematics,S61982,,C3475,DH65c712DB96DF,F100361,+91 9921293602,1,active
+E100362,Ayaan Kumar,student,ayaan.kumar@iitg.ac.in,Chemical Engineering,S71550,,C5640,DHBeb8eE4332C8,F100362,+91 9512706505,1,active
+E100363,Ayaan Chopra,student,ayaan.chopra@iitg.ac.in,Electronics & Communication,S86641,,C9065,DH1fB463A8b568,F100363,+91 9814105613,4,active
+E100364,Vihaan Patel,student,vihaan.patel@iitg.ac.in,Mechanical Engineering,S11238,,C8280,DH5aC4cEecDA4F,F100364,+91 9741860538,1,active
+E100365,Ishaan Pandey,student,ishaan.pandey@iitg.ac.in,Physics,S80630,,C2757,DHC14e7cbebf7f,F100365,+91 9960676066,1,active
+E100366,Advik Chopra,student,advik.chopra@iitg.ac.in,Computer Science,S78116,,C4444,DHAC78cDEcD3c5,F100366,+91 9215630169,3,active
+E100367,Diya Tiwari,student,diya.tiwari@iitg.ac.in,Chemistry,S47409,,C2776,DHa1C80fF0B1c6,F100367,+91 9636074886,3,active
+E100368,Vivaan Mishra,student,vivaan.mishra@iitg.ac.in,Mechanical Engineering,S41981,,C7869,DH3037Ac0AcAAC,F100368,+91 9717669315,3,active
+E100369,Vihaan Joshi,student,vihaan.joshi@iitg.ac.in,Computer Science,S65389,,C8910,DH5CD72cd28577,F100369,+91 9881089361,3,active
+E100370,Anika Shah,student,anika.shah@iitg.ac.in,Electronics & Communication,S49472,,C3546,DHd3486f9508EA,F100370,+91 9208233614,2,inactive
+E100371,Advik Rao,student,advik.rao@iitg.ac.in,Chemistry,S21118,,C9748,DHcE70950ca5ba,F100371,+91 9046550322,1,active
+E100372,Shaurya Reddy,student,shaurya.reddy@iitg.ac.in,Chemistry,S63546,,C3694,DHCc3Ee25437c3,F100372,+91 9502941718,4,active
+E100373,Ananya Reddy,student,ananya.reddy@iitg.ac.in,Management,S53922,,C1965,DHACd7eEedEbb2,F100373,+91 9253869293,4,active
+E100374,Vivaan Joshi,student,vivaan.joshi@iitg.ac.in,Electronics & Communication,S50842,,C9770,DH31b2CdBb505B,F100374,+91 9442643045,1,active
+E100375,Sai Modi,student,sai.modi@iitg.ac.in,Management,S56750,,C9050,DHa8AD2BdCFFe3,F100375,+91 9636785405,4,active
+E100376,Saanvi Patel,student,saanvi.patel@iitg.ac.in,Physics,S90559,,C6719,DH2dEAc01A1f8C,F100376,+91 9459991755,4,active
+E100377,Atharv Kapoor,student,atharv.kapoor@iitg.ac.in,Mechanical Engineering,S80619,,C7048,DHB2AdcfebEBBA,F100377,+91 9804307569,2,active
+E100378,Myra Malhotra,student,myra.malhotra@iitg.ac.in,Chemistry,S75065,,C1384,DHf37A670e584B,F100378,+91 9612185903,4,active
+E100379,Siya Sharma,student,siya.sharma@iitg.ac.in,Computer Science,S78279,,C9924,DH4B1CF43A15a7,F100379,+91 9173286997,4,active
+E100380,Pranav Joshi,student,pranav.joshi@iitg.ac.in,Humanities,S93472,,C7618,DHcD4ea5ADd3D4,F100380,+91 9404036575,2,active
+E100381,Pari Kumar,student,pari.kumar@iitg.ac.in,Physics,S40538,,C7712,DH1db4FF97dEDF,F100381,+91 9930358507,3,active
+E100382,Vivaan Reddy,student,vivaan.reddy@iitg.ac.in,Computer Science,S67437,,C3900,DHCf55C8bF1Ff2,F100382,+91 9727968658,1,active
+E100383,Priya Mishra,student,priya.mishra@iitg.ac.in,Mechanical Engineering,S91364,,C2673,DHCd43e1De03e2,F100383,+91 9514231919,4,active
+E100384,Siya Arora,student,siya.arora@iitg.ac.in,Electronics & Communication,S11022,,C3466,DHbECFA51bd09E,F100384,+91 9669143998,1,active
+E100385,Ishaan Bansal,student,ishaan.bansal@iitg.ac.in,Chemistry,S64338,,C5693,DH94Df05E60EdB,F100385,+91 9631688419,1,active
+E100386,Sana Jain,student,sana.jain@iitg.ac.in,Mechanical Engineering,S88240,,C7884,DHA1Ae3EE423BD,F100386,+91 9459594209,2,inactive
+E100387,Riya Patel,student,riya.patel@iitg.ac.in,Physics,S69029,,C4240,DHA4EFb2764C52,F100387,+91 9187365137,3,inactive
+E100388,Diya Gupta,student,diya.gupta@iitg.ac.in,Civil Engineering,S82401,,C8480,DH1c6ec501F6AA,F100388,+91 9230620621,4,active
+E100389,Ira Kumar,student,ira.kumar@iitg.ac.in,Computer Science,S90534,,C3431,DH3B7FBf03BAEA,F100389,+91 9720607509,1,active
+E100390,Aditya Singh,student,aditya.singh@iitg.ac.in,Physics,S75835,,C9917,DHe0725E8A26fa,F100390,+91 9932612525,3,active
+E100391,Sai Jain,student,sai.jain@iitg.ac.in,Chemical Engineering,S43917,,C7929,DHf92bBDeb5987,F100391,+91 9270514375,2,active
+E100392,Aditya Srivastava,student,aditya.srivastava@iitg.ac.in,Physics,S86690,,C8537,DHE11fc83dDEbA,F100392,+91 9588877721,3,active
+E100393,Pranav Mishra,student,pranav.mishra@iitg.ac.in,Biology,S28308,,C8488,DHbdDADCcC23A2,F100393,+91 9421133241,3,active
+E100394,Atharv Jain,student,atharv.jain@iitg.ac.in,Chemistry,S87007,,C2072,DH3f2af1cA4B0D,F100394,+91 9566672444,3,active
+E100395,Riya Shah,student,riya.shah@iitg.ac.in,Humanities,S63660,,C1867,DH7F819f96ecdC,F100395,+91 9199080137,2,active
+E100396,Atharv Modi,student,atharv.modi@iitg.ac.in,Design,S77314,,C1311,DHf0Fa91C398af,F100396,+91 9081809389,2,active
+E100397,Ishaan Jain,student,ishaan.jain@iitg.ac.in,Mechanical Engineering,S51709,,C9871,DHac2c6DDEFBc3,F100397,+91 9195635799,4,active
+E100398,Atharv Tiwari,student,atharv.tiwari@iitg.ac.in,Civil Engineering,S78179,,C4870,DH1F9A9bcB2Bc8,F100398,+91 9680329876,4,inactive
+E100399,Sana Desai,student,sana.desai@iitg.ac.in,Civil Engineering,S76868,,C4857,DHb84afb63D649,F100399,+91 9919800593,4,active
+E100400,Krishna Mishra,student,krishna.mishra@iitg.ac.in,Mechanical Engineering,S35362,,C8300,DHcb473aFCF8e3,F100400,+91 9937634839,3,active
+E100401,Siya Singh,student,siya.singh@iitg.ac.in,Design,S56998,,C5050,DHe2F6cbB23806,F100401,+91 9855581306,1,active
+E100402,Vivaan Srivastava,student,vivaan.srivastava@iitg.ac.in,Design,S42574,,C8769,DHB27EeeF53aD2,F100402,+91 9463526113,3,active
+E100403,Arjun Shah,student,arjun.shah@iitg.ac.in,Management,S91049,,C6879,DH8Dde0290E0E5,F100403,+91 9533903342,3,inactive
+E100404,Anika Joshi,student,anika.joshi@iitg.ac.in,Biology,S32802,,C3470,DH80aA0B430BF4,F100404,+91 9474749520,4,active
+E100405,Aarav Joshi,student,aarav.joshi@iitg.ac.in,Mathematics,S80575,,C5579,DH3E6C57aB74c4,F100405,+91 9321696367,3,active
+E100406,Tara Shah,student,tara.shah@iitg.ac.in,Computer Science,S83333,,C7121,DH1f3d0bc2AA3d,F100406,+91 9935618373,4,active
+E100407,Reyansh Chopra,student,reyansh.chopra@iitg.ac.in,Chemistry,S52177,,C3641,DH1FA4fD556f89,F100407,+91 9270599214,3,active
+E100408,Myra Kumar,student,myra.kumar@iitg.ac.in,Civil Engineering,S23788,,C8513,DHD50D218efa46,F100408,+91 9590341721,3,active
+E100409,Sai Malhotra,student,sai.malhotra@iitg.ac.in,Chemistry,S28855,,C3894,DH414Fe9879E2F,F100409,+91 9187872184,2,active
+E100410,Nisha Kapoor,student,nisha.kapoor@iitg.ac.in,Mathematics,S32910,,C7210,DHEFBF5d22637b,F100410,+91 9858874487,4,active
+E100411,Pari Verma,student,pari.verma@iitg.ac.in,Chemical Engineering,S52105,,C7393,DH431ac9454e4f,F100411,+91 9388802551,1,active
+E100412,Nisha Tiwari,student,nisha.tiwari@iitg.ac.in,Computer Science,S14501,,C6094,DHaed1cC4dEFFb,F100412,+91 9276242392,3,active
+E100413,Saanvi Gupta,student,saanvi.gupta@iitg.ac.in,Chemistry,S30699,,C7686,DH4ac07cc67bB9,F100413,+91 9963562258,2,active
+E100414,Pranav Kapoor,student,pranav.kapoor@iitg.ac.in,Physics,S22481,,C5529,DHf450CcAEBB4F,F100414,+91 9393301919,1,active
+E100415,Anika Yadav,student,anika.yadav@iitg.ac.in,Civil Engineering,S87974,,C8303,DH82571cAAF9E7,F100415,+91 9849603035,1,active
+E100416,Krishna Arora,student,krishna.arora@iitg.ac.in,Computer Science,S50102,,C4456,DH8a13a33b1CEb,F100416,+91 9672413033,2,active
+E100417,Neha Malhotra,student,neha.malhotra@iitg.ac.in,Management,S84574,,C4901,DHA51D8edc2118,F100417,+91 9366090683,1,active
+E100418,Riya Saxena,student,riya.saxena@iitg.ac.in,Chemical Engineering,S18185,,C3561,DH27E26447C13d,F100418,+91 9442245336,3,active
+E100419,Vihaan Pandey,student,vihaan.pandey@iitg.ac.in,Mechanical Engineering,S27267,,C8351,DH2ACcC61FCDFe,F100419,+91 9343503316,3,active
+E100420,Nisha Bansal,student,nisha.bansal@iitg.ac.in,Humanities,S73423,,C2244,DHE9C3aeFaB5D4,F100420,+91 9474635560,3,active
+E100421,Sana Rao,student,sana.rao@iitg.ac.in,Electronics & Communication,S80439,,C3322,DHe0647F63f46B,F100421,+91 9589443650,1,active
+E100422,Riya Agarwal,student,riya.agarwal@iitg.ac.in,Design,S43109,,C2854,DH7Cb49B0ED11F,F100422,+91 9020758085,1,active
+E100423,Saanvi Singh,student,saanvi.singh@iitg.ac.in,Management,S66865,,C2876,DH53fa7F74A5D1,F100423,+91 9697986386,2,active
+E100424,Siya Yadav,student,siya.yadav@iitg.ac.in,Electronics & Communication,S47694,,C2698,DHC343305E1deE,F100424,+91 9513601243,1,active
+E100425,Arjun Arora,student,arjun.arora@iitg.ac.in,Chemistry,S22850,,C2131,DH814CFccC6Bb0,F100425,+91 9085462752,2,active
+E100426,Siya Agarwal,student,siya.agarwal@iitg.ac.in,Design,S93897,,C8158,DH6ae9F3De3A0f,F100426,+91 9200561262,4,active
+E100427,Pranav Reddy,student,pranav.reddy@iitg.ac.in,Civil Engineering,S84031,,C3127,DH80624fD6bd8c,F100427,+91 9102943074,4,active
+E100428,Saanvi Verma,student,saanvi.verma@iitg.ac.in,Humanities,S50077,,C2899,DHb63Cce0aAeEE,F100428,+91 9335481273,3,active
+E100429,Pranav Agarwal,student,pranav.agarwal@iitg.ac.in,Mathematics,S52747,,C8833,DHAb12A22aC6a7,F100429,+91 9160507367,2,active
+E100430,Atharv Kapoor,student,atharv.kapoor@iitg.ac.in,Chemical Engineering,S53658,,C9359,DHA110809fD842,F100430,+91 9563724955,1,active
+E100431,Advik Srivastava,student,advik.srivastava@iitg.ac.in,Biology,S27450,,C2130,DH2cb5A0bF3c1a,F100431,+91 9249053659,2,active
+E100432,Ananya Rao,student,ananya.rao@iitg.ac.in,Physics,S86167,,C4094,DH1Fd5CaF3Ba0f,F100432,+91 9809492993,3,active
+E100433,Ishaan Singh,student,ishaan.singh@iitg.ac.in,Computer Science,S46666,,C7782,DHC0ccC63CB1Ea,F100433,+91 9341647309,1,active
+E100434,Sana Mishra,student,sana.mishra@iitg.ac.in,Civil Engineering,S27456,,C8781,DHDA38C9AE79c7,F100434,+91 9189428769,3,active
+E100435,Reyansh Bansal,student,reyansh.bansal@iitg.ac.in,Biology,S14949,,C8632,DHCaAa54393B2d,F100435,+91 9352693406,2,active
+E100436,Kavya Arora,student,kavya.arora@iitg.ac.in,Physics,S71199,,C3720,DH84b9ecbD6eDf,F100436,+91 9899725578,1,active
+E100437,Advik Sharma,student,advik.sharma@iitg.ac.in,Mechanical Engineering,S24311,,C2421,DHAEEbF1A3821F,F100437,+91 9151343200,3,active
+E100438,Kavya Modi,student,kavya.modi@iitg.ac.in,Biology,S41269,,C5036,DHe8f60D4FcacC,F100438,+91 9750519121,4,active
+E100439,Advik Bansal,student,advik.bansal@iitg.ac.in,Management,S82786,,C1958,DHe7a7A7c70a91,F100439,+91 9670686811,3,active
+E100440,Myra Kapoor,student,myra.kapoor@iitg.ac.in,Design,S54321,,C8258,DH78C9458F31FE,F100440,+91 9024520813,4,active
+E100441,Neha Malhotra,student,neha.malhotra@iitg.ac.in,Biology,S10674,,C9677,DH7Ed174EFBA06,F100441,+91 9544758090,2,active
+E100442,Arjun Bansal,student,arjun.bansal@iitg.ac.in,Design,S48660,,C9846,DHb67b357dC2eC,F100442,+91 9832381805,2,active
+E100443,Vihaan Shah,student,vihaan.shah@iitg.ac.in,Mathematics,S30709,,C5488,DHFfB4dcCe8CdB,F100443,+91 9620703737,4,active
+E100444,Siya Joshi,student,siya.joshi@iitg.ac.in,Management,S15871,,C7259,DHC9B0cc81cCBb,F100444,+91 9657496238,3,active
+E100445,Atharv Gupta,student,atharv.gupta@iitg.ac.in,Biology,S11778,,C1130,DH325962092CFA,F100445,+91 9234896810,1,active
+E100446,Nisha Chopra,student,nisha.chopra@iitg.ac.in,Humanities,S41830,,C2093,DH8Cfd72a2Ae5b,F100446,+91 9133666568,1,active
+E100447,Vihaan Shah,student,vihaan.shah@iitg.ac.in,Civil Engineering,S91042,,C6158,DHba6A98aB3F0A,F100447,+91 9747357831,2,active
+E100448,Vivaan Joshi,student,vivaan.joshi@iitg.ac.in,Humanities,S46354,,C3449,DHB7afdABA6Da2,F100448,+91 9716615118,4,inactive
+E100449,Nisha Chopra,student,nisha.chopra@iitg.ac.in,Electronics & Communication,S57963,,C5047,DHFcD1ddD5a1Ca,F100449,+91 9538332313,2,active
+E100450,Priya Gupta,student,priya.gupta@iitg.ac.in,Electronics & Communication,S11714,,C5756,DHe4b2ECf4D7cE,F100450,+91 9051329709,3,active
+E100451,Diya Pandey,student,diya.pandey@iitg.ac.in,Chemistry,S74997,,C3799,DH5d9E0FF5c55C,F100451,+91 9414082935,3,active
+E100452,Anika Saxena,student,anika.saxena@iitg.ac.in,Physics,S57333,,C4648,DHc4d1aEcCd3d9,F100452,+91 9895244558,2,active
+E100453,Reyansh Srivastava,student,reyansh.srivastava@iitg.ac.in,Civil Engineering,S85734,,C4259,DHCcbDfCb5AfAb,F100453,+91 9340007061,1,active
+E100454,Ananya Arora,student,ananya.arora@iitg.ac.in,Biology,S37871,,C6774,DHe3bc3797dfF9,F100454,+91 9287082930,2,active
+E100455,Ananya Rao,student,ananya.rao@iitg.ac.in,Humanities,S69630,,C1199,DHEbebfa311d4E,F100455,+91 9986849586,4,active
+E100456,Vihaan Modi,student,vihaan.modi@iitg.ac.in,Design,S57788,,C9527,DH7a3BE30bF1da,F100456,+91 9548719029,2,active
+E100457,Advik Mehta,student,advik.mehta@iitg.ac.in,Mathematics,S82188,,C8997,DHa63E20ec16CF,F100457,+91 9181020157,3,active
+E100458,Vivaan Tiwari,student,vivaan.tiwari@iitg.ac.in,Biology,S85054,,C8910,DHe6a28c6c54C0,F100458,+91 9141024269,2,active
+E100459,Ishaan Saxena,student,ishaan.saxena@iitg.ac.in,Electronics & Communication,S37052,,C3214,DHb3CA598a17Cb,F100459,+91 9859960872,1,active
+E100460,Nisha Yadav,student,nisha.yadav@iitg.ac.in,Biology,S67797,,C5926,DH82db9Cb174d4,F100460,+91 9979784247,3,active
+E100461,Aditya Singh,student,aditya.singh@iitg.ac.in,Electronics & Communication,S94419,,C5747,DHf1Df0aF9bfF3,F100461,+91 9232472129,2,active
+E100462,Advik Malhotra,student,advik.malhotra@iitg.ac.in,Mechanical Engineering,S15850,,C8310,DHf3ADC5AEC243,F100462,+91 9677823962,3,active
+E100463,Atharv Gupta,student,atharv.gupta@iitg.ac.in,Civil Engineering,S48061,,C3559,DH2e36FD82a5A9,F100463,+91 9903748670,4,active
+E100464,Ishaan Reddy,student,ishaan.reddy@iitg.ac.in,Mechanical Engineering,S92982,,C2944,DHceDfb8dFDDBc,F100464,+91 9467702319,2,active
+E100465,Nisha Gupta,student,nisha.gupta@iitg.ac.in,Management,S71801,,C7092,DH7836fBaA7A95,F100465,+91 9009237776,2,active
+E100466,Neha Gupta,student,neha.gupta@iitg.ac.in,Biology,S76598,,C7712,DH6fdd4275f33E,F100466,+91 9904081207,4,active
+E100467,Kavya Mehta,student,kavya.mehta@iitg.ac.in,Design,S72579,,C9819,DH14E66d5f4aC0,F100467,+91 9147387676,4,active
+E100468,Riya Chopra,student,riya.chopra@iitg.ac.in,Biology,S66033,,C6417,DHbDB90AD0d83A,F100468,+91 9228974657,1,active
+E100469,Arjun Mehta,student,arjun.mehta@iitg.ac.in,Design,S12902,,C4017,DH5c9dbdAD4aca,F100469,+91 9832186866,2,active
+E100470,Vihaan Reddy,student,vihaan.reddy@iitg.ac.in,Computer Science,S93587,,C6695,DH0C1DEcde526D,F100470,+91 9566480463,1,active
+E100471,Priya Yadav,student,priya.yadav@iitg.ac.in,Management,S96591,,C8424,DH298B5b7E1DAf,F100471,+91 9019774630,2,active
+E100472,Neha Desai,student,neha.desai@iitg.ac.in,Management,S19145,,C8767,DHB03cEDfeDE6e,F100472,+91 9979195835,2,active
+E100473,Tara Sharma,student,tara.sharma@iitg.ac.in,Chemistry,S43893,,C6223,DH4aa1CaeD3A70,F100473,+91 9156392918,3,active
+E100474,Siya Chopra,student,siya.chopra@iitg.ac.in,Chemical Engineering,S16304,,C3577,DHFc8aAD785aCd,F100474,+91 9816303747,3,active
+E100475,Pari Desai,student,pari.desai@iitg.ac.in,Civil Engineering,S69739,,C6450,DH10e14af7CCab,F100475,+91 9199576953,4,active
+E100476,Pranav Pandey,student,pranav.pandey@iitg.ac.in,Design,S69330,,C9270,DHB0EE98F58e6F,F100476,+91 9188227313,3,active
+E100477,Atharv Shah,student,atharv.shah@iitg.ac.in,Civil Engineering,S61476,,C5024,DHf1f3f3cde94e,F100477,+91 9959837780,4,active
+E100478,Sana Srivastava,student,sana.srivastava@iitg.ac.in,Biology,S41634,,C6113,DHC8eb0D86bD56,F100478,+91 9350361564,2,active
+E100479,Anika Shah,student,anika.shah@iitg.ac.in,Biology,S88188,,C3793,DH7A81ECfA0cfF,F100479,+91 9624294509,4,active
+E100480,Ayaan Sharma,student,ayaan.sharma@iitg.ac.in,Humanities,S53138,,C8946,DH4fEeAE84323C,F100480,+91 9522151791,3,active
+E100481,Ira Kapoor,student,ira.kapoor@iitg.ac.in,Design,S51833,,C6407,DHadDa4DDcFD08,F100481,+91 9959767393,4,active
+E100482,Ira Agarwal,student,ira.agarwal@iitg.ac.in,Electronics & Communication,S77518,,C9479,DH41De9c3Bf46e,F100482,+91 9419203886,2,active
+E100483,Aarav Patel,student,aarav.patel@iitg.ac.in,Design,S59492,,C6506,DHAFAFC0bfF5ec,F100483,+91 9499435279,2,active
+E100484,Priya Desai,student,priya.desai@iitg.ac.in,Mechanical Engineering,S30565,,C5838,DHd4BECd63866f,F100484,+91 9722405958,4,inactive
+E100485,Ira Desai,student,ira.desai@iitg.ac.in,Mechanical Engineering,S99150,,C3552,DHA0D0D7313C1B,F100485,+91 9035003352,4,active
+E100486,Ananya Yadav,student,ananya.yadav@iitg.ac.in,Chemical Engineering,S84419,,C2918,DH8AaEdfFFD7D6,F100486,+91 9721238489,1,inactive
+E100487,Anika Verma,student,anika.verma@iitg.ac.in,Civil Engineering,S33446,,C3381,DH9b9dfe12C39C,F100487,+91 9499777410,4,active
+E100488,Reyansh Agarwal,student,reyansh.agarwal@iitg.ac.in,Electronics & Communication,S63076,,C9921,DHaC1EbAbCE843,F100488,+91 9996353964,1,active
+E100489,Riya Pandey,student,riya.pandey@iitg.ac.in,Computer Science,S38328,,C5171,DH1d5F71aEdAF8,F100489,+91 9693647915,2,active
+E100490,Myra Mehta,student,myra.mehta@iitg.ac.in,Physics,S17626,,C1352,DHBEACCb0af1b6,F100490,+91 9145920152,4,inactive
+E100491,Pari Gupta,student,pari.gupta@iitg.ac.in,Electronics & Communication,S88057,,C6227,DH45f2EEcC2D85,F100491,+91 9835912309,3,active
+E100492,Neha Reddy,student,neha.reddy@iitg.ac.in,Civil Engineering,S37535,,C2030,DH3D4Ad9Ba931c,F100492,+91 9794153258,4,active
+E100493,Atharv Modi,student,atharv.modi@iitg.ac.in,Electronics & Communication,S11541,,C6018,DH04B5Fc6cAFDD,F100493,+91 9173290863,2,active
+E100494,Riya Mehta,student,riya.mehta@iitg.ac.in,Physics,S54068,,C2148,DHBDA85aFF858B,F100494,+91 9513244768,2,active
+E100495,Ayaan Sharma,student,ayaan.sharma@iitg.ac.in,Design,S83363,,C6336,DH8cfbA0De0Cc6,F100495,+91 9985532837,4,active
+E100496,Neha Agarwal,student,neha.agarwal@iitg.ac.in,Management,S90371,,C6012,DH4A5c9252ED12,F100496,+91 9212469497,2,active
+E100497,Saanvi Reddy,student,saanvi.reddy@iitg.ac.in,Computer Science,S50085,,C6825,DHd037C07B1E4b,F100497,+91 9987676969,2,active
+E100498,Arjun Kapoor,student,arjun.kapoor@iitg.ac.in,Physics,S92520,,C9168,DHfFd8e9BEeA16,F100498,+91 9280233672,2,active
+E100499,Aditya Arora,student,aditya.arora@iitg.ac.in,Design,S35056,,C9196,DHE1Eb8E142693,F100499,+91 9075696719,3,inactive
+E100500,Vivaan Bansal,student,vivaan.bansal@iitg.ac.in,Physics,S18320,,C9724,DH3b88fE506c75,F100500,+91 9685319227,1,active
+E100501,Anika Kapoor,student,anika.kapoor@iitg.ac.in,Humanities,S47106,,C4882,DHf1dD9c3Bd196,F100501,+91 9046198969,4,active
+E100502,Riya Joshi,student,riya.joshi@iitg.ac.in,Humanities,S10291,,C6614,DH1Aa395B240aB,F100502,+91 9430577221,3,active
+E100503,Saanvi Saxena,student,saanvi.saxena@iitg.ac.in,Civil Engineering,S33488,,C6386,DHf65c41FB2657,F100503,+91 9193721655,1,active
+E100504,Ishaan Tiwari,student,ishaan.tiwari@iitg.ac.in,Mechanical Engineering,S87899,,C7551,DHa4fA4cBC5412,F100504,+91 9350206593,1,active
+E100505,Myra Modi,student,myra.modi@iitg.ac.in,Computer Science,S14452,,C9740,DHfB7c80539ac2,F100505,+91 9794362755,2,active
+E100506,Vihaan Mishra,student,vihaan.mishra@iitg.ac.in,Humanities,S68135,,C7899,DH6de71FE1DB01,F100506,+91 9524264518,2,active
+E100507,Shaurya Desai,student,shaurya.desai@iitg.ac.in,Electronics & Communication,S92888,,C1253,DH4CDedbf489c4,F100507,+91 9052071667,1,active
+E100508,Atharv Pandey,student,atharv.pandey@iitg.ac.in,Biology,S75668,,C8116,DHd1b8978c09Ce,F100508,+91 9542588602,1,active
+E100509,Priya Shah,student,priya.shah@iitg.ac.in,Chemical Engineering,S74496,,C3067,DHDD81AE2eFb2c,F100509,+91 9341512521,4,active
+E100510,Anika Reddy,student,anika.reddy@iitg.ac.in,Physics,S25713,,C7035,DH5dA06d29d4ab,F100510,+91 9194619916,4,active
+E100511,Ananya Chopra,student,ananya.chopra@iitg.ac.in,Chemistry,S51632,,C9277,DHdf41cEf266Ba,F100511,+91 9852427487,2,active
+E100512,Sai Joshi,student,sai.joshi@iitg.ac.in,Design,S67975,,C4115,DHEcb94402E5A9,F100512,+91 9912912407,4,active
+E100513,Nisha Reddy,student,nisha.reddy@iitg.ac.in,Computer Science,S56381,,C2347,DHC55f6269128c,F100513,+91 9402601277,3,inactive
+E100514,Anika Bansal,student,anika.bansal@iitg.ac.in,Electronics & Communication,S37831,,C5755,DH3F5178e7c6BA,F100514,+91 9545209429,1,active
+E100515,Pari Reddy,student,pari.reddy@iitg.ac.in,Chemical Engineering,S77553,,C2762,DH5eD579b5afAB,F100515,+91 9232952552,2,active
+E100516,Priya Desai,student,priya.desai@iitg.ac.in,Management,S38888,,C7032,DH562fBdfbe1Ef,F100516,+91 9455681877,1,active
+E100517,Saanvi Malhotra,student,saanvi.malhotra@iitg.ac.in,Electronics & Communication,S76503,,C9499,DHdD9c81Ac6105,F100517,+91 9676438529,4,active
+E100518,Aditya Tiwari,student,aditya.tiwari@iitg.ac.in,Design,S19312,,C3634,DH96CaFd6d2F45,F100518,+91 9449611813,4,active
+E100519,Krishna Gupta,student,krishna.gupta@iitg.ac.in,Design,S88854,,C7190,DH57cf4daF5442,F100519,+91 9974025710,4,active
+E100520,Ayaan Patel,student,ayaan.patel@iitg.ac.in,Mathematics,S98718,,C7305,DHC549B37138Ed,F100520,+91 9572347877,1,active
+E100521,Ananya Arora,student,ananya.arora@iitg.ac.in,Mechanical Engineering,S19530,,C7119,DH52a1D1e1122c,F100521,+91 9096778323,1,active
+E100522,Saanvi Arora,student,saanvi.arora@iitg.ac.in,Mathematics,S40347,,C4779,DHBdff2eCDE54D,F100522,+91 9129514701,3,active
+E100523,Ishaan Rao,student,ishaan.rao@iitg.ac.in,Biology,S91346,,C6984,DHC7F146BcA7e7,F100523,+91 9158030306,3,active
+E100524,Ayaan Rao,student,ayaan.rao@iitg.ac.in,Electronics & Communication,S72819,,C6506,DHb252F1bdfC8E,F100524,+91 9742257811,2,active
+E100525,Vihaan Reddy,student,vihaan.reddy@iitg.ac.in,Humanities,S30313,,C3665,DH35568B4EC6FC,F100525,+91 9308218501,3,inactive
+E100526,Siya Jain,student,siya.jain@iitg.ac.in,Design,S89267,,C9488,DHE8A04B6b51fB,F100526,+91 9549091349,3,active
+E100527,Atharv Kapoor,student,atharv.kapoor@iitg.ac.in,Design,S94251,,C7340,DH85Ab80D529BD,F100527,+91 9073436505,1,active
+E100528,Ishaan Jain,student,ishaan.jain@iitg.ac.in,Mathematics,S42724,,C7622,DHB0b9Dc0De3Ec,F100528,+91 9419304764,2,active
+E100529,Sana Srivastava,student,sana.srivastava@iitg.ac.in,Design,S23059,,C5900,DH85406f41ad8C,F100529,+91 9609771702,3,active
+E100530,Neha Kapoor,student,neha.kapoor@iitg.ac.in,Civil Engineering,S65774,,C7545,DH06DFeB78ABD6,F100530,+91 9225973351,4,inactive
+E100531,Ayaan Singh,student,ayaan.singh@iitg.ac.in,Chemical Engineering,S90603,,C3126,DH96EcAe6C6e59,F100531,+91 9323790753,2,active
+E100532,Advik Pandey,student,advik.pandey@iitg.ac.in,Design,S66445,,C4316,DH297836611dBf,F100532,+91 9214323960,1,active
+E100533,Ira Joshi,student,ira.joshi@iitg.ac.in,Civil Engineering,S64764,,C4619,DHdaeCcaA77f42,F100533,+91 9619487286,2,active
+E100534,Reyansh Pandey,student,reyansh.pandey@iitg.ac.in,Mechanical Engineering,S69999,,C8272,DHdDaB5CA1a29F,F100534,+91 9687937500,1,active
+E100535,Aditya Tiwari,student,aditya.tiwari@iitg.ac.in,Design,S55876,,C9389,DH67f795fddE5f,F100535,+91 9139353493,2,active
+E100536,Siya Srivastava,student,siya.srivastava@iitg.ac.in,Electronics & Communication,S98560,,C6676,DH0667b0aD435d,F100536,+91 9103702726,4,active
+E100537,Ayaan Patel,student,ayaan.patel@iitg.ac.in,Computer Science,S41578,,C6326,DHF423A08Bbafd,F100537,+91 9171090716,2,inactive
+E100538,Sai Srivastava,student,sai.srivastava@iitg.ac.in,Biology,S10172,,C7358,DHB7C6079986aE,F100538,+91 9385765222,1,active
+E100539,Arjun Rao,student,arjun.rao@iitg.ac.in,Civil Engineering,S98993,,C2221,DHBa27512C031C,F100539,+91 9224279764,1,active
+E100540,Ayaan Kapoor,student,ayaan.kapoor@iitg.ac.in,Electronics & Communication,S72466,,C7464,DHAFA7b51ec7aa,F100540,+91 9671860542,3,active
+E100541,Arjun Arora,student,arjun.arora@iitg.ac.in,Civil Engineering,S94327,,C6447,DHd9dEd299ae5f,F100541,+91 9569900610,1,active
+E100542,Atharv Kapoor,student,atharv.kapoor@iitg.ac.in,Physics,S74051,,C6470,DH3Bf82C1Fe7aA,F100542,+91 9993723011,2,active
+E100543,Arjun Singh,student,arjun.singh@iitg.ac.in,Design,S62236,,C5400,DHC223A7E5b4c6,F100543,+91 9472280126,3,inactive
+E100544,Ayaan Kapoor,student,ayaan.kapoor@iitg.ac.in,Chemistry,S32158,,C5159,DHDdAd8b0B79Df,F100544,+91 9501930409,4,active
+E100545,Vivaan Tiwari,student,vivaan.tiwari@iitg.ac.in,Civil Engineering,S70262,,C3009,DH562E7aBcf711,F100545,+91 9392326326,2,active
+E100546,Tara Yadav,student,tara.yadav@iitg.ac.in,Management,S61067,,C1910,DH4Ff45ff7a66b,F100546,+91 9650896989,2,active
+E100547,Neha Tiwari,student,neha.tiwari@iitg.ac.in,Chemistry,S13287,,C5918,DHf162FBB5d8B9,F100547,+91 9816708668,4,active
+E100548,Advik Modi,student,advik.modi@iitg.ac.in,Computer Science,S39703,,C5194,DHcAcF7571F4E2,F100548,+91 9110105597,3,active
+E100549,Pari Arora,student,pari.arora@iitg.ac.in,Electronics & Communication,S62979,,C7086,DHe302275f1F62,F100549,+91 9813258543,4,active
+E100550,Diya Chopra,student,diya.chopra@iitg.ac.in,Computer Science,S12752,,C2741,DHfe8faC1f272F,F100550,+91 9394625861,4,inactive
+E100551,Krishna Shah,student,krishna.shah@iitg.ac.in,Mechanical Engineering,S73334,,C3395,DH6d658ff01228,F100551,+91 9623579789,2,active
+E100552,Priya Desai,student,priya.desai@iitg.ac.in,Management,S57212,,C7188,DHbcdadaEF7eB9,F100552,+91 9827570294,4,active
+E100553,Nisha Malhotra,student,nisha.malhotra@iitg.ac.in,Electronics & Communication,S74682,,C2778,DH906a348758A0,F100553,+91 9566331396,1,active
+E100554,Anika Chopra,student,anika.chopra@iitg.ac.in,Design,S71822,,C2621,DHcf0eaC0E405e,F100554,+91 9809508303,3,active
+E100555,Atharv Rao,student,atharv.rao@iitg.ac.in,Humanities,S63799,,C7270,DH8b09ce39Fe29,F100555,+91 9339707614,2,active
+E100556,Aarav Mehta,student,aarav.mehta@iitg.ac.in,Management,S49368,,C8339,DHCFEBfFA7D5E8,F100556,+91 9621996045,4,active
+E100557,Shaurya Sharma,student,shaurya.sharma@iitg.ac.in,Design,S98290,,C7948,DHFa6fE38d3Bb6,F100557,+91 9286387769,3,active
+E100558,Siya Desai,student,siya.desai@iitg.ac.in,Chemistry,S74029,,C2775,DHC2B9C4C04b40,F100558,+91 9086195602,4,active
+E100559,Krishna Joshi,student,krishna.joshi@iitg.ac.in,Physics,S74211,,C1779,DHDDbD2f32D6C0,F100559,+91 9034712587,3,active
+E100560,Atharv Pandey,student,atharv.pandey@iitg.ac.in,Biology,S26741,,C3068,DHD81a6FDbB1d1,F100560,+91 9225284697,2,active
+E100561,Krishna Rao,student,krishna.rao@iitg.ac.in,Computer Science,S86531,,C8919,DH9daC4De35eCB,F100561,+91 9581794081,2,active
+E100562,Sana Srivastava,student,sana.srivastava@iitg.ac.in,Electronics & Communication,S73054,,C9621,DHa3faC7920e4F,F100562,+91 9477009230,2,active
+E100563,Kavya Malhotra,student,kavya.malhotra@iitg.ac.in,Computer Science,S52234,,C6494,DHBe8C29181cDd,F100563,+91 9088258270,4,active
+E100564,Nisha Chopra,student,nisha.chopra@iitg.ac.in,Biology,S84141,,C9576,DHb3f5043AfEeD,F100564,+91 9949010680,3,active
+E100565,Sai Joshi,student,sai.joshi@iitg.ac.in,Electronics & Communication,S51825,,C7007,DHdbEE3bC8cb47,F100565,+91 9148239448,2,active
+E100566,Ananya Desai,student,ananya.desai@iitg.ac.in,Humanities,S45930,,C2337,DH5eCbC36B4150,F100566,+91 9711593138,4,active
+E100567,Ananya Arora,student,ananya.arora@iitg.ac.in,Civil Engineering,S51493,,C1159,DHDe82f2D9F0d8,F100567,+91 9145784127,4,active
+E100568,Ira Jain,student,ira.jain@iitg.ac.in,Chemical Engineering,S75260,,C6615,DH08A8fBa3Ceed,F100568,+91 9313084512,2,active
+E100569,Reyansh Srivastava,student,reyansh.srivastava@iitg.ac.in,Mathematics,S71787,,C7310,DH5E985dd4b6bD,F100569,+91 9142238841,2,active
+E100570,Saanvi Rao,student,saanvi.rao@iitg.ac.in,Electronics & Communication,S65032,,C2020,DHD23CaCe5A6b3,F100570,+91 9843171396,2,active
+E100571,Sai Mehta,student,sai.mehta@iitg.ac.in,Chemical Engineering,S97928,,C2924,DH907fA0db1806,F100571,+91 9740472015,2,active
+E100572,Krishna Gupta,student,krishna.gupta@iitg.ac.in,Design,S53205,,C9653,DH93bB09EF9eA6,F100572,+91 9698953360,1,active
+E100573,Aarav Jain,student,aarav.jain@iitg.ac.in,Mechanical Engineering,S81141,,C1729,DH6D7de1ffDD9C,F100573,+91 9711119133,4,inactive
+E100574,Riya Reddy,student,riya.reddy@iitg.ac.in,Design,S84502,,C7663,DHcBccaD8ACDe5,F100574,+91 9452167856,3,active
+E100575,Vihaan Verma,student,vihaan.verma@iitg.ac.in,Computer Science,S57793,,C6403,DHEA3cEAcfFfEC,F100575,+91 9596139814,4,active
+E100576,Neha Kumar,student,neha.kumar@iitg.ac.in,Electronics & Communication,S90956,,C6974,DHA22bdDbae4A1,F100576,+91 9560821378,3,active
+E100577,Pranav Patel,student,pranav.patel@iitg.ac.in,Electronics & Communication,S55844,,C1089,DH65b0F7f4EBd2,F100577,+91 9140120332,4,inactive
+E100578,Pranav Tiwari,student,pranav.tiwari@iitg.ac.in,Computer Science,S75853,,C4928,DHb005f95eE5E4,F100578,+91 9464829370,4,active
+E100579,Pranav Sharma,student,pranav.sharma@iitg.ac.in,Biology,S67639,,C4443,DHFee2ABEAa05B,F100579,+91 9451107090,1,active
+E100580,Kavya Modi,student,kavya.modi@iitg.ac.in,Civil Engineering,S81186,,C4997,DH9Db4Ca10BD63,F100580,+91 9040137933,2,active
+E100581,Vivaan Reddy,student,vivaan.reddy@iitg.ac.in,Biology,S72962,,C3224,DHafc1D0E8FaC1,F100581,+91 9781179876,2,active
+E100582,Vihaan Srivastava,student,vihaan.srivastava@iitg.ac.in,Chemistry,S16652,,C8086,DH504530DF987F,F100582,+91 9541119897,2,active
+E100583,Krishna Saxena,student,krishna.saxena@iitg.ac.in,Biology,S77443,,C8273,DH4afeA966fbCb,F100583,+91 9064946038,1,active
+E100584,Neha Arora,student,neha.arora@iitg.ac.in,Chemistry,S24891,,C3318,DHbaF3666b57ca,F100584,+91 9481267810,4,active
+E100585,Advik Patel,student,advik.patel@iitg.ac.in,Mathematics,S85072,,C2426,DH46ea6d31f36d,F100585,+91 9657801541,3,active
+E100586,Sai Sharma,student,sai.sharma@iitg.ac.in,Biology,S28815,,C3567,DHBd506A32231b,F100586,+91 9203897981,1,active
+E100587,Tara Joshi,student,tara.joshi@iitg.ac.in,Management,S23511,,C4385,DHAcC21E2c3dB0,F100587,+91 9979475278,2,inactive
+E100588,Nisha Mishra,student,nisha.mishra@iitg.ac.in,Humanities,S74509,,C9211,DH7194702FdAb3,F100588,+91 9705914752,1,active
+E100589,Kavya Malhotra,student,kavya.malhotra@iitg.ac.in,Humanities,S73352,,C4596,DH4B636Be67218,F100589,+91 9579142253,3,active
+E100590,Neha Malhotra,student,neha.malhotra@iitg.ac.in,Design,S94103,,C6004,DH5a381cA1dcFE,F100590,+91 9908281606,1,active
+E100591,Arjun Mishra,student,arjun.mishra@iitg.ac.in,Humanities,S58677,,C9202,DH3a8faB7d3C4A,F100591,+91 9574978537,2,active
+E100592,Aarav Mishra,student,aarav.mishra@iitg.ac.in,Humanities,S33212,,C6820,DH584791136f64,F100592,+91 9676118975,4,active
+E100593,Tara Patel,student,tara.patel@iitg.ac.in,Humanities,S16806,,C5948,DHCFE0BdedfaEF,F100593,+91 9213446103,4,active
+E100594,Ishaan Kumar,student,ishaan.kumar@iitg.ac.in,Humanities,S60566,,C4139,DHE3b849aaCE4E,F100594,+91 9031593170,1,active
+E100595,Neha Agarwal,student,neha.agarwal@iitg.ac.in,Chemical Engineering,S49265,,C3889,DH70d4FE1611a4,F100595,+91 9566262511,3,active
+E100596,Pranav Malhotra,student,pranav.malhotra@iitg.ac.in,Mechanical Engineering,S23844,,C4130,DHDDc9Bc348d4a,F100596,+91 9724586970,2,inactive
+E100597,Saanvi Jain,student,saanvi.jain@iitg.ac.in,Civil Engineering,S69685,,C3203,DHC1E9AeA31C75,F100597,+91 9498123029,3,inactive
+E100598,Aarav Desai,student,aarav.desai@iitg.ac.in,Chemical Engineering,S33908,,C9005,DH5Ef41B313b7d,F100598,+91 9865228010,2,active
+E100599,Arjun Desai,student,arjun.desai@iitg.ac.in,Humanities,S14941,,C5881,DH03Cf9d5eE1C5,F100599,+91 9284341914,2,active
+E100600,Vivaan Shah,student,vivaan.shah@iitg.ac.in,Physics,S96934,,C2723,DHAddff7a17e10,F100600,+91 9646346912,1,active
+E100601,Ishaan Rao,student,ishaan.rao@iitg.ac.in,Design,S83236,,C9799,DHDAfFaA085ABe,F100601,+91 9858862996,1,active
+E100602,Siya Saxena,student,siya.saxena@iitg.ac.in,Civil Engineering,S40859,,C2949,DHe5819e4c6AcE,F100602,+91 9342269665,1,active
+E100603,Advik Kapoor,student,advik.kapoor@iitg.ac.in,Management,S45545,,C2597,DH06cbf93fc51d,F100603,+91 9458058911,3,active
+E100604,Saanvi Modi,student,saanvi.modi@iitg.ac.in,Biology,S70999,,C4236,DHDb6467eD706e,F100604,+91 9111971388,1,active
+E100605,Ishaan Shah,student,ishaan.shah@iitg.ac.in,Computer Science,S26745,,C8243,DHeFe8A10816e3,F100605,+91 9733096214,2,active
+E100606,Neha Patel,student,neha.patel@iitg.ac.in,Electronics & Communication,S43734,,C9780,DHCB3ccBCcaBe7,F100606,+91 9782826493,3,active
+E100607,Diya Gupta,student,diya.gupta@iitg.ac.in,Electronics & Communication,S75047,,C7503,DH60abAEAAB65f,F100607,+91 9296552778,2,active
+E100608,Sana Malhotra,student,sana.malhotra@iitg.ac.in,Management,S43124,,C3780,DH497D87ADF8E1,F100608,+91 9977041350,4,active
+E100609,Atharv Agarwal,student,atharv.agarwal@iitg.ac.in,Chemistry,S57422,,C8551,DHADDFE39FD3f5,F100609,+91 9810848438,4,active
+E100610,Anika Shah,student,anika.shah@iitg.ac.in,Chemical Engineering,S89762,,C5279,DHbEF800cEeE2f,F100610,+91 9660671222,4,active
+E100611,Ayaan Gupta,student,ayaan.gupta@iitg.ac.in,Chemical Engineering,S64245,,C4772,DHbA9829a7Fcea,F100611,+91 9148593960,2,active
+E100612,Nisha Bansal,student,nisha.bansal@iitg.ac.in,Mathematics,S28587,,C6022,DH22bcAfaD1aba,F100612,+91 9443265210,3,active
+E100613,Shaurya Srivastava,student,shaurya.srivastava@iitg.ac.in,Civil Engineering,S41953,,C3878,DHDBF8Bea915cD,F100613,+91 9737288145,3,active
+E100614,Vivaan Sharma,student,vivaan.sharma@iitg.ac.in,Humanities,S69843,,C3759,DHAcC5B9ADeFA2,F100614,+91 9500896545,3,active
+E100615,Ananya Joshi,student,ananya.joshi@iitg.ac.in,Electronics & Communication,S15947,,C7570,DHf2E9de9afcDf,F100615,+91 9119820011,1,active
+E100616,Arjun Saxena,student,arjun.saxena@iitg.ac.in,Chemistry,S35495,,C8273,DHba120c7A8261,F100616,+91 9505909063,3,active
+E100617,Sai Patel,student,sai.patel@iitg.ac.in,Mathematics,S39059,,C1775,DHc96EBE8Cf24a,F100617,+91 9815051558,3,active
+E100618,Diya Chopra,student,diya.chopra@iitg.ac.in,Biology,S71896,,C2853,DHC1DC2FBAe1ad,F100618,+91 9815917023,1,inactive
+E100619,Sai Desai,student,sai.desai@iitg.ac.in,Biology,S86600,,C7308,DH67833Dd8E8bD,F100619,+91 9614477708,1,active
+E100620,Neha Chopra,student,neha.chopra@iitg.ac.in,Management,S92031,,C1311,DHec8DD8cEDd6C,F100620,+91 9700903287,1,inactive
+E100621,Neha Arora,student,neha.arora@iitg.ac.in,Chemistry,S91654,,C8959,DH18B2CACa79ae,F100621,+91 9999812905,4,active
+E100622,Vivaan Reddy,student,vivaan.reddy@iitg.ac.in,Design,S74088,,C8966,DHbf10CEe7fEBf,F100622,+91 9651592453,4,active
+E100623,Advik Joshi,student,advik.joshi@iitg.ac.in,Mathematics,S32442,,C5070,DH1ceC44EcA4A7,F100623,+91 9549958445,2,active
+E100624,Ira Mishra,student,ira.mishra@iitg.ac.in,Humanities,S36216,,C3199,DH09Abe1Ccfc5F,F100624,+91 9103731540,2,active
+E100625,Vivaan Srivastava,student,vivaan.srivastava@iitg.ac.in,Biology,S37253,,C6209,DH308C2FBdd845,F100625,+91 9429201829,1,active
+E100626,Atharv Mishra,student,atharv.mishra@iitg.ac.in,Chemical Engineering,S44792,,C8429,DH739f3BA6dAd3,F100626,+91 9952329944,1,active
+E100627,Shaurya Desai,student,shaurya.desai@iitg.ac.in,Computer Science,S98737,,C1238,DHf6a4e0304aA9,F100627,+91 9477491215,2,active
+E100628,Diya Bansal,student,diya.bansal@iitg.ac.in,Design,S71496,,C8612,DHbeaDCeB2f03A,F100628,+91 9926568407,3,active
+E100629,Saanvi Verma,student,saanvi.verma@iitg.ac.in,Civil Engineering,S76926,,C9186,DH27282FC0F9FB,F100629,+91 9838392566,2,active
+E100630,Pari Srivastava,student,pari.srivastava@iitg.ac.in,Computer Science,S24162,,C4487,DH95a2B33bc8f9,F100630,+91 9470777606,2,active
+E100631,Siya Joshi,student,siya.joshi@iitg.ac.in,Civil Engineering,S98013,,C3255,DH38eeD2feA050,F100631,+91 9545256080,1,active
+E100632,Shaurya Bansal,student,shaurya.bansal@iitg.ac.in,Physics,S31459,,C9740,DHcCcfb83Ab53b,F100632,+91 9227232490,1,active
+E100633,Krishna Malhotra,student,krishna.malhotra@iitg.ac.in,Humanities,S41717,,C6956,DHeeb8DEb5d1EF,F100633,+91 9035540031,1,inactive
+E100634,Saanvi Tiwari,student,saanvi.tiwari@iitg.ac.in,Electronics & Communication,S50255,,C2309,DH955B5E8FCb48,F100634,+91 9302744539,1,active
+E100635,Vihaan Bansal,student,vihaan.bansal@iitg.ac.in,Electronics & Communication,S53569,,C4725,DH38291f6FF2E3,F100635,+91 9719473405,1,active
+E100636,Kavya Modi,student,kavya.modi@iitg.ac.in,Chemistry,S51902,,C8742,DHC4C4aB37cca6,F100636,+91 9619846290,2,active
+E100637,Pari Patel,student,pari.patel@iitg.ac.in,Chemical Engineering,S90689,,C1203,DHb33F8C0cEeB8,F100637,+91 9652503463,3,active
+E100638,Pari Jain,student,pari.jain@iitg.ac.in,Design,S79233,,C1742,DHdEfBc48dc9e3,F100638,+91 9468244856,4,active
+E100639,Reyansh Mehta,student,reyansh.mehta@iitg.ac.in,Design,S25999,,C1494,DH5F38AD1c08D7,F100639,+91 9288781328,3,active
+E100640,Riya Yadav,student,riya.yadav@iitg.ac.in,Design,S86946,,C1823,DH96DBeb6Bcf71,F100640,+91 9013291895,4,active
+E100641,Shaurya Verma,student,shaurya.verma@iitg.ac.in,Chemical Engineering,S89790,,C1145,DH3E2bB51DfE50,F100641,+91 9532269384,2,inactive
+E100642,Reyansh Singh,student,reyansh.singh@iitg.ac.in,Chemical Engineering,S28995,,C3599,DH76A6f50Ddc99,F100642,+91 9888609587,3,inactive
+E100643,Neha Saxena,student,neha.saxena@iitg.ac.in,Chemical Engineering,S47771,,C8017,DHfa43ABee3c65,F100643,+91 9871373661,2,active
+E100644,Shaurya Reddy,student,shaurya.reddy@iitg.ac.in,Computer Science,S26125,,C7852,DHbfda3cF5fDbB,F100644,+91 9732500857,2,active
+E100645,Reyansh Agarwal,student,reyansh.agarwal@iitg.ac.in,Biology,S49375,,C6061,DH481dEee1bD9A,F100645,+91 9287135773,4,active
+E100646,Pranav Rao,student,pranav.rao@iitg.ac.in,Management,S85464,,C9632,DH2cBd9dd3f7df,F100646,+91 9918980333,1,inactive
+E100647,Ishaan Malhotra,student,ishaan.malhotra@iitg.ac.in,Design,S15317,,C3549,DH7F03C0f8A6aC,F100647,+91 9333156459,3,active
+E100648,Ananya Modi,student,ananya.modi@iitg.ac.in,Chemical Engineering,S28130,,C9580,DHB1eCbaF63179,F100648,+91 9745032750,2,active
+E100649,Pari Patel,student,pari.patel@iitg.ac.in,Management,S43482,,C8232,DHc3f1DF96767E,F100649,+91 9846276221,2,active
+E100650,Arjun Singh,student,arjun.singh@iitg.ac.in,Chemistry,S36757,,C6404,DH5239ed6BaD9C,F100650,+91 9832304141,3,active
+E100651,Vihaan Chopra,student,vihaan.chopra@iitg.ac.in,Physics,S78684,,C4845,DH794c096A4f71,F100651,+91 9040675575,4,active
+E100652,Ananya Kumar,student,ananya.kumar@iitg.ac.in,Design,S48883,,C5476,DH7Ab21BD7ddd7,F100652,+91 9911978102,4,active
+E100653,Vivaan Agarwal,student,vivaan.agarwal@iitg.ac.in,Humanities,S39476,,C9041,DHCF290Bc8E4Ae,F100653,+91 9683311036,2,active
+E100654,Ananya Srivastava,student,ananya.srivastava@iitg.ac.in,Physics,S92835,,C7088,DH9dFa0dA6bb8F,F100654,+91 9152720116,2,active
+E100655,Siya Bansal,student,siya.bansal@iitg.ac.in,Mathematics,S47615,,C2026,DHB9745654eE7d,F100655,+91 9413714981,3,inactive
+E100656,Neha Bansal,student,neha.bansal@iitg.ac.in,Computer Science,S43769,,C5832,DHbfA7495Debac,F100656,+91 9344192373,1,active
+E100657,Aarav Rao,student,aarav.rao@iitg.ac.in,Biology,S10688,,C2491,DH7aC19CCe4cB5,F100657,+91 9682245764,3,active
+E100658,Saanvi Modi,student,saanvi.modi@iitg.ac.in,Humanities,S85822,,C8290,DHAc62D88Bd9e6,F100658,+91 9990392132,3,active
+E100659,Tara Bansal,student,tara.bansal@iitg.ac.in,Design,S50898,,C7135,DHAC47c56defac,F100659,+91 9129238216,2,active
+E100660,Arjun Srivastava,student,arjun.srivastava@iitg.ac.in,Design,S14483,,C3606,DH32FE60e3dCAb,F100660,+91 9990316842,2,active
+E100661,Nisha Srivastava,student,nisha.srivastava@iitg.ac.in,Mathematics,S99478,,C5237,DHAECa05126Ce8,F100661,+91 9936474200,4,active
+E100662,Myra Desai,student,myra.desai@iitg.ac.in,Chemistry,S36165,,C1427,DH96a1e8Bf4beF,F100662,+91 9803882634,2,active
+E100663,Ishaan Jain,student,ishaan.jain@iitg.ac.in,Humanities,S15029,,C2188,DH9dBBCCc1eDCf,F100663,+91 9449556938,4,active
+E100664,Priya Srivastava,student,priya.srivastava@iitg.ac.in,Biology,S71990,,C3322,DH9Ce740aFFDa3,F100664,+91 9351423506,4,inactive
+E100665,Siya Verma,student,siya.verma@iitg.ac.in,Management,S31528,,C6204,DHa6Bc7d4022C8,F100665,+91 9849394621,1,active
+E100666,Arjun Patel,student,arjun.patel@iitg.ac.in,Biology,S76554,,C2032,DHDE1ad7eeED4F,F100666,+91 9965604988,4,active
+E100667,Sai Mehta,student,sai.mehta@iitg.ac.in,Biology,S67565,,C9560,DHB94490DAEE0E,F100667,+91 9211717151,2,active
+E100668,Kavya Shah,student,kavya.shah@iitg.ac.in,Management,S16001,,C2159,DH33Aa4423E89c,F100668,+91 9515342056,2,active
+E100669,Aarav Sharma,student,aarav.sharma@iitg.ac.in,Civil Engineering,S76380,,C6357,DHC46FA75B672f,F100669,+91 9226398453,4,active
+E100670,Kavya Sharma,student,kavya.sharma@iitg.ac.in,Computer Science,S18256,,C4143,DHC5CCaBbCe8F4,F100670,+91 9781560669,1,active
+E100671,Tara Mishra,student,tara.mishra@iitg.ac.in,Chemistry,S30824,,C7118,DHd26f438123B0,F100671,+91 9805901429,2,active
+E100672,Tara Mishra,student,tara.mishra@iitg.ac.in,Chemical Engineering,S60083,,C8614,DH8BdDF480680E,F100672,+91 9991585902,1,active
+E100673,Neha Saxena,student,neha.saxena@iitg.ac.in,Mathematics,S18096,,C5680,DHE4fd77F98Daa,F100673,+91 9289041963,1,active
+E100674,Ananya Mehta,student,ananya.mehta@iitg.ac.in,Biology,S22419,,C7994,DHdbB62a4DCD89,F100674,+91 9748483678,4,active
+E100675,Riya Mishra,student,riya.mishra@iitg.ac.in,Chemical Engineering,S92629,,C9024,DHdBC0A3CF71cf,F100675,+91 9548592055,3,active
+E100676,Vihaan Sharma,student,vihaan.sharma@iitg.ac.in,Design,S58352,,C8070,DH36d0Cf48DF3A,F100676,+91 9815654975,4,active
+E100677,Siya Mishra,student,siya.mishra@iitg.ac.in,Physics,S99620,,C1664,DH3f4Bd6cC6c37,F100677,+91 9549326828,1,active
+E100678,Nisha Shah,student,nisha.shah@iitg.ac.in,Electronics & Communication,S31066,,C6876,DH9E06dEf46fA7,F100678,+91 9310274743,4,active
+E100679,Ishaan Mishra,student,ishaan.mishra@iitg.ac.in,Management,S12165,,C8417,DH93E6eA11BbC6,F100679,+91 9262615354,4,active
+E100680,Myra Singh,student,myra.singh@iitg.ac.in,Mechanical Engineering,S43200,,C6193,DHFCEba5CF70A0,F100680,+91 9330194389,1,active
+E100681,Priya Singh,student,priya.singh@iitg.ac.in,Design,S14751,,C8855,DH79DBB1c7fa0d,F100681,+91 9743524917,2,active
+E100682,Atharv Modi,student,atharv.modi@iitg.ac.in,Design,S57159,,C9995,DHDbE6F24d06B8,F100682,+91 9116151352,3,active
+E100683,Ananya Bansal,student,ananya.bansal@iitg.ac.in,Physics,S72324,,C4112,DHB06AC8ACa59D,F100683,+91 9483577588,2,active
+E100684,Atharv Joshi,student,atharv.joshi@iitg.ac.in,Civil Engineering,S92540,,C2831,DHAcd10d0ad577,F100684,+91 9960877888,3,inactive
+E100685,Anika Desai,student,anika.desai@iitg.ac.in,Biology,S34164,,C3143,DHD3fCC82EfB84,F100685,+91 9932073686,2,active
+E100686,Tara Kapoor,student,tara.kapoor@iitg.ac.in,Electronics & Communication,S18109,,C3567,DHfaFfcE49A191,F100686,+91 9563819021,2,active
+E100687,Kavya Pandey,student,kavya.pandey@iitg.ac.in,Mathematics,S48509,,C6715,DHc59BEfacB8Be,F100687,+91 9639884665,2,active
+E100688,Nisha Agarwal,student,nisha.agarwal@iitg.ac.in,Mechanical Engineering,S54106,,C1446,DHf1ed1A268cdb,F100688,+91 9207023308,3,inactive
+E100689,Sana Arora,student,sana.arora@iitg.ac.in,Humanities,S17044,,C3735,DHecdBAAee0B54,F100689,+91 9716602195,4,active
+E100690,Siya Shah,student,siya.shah@iitg.ac.in,Electronics & Communication,S60926,,C3752,DH0AfBC38653c9,F100690,+91 9329462369,3,active
+E100691,Aarav Joshi,student,aarav.joshi@iitg.ac.in,Electronics & Communication,S34249,,C3694,DHEA0379c6B02b,F100691,+91 9286018993,2,active
+E100692,Krishna Bansal,student,krishna.bansal@iitg.ac.in,Mechanical Engineering,S57555,,C4851,DHa06EED8cab1f,F100692,+91 9809044364,1,active
+E100693,Neha Verma,student,neha.verma@iitg.ac.in,Biology,S74426,,C3438,DHe5Aec47c37db,F100693,+91 9818357029,3,active
+E100694,Neha Patel,student,neha.patel@iitg.ac.in,Humanities,S50551,,C9470,DHe0b92AaeeceE,F100694,+91 9593622416,4,active
+E100695,Siya Bansal,student,siya.bansal@iitg.ac.in,Biology,S96349,,C4231,DH9C5E4d73f056,F100695,+91 9262846652,3,active
+E100696,Ira Jain,student,ira.jain@iitg.ac.in,Design,S57602,,C3208,DH1Affce0BCd7C,F100696,+91 9057369067,4,active
+E100697,Shaurya Jain,student,shaurya.jain@iitg.ac.in,Mathematics,S49145,,C5700,DH6114328f7bB0,F100697,+91 9453383108,1,active
+E100698,Aditya Yadav,student,aditya.yadav@iitg.ac.in,Mathematics,S64729,,C1449,DHDc40A0eCA7Ab,F100698,+91 9296136898,1,active
+E100699,Sana Tiwari,student,sana.tiwari@iitg.ac.in,Biology,S29806,,C4526,DHB2FB220d9687,F100699,+91 9903885031,3,active
+E100700,Vivaan Mishra,student,vivaan.mishra@iitg.ac.in,Physics,S39458,,C1464,DHDDcAb0d40EC7,F100700,+91 9009416037,4,active
+E100701,Priya Kumar,student,priya.kumar@iitg.ac.in,Chemistry,S47168,,C8882,DH5B6f063785C6,F100701,+91 9889924959,2,active
+E100702,Ayaan Arora,student,ayaan.arora@iitg.ac.in,Physics,S76512,,C5663,DH147C44fd2C0A,F100702,+91 9850439151,4,active
+E100703,Sana Joshi,student,sana.joshi@iitg.ac.in,Design,S91030,,C5956,DHD9C3Fa9fc5B4,F100703,+91 9059904958,1,active
+E100704,Ira Patel,student,ira.patel@iitg.ac.in,Chemistry,S45636,,C2174,DH79BB9916B35C,F100704,+91 9327401998,4,inactive
+E100705,Ananya Pandey,student,ananya.pandey@iitg.ac.in,Management,S79923,,C3359,DH5DEfeD2bc27E,F100705,+91 9687361890,2,active
+E100706,Siya Agarwal,student,siya.agarwal@iitg.ac.in,Design,S96142,,C7676,DHFFAaCcACb78B,F100706,+91 9102634540,4,inactive
+E100707,Sai Patel,student,sai.patel@iitg.ac.in,Chemical Engineering,S94370,,C4314,DH536bfF27479A,F100707,+91 9007231601,3,active
+E100708,Shaurya Singh,student,shaurya.singh@iitg.ac.in,Management,S46506,,C4012,DHbfB93bCa7D50,F100708,+91 9098256578,4,active
+E100709,Anika Agarwal,student,anika.agarwal@iitg.ac.in,Management,S48231,,C3205,DHCa7f54CfC93d,F100709,+91 9605132112,4,active
+E100710,Sana Joshi,student,sana.joshi@iitg.ac.in,Mechanical Engineering,S85560,,C4140,DH46087e3d1E9f,F100710,+91 9104485680,4,active
+E100711,Sana Verma,student,sana.verma@iitg.ac.in,Electronics & Communication,S25934,,C5135,DHE517aC9DEAee,F100711,+91 9886661030,4,active
+E100712,Ayaan Verma,student,ayaan.verma@iitg.ac.in,Civil Engineering,S34258,,C2704,DHffb407Bc8C3a,F100712,+91 9648663560,3,active
+E100713,Vivaan Shah,student,vivaan.shah@iitg.ac.in,Chemistry,S17517,,C7917,DHDB9DEAccdE9b,F100713,+91 9878319335,1,active
+E100714,Riya Mehta,student,riya.mehta@iitg.ac.in,Chemistry,S53305,,C8409,DH23B46DA1A3eF,F100714,+91 9436430114,2,active
+E100715,Ayaan Malhotra,student,ayaan.malhotra@iitg.ac.in,Chemical Engineering,S86552,,C2930,DH348d96A5C5CD,F100715,+91 9787641453,3,active
+E100716,Priya Shah,student,priya.shah@iitg.ac.in,Physics,S92513,,C9311,DH1fe6DC41EFd7,F100716,+91 9486788796,4,active
+E100717,Riya Kapoor,student,riya.kapoor@iitg.ac.in,Chemistry,S82892,,C4600,DH2FEd8D3872FC,F100717,+91 9267096141,3,active
+E100718,Anika Malhotra,student,anika.malhotra@iitg.ac.in,Management,S45230,,C8345,DHe145B7a3bc39,F100718,+91 9454426752,2,active
+E100719,Siya Tiwari,student,siya.tiwari@iitg.ac.in,Civil Engineering,S93227,,C4521,DH69c93F9772Af,F100719,+91 9015217262,4,active
+E100720,Arjun Mishra,student,arjun.mishra@iitg.ac.in,Mathematics,S40785,,C7047,DHfBEBDf4BB0DD,F100720,+91 9839885129,2,active
+E100721,Ananya Kumar,student,ananya.kumar@iitg.ac.in,Electronics & Communication,S70035,,C8955,DHb9af6E1051ef,F100721,+91 9335131122,1,active
+E100722,Aarav Sharma,student,aarav.sharma@iitg.ac.in,Biology,S37178,,C7685,DH51Da90F06F7B,F100722,+91 9141113397,1,inactive
+E100723,Vihaan Jain,student,vihaan.jain@iitg.ac.in,Civil Engineering,S40754,,C6316,DH8efe141E2ce5,F100723,+91 9494369787,1,active
+E100724,Vihaan Gupta,student,vihaan.gupta@iitg.ac.in,Electronics & Communication,S25315,,C6444,DH0d682c610A63,F100724,+91 9054154199,4,active
+E100725,Pari Malhotra,student,pari.malhotra@iitg.ac.in,Mathematics,S40790,,C8179,DH2fFaDC424df5,F100725,+91 9278746867,4,active
+E100726,Arjun Kapoor,student,arjun.kapoor@iitg.ac.in,Management,S36428,,C2431,DH03C72D409286,F100726,+91 9364753413,1,active
+E100727,Neha Chopra,student,neha.chopra@iitg.ac.in,Physics,S52759,,C1461,DH42E7ba9D8FdB,F100727,+91 9029276853,2,active
+E100728,Siya Sharma,student,siya.sharma@iitg.ac.in,Chemistry,S26354,,C7711,DH55fcfA995ec5,F100728,+91 9001154166,2,active
+E100729,Ananya Pandey,student,ananya.pandey@iitg.ac.in,Mathematics,S77428,,C5132,DH62FaBe88bFc7,F100729,+91 9704831563,2,active
+E100730,Priya Rao,student,priya.rao@iitg.ac.in,Design,S71069,,C1811,DHba5F0E07348E,F100730,+91 9928884004,3,active
+E100731,Myra Singh,student,myra.singh@iitg.ac.in,Chemical Engineering,S75357,,C9406,DHfC5b4fEc6cc2,F100731,+91 9521392802,1,active
+E100732,Shaurya Mishra,student,shaurya.mishra@iitg.ac.in,Humanities,S91683,,C1411,DH4B1a9Dd25db1,F100732,+91 9619205466,2,active
+E100733,Advik Reddy,student,advik.reddy@iitg.ac.in,Chemical Engineering,S21431,,C1816,DHE63D8F93BFD7,F100733,+91 9329687071,2,active
+E100734,Pranav Agarwal,student,pranav.agarwal@iitg.ac.in,Physics,S84710,,C6088,DH7B828D8Bdddc,F100734,+91 9939411019,1,active
+E100735,Sai Tiwari,student,sai.tiwari@iitg.ac.in,Humanities,S78014,,C8116,DH85dE49EF5c9A,F100735,+91 9712924995,4,active
+E100736,Ananya Verma,student,ananya.verma@iitg.ac.in,Design,S54529,,C2935,DH2e750eEecC22,F100736,+91 9155633593,4,active
+E100737,Atharv Desai,student,atharv.desai@iitg.ac.in,Computer Science,S51801,,C2031,DHEeDfb5baad3B,F100737,+91 9211566184,3,active
+E100738,Neha Kapoor,student,neha.kapoor@iitg.ac.in,Design,S82822,,C4464,DHDceeedADB2dd,F100738,+91 9242306833,3,active
+E100739,Reyansh Joshi,student,reyansh.joshi@iitg.ac.in,Computer Science,S75849,,C4901,DH154c354Dadee,F100739,+91 9977921658,4,active
+E100740,Sana Verma,student,sana.verma@iitg.ac.in,Design,S24372,,C3654,DHB7654CA1BCF9,F100740,+91 9265748921,2,active
+E100741,Aarav Jain,student,aarav.jain@iitg.ac.in,Computer Science,S60065,,C1017,DHAcD0C19a0b9B,F100741,+91 9607794305,4,active
+E100742,Vivaan Srivastava,student,vivaan.srivastava@iitg.ac.in,Civil Engineering,S73321,,C4014,DHcA475DCa827B,F100742,+91 9576435577,1,active
+E100743,Diya Srivastava,student,diya.srivastava@iitg.ac.in,Biology,S13160,,C3414,DH85caB5bdbCB8,F100743,+91 9699890384,3,active
+E100744,Sana Kapoor,student,sana.kapoor@iitg.ac.in,Electronics & Communication,S29002,,C2023,DH3Eda77AdCBbe,F100744,+91 9231715582,2,active
+E100745,Reyansh Gupta,student,reyansh.gupta@iitg.ac.in,Design,S80399,,C1204,DHa2dBA1AfAF63,F100745,+91 9311072604,3,active
+E100746,Reyansh Yadav,student,reyansh.yadav@iitg.ac.in,Mechanical Engineering,S30484,,C5568,DH02C2cBAaEBF8,F100746,+91 9176577517,1,active
+E100747,Anika Gupta,student,anika.gupta@iitg.ac.in,Civil Engineering,S46840,,C2478,DH3a38ab3c0DB1,F100747,+91 9232862115,4,active
+E100748,Ira Malhotra,student,ira.malhotra@iitg.ac.in,Electronics & Communication,S60495,,C4705,DH8E5af9A3ee57,F100748,+91 9328381160,4,active
+E100749,Pari Saxena,student,pari.saxena@iitg.ac.in,Biology,S81219,,C1884,DHDc46B70BBF38,F100749,+91 9654644132,3,active
+E100750,Aarav Desai,student,aarav.desai@iitg.ac.in,Chemistry,S87593,,C5296,DH9Bc7E1308DBC,F100750,+91 9075844092,2,active
+E100751,Arjun Agarwal,student,arjun.agarwal@iitg.ac.in,Chemistry,S23832,,C1644,DHc118dcd9C7FD,F100751,+91 9066063030,2,active
+E100752,Diya Modi,student,diya.modi@iitg.ac.in,Design,S97840,,C6522,DHa55C29db6594,F100752,+91 9867627047,4,active
+E100753,Shaurya Malhotra,student,shaurya.malhotra@iitg.ac.in,Chemical Engineering,S10967,,C7577,DHE72B6ae5005e,F100753,+91 9788446481,3,active
+E100754,Priya Tiwari,student,priya.tiwari@iitg.ac.in,Chemistry,S92698,,C4028,DHD9c1aadCae3A,F100754,+91 9061441965,1,active
+E100755,Tara Yadav,student,tara.yadav@iitg.ac.in,Chemical Engineering,S71157,,C6634,DHdC4E59a1fe6b,F100755,+91 9223797585,2,active
+E100756,Ananya Kumar,student,ananya.kumar@iitg.ac.in,Electronics & Communication,S14881,,C5298,DHfd93FB5C4cfE,F100756,+91 9598052233,3,active
+E100757,Aarav Bansal,student,aarav.bansal@iitg.ac.in,Electronics & Communication,S60637,,C4188,DHB8c9a5f016a8,F100757,+91 9252531139,3,active
+E100758,Pari Shah,student,pari.shah@iitg.ac.in,Civil Engineering,S81619,,C2953,DHb7B8dB5becCf,F100758,+91 9050074433,3,active
+E100759,Shaurya Kumar,student,shaurya.kumar@iitg.ac.in,Humanities,S99733,,C9898,DH01eE7fE7CB86,F100759,+91 9218490044,3,inactive
+E100760,Saanvi Jain,student,saanvi.jain@iitg.ac.in,Civil Engineering,S76872,,C6444,DHecA40dc9deac,F100760,+91 9334544852,2,active
+E100761,Aarav Gupta,student,aarav.gupta@iitg.ac.in,Biology,S89207,,C6208,DHE919D5FBd777,F100761,+91 9520035089,3,active
+E100762,Riya Agarwal,student,riya.agarwal@iitg.ac.in,Management,S81986,,C6407,DHd85A03FB6044,F100762,+91 9930710950,3,active
+E100763,Vihaan Verma,student,vihaan.verma@iitg.ac.in,Physics,S99134,,C4963,DH91877203B45F,F100763,+91 9350202574,1,active
+E100764,Riya Desai,student,riya.desai@iitg.ac.in,Civil Engineering,S14349,,C6043,DH93BF6Efa88F2,F100764,+91 9214775720,4,active
+E100765,Sana Malhotra,student,sana.malhotra@iitg.ac.in,Chemistry,S77231,,C3715,DH9Ac5eBBF53ca,F100765,+91 9380298930,4,active
+E100766,Pari Joshi,student,pari.joshi@iitg.ac.in,Electronics & Communication,S92891,,C2968,DHd3ACebBa6A00,F100766,+91 9767803595,2,active
+E100767,Atharv Malhotra,student,atharv.malhotra@iitg.ac.in,Electronics & Communication,S34613,,C2128,DHDc3Ed6E7BEcB,F100767,+91 9034116031,4,active
+E100768,Myra Singh,student,myra.singh@iitg.ac.in,Mathematics,S97958,,C7799,DHfbD9462E1094,F100768,+91 9054635056,3,active
+E100769,Advik Desai,student,advik.desai@iitg.ac.in,Computer Science,S25393,,C5439,DHbBF15D89eeDD,F100769,+91 9045223846,4,active
+E100770,Arjun Rao,student,arjun.rao@iitg.ac.in,Management,S43908,,C9509,DH615cFC30a7D7,F100770,+91 9713214117,1,active
+E100771,Pranav Pandey,student,pranav.pandey@iitg.ac.in,Mechanical Engineering,S74569,,C8329,DHaf89178d10EF,F100771,+91 9584887313,2,active
+E100772,Anika Kumar,student,anika.kumar@iitg.ac.in,Mechanical Engineering,S19429,,C5874,DHe1349e5a1a07,F100772,+91 9230206172,4,active
+E100773,Saanvi Chopra,student,saanvi.chopra@iitg.ac.in,Physics,S40912,,C5704,DH386f4C3A6aaE,F100773,+91 9489658024,4,inactive
+E100774,Kavya Desai,student,kavya.desai@iitg.ac.in,Chemistry,S68566,,C9047,DHb9AeC0ec04A9,F100774,+91 9398227639,3,active
+E100775,Shaurya Rao,student,shaurya.rao@iitg.ac.in,Mathematics,S99080,,C4519,DHbA2B38F36Ddb,F100775,+91 9422373188,1,active
+E100776,Aditya Yadav,student,aditya.yadav@iitg.ac.in,Chemistry,S52059,,C5792,DHFCbCdE8Ca62B,F100776,+91 9808441417,1,active
+E100777,Arjun Modi,student,arjun.modi@iitg.ac.in,Electronics & Communication,S42790,,C2639,DH9fdDee3fb1CF,F100777,+91 9161153351,3,active
+E100778,Diya Rao,student,diya.rao@iitg.ac.in,Physics,S39518,,C6605,DH2EB0efDd53DB,F100778,+91 9504823589,2,active
+E100779,Kavya Shah,student,kavya.shah@iitg.ac.in,Chemistry,S88564,,C4647,DH72dCDDeB56d3,F100779,+91 9143363302,1,active
+E100780,Aarav Verma,student,aarav.verma@iitg.ac.in,Electronics & Communication,S68907,,C6435,DHBEAdCe2fde02,F100780,+91 9637379637,2,active
+E100781,Priya Srivastava,student,priya.srivastava@iitg.ac.in,Mechanical Engineering,S61954,,C5826,DH71dA3d6128ea,F100781,+91 9488943914,2,active
+E100782,Pranav Pandey,student,pranav.pandey@iitg.ac.in,Computer Science,S47025,,C7519,DH0748f82b44d7,F100782,+91 9819038546,2,active
+E100783,Saanvi Arora,student,saanvi.arora@iitg.ac.in,Electronics & Communication,S59953,,C9851,DHDEce6aA0C641,F100783,+91 9141026739,4,active
+E100784,Pari Kapoor,student,pari.kapoor@iitg.ac.in,Physics,S88604,,C4264,DH63d8A2fCCaf2,F100784,+91 9791559656,3,active
+E100785,Aarav Pandey,student,aarav.pandey@iitg.ac.in,Physics,S21067,,C8685,DH6E4Fb4bCe13a,F100785,+91 9366811902,4,active
+E100786,Aarav Arora,student,aarav.arora@iitg.ac.in,Humanities,S73661,,C7232,DH0AEc27F3C70a,F100786,+91 9795715760,2,active
+E100787,Tara Patel,student,tara.patel@iitg.ac.in,Electronics & Communication,S90502,,C4293,DH5C58b8B0631E,F100787,+91 9106432470,3,active
+E100788,Advik Srivastava,student,advik.srivastava@iitg.ac.in,Management,S43610,,C5662,DHb69ba47018ef,F100788,+91 9669966916,2,active
+E100789,Krishna Tiwari,student,krishna.tiwari@iitg.ac.in,Electronics & Communication,S33892,,C1261,DHcd6fBd8fD136,F100789,+91 9826024036,1,active
+E100790,Sai Sharma,student,sai.sharma@iitg.ac.in,Computer Science,S56276,,C1567,DHbAA2D4ef66de,F100790,+91 9701724152,4,active
+E100791,Shaurya Mishra,student,shaurya.mishra@iitg.ac.in,Electronics & Communication,S98595,,C6261,DH78EA84cEB605,F100791,+91 9999810050,4,active
+E100792,Ananya Jain,student,ananya.jain@iitg.ac.in,Mathematics,S44737,,C3245,DHE6e851D6e240,F100792,+91 9739036436,1,active
+E100793,Diya Rao,student,diya.rao@iitg.ac.in,Design,S75135,,C1954,DH5CFe48dC7eb7,F100793,+91 9427580057,3,active
+E100794,Saanvi Shah,student,saanvi.shah@iitg.ac.in,Management,S56439,,C4346,DHEdbacD4F98Ea,F100794,+91 9278724989,4,active
+E100795,Ananya Chopra,student,ananya.chopra@iitg.ac.in,Computer Science,S40031,,C3884,DHeDad1F08E8d1,F100795,+91 9612678101,3,inactive
+E100796,Tara Pandey,student,tara.pandey@iitg.ac.in,Computer Science,S38228,,C2987,DH5Ec7c8d4f6b2,F100796,+91 9365719160,1,active
+E100797,Vivaan Singh,student,vivaan.singh@iitg.ac.in,Chemical Engineering,S67663,,C9517,DH5233051f0c56,F100797,+91 9087919865,2,active
+E100798,Ananya Shah,student,ananya.shah@iitg.ac.in,Management,S21160,,C3511,DH239f5158C179,F100798,+91 9938716285,2,active
+E100799,Aarav Agarwal,student,aarav.agarwal@iitg.ac.in,Design,S84456,,C5885,DH5e61FF94d9Df,F100799,+91 9703551050,1,active
+E100800,Pranav Malhotra,staff,pranav.malhotra@iitg.ac.in,Design,,T6822,C2186,DHFAaBea240287,F100800,+91 9278059602,,active
+E100801,Vivaan Shah,staff,vivaan.shah@iitg.ac.in,Humanities,,T7920,C3212,DHa058d61F38CE,F100801,+91 9292203906,,active
+E100802,Pari Agarwal,staff,pari.agarwal@iitg.ac.in,Chemistry,,T8731,C1019,DH7C7cCE525Ccc,F100802,+91 9540133192,,inactive
+E100803,Sana Gupta,staff,sana.gupta@iitg.ac.in,Physics,,T4630,C2128,DHDA6Af3Fdb038,F100803,+91 9173839875,,active
+E100804,Ishaan Tiwari,staff,ishaan.tiwari@iitg.ac.in,Biology,,T3481,C7196,DHBd8245Cb3BEB,F100804,+91 9276949336,,active
+E100805,Sai Kapoor,staff,sai.kapoor@iitg.ac.in,Physics,,T4433,C6530,DH6CffA11CcB0D,F100805,+91 9825510112,,inactive
+E100806,Shaurya Kapoor,staff,shaurya.kapoor@iitg.ac.in,Physics,,T2372,C3609,DHddA986cd423A,F100806,+91 9083920163,,active
+E100807,Ananya Yadav,staff,ananya.yadav@iitg.ac.in,Management,,T6741,C5211,DH4Fbd5cDd7feE,F100807,+91 9662834592,,active
+E100808,Reyansh Patel,staff,reyansh.patel@iitg.ac.in,Electronics & Communication,,T7961,C4542,DH6D9c66fCAF8f,F100808,+91 9566299000,,inactive
+E100809,Priya Bansal,staff,priya.bansal@iitg.ac.in,Electronics & Communication,,T3170,C3454,DHac08248BFFCD,F100809,+91 9134518902,,active
+E100810,Aarav Yadav,staff,aarav.yadav@iitg.ac.in,Biology,,T9253,C7920,DH1193430A6e71,F100810,+91 9840618480,,inactive
+E100811,Anika Kapoor,staff,anika.kapoor@iitg.ac.in,Civil Engineering,,T6785,C6407,DHA2ae37b59ECD,F100811,+91 9692778728,,active
+E100812,Krishna Arora,staff,krishna.arora@iitg.ac.in,Chemistry,,T6677,C8579,DH9EebD2a7fdCF,F100812,+91 9043223881,,active
+E100813,Kavya Shah,staff,kavya.shah@iitg.ac.in,Management,,T5494,C1313,DHEa6D97dbFee7,F100813,+91 9096078006,,active
+E100814,Atharv Reddy,staff,atharv.reddy@iitg.ac.in,Management,,T1017,C7345,DH81Df3e4B4E97,F100814,+91 9422757401,,active
+E100815,Tara Jain,staff,tara.jain@iitg.ac.in,Mathematics,,T1767,C6935,DH7D65feF25B9A,F100815,+91 9677102714,,inactive
+E100816,Kavya Modi,staff,kavya.modi@iitg.ac.in,Electronics & Communication,,T5108,C2103,DH6f4b2F7aF621,F100816,+91 9337065180,,active
+E100817,Riya Joshi,staff,riya.joshi@iitg.ac.in,Chemistry,,T9970,C8865,DH47CaCD3FCc71,F100817,+91 9011029822,,active
+E100818,Nisha Malhotra,staff,nisha.malhotra@iitg.ac.in,Biology,,T3420,C1839,DHC01BFCA3DB39,F100818,+91 9875735908,,active
+E100819,Siya Tiwari,staff,siya.tiwari@iitg.ac.in,Physics,,T2464,C7050,DH6195cdcF49ed,F100819,+91 9304152551,,active
+E100820,Pranav Srivastava,staff,pranav.srivastava@iitg.ac.in,Management,,T5572,C3424,DH88f7e881B80B,F100820,+91 9074070941,,active
+E100821,Pari Singh,staff,pari.singh@iitg.ac.in,Humanities,,T8456,C3730,DH9259430ceE12,F100821,+91 9470558591,,active
+E100822,Ira Singh,staff,ira.singh@iitg.ac.in,Management,,T7813,C8501,DHEeBbd4dbdfd6,F100822,+91 9184233143,,active
+E100823,Saanvi Verma,staff,saanvi.verma@iitg.ac.in,Management,,T3719,C9817,DHeCf2B8aFb70f,F100823,+91 9154335583,,active
+E100824,Vihaan Singh,staff,vihaan.singh@iitg.ac.in,Computer Science,,T1952,C8091,DHe9b1Ea198F97,F100824,+91 9777088904,,active
+E100825,Advik Jain,staff,advik.jain@iitg.ac.in,Physics,,T1995,C2403,DHf1C095EbD90E,F100825,+91 9568564291,,inactive
+E100826,Vihaan Sharma,staff,vihaan.sharma@iitg.ac.in,Mechanical Engineering,,T2463,C2191,DHFB1774A056BC,F100826,+91 9577206641,,inactive
+E100827,Saanvi Bansal,staff,saanvi.bansal@iitg.ac.in,Computer Science,,T4229,C5750,DH9a1Ed3FFE4BB,F100827,+91 9883663983,,active
+E100828,Pari Shah,staff,pari.shah@iitg.ac.in,Biology,,T7565,C4846,DHd1ffDD13d2Ce,F100828,+91 9110729467,,active
+E100829,Myra Singh,staff,myra.singh@iitg.ac.in,Biology,,T3997,C7092,DH906DccEeC98E,F100829,+91 9600258685,,active
+E100830,Shaurya Tiwari,staff,shaurya.tiwari@iitg.ac.in,Chemical Engineering,,T3070,C7594,DHEf6F9Dc38bDA,F100830,+91 9644406510,,active
+E100831,Saanvi Pandey,staff,saanvi.pandey@iitg.ac.in,Electronics & Communication,,T6584,C3111,DH2d79Dbb7E52e,F100831,+91 9258108525,,active
+E100832,Vihaan Joshi,staff,vihaan.joshi@iitg.ac.in,Biology,,T3623,C8933,DH448b7d18fA6d,F100832,+91 9137555800,,active
+E100833,Sana Singh,staff,sana.singh@iitg.ac.in,Chemical Engineering,,T3959,C8270,DH8DA3f5b60C77,F100833,+91 9446173842,,active
+E100834,Sana Tiwari,staff,sana.tiwari@iitg.ac.in,Chemical Engineering,,T9108,C3012,DH4Cb4975FdA71,F100834,+91 9639841416,,active
+E100835,Reyansh Patel,staff,reyansh.patel@iitg.ac.in,Management,,T3429,C5164,DH06f38fcdE6CE,F100835,+91 9589508045,,active
+E100836,Anika Pandey,staff,anika.pandey@iitg.ac.in,Mathematics,,T6090,C8224,DH1aC081d1AA0B,F100836,+91 9286104013,,inactive
+E100837,Siya Gupta,staff,siya.gupta@iitg.ac.in,Chemistry,,T7674,C8475,DH1EEda71CeC88,F100837,+91 9797881443,,active
+E100838,Vihaan Malhotra,staff,vihaan.malhotra@iitg.ac.in,Electronics & Communication,,T1695,C5547,DH2Aa8ad2d0cBd,F100838,+91 9291233893,,active
+E100839,Sai Shah,staff,sai.shah@iitg.ac.in,Management,,T2944,C7253,DHB9b6b1ED73CE,F100839,+91 9186161533,,active
+E100840,Arjun Chopra,staff,arjun.chopra@iitg.ac.in,Humanities,,T4841,C3779,DH98E15E7Bf81d,F100840,+91 9614605374,,active
+E100841,Ira Saxena,staff,ira.saxena@iitg.ac.in,Biology,,T9683,C2749,DHE54f664DCE10,F100841,+91 9706259408,,active
+E100842,Saanvi Mehta,staff,saanvi.mehta@iitg.ac.in,Mathematics,,T9346,C9520,DHe4B65bcde118,F100842,+91 9136836266,,active
+E100843,Sana Chopra,staff,sana.chopra@iitg.ac.in,Computer Science,,T6457,C7660,DH1BB5a945A723,F100843,+91 9752062335,,inactive
+E100844,Shaurya Patel,staff,shaurya.patel@iitg.ac.in,Management,,T5703,C6190,DHbBe7aa963c8f,F100844,+91 9340591605,,active
+E100845,Diya Tiwari,staff,diya.tiwari@iitg.ac.in,Civil Engineering,,T4354,C6735,DHC6e7adD3C7Cb,F100845,+91 9883541548,,active
+E100846,Tara Srivastava,staff,tara.srivastava@iitg.ac.in,Electronics & Communication,,T7713,C5215,DHC1Ba656bED8f,F100846,+91 9118713567,,active
+E100847,Kavya Pandey,staff,kavya.pandey@iitg.ac.in,Management,,T6629,C6095,DHCDeDE3aB824E,F100847,+91 9731274745,,active
+E100848,Tara Patel,staff,tara.patel@iitg.ac.in,Humanities,,T3646,C8250,DHd7C29D8643D0,F100848,+91 9951565706,,active
+E100849,Neha Malhotra,staff,neha.malhotra@iitg.ac.in,Computer Science,,T5633,C4006,DHdEEB8F4935eb,F100849,+91 9670955511,,active
+E100850,Ira Yadav,staff,ira.yadav@iitg.ac.in,Humanities,,T6254,C4170,DHFB53612e16AD,F100850,+91 9198550104,,active
+E100851,Ishaan Desai,staff,ishaan.desai@iitg.ac.in,Mathematics,,T9878,C3374,DH43eb56e4Dfe1,F100851,+91 9749431908,,active
+E100852,Vivaan Shah,staff,vivaan.shah@iitg.ac.in,Management,,T4520,C5370,DHfC8A8dAf8504,F100852,+91 9206943568,,active
+E100853,Advik Kumar,staff,advik.kumar@iitg.ac.in,Electronics & Communication,,T2223,C9938,DH4cac1fbaFa5b,F100853,+91 9303308686,,inactive
+E100854,Tara Joshi,staff,tara.joshi@iitg.ac.in,Mathematics,,T1935,C8076,DHbaaED1993f72,F100854,+91 9513375773,,active
+E100855,Shaurya Chopra,staff,shaurya.chopra@iitg.ac.in,Humanities,,T8153,C6073,DH226dFB8d6ff7,F100855,+91 9842796735,,active
+E100856,Ayaan Arora,staff,ayaan.arora@iitg.ac.in,Computer Science,,T1888,C7093,DH52f24727CB92,F100856,+91 9665636119,,active
+E100857,Ananya Pandey,staff,ananya.pandey@iitg.ac.in,Chemical Engineering,,T5392,C4489,DHFbdaFd8B6Ebf,F100857,+91 9443339004,,active
+E100858,Neha Malhotra,staff,neha.malhotra@iitg.ac.in,Design,,T7899,C4450,DH6dbcadbabFb6,F100858,+91 9781508751,,active
+E100859,Sana Bansal,staff,sana.bansal@iitg.ac.in,Computer Science,,T7936,C3148,DHCA12a9fDdbC0,F100859,+91 9846223715,,active
+E100860,Ayaan Verma,staff,ayaan.verma@iitg.ac.in,Humanities,,T8560,C3862,DH6726D4B9bc8f,F100860,+91 9937647895,,active
+E100861,Ayaan Reddy,staff,ayaan.reddy@iitg.ac.in,Electronics & Communication,,T5782,C2665,DHf33Adfb4a6BD,F100861,+91 9488647559,,active
+E100862,Ira Yadav,staff,ira.yadav@iitg.ac.in,Mechanical Engineering,,T6522,C7235,DHF76D510dbF31,F100862,+91 9125560695,,active
+E100863,Krishna Bansal,staff,krishna.bansal@iitg.ac.in,Biology,,T8087,C9543,DHAFc9542ec568,F100863,+91 9044941790,,active
+E100864,Ayaan Joshi,staff,ayaan.joshi@iitg.ac.in,Management,,T4003,C1143,DHBacdf30D7Be0,F100864,+91 9809883296,,inactive
+E100865,Pari Srivastava,staff,pari.srivastava@iitg.ac.in,Civil Engineering,,T8689,C4208,DHce9E5f68CD1F,F100865,+91 9696146022,,active
+E100866,Nisha Rao,staff,nisha.rao@iitg.ac.in,Civil Engineering,,T1006,C5604,DH1594EBF5C975,F100866,+91 9612075895,,active
+E100867,Aarav Joshi,staff,aarav.joshi@iitg.ac.in,Civil Engineering,,T5550,C3950,DHCbDD6e4AE1fa,F100867,+91 9438819777,,active
+E100868,Sana Malhotra,staff,sana.malhotra@iitg.ac.in,Computer Science,,T7546,C5072,DHe0aB12f5eCE4,F100868,+91 9565648877,,active
+E100869,Ananya Sharma,staff,ananya.sharma@iitg.ac.in,Electronics & Communication,,T8957,C1521,DH63Df28D7eBe1,F100869,+91 9738966922,,active
+E100870,Atharv Saxena,staff,atharv.saxena@iitg.ac.in,Management,,T3003,C2669,DHaA0346A8fE6e,F100870,+91 9544457008,,active
+E100871,Neha Arora,staff,neha.arora@iitg.ac.in,Biology,,T6928,C3301,DH2CaFd6Daa544,F100871,+91 9575737987,,active
+E100872,Ishaan Chopra,staff,ishaan.chopra@iitg.ac.in,Electronics & Communication,,T6189,C6282,DHB85b6FcD62eF,F100872,+91 9540711331,,active
+E100873,Pari Joshi,staff,pari.joshi@iitg.ac.in,Civil Engineering,,T2669,C9620,DH4B9c6931f751,F100873,+91 9848075648,,active
+E100874,Vihaan Mishra,staff,vihaan.mishra@iitg.ac.in,Humanities,,T2057,C5068,DH2DeC8E11CABb,F100874,+91 9628835386,,active
+E100875,Diya Pandey,staff,diya.pandey@iitg.ac.in,Mathematics,,T8164,C1185,DH77d59dBe5b16,F100875,+91 9481615181,,active
+E100876,Atharv Malhotra,staff,atharv.malhotra@iitg.ac.in,Mechanical Engineering,,T6469,C3481,DHe1Ea103a4Fad,F100876,+91 9110989943,,active
+E100877,Kavya Shah,staff,kavya.shah@iitg.ac.in,Design,,T2747,C7295,DHB5FaF3c336DF,F100877,+91 9938463832,,active
+E100878,Ayaan Kapoor,staff,ayaan.kapoor@iitg.ac.in,Chemical Engineering,,T2431,C2207,DH5dd737B60b7F,F100878,+91 9196928263,,active
+E100879,Saanvi Singh,staff,saanvi.singh@iitg.ac.in,Biology,,T9398,C4345,DH840Fbb86dE19,F100879,+91 9296468678,,active
+E100880,Sai Rao,staff,sai.rao@iitg.ac.in,Humanities,,T7292,C5879,DHAfFfca7AdaA1,F100880,+91 9182846768,,active
+E100881,Diya Kumar,staff,diya.kumar@iitg.ac.in,Chemical Engineering,,T7338,C5033,DH789a2eCec496,F100881,+91 9905416184,,inactive
+E100882,Siya Jain,staff,siya.jain@iitg.ac.in,Design,,T3662,C3335,DH3681A90a5758,F100882,+91 9455097442,,active
+E100883,Tara Patel,staff,tara.patel@iitg.ac.in,Humanities,,T1776,C4772,DH1166eE225F81,F100883,+91 9090366494,,active
+E100884,Tara Mishra,staff,tara.mishra@iitg.ac.in,Chemistry,,T7168,C4814,DH9fdC813b83AD,F100884,+91 9479067797,,inactive
+E100885,Anika Pandey,staff,anika.pandey@iitg.ac.in,Chemical Engineering,,T9469,C7996,DHD66C0d23E137,F100885,+91 9141846221,,inactive
+E100886,Saanvi Sharma,staff,saanvi.sharma@iitg.ac.in,Mechanical Engineering,,T2810,C2770,DHB2CfcB703a33,F100886,+91 9031445105,,active
+E100887,Neha Rao,staff,neha.rao@iitg.ac.in,Mathematics,,T4927,C8444,DH8E5e797706a5,F100887,+91 9486763313,,active
+E100888,Arjun Tiwari,staff,arjun.tiwari@iitg.ac.in,Physics,,T1938,C2949,DH1B3D26Ab21E3,F100888,+91 9419295941,,active
+E100889,Sai Arora,staff,sai.arora@iitg.ac.in,Mathematics,,T2947,C2486,DH77C7F60F0390,F100889,+91 9064939298,,active
+E100890,Priya Srivastava,staff,priya.srivastava@iitg.ac.in,Management,,T2137,C6619,DH0Dc824Cf0800,F100890,+91 9011624548,,active
+E100891,Nisha Singh,staff,nisha.singh@iitg.ac.in,Computer Science,,T4693,C8725,DH8F00adce79CD,F100891,+91 9500805051,,active
+E100892,Arjun Sharma,staff,arjun.sharma@iitg.ac.in,Design,,T4342,C2116,DHDE6Db6Faa4E2,F100892,+91 9201599807,,active
+E100893,Diya Saxena,staff,diya.saxena@iitg.ac.in,Electronics & Communication,,T6835,C3043,DHAaB3eEDD3a39,F100893,+91 9600418632,,active
+E100894,Priya Pandey,staff,priya.pandey@iitg.ac.in,Electronics & Communication,,T9070,C3391,DH7a0669d64c7a,F100894,+91 9737295516,,active
+E100895,Ananya Patel,staff,ananya.patel@iitg.ac.in,Biology,,T4066,C2380,DHf97f4DccaaBc,F100895,+91 9213471794,,active
+E100896,Vihaan Rao,staff,vihaan.rao@iitg.ac.in,Mathematics,,T8776,C2102,DHebE1b25e5b7b,F100896,+91 9484413771,,active
+E100897,Ishaan Chopra,staff,ishaan.chopra@iitg.ac.in,Physics,,T5495,C2685,DHb166a5573785,F100897,+91 9427417264,,inactive
+E100898,Reyansh Joshi,staff,reyansh.joshi@iitg.ac.in,Chemistry,,T5048,C8648,DH8C0bB14FD761,F100898,+91 9695210079,,active
+E100899,Anika Kumar,staff,anika.kumar@iitg.ac.in,Electronics & Communication,,T7228,C1492,DHA3AFb64CeeCc,F100899,+91 9717550524,,active
+E100900,Sai Patel,staff,sai.patel@iitg.ac.in,Chemical Engineering,,T6269,C6153,DH3CbFb61B2302,F100900,+91 9774422158,,active
+E100901,Riya Saxena,staff,riya.saxena@iitg.ac.in,Management,,T7872,C1465,DHE49aeC6d3A9E,F100901,+91 9699827538,,inactive
+E100902,Reyansh Shah,staff,reyansh.shah@iitg.ac.in,Civil Engineering,,T9520,C5463,DH6A34c53c7f97,F100902,+91 9051896772,,active
+E100903,Siya Modi,staff,siya.modi@iitg.ac.in,Civil Engineering,,T6919,C9739,DH41867eb4d8B6,F100903,+91 9480794925,,active
+E100904,Ishaan Bansal,staff,ishaan.bansal@iitg.ac.in,Biology,,T5048,C2494,DHEE1d6b9b38De,F100904,+91 9837232876,,active
+E100905,Nisha Verma,staff,nisha.verma@iitg.ac.in,Management,,T5520,C6001,DHbcDe5dBfcB65,F100905,+91 9666114465,,active
+E100906,Sai Modi,staff,sai.modi@iitg.ac.in,Management,,T4215,C6328,DHFdBFFcfa07DA,F100906,+91 9726405865,,active
+E100907,Sana Tiwari,staff,sana.tiwari@iitg.ac.in,Electronics & Communication,,T2083,C4819,DHA4b5dA5ce7CF,F100907,+91 9653233718,,inactive
+E100908,Shaurya Patel,staff,shaurya.patel@iitg.ac.in,Electronics & Communication,,T6677,C1965,DH7C9BAE37e3C7,F100908,+91 9920371159,,active
+E100909,Shaurya Arora,staff,shaurya.arora@iitg.ac.in,Chemical Engineering,,T6803,C1904,DH25bc77dd61Cd,F100909,+91 9305871024,,active
+E100910,Tara Singh,staff,tara.singh@iitg.ac.in,Physics,,T6599,C8328,DH5fc5329377fa,F100910,+91 9002070304,,inactive
+E100911,Aarav Chopra,staff,aarav.chopra@iitg.ac.in,Physics,,T3734,C9163,DH09B2FeAFb349,F100911,+91 9582857316,,active
+E100912,Ira Jain,staff,ira.jain@iitg.ac.in,Electronics & Communication,,T1602,C1973,DH767eA0baD563,F100912,+91 9954776291,,active
+E100913,Ira Mishra,staff,ira.mishra@iitg.ac.in,Humanities,,T1613,C6810,DH46E89b3BbEbA,F100913,+91 9426139819,,active
+E100914,Atharv Verma,staff,atharv.verma@iitg.ac.in,Management,,T3421,C5556,DHfEF8B06c8A3C,F100914,+91 9155453816,,active
+E100915,Ira Shah,staff,ira.shah@iitg.ac.in,Computer Science,,T6735,C1921,DH4E186f4Fa7cf,F100915,+91 9994778016,,active
+E100916,Shaurya Verma,staff,shaurya.verma@iitg.ac.in,Physics,,T3121,C4920,DH57Eaf12eEf49,F100916,+91 9364928068,,active
+E100917,Diya Tiwari,staff,diya.tiwari@iitg.ac.in,Biology,,T5514,C9447,DHBda610bE05ed,F100917,+91 9839673443,,active
+E100918,Vivaan Joshi,staff,vivaan.joshi@iitg.ac.in,Chemistry,,T7916,C3436,DH6846d365dCfb,F100918,+91 9942364712,,active
+E100919,Pranav Saxena,staff,pranav.saxena@iitg.ac.in,Physics,,T9906,C3376,DHAF9d6AfdFEbc,F100919,+91 9307762443,,inactive
+E100920,Ayaan Mishra,staff,ayaan.mishra@iitg.ac.in,Design,,T9547,C1284,DH8F9adC38bBbA,F100920,+91 9480835875,,active
+E100921,Vivaan Bansal,staff,vivaan.bansal@iitg.ac.in,Design,,T3878,C7600,DH558B7E904404,F100921,+91 9654252593,,active
+E100922,Arjun Shah,staff,arjun.shah@iitg.ac.in,Mechanical Engineering,,T4798,C4975,DH2B5fa83c6Cf3,F100922,+91 9078272517,,active
+E100923,Advik Desai,staff,advik.desai@iitg.ac.in,Management,,T9745,C1314,DHc1Dfc01ded12,F100923,+91 9077766600,,active
+E100924,Advik Reddy,staff,advik.reddy@iitg.ac.in,Civil Engineering,,T6323,C1382,DH23807BbAE9FA,F100924,+91 9873136133,,active
+E100925,Vihaan Malhotra,staff,vihaan.malhotra@iitg.ac.in,Mechanical Engineering,,T9771,C9260,DH9fDdf35F17EE,F100925,+91 9113329390,,active
+E100926,Anika Desai,staff,anika.desai@iitg.ac.in,Management,,T8073,C9981,DH5b67c86dcF1f,F100926,+91 9285829225,,active
+E100927,Aarav Jain,staff,aarav.jain@iitg.ac.in,Biology,,T5081,C1312,DHd2CfBcF8f7CD,F100927,+91 9557408687,,active
+E100928,Saanvi Patel,staff,saanvi.patel@iitg.ac.in,Civil Engineering,,T5999,C6714,DHbfb0E3D9baea,F100928,+91 9399528557,,active
+E100929,Shaurya Modi,staff,shaurya.modi@iitg.ac.in,Physics,,T5777,C1297,DH9DAe6c92eb31,F100929,+91 9593453674,,active
+E100930,Pranav Rao,staff,pranav.rao@iitg.ac.in,Humanities,,T9896,C6390,DH5f8EeaecC19b,F100930,+91 9429436039,,active
+E100931,Aditya Srivastava,staff,aditya.srivastava@iitg.ac.in,Computer Science,,T1481,C1956,DHE71Bdd7f2aaE,F100931,+91 9873826402,,inactive
+E100932,Sana Agarwal,staff,sana.agarwal@iitg.ac.in,Design,,T1883,C2201,DHCDe35ED0C0D7,F100932,+91 9562433820,,active
+E100933,Aarav Kumar,staff,aarav.kumar@iitg.ac.in,Management,,T6040,C8774,DH420840190A7e,F100933,+91 9366439380,,active
+E100934,Aditya Patel,staff,aditya.patel@iitg.ac.in,Physics,,T3043,C6607,DHdFE7AcAf2FdC,F100934,+91 9081227779,,active
+E100935,Pari Joshi,staff,pari.joshi@iitg.ac.in,Mechanical Engineering,,T1153,C6663,DHDAbDdBA40F21,F100935,+91 9325915473,,active
+E100936,Ira Desai,staff,ira.desai@iitg.ac.in,Management,,T2732,C5830,DHcBF578C385eD,F100936,+91 9219527526,,active
+E100937,Aditya Chopra,staff,aditya.chopra@iitg.ac.in,Civil Engineering,,T1758,C7929,DH137f7dD78d60,F100937,+91 9602828653,,active
+E100938,Tara Agarwal,staff,tara.agarwal@iitg.ac.in,Chemical Engineering,,T2199,C8433,DHaA7c0D16d1b6,F100938,+91 9950368105,,active
+E100939,Neha Chopra,staff,neha.chopra@iitg.ac.in,Civil Engineering,,T8126,C4139,DH5a09F5db20A6,F100939,+91 9999772267,,active
+E100940,Sai Chopra,staff,sai.chopra@iitg.ac.in,Design,,T5806,C6608,DH6E5277fccd0e,F100940,+91 9773948280,,inactive
+E100941,Anika Reddy,staff,anika.reddy@iitg.ac.in,Mechanical Engineering,,T3619,C2870,DH477FadA2d5eE,F100941,+91 9212486528,,active
+E100942,Advik Desai,staff,advik.desai@iitg.ac.in,Chemistry,,T3852,C3098,DHbfd3F75d1A0f,F100942,+91 9140982614,,active
+E100943,Aditya Chopra,staff,aditya.chopra@iitg.ac.in,Electronics & Communication,,T1388,C5128,DHb2F989E1Fa8d,F100943,+91 9653017562,,active
+E100944,Ira Arora,staff,ira.arora@iitg.ac.in,Biology,,T6890,C7780,DH62EE8164d2DC,F100944,+91 9151656310,,active
+E100945,Pranav Kumar,staff,pranav.kumar@iitg.ac.in,Mechanical Engineering,,T8223,C2499,DHbb8cd4f00A71,F100945,+91 9985197972,,active
+E100946,Saanvi Srivastava,staff,saanvi.srivastava@iitg.ac.in,Computer Science,,T5512,C7630,DH8a4F28B4bDEB,F100946,+91 9504798474,,active
+E100947,Kavya Joshi,staff,kavya.joshi@iitg.ac.in,Computer Science,,T6854,C1358,DHC5fea6C6abd9,F100947,+91 9367105986,,active
+E100948,Anika Patel,staff,anika.patel@iitg.ac.in,Mechanical Engineering,,T3535,C5164,DH2CF1BE537f5A,F100948,+91 9292094026,,active
+E100949,Priya Bansal,staff,priya.bansal@iitg.ac.in,Humanities,,T5608,C7056,DHF5aD3Feff65D,F100949,+91 9909450477,,inactive
+E100950,Aarav Patel,staff,aarav.patel@iitg.ac.in,Civil Engineering,,T6349,C7809,DHEFf8DcEFC68f,F100950,+91 9808589071,,active
+E100951,Anika Agarwal,staff,anika.agarwal@iitg.ac.in,Civil Engineering,,T6016,C5952,DHe4D557fEff6D,F100951,+91 9715893660,,active
+E100952,Arjun Mehta,staff,arjun.mehta@iitg.ac.in,Management,,T6148,C1096,DH65608DDABADC,F100952,+91 9931793254,,active
+E100953,Tara Mehta,staff,tara.mehta@iitg.ac.in,Humanities,,T4899,C3536,DHA3dAdcD8b5c5,F100953,+91 9482380968,,active
+E100954,Atharv Kumar,staff,atharv.kumar@iitg.ac.in,Biology,,T4404,C2842,DHc23fDc0aFB81,F100954,+91 9930074206,,active
+E100955,Reyansh Agarwal,staff,reyansh.agarwal@iitg.ac.in,Computer Science,,T4711,C1257,DH75c4D308Ce0D,F100955,+91 9666957669,,active
+E100956,Reyansh Rao,staff,reyansh.rao@iitg.ac.in,Management,,T2335,C1253,DHA1Bdf9ff0843,F100956,+91 9844593081,,active
+E100957,Nisha Jain,staff,nisha.jain@iitg.ac.in,Computer Science,,T1497,C3945,DHa7bb57501734,F100957,+91 9179416530,,active
+E100958,Aarav Sharma,staff,aarav.sharma@iitg.ac.in,Mechanical Engineering,,T4639,C6315,DH4dD99e32Af33,F100958,+91 9123696840,,active
+E100959,Reyansh Shah,staff,reyansh.shah@iitg.ac.in,Computer Science,,T6738,C3854,DHeB8CB99F6BB8,F100959,+91 9648633882,,active
+E100960,Nisha Pandey,staff,nisha.pandey@iitg.ac.in,Mathematics,,T8515,C3606,DH3B277B5C3F5c,F100960,+91 9639921329,,active
+E100961,Pari Srivastava,staff,pari.srivastava@iitg.ac.in,Mechanical Engineering,,T7883,C2398,DHB79308ceBd2A,F100961,+91 9003504383,,active
+E100962,Kavya Bansal,staff,kavya.bansal@iitg.ac.in,Mechanical Engineering,,T5492,C8082,DH05a77E3DBc62,F100962,+91 9587448863,,active
+E100963,Vihaan Bansal,staff,vihaan.bansal@iitg.ac.in,Physics,,T4368,C4110,DHBF3b9C4CcBaB,F100963,+91 9772852915,,active
+E100964,Shaurya Reddy,staff,shaurya.reddy@iitg.ac.in,Humanities,,T4440,C5511,DHABB2Fd41Df4f,F100964,+91 9635985691,,inactive
+E100965,Sana Desai,staff,sana.desai@iitg.ac.in,Design,,T4874,C2479,DH7A5D6e0df30A,F100965,+91 9607848171,,active
+E100966,Diya Chopra,staff,diya.chopra@iitg.ac.in,Chemical Engineering,,T8882,C6356,DH0CdBdEa61228,F100966,+91 9179121658,,active
+E100967,Ishaan Yadav,staff,ishaan.yadav@iitg.ac.in,Mathematics,,T9858,C7697,DH2f3862AD7e8E,F100967,+91 9043795533,,inactive
+E100968,Priya Arora,staff,priya.arora@iitg.ac.in,Chemical Engineering,,T9337,C1701,DH6ebCAF71Ebbd,F100968,+91 9226817657,,active
+E100969,Anika Desai,staff,anika.desai@iitg.ac.in,Civil Engineering,,T3413,C1913,DH0e1FaAed7DaC,F100969,+91 9669740311,,inactive
+E100970,Aarav Desai,staff,aarav.desai@iitg.ac.in,Design,,T3941,C8334,DH9Ec1a8d24cD8,F100970,+91 9430972658,,active
+E100971,Advik Tiwari,staff,advik.tiwari@iitg.ac.in,Humanities,,T4064,C8643,DHfCac43ea7480,F100971,+91 9213023057,,active
+E100972,Ananya Bansal,staff,ananya.bansal@iitg.ac.in,Computer Science,,T7620,C8570,DH183Cfe10A812,F100972,+91 9438085928,,inactive
+E100973,Anika Reddy,staff,anika.reddy@iitg.ac.in,Physics,,T7908,C7493,DHFf475f59CF3F,F100973,+91 9411497324,,active
+E100974,Nisha Malhotra,staff,nisha.malhotra@iitg.ac.in,Physics,,T1844,C6495,DHE9493B6f1058,F100974,+91 9695414191,,active
+E100975,Krishna Shah,staff,krishna.shah@iitg.ac.in,Civil Engineering,,T8116,C8998,DHF6ABc9b3959A,F100975,+91 9483034697,,active
+E100976,Aarav Gupta,staff,aarav.gupta@iitg.ac.in,Electronics & Communication,,T6443,C3645,DH159D7ead56BF,F100976,+91 9832885309,,active
+E100977,Sai Agarwal,staff,sai.agarwal@iitg.ac.in,Design,,T5093,C3534,DHfbFE6B8ffEcD,F100977,+91 9969733070,,active
+E100978,Anika Joshi,staff,anika.joshi@iitg.ac.in,Mechanical Engineering,,T9131,C4844,DHbDC0aea83FA2,F100978,+91 9456256211,,active
+E100979,Priya Rao,staff,priya.rao@iitg.ac.in,Physics,,T5189,C7843,DH0Ac917fB63fA,F100979,+91 9013086043,,active
+E100980,Anika Sharma,staff,anika.sharma@iitg.ac.in,Civil Engineering,,T6040,C9325,DHbdf1F133E4dF,F100980,+91 9777041583,,active
+E100981,Tara Joshi,staff,tara.joshi@iitg.ac.in,Biology,,T5512,C9949,DHCDF26b538194,F100981,+91 9002783124,,active
+E100982,Ishaan Verma,staff,ishaan.verma@iitg.ac.in,Chemistry,,T4039,C6339,DH4BE3cbdBef3e,F100982,+91 9823190504,,inactive
+E100983,Riya Sharma,staff,riya.sharma@iitg.ac.in,Mathematics,,T7039,C8297,DHfFD1CBeF736b,F100983,+91 9700937590,,active
+E100984,Pari Arora,staff,pari.arora@iitg.ac.in,Design,,T4336,C5539,DHE5222Ed636Db,F100984,+91 9669957778,,active
+E100985,Nisha Agarwal,staff,nisha.agarwal@iitg.ac.in,Chemical Engineering,,T2844,C6152,DHfE69A7EA34fd,F100985,+91 9624135214,,active
+E100986,Diya Yadav,staff,diya.yadav@iitg.ac.in,Design,,T1069,C3838,DHCba532b7EC7D,F100986,+91 9035747521,,inactive
+E100987,Priya Singh,staff,priya.singh@iitg.ac.in,Physics,,T7771,C6486,DH959FD3C51Aa2,F100987,+91 9735158291,,active
+E100988,Ira Bansal,staff,ira.bansal@iitg.ac.in,Electronics & Communication,,T9914,C5756,DH2F870eDfcced,F100988,+91 9045770522,,active
+E100989,Atharv Agarwal,staff,atharv.agarwal@iitg.ac.in,Mechanical Engineering,,T4220,C3285,DH8A9b8bB1ACDA,F100989,+91 9592857191,,active
+E100990,Diya Verma,staff,diya.verma@iitg.ac.in,Mechanical Engineering,,T6854,C2998,DH3Ee21bAAdB20,F100990,+91 9527856818,,active
+E100991,Aditya Modi,staff,aditya.modi@iitg.ac.in,Chemistry,,T4497,C1020,DHeBDBf382Fa3B,F100991,+91 9852731256,,active
+E100992,Vihaan Malhotra,staff,vihaan.malhotra@iitg.ac.in,Electronics & Communication,,T9241,C5069,DHEaDA06a775Be,F100992,+91 9710235862,,active
+E100993,Krishna Bansal,staff,krishna.bansal@iitg.ac.in,Computer Science,,T1755,C5054,DH4aAA7FEEAfb5,F100993,+91 9983654534,,active
+E100994,Pranav Shah,staff,pranav.shah@iitg.ac.in,Chemistry,,T7249,C7967,DHebafd2d4b6cd,F100994,+91 9972229724,,active
+E100995,Vivaan Kapoor,staff,vivaan.kapoor@iitg.ac.in,Civil Engineering,,T8906,C8784,DHD72114CD2344,F100995,+91 9701287781,,active
+E100996,Krishna Kumar,staff,krishna.kumar@iitg.ac.in,Chemical Engineering,,T8519,C2671,DHbde3AA807FC8,F100996,+91 9818591717,,active
+E100997,Vihaan Malhotra,staff,vihaan.malhotra@iitg.ac.in,Electronics & Communication,,T5454,C2815,DHdc46C418a0E7,F100997,+91 9184586243,,active
+E100998,Neha Kapoor,staff,neha.kapoor@iitg.ac.in,Computer Science,,T1407,C7527,DH2Fadc09e3eC3,F100998,+91 9221552944,,active
+E100999,Diya Chopra,staff,diya.chopra@iitg.ac.in,Biology,,T5845,C1458,DH7EdbBB7bE2C9,F100999,+91 9640745486,,inactive

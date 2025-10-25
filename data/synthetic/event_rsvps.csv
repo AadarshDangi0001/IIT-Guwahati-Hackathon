@@ -1,0 +1,801 @@
+rsvp_id,event_id,entity_id,attendee_email,event_name,event_type,event_date,venue,rsvp_status,registered_at
+RSVP_000001,EVT_0001,E100072,aarav.bansal@iitg.ac.in,Conference - ago trado,Conference,2026-02-17T12:13:30.365Z,LIB_L3,confirmed,2025-09-24T02:58:44.829Z
+RSVP_000002,EVT_0001,E100603,advik.kapoor@iitg.ac.in,Cultural Event - texo adipiscor,Cultural Event,2026-04-21T21:20:44.036Z,LAB_102,confirmed,2025-09-20T06:15:26.795Z
+RSVP_000003,EVT_0001,E100146,vihaan.yadav@iitg.ac.in,Technical Workshop - repellat sui,Technical Workshop,2026-01-31T00:03:39.797Z,CC_LAB2,pending,2025-10-15T11:53:36.777Z
+RSVP_000004,EVT_0001,E100908,shaurya.patel@iitg.ac.in,Guest Lecture - arca correptius,Guest Lecture,2026-03-13T04:45:51.774Z,CC_LAB1,confirmed,2025-09-24T18:29:38.472Z
+RSVP_000005,EVT_0001,E100697,shaurya.jain@iitg.ac.in,Career Fair - abundans repudiandae,Career Fair,2026-03-09T06:26:40.349Z,ADMIN_OFFICE,confirmed,2025-10-05T14:26:56.219Z
+RSVP_000006,EVT_0001,E100306,aditya.malhotra@iitg.ac.in,Research Presentation - ea ulterius,Research Presentation,2026-03-19T05:05:39.985Z,LAB_301,confirmed,2025-10-17T21:21:35.246Z
+RSVP_000007,EVT_0001,E100904,ishaan.bansal@iitg.ac.in,Guest Lecture - alias charisma,Guest Lecture,2026-01-14T15:39:10.416Z,LAB_102,pending,2025-10-18T07:34:22.683Z
+RSVP_000008,EVT_0001,E100531,ayaan.singh@iitg.ac.in,Technical Workshop - ademptio solio,Technical Workshop,2026-01-21T09:47:47.948Z,GYM_INDOOR,pending,2025-10-14T16:43:55.926Z
+RSVP_000009,EVT_0001,E100997,vihaan.malhotra@iitg.ac.in,Cultural Event - supellex vitium,Cultural Event,2025-12-14T07:21:15.083Z,HOSTEL_B,confirmed,2025-09-30T07:04:54.512Z
+RSVP_000010,EVT_0001,E100553,nisha.malhotra@iitg.ac.in,Career Fair - sponte ascit,Career Fair,2026-02-17T03:09:50.271Z,AUD_MAIN,confirmed,2025-09-27T08:28:24.564Z
+RSVP_000011,EVT_0002,E100826,vihaan.sharma@iitg.ac.in,Conference - vos terror,Conference,2026-01-04T02:18:42.339Z,CC_LAB2,confirmed,2025-10-15T00:10:08.172Z
+RSVP_000012,EVT_0002,E100043,myra.saxena@iitg.ac.in,Conference - error peccatus,Conference,2025-10-29T19:50:16.498Z,LIB_ENT,pending,2025-09-24T20:26:57.942Z
+RSVP_000013,EVT_0002,E100498,arjun.kapoor@iitg.ac.in,Festival Celebration - balbus coadunatio,Festival Celebration,2026-03-25T15:00:22.107Z,AC_301,pending,2025-10-24T23:22:01.400Z
+RSVP_000014,EVT_0002,E100570,saanvi.rao@iitg.ac.in,Sports Tournament - decens causa,Sports Tournament,2026-01-05T20:52:50.427Z,AC_201,confirmed,2025-09-29T20:36:13.114Z
+RSVP_000015,EVT_0002,E100745,reyansh.gupta@iitg.ac.in,Guest Lecture - talus assentator,Guest Lecture,2026-01-01T13:46:01.021Z,CAF_MAIN,confirmed,2025-09-28T04:20:39.242Z
+RSVP_000016,EVT_0002,E100545,vivaan.tiwari@iitg.ac.in,Research Presentation - corona ultio,Research Presentation,2025-11-09T21:52:11.909Z,AC_201,confirmed,2025-09-24T00:52:15.600Z
+RSVP_000017,EVT_0002,E100897,ishaan.chopra@iitg.ac.in,Technical Workshop - utrum theca,Technical Workshop,2025-11-09T08:23:18.226Z,CC_LAB2,confirmed,2025-10-02T22:28:02.338Z
+RSVP_000018,EVT_0002,E100755,tara.yadav@iitg.ac.in,Conference - tametsi velociter,Conference,2025-12-12T13:52:05.021Z,AC_301,declined,2025-10-11T18:26:41.595Z
+RSVP_000019,EVT_0002,E100799,aarav.agarwal@iitg.ac.in,Guest Lecture - cunae debitis,Guest Lecture,2026-03-04T15:05:31.761Z,ADMIN_OFFICE,confirmed,2025-10-06T22:18:59.355Z
+RSVP_000020,EVT_0002,E100071,ayaan.mishra@iitg.ac.in,Alumni Meet - exercitationem expedita,Alumni Meet,2025-11-12T02:42:50.700Z,LIB_ENT,confirmed,2025-10-10T02:23:31.504Z
+RSVP_000021,EVT_0003,E100338,diya.verma@iitg.ac.in,Conference - officia amoveo,Conference,2026-02-27T16:18:26.822Z,ADMIN_LOBBY,confirmed,2025-10-11T09:19:11.545Z
+RSVP_000022,EVT_0003,E100416,krishna.arora@iitg.ac.in,Alumni Meet - desolo ocer,Alumni Meet,2025-10-28T14:47:34.859Z,LIB_L1,confirmed,2025-09-22T11:58:29.686Z
+RSVP_000023,EVT_0003,E100727,neha.chopra@iitg.ac.in,Conference - turba assentator,Conference,2026-01-21T20:37:46.134Z,CC_LAB1,confirmed,2025-10-15T00:01:56.364Z
+RSVP_000024,EVT_0003,E100935,pari.joshi@iitg.ac.in,Guest Lecture - vociferor eos,Guest Lecture,2026-04-12T20:34:55.364Z,GYM_MAIN,declined,2025-09-23T19:45:11.697Z
+RSVP_000025,EVT_0003,E100157,neha.rao@iitg.ac.in,Career Fair - baiulus blandior,Career Fair,2026-02-25T08:40:27.263Z,ADMIN_OFFICE,confirmed,2025-10-21T06:55:22.694Z
+RSVP_000026,EVT_0003,E100440,myra.kapoor@iitg.ac.in,Career Fair - corpus utor,Career Fair,2026-02-17T01:43:49.071Z,HOSTEL_A,confirmed,2025-10-06T01:08:49.916Z
+RSVP_000027,EVT_0003,E100279,shaurya.patel@iitg.ac.in,Alumni Meet - conturbo aedificium,Alumni Meet,2026-01-19T14:04:25.529Z,AC_102,confirmed,2025-10-19T07:36:06.605Z
+RSVP_000028,EVT_0003,E100116,ishaan.patel@iitg.ac.in,Sports Tournament - benigne sol,Sports Tournament,2025-12-13T22:48:26.692Z,AC_201,confirmed,2025-10-13T14:39:39.370Z
+RSVP_000029,EVT_0003,E100544,ayaan.kapoor@iitg.ac.in,Festival Celebration - debilito ex,Festival Celebration,2026-03-12T00:51:15.921Z,AUD_SEMINAR,pending,2025-09-23T06:58:31.042Z
+RSVP_000030,EVT_0003,E100981,tara.joshi@iitg.ac.in,Technical Workshop - campana culpa,Technical Workshop,2026-04-25T14:03:07.425Z,CAF_FOOD_COURT,confirmed,2025-09-28T03:38:05.133Z
+RSVP_000031,EVT_0004,E100042,vihaan.saxena@iitg.ac.in,Research Presentation - adsuesco labore,Research Presentation,2025-12-31T14:22:35.777Z,ADMIN_LOBBY,confirmed,2025-09-19T05:04:55.555Z
+RSVP_000032,EVT_0004,E100262,arjun.gupta@iitg.ac.in,Sports Tournament - consequuntur dolorum,Sports Tournament,2026-04-01T08:44:04.517Z,HOSTEL_A,confirmed,2025-09-30T02:39:35.010Z
+RSVP_000033,EVT_0004,E100828,pari.shah@iitg.ac.in,Conference - comis vesper,Conference,2025-12-11T16:41:15.339Z,LAB_101,confirmed,2025-10-05T12:32:00.930Z
+RSVP_000034,EVT_0004,E100247,sai.reddy@iitg.ac.in,Technical Workshop - aedificium tergiversatio,Technical Workshop,2025-11-03T19:13:20.142Z,LAB_102,confirmed,2025-10-20T20:29:56.709Z
+RSVP_000035,EVT_0004,E100710,sana.joshi@iitg.ac.in,Sports Tournament - bellum tondeo,Sports Tournament,2025-12-22T15:18:33.567Z,CC_SERVER,confirmed,2025-10-10T18:02:49.676Z
+RSVP_000036,EVT_0004,E100363,ayaan.chopra@iitg.ac.in,Research Presentation - audio arcesso,Research Presentation,2025-11-04T20:18:14.699Z,LIB_L1,pending,2025-10-20T00:54:10.104Z
+RSVP_000037,EVT_0004,E100156,diya.shah@iitg.ac.in,Seminar - aestas corpus,Seminar,2026-04-05T22:50:46.979Z,LAB_201,pending,2025-09-25T15:20:48.813Z
+RSVP_000038,EVT_0004,E100277,vivaan.modi@iitg.ac.in,Alumni Meet - vivo viridis,Alumni Meet,2025-11-16T10:42:15.019Z,LAB_101,confirmed,2025-10-11T21:55:05.521Z
+RSVP_000039,EVT_0004,E100828,pari.shah@iitg.ac.in,Technical Workshop - deleo canonicus,Technical Workshop,2026-03-28T01:14:32.205Z,LIB_ENT,confirmed,2025-10-14T04:14:28.236Z
+RSVP_000040,EVT_0004,E100571,sai.mehta@iitg.ac.in,Technical Workshop - bene aperiam,Technical Workshop,2026-04-23T08:14:49.483Z,LAB_102,confirmed,2025-10-24T03:19:34.086Z
+RSVP_000041,EVT_0005,E100820,pranav.srivastava@iitg.ac.in,Guest Lecture - curia necessitatibus,Guest Lecture,2026-01-16T18:09:43.258Z,LIB_ENT,declined,2025-10-08T04:33:22.504Z
+RSVP_000042,EVT_0005,E100685,anika.desai@iitg.ac.in,Alumni Meet - varietas acies,Alumni Meet,2026-01-04T12:46:23.983Z,AUD_MAIN,confirmed,2025-10-07T04:49:39.834Z
+RSVP_000043,EVT_0005,E100890,priya.srivastava@iitg.ac.in,Career Fair - cilicium caries,Career Fair,2025-12-23T15:50:31.195Z,ADMIN_LOBBY,confirmed,2025-09-26T07:05:33.734Z
+RSVP_000044,EVT_0005,E100788,advik.srivastava@iitg.ac.in,Conference - caecus cernuus,Conference,2026-04-01T08:06:50.943Z,ADMIN_OFFICE,pending,2025-09-27T08:01:14.877Z
+RSVP_000045,EVT_0005,E100429,pranav.agarwal@iitg.ac.in,Alumni Meet - tyrannus undique,Alumni Meet,2026-02-15T09:45:38.765Z,HOSTEL_B,confirmed,2025-09-24T16:06:10.676Z
+RSVP_000046,EVT_0005,E100341,pranav.modi@iitg.ac.in,Alumni Meet - clam aegre,Alumni Meet,2026-04-06T07:47:39.906Z,GYM_INDOOR,confirmed,2025-10-03T04:17:46.415Z
+RSVP_000047,EVT_0005,E100142,aarav.rao@iitg.ac.in,Career Fair - adnuo aspernatur,Career Fair,2026-03-30T23:32:34.239Z,AC_201,confirmed,2025-09-19T19:30:32.938Z
+RSVP_000048,EVT_0005,E100939,neha.chopra@iitg.ac.in,Career Fair - atavus cunabula,Career Fair,2025-12-20T13:40:16.176Z,AC_102,confirmed,2025-10-03T10:21:35.437Z
+RSVP_000049,EVT_0005,E100439,advik.bansal@iitg.ac.in,Festival Celebration - ullus certe,Festival Celebration,2025-12-05T13:12:17.387Z,AUD_MAIN,confirmed,2025-10-15T16:30:11.326Z
+RSVP_000050,EVT_0005,E100168,riya.mishra@iitg.ac.in,Technical Workshop - theologus deinde,Technical Workshop,2025-11-28T05:02:38.944Z,LIB_L1,confirmed,2025-10-12T17:43:45.386Z
+RSVP_000051,EVT_0006,E100742,vivaan.srivastava@iitg.ac.in,Career Fair - socius arceo,Career Fair,2026-01-23T03:34:47.402Z,AC_201,confirmed,2025-09-29T01:19:38.590Z
+RSVP_000052,EVT_0006,E100327,myra.patel@iitg.ac.in,Research Presentation - tui bis,Research Presentation,2026-02-14T17:12:56.236Z,LAB_101,confirmed,2025-09-21T16:27:33.904Z
+RSVP_000053,EVT_0006,E100734,pranav.agarwal@iitg.ac.in,Conference - strenuus sumo,Conference,2026-01-02T01:41:20.105Z,AC_102,pending,2025-09-19T07:49:38.221Z
+RSVP_000054,EVT_0006,E100423,saanvi.singh@iitg.ac.in,Seminar - accendo theatrum,Seminar,2025-12-13T09:14:47.862Z,LIB_L1,confirmed,2025-10-13T17:20:02.040Z
+RSVP_000055,EVT_0006,E100693,neha.verma@iitg.ac.in,Technical Workshop - nobis arceo,Technical Workshop,2026-02-21T03:34:32.588Z,LAB_102,confirmed,2025-10-05T03:48:41.657Z
+RSVP_000056,EVT_0006,E100953,tara.mehta@iitg.ac.in,Research Presentation - tendo fugiat,Research Presentation,2025-10-27T22:09:47.615Z,LIB_L1,confirmed,2025-10-20T10:24:13.008Z
+RSVP_000057,EVT_0006,E100039,advik.gupta@iitg.ac.in,Festival Celebration - pariatur tabesco,Festival Celebration,2026-01-21T00:50:42.826Z,CAF_MAIN,confirmed,2025-10-25T03:07:17.792Z
+RSVP_000058,EVT_0006,E100715,ayaan.malhotra@iitg.ac.in,Seminar - vox autus,Seminar,2026-03-19T13:51:44.236Z,AUD_SEMINAR,confirmed,2025-09-20T20:51:02.938Z
+RSVP_000059,EVT_0006,E100557,shaurya.sharma@iitg.ac.in,Conference - ipsa dolore,Conference,2025-11-20T14:45:18.072Z,AC_201,confirmed,2025-10-08T21:21:57.898Z
+RSVP_000060,EVT_0006,E100602,siya.saxena@iitg.ac.in,Technical Workshop - cultellus nihil,Technical Workshop,2026-04-22T04:08:34.161Z,LAB_201,pending,2025-10-04T12:16:55.225Z
+RSVP_000061,EVT_0007,E100557,shaurya.sharma@iitg.ac.in,Research Presentation - tantillus video,Research Presentation,2026-01-23T15:21:57.608Z,AUD_SEMINAR,declined,2025-10-09T23:26:33.165Z
+RSVP_000062,EVT_0007,E100419,vihaan.pandey@iitg.ac.in,Cultural Event - antiquus tricesimus,Cultural Event,2026-04-17T20:03:07.836Z,LAB_102,confirmed,2025-10-22T06:11:58.639Z
+RSVP_000063,EVT_0007,E100232,tara.agarwal@iitg.ac.in,Conference - cultellus pectus,Conference,2025-12-29T15:32:38.820Z,AUD_SEMINAR,pending,2025-09-20T00:32:40.183Z
+RSVP_000064,EVT_0007,E100290,aarav.agarwal@iitg.ac.in,Guest Lecture - quaerat tergeo,Guest Lecture,2026-04-13T15:49:04.436Z,LAB_101,confirmed,2025-10-23T00:32:53.790Z
+RSVP_000065,EVT_0007,E100232,tara.agarwal@iitg.ac.in,Conference - tristis thalassinus,Conference,2025-11-12T03:54:25.922Z,HOSTEL_C,pending,2025-09-29T23:53:29.210Z
+RSVP_000066,EVT_0007,E100535,aditya.tiwari@iitg.ac.in,Guest Lecture - conventus uredo,Guest Lecture,2025-11-09T06:00:17.099Z,GYM_MAIN,declined,2025-10-20T10:15:05.476Z
+RSVP_000067,EVT_0007,E100880,sai.rao@iitg.ac.in,Seminar - audacia porro,Seminar,2026-02-09T02:47:24.780Z,HOSTEL_B,confirmed,2025-09-27T04:15:32.429Z
+RSVP_000068,EVT_0007,E100417,neha.malhotra@iitg.ac.in,Sports Tournament - abundans asperiores,Sports Tournament,2025-12-26T19:17:59.142Z,HOSTEL_B,confirmed,2025-10-13T07:50:04.140Z
+RSVP_000069,EVT_0007,E100559,krishna.joshi@iitg.ac.in,Festival Celebration - angulus combibo,Festival Celebration,2025-11-21T00:01:50.693Z,AC_102,confirmed,2025-10-02T22:54:45.305Z
+RSVP_000070,EVT_0007,E100504,ishaan.tiwari@iitg.ac.in,Sports Tournament - conculco calculus,Sports Tournament,2026-04-09T22:50:37.095Z,LIB_L3,confirmed,2025-10-16T00:16:30.775Z
+RSVP_000071,EVT_0008,E100233,shaurya.patel@iitg.ac.in,Cultural Event - viridis tantillus,Cultural Event,2026-02-14T18:55:24.224Z,LAB_101,confirmed,2025-10-15T05:54:10.977Z
+RSVP_000072,EVT_0008,E100955,reyansh.agarwal@iitg.ac.in,Alumni Meet - basium victus,Alumni Meet,2026-01-17T09:36:16.794Z,CAF_FOOD_COURT,confirmed,2025-10-05T06:13:26.306Z
+RSVP_000073,EVT_0008,E100296,saanvi.rao@iitg.ac.in,Cultural Event - artificiose curiositas,Cultural Event,2025-10-25T17:35:12.180Z,AUD_SEMINAR,confirmed,2025-09-28T14:03:04.061Z
+RSVP_000074,EVT_0008,E100348,sana.tiwari@iitg.ac.in,Cultural Event - verus thorax,Cultural Event,2026-03-06T02:01:33.892Z,LIB_L1,declined,2025-10-23T09:14:31.696Z
+RSVP_000075,EVT_0008,E100315,sana.singh@iitg.ac.in,Seminar - sortitus occaecati,Seminar,2025-12-20T15:37:41.123Z,AUD_MAIN,confirmed,2025-09-19T23:54:03.975Z
+RSVP_000076,EVT_0008,E100810,aarav.yadav@iitg.ac.in,Sports Tournament - coniuratio alius,Sports Tournament,2026-01-15T21:47:29.735Z,AUD_MAIN,pending,2025-09-22T18:09:24.187Z
+RSVP_000077,EVT_0008,E100833,sana.singh@iitg.ac.in,Research Presentation - auditor civis,Research Presentation,2026-02-04T01:18:04.498Z,LAB_301,confirmed,2025-10-16T22:34:19.186Z
+RSVP_000078,EVT_0008,E100458,vivaan.tiwari@iitg.ac.in,Research Presentation - auctor volubilis,Research Presentation,2025-12-07T12:00:31.154Z,AUD_MAIN,confirmed,2025-10-25T11:59:02.375Z
+RSVP_000079,EVT_0008,E100955,reyansh.agarwal@iitg.ac.in,Cultural Event - aeneus socius,Cultural Event,2026-03-22T06:26:44.402Z,LIB_ENT,confirmed,2025-09-27T06:14:53.531Z
+RSVP_000080,EVT_0008,E100312,vivaan.kapoor@iitg.ac.in,Research Presentation - cras umquam,Research Presentation,2025-11-16T04:23:03.434Z,AUD_SEMINAR,confirmed,2025-10-14T14:37:38.180Z
+RSVP_000081,EVT_0009,E100345,riya.srivastava@iitg.ac.in,Technical Workshop - vergo sumptus,Technical Workshop,2026-01-13T14:08:27.339Z,AC_201,pending,2025-10-05T15:42:42.873Z
+RSVP_000082,EVT_0009,E100843,sana.chopra@iitg.ac.in,Sports Tournament - sodalitas audio,Sports Tournament,2026-01-29T02:50:20.181Z,GYM_INDOOR,confirmed,2025-09-25T01:26:10.403Z
+RSVP_000083,EVT_0009,E100788,advik.srivastava@iitg.ac.in,Technical Workshop - vilis cimentarius,Technical Workshop,2026-03-29T15:27:26.989Z,GYM_MAIN,confirmed,2025-10-15T10:10:41.105Z
+RSVP_000084,EVT_0009,E100175,sai.yadav@iitg.ac.in,Guest Lecture - suffoco certe,Guest Lecture,2026-03-23T22:21:25.100Z,CC_SERVER,confirmed,2025-09-27T12:15:09.991Z
+RSVP_000085,EVT_0009,E100571,sai.mehta@iitg.ac.in,Career Fair - nobis desparatus,Career Fair,2026-02-02T22:27:55.050Z,LAB_201,confirmed,2025-10-12T01:42:10.293Z
+RSVP_000086,EVT_0009,E100987,priya.singh@iitg.ac.in,Conference - rem subnecto,Conference,2026-03-25T01:35:11.216Z,CC_LAB2,confirmed,2025-10-09T01:34:40.629Z
+RSVP_000087,EVT_0009,E100228,krishna.chopra@iitg.ac.in,Research Presentation - strues vulgo,Research Presentation,2026-03-09T07:08:06.632Z,GYM_INDOOR,confirmed,2025-10-04T21:10:57.552Z
+RSVP_000088,EVT_0009,E100439,advik.bansal@iitg.ac.in,Seminar - vulgaris alias,Seminar,2025-11-02T04:34:14.066Z,LIB_ENT,confirmed,2025-10-04T18:06:23.235Z
+RSVP_000089,EVT_0009,E100302,tara.agarwal@iitg.ac.in,Cultural Event - demens caste,Cultural Event,2026-03-25T12:18:54.987Z,LAB_102,confirmed,2025-10-21T07:59:27.729Z
+RSVP_000090,EVT_0009,E100115,shaurya.pandey@iitg.ac.in,Sports Tournament - perspiciatis appono,Sports Tournament,2025-12-22T14:03:39.581Z,ADMIN_OFFICE,declined,2025-09-20T21:21:17.530Z
+RSVP_000091,EVT_0010,E100530,neha.kapoor@iitg.ac.in,Career Fair - aeneus tabgo,Career Fair,2026-01-18T13:03:54.173Z,HOSTEL_A,confirmed,2025-10-25T13:50:38.642Z
+RSVP_000092,EVT_0010,E100883,tara.patel@iitg.ac.in,Festival Celebration - tersus video,Festival Celebration,2025-10-29T21:23:31.230Z,LAB_101,confirmed,2025-10-13T18:09:56.206Z
+RSVP_000093,EVT_0010,E100603,advik.kapoor@iitg.ac.in,Conference - creo vobis,Conference,2026-03-17T20:58:57.539Z,LIB_ENT,confirmed,2025-09-26T08:08:33.599Z
+RSVP_000094,EVT_0010,E100358,vihaan.patel@iitg.ac.in,Research Presentation - volubilis sunt,Research Presentation,2026-01-20T07:32:57.211Z,GYM_MAIN,confirmed,2025-09-20T20:08:57.591Z
+RSVP_000095,EVT_0010,E100697,shaurya.jain@iitg.ac.in,Career Fair - curso provident,Career Fair,2025-12-05T09:57:07.957Z,LAB_201,confirmed,2025-09-29T21:26:30.364Z
+RSVP_000096,EVT_0010,E100828,pari.shah@iitg.ac.in,Research Presentation - patruus velut,Research Presentation,2026-04-11T03:33:18.683Z,LIB_ENT,confirmed,2025-10-15T02:55:10.539Z
+RSVP_000097,EVT_0010,E100539,arjun.rao@iitg.ac.in,Career Fair - pauci patruus,Career Fair,2025-11-23T14:17:16.770Z,ADMIN_LOBBY,confirmed,2025-10-01T19:25:43.927Z
+RSVP_000098,EVT_0010,E100893,diya.saxena@iitg.ac.in,Conference - vis iste,Conference,2025-12-04T23:09:24.364Z,LAB_301,confirmed,2025-10-13T18:04:43.287Z
+RSVP_000099,EVT_0010,E100971,advik.tiwari@iitg.ac.in,Alumni Meet - voluptate volup,Alumni Meet,2025-11-10T19:46:52.489Z,LIB_L2,confirmed,2025-10-12T16:51:32.957Z
+RSVP_000100,EVT_0010,E100341,pranav.modi@iitg.ac.in,Sports Tournament - surgo volo,Sports Tournament,2026-02-18T22:12:44.747Z,CAF_MAIN,confirmed,2025-10-18T21:30:25.982Z
+RSVP_000101,EVT_0011,E100350,neha.srivastava@iitg.ac.in,Research Presentation - adeo claudeo,Research Presentation,2025-12-28T13:17:24.321Z,CC_LAB1,confirmed,2025-10-23T11:49:02.281Z
+RSVP_000102,EVT_0011,E100226,ayaan.reddy@iitg.ac.in,Career Fair - vulgaris defero,Career Fair,2026-03-22T23:38:42.436Z,AC_201,confirmed,2025-09-29T05:11:50.762Z
+RSVP_000103,EVT_0011,E100411,pari.verma@iitg.ac.in,Research Presentation - copia cogo,Research Presentation,2026-02-16T00:38:40.806Z,ADMIN_OFFICE,confirmed,2025-10-23T01:38:56.161Z
+RSVP_000104,EVT_0011,E100816,kavya.modi@iitg.ac.in,Career Fair - textilis volubilis,Career Fair,2026-02-04T02:25:09.950Z,HOSTEL_C,confirmed,2025-10-08T09:28:31.385Z
+RSVP_000105,EVT_0011,E100340,krishna.rao@iitg.ac.in,Technical Workshop - aptus basium,Technical Workshop,2026-02-04T05:23:58.788Z,LIB_L3,confirmed,2025-10-16T07:37:26.379Z
+RSVP_000106,EVT_0011,E100550,diya.chopra@iitg.ac.in,Sports Tournament - tibi infit,Sports Tournament,2026-01-25T20:08:25.365Z,CC_SERVER,pending,2025-10-07T05:33:05.995Z
+RSVP_000107,EVT_0011,E100333,diya.desai@iitg.ac.in,Seminar - talio ter,Seminar,2026-03-23T11:13:40.953Z,LAB_201,confirmed,2025-10-12T06:36:38.229Z
+RSVP_000108,EVT_0011,E100961,pari.srivastava@iitg.ac.in,Seminar - defetiscor ver,Seminar,2026-01-10T23:04:59.562Z,LAB_301,pending,2025-10-24T07:03:02.945Z
+RSVP_000109,EVT_0011,E100780,aarav.verma@iitg.ac.in,Alumni Meet - abscido aveho,Alumni Meet,2026-03-13T06:08:05.867Z,LAB_101,confirmed,2025-10-07T20:05:27.458Z
+RSVP_000110,EVT_0011,E100093,priya.kapoor@iitg.ac.in,Sports Tournament - caries conqueror,Sports Tournament,2026-04-03T01:05:14.187Z,LAB_301,declined,2025-09-21T12:16:32.107Z
+RSVP_000111,EVT_0012,E100927,aarav.jain@iitg.ac.in,Sports Tournament - volubilis veniam,Sports Tournament,2025-11-18T19:56:06.605Z,GYM_INDOOR,pending,2025-10-22T18:42:18.778Z
+RSVP_000112,EVT_0012,E100468,riya.chopra@iitg.ac.in,Cultural Event - conscendo ab,Cultural Event,2025-12-18T14:36:50.125Z,LAB_102,pending,2025-10-22T10:46:48.571Z
+RSVP_000113,EVT_0012,E100568,ira.jain@iitg.ac.in,Alumni Meet - arguo atavus,Alumni Meet,2026-04-02T19:35:44.046Z,LIB_ENT,pending,2025-10-17T08:14:18.161Z
+RSVP_000114,EVT_0012,E100145,priya.pandey@iitg.ac.in,Cultural Event - defendo infit,Cultural Event,2026-03-14T22:21:06.280Z,LIB_L3,confirmed,2025-09-22T06:46:53.473Z
+RSVP_000115,EVT_0012,E100462,advik.malhotra@iitg.ac.in,Conference - adhaero eius,Conference,2025-11-30T01:20:17.630Z,LIB_L3,confirmed,2025-10-16T13:19:39.242Z
+RSVP_000116,EVT_0012,E100237,tara.chopra@iitg.ac.in,Seminar - aggero sustineo,Seminar,2025-11-01T07:27:34.794Z,LAB_201,confirmed,2025-10-04T06:36:53.571Z
+RSVP_000117,EVT_0012,E100076,riya.chopra@iitg.ac.in,Guest Lecture - ulterius agnosco,Guest Lecture,2026-03-25T22:33:16.748Z,CC_LAB2,confirmed,2025-10-11T14:11:24.111Z
+RSVP_000118,EVT_0012,E100355,aarav.pandey@iitg.ac.in,Conference - alioqui crapula,Conference,2026-03-11T17:01:18.861Z,LIB_L1,confirmed,2025-09-26T17:24:02.976Z
+RSVP_000119,EVT_0012,E100708,shaurya.singh@iitg.ac.in,Seminar - varius traho,Seminar,2025-12-10T07:03:03.811Z,CC_LAB2,confirmed,2025-09-23T13:17:45.549Z
+RSVP_000120,EVT_0012,E100755,tara.yadav@iitg.ac.in,Technical Workshop - tredecim tertius,Technical Workshop,2025-11-26T19:10:31.155Z,GYM_INDOOR,confirmed,2025-10-21T17:47:09.034Z
+RSVP_000121,EVT_0013,E100419,vihaan.pandey@iitg.ac.in,Cultural Event - sol decet,Cultural Event,2026-01-11T10:15:54.300Z,AUD_MAIN,confirmed,2025-10-21T11:08:30.455Z
+RSVP_000122,EVT_0013,E100689,sana.arora@iitg.ac.in,Sports Tournament - nostrum quibusdam,Sports Tournament,2026-02-11T04:16:47.704Z,LAB_102,confirmed,2025-10-05T22:48:57.797Z
+RSVP_000123,EVT_0013,E100492,neha.reddy@iitg.ac.in,Guest Lecture - veritatis adimpleo,Guest Lecture,2025-12-16T07:13:57.099Z,LIB_L1,confirmed,2025-09-30T05:10:20.924Z
+RSVP_000124,EVT_0013,E100124,sai.sharma@iitg.ac.in,Career Fair - pel utique,Career Fair,2026-03-09T02:15:21.472Z,AC_301,confirmed,2025-10-14T22:15:05.801Z
+RSVP_000125,EVT_0013,E100173,krishna.mishra@iitg.ac.in,Career Fair - conculco via,Career Fair,2025-12-19T21:21:37.735Z,CAF_FOOD_COURT,declined,2025-10-22T00:17:34.815Z
+RSVP_000126,EVT_0013,E100926,anika.desai@iitg.ac.in,Alumni Meet - vulticulus coadunatio,Alumni Meet,2026-01-21T22:24:31.545Z,ADMIN_OFFICE,confirmed,2025-10-24T07:34:48.579Z
+RSVP_000127,EVT_0013,E100118,nisha.tiwari@iitg.ac.in,Alumni Meet - aperiam itaque,Alumni Meet,2025-11-06T00:07:33.385Z,LIB_L2,confirmed,2025-09-24T02:24:57.275Z
+RSVP_000128,EVT_0013,E100654,ananya.srivastava@iitg.ac.in,Conference - bibo cavus,Conference,2025-12-16T03:18:13.889Z,HOSTEL_B,confirmed,2025-10-09T04:03:36.275Z
+RSVP_000129,EVT_0013,E100150,krishna.joshi@iitg.ac.in,Guest Lecture - approbo apud,Guest Lecture,2026-02-03T13:13:48.465Z,CC_LAB2,declined,2025-09-29T20:13:33.935Z
+RSVP_000130,EVT_0013,E100777,arjun.modi@iitg.ac.in,Alumni Meet - urbs thymbra,Alumni Meet,2026-04-12T04:32:53.755Z,HOSTEL_B,confirmed,2025-10-23T01:55:01.408Z
+RSVP_000131,EVT_0014,E100520,ayaan.patel@iitg.ac.in,Research Presentation - alias id,Research Presentation,2026-03-20T11:04:58.639Z,ADMIN_LOBBY,pending,2025-10-13T18:03:50.513Z
+RSVP_000132,EVT_0014,E100481,ira.kapoor@iitg.ac.in,Guest Lecture - calcar error,Guest Lecture,2025-11-28T00:50:27.373Z,CAF_MAIN,confirmed,2025-10-06T00:40:49.556Z
+RSVP_000133,EVT_0014,E100580,kavya.modi@iitg.ac.in,Sports Tournament - adimpleo antiquus,Sports Tournament,2025-11-25T08:03:06.571Z,LAB_101,confirmed,2025-10-11T09:49:54.229Z
+RSVP_000134,EVT_0014,E100816,kavya.modi@iitg.ac.in,Technical Workshop - antepono tracto,Technical Workshop,2025-10-29T10:03:42.858Z,ADMIN_LOBBY,confirmed,2025-10-22T22:21:50.806Z
+RSVP_000135,EVT_0014,E100614,vivaan.sharma@iitg.ac.in,Alumni Meet - constans comparo,Alumni Meet,2025-12-29T11:33:50.516Z,CC_LAB2,pending,2025-10-18T17:35:19.903Z
+RSVP_000136,EVT_0014,E100285,pranav.chopra@iitg.ac.in,Career Fair - deripio adhaero,Career Fair,2025-11-03T09:17:05.596Z,LAB_301,confirmed,2025-10-08T04:19:04.452Z
+RSVP_000137,EVT_0014,E100726,arjun.kapoor@iitg.ac.in,Sports Tournament - sum vesper,Sports Tournament,2026-02-09T15:33:23.087Z,AUD_MAIN,confirmed,2025-10-17T19:01:01.619Z
+RSVP_000138,EVT_0014,E100593,tara.patel@iitg.ac.in,Seminar - ara delectatio,Seminar,2026-02-16T14:15:04.154Z,CAF_FOOD_COURT,confirmed,2025-09-20T08:21:59.163Z
+RSVP_000139,EVT_0014,E100995,vivaan.kapoor@iitg.ac.in,Career Fair - comprehendo thalassinus,Career Fair,2025-12-29T11:19:26.426Z,LAB_102,confirmed,2025-09-22T11:45:18.891Z
+RSVP_000140,EVT_0014,E100608,sana.malhotra@iitg.ac.in,Festival Celebration - suppellex summa,Festival Celebration,2025-11-14T15:39:21.155Z,CAF_FOOD_COURT,confirmed,2025-09-27T12:55:31.096Z
+RSVP_000141,EVT_0015,E100636,kavya.modi@iitg.ac.in,Festival Celebration - truculenter peior,Festival Celebration,2025-11-24T17:12:23.962Z,HOSTEL_C,confirmed,2025-10-16T03:16:41.437Z
+RSVP_000142,EVT_0015,E100094,pari.kumar@iitg.ac.in,Career Fair - ascit strenuus,Career Fair,2026-03-03T07:00:12.198Z,HOSTEL_C,confirmed,2025-10-21T20:39:14.030Z
+RSVP_000143,EVT_0015,E100418,riya.saxena@iitg.ac.in,Research Presentation - adnuo aeternus,Research Presentation,2025-12-26T14:47:53.902Z,CC_LAB2,confirmed,2025-10-22T20:21:25.732Z
+RSVP_000144,EVT_0015,E100290,aarav.agarwal@iitg.ac.in,Technical Workshop - delibero aspicio,Technical Workshop,2026-01-08T04:40:54.205Z,HOSTEL_A,declined,2025-10-25T10:50:04.349Z
+RSVP_000145,EVT_0015,E100818,nisha.malhotra@iitg.ac.in,Seminar - vestigium aegrus,Seminar,2025-11-29T13:30:30.176Z,HOSTEL_C,confirmed,2025-10-03T20:29:35.284Z
+RSVP_000146,EVT_0015,E100843,sana.chopra@iitg.ac.in,Alumni Meet - tamisium coerceo,Alumni Meet,2025-11-21T05:47:58.687Z,LIB_L3,declined,2025-09-25T16:42:26.304Z
+RSVP_000147,EVT_0015,E100466,neha.gupta@iitg.ac.in,Conference - rem corporis,Conference,2026-01-21T17:27:26.140Z,CC_SERVER,pending,2025-10-24T14:43:52.283Z
+RSVP_000148,EVT_0015,E100023,krishna.agarwal@iitg.ac.in,Festival Celebration - arto turba,Festival Celebration,2025-11-08T07:44:19.581Z,GYM_INDOOR,confirmed,2025-10-24T04:02:29.630Z
+RSVP_000149,EVT_0015,E100180,sana.gupta@iitg.ac.in,Alumni Meet - reiciendis sophismata,Alumni Meet,2025-12-06T19:41:53.660Z,LIB_L2,confirmed,2025-09-24T13:19:28.137Z
+RSVP_000150,EVT_0015,E100509,priya.shah@iitg.ac.in,Festival Celebration - celer neque,Festival Celebration,2025-12-16T13:21:48.335Z,LAB_201,confirmed,2025-09-23T02:29:32.547Z
+RSVP_000151,EVT_0016,E100392,aditya.srivastava@iitg.ac.in,Career Fair - apostolus sursum,Career Fair,2026-04-20T06:49:08.058Z,LAB_101,confirmed,2025-10-19T07:39:38.492Z
+RSVP_000152,EVT_0016,E100894,priya.pandey@iitg.ac.in,Guest Lecture - sophismata vereor,Guest Lecture,2026-01-13T16:07:20.612Z,ADMIN_OFFICE,confirmed,2025-10-12T04:00:55.614Z
+RSVP_000153,EVT_0016,E100821,pari.singh@iitg.ac.in,Seminar - suffragium clementia,Seminar,2026-02-21T04:56:52.253Z,CC_SERVER,confirmed,2025-10-22T07:12:48.535Z
+RSVP_000154,EVT_0016,E100154,siya.mehta@iitg.ac.in,Cultural Event - coepi ullam,Cultural Event,2026-01-19T01:45:03.030Z,GYM_INDOOR,confirmed,2025-09-27T02:42:01.164Z
+RSVP_000155,EVT_0016,E100048,myra.arora@iitg.ac.in,Cultural Event - decimus capio,Cultural Event,2026-03-23T20:30:33.032Z,LAB_301,declined,2025-10-23T15:54:00.007Z
+RSVP_000156,EVT_0016,E100367,diya.tiwari@iitg.ac.in,Research Presentation - vacuus viridis,Research Presentation,2025-12-09T00:32:11.746Z,CC_LAB2,pending,2025-10-04T14:14:22.533Z
+RSVP_000157,EVT_0016,E100651,vihaan.chopra@iitg.ac.in,Seminar - tendo voluptatum,Seminar,2026-01-12T09:35:53.361Z,CAF_MAIN,confirmed,2025-09-20T22:41:35.329Z
+RSVP_000158,EVT_0016,E100850,ira.yadav@iitg.ac.in,Cultural Event - vereor maiores,Cultural Event,2025-12-12T10:26:36.229Z,LAB_301,confirmed,2025-10-24T16:34:21.907Z
+RSVP_000159,EVT_0016,E100836,anika.pandey@iitg.ac.in,Technical Workshop - veritatis bellum,Technical Workshop,2025-12-29T15:10:51.957Z,AUD_MAIN,pending,2025-09-22T11:17:39.461Z
+RSVP_000160,EVT_0016,E100432,ananya.rao@iitg.ac.in,Seminar - testimonium video,Seminar,2025-12-09T06:44:36.852Z,AC_301,confirmed,2025-10-17T02:03:44.478Z
+RSVP_000161,EVT_0017,E100735,sai.tiwari@iitg.ac.in,Guest Lecture - trucido demum,Guest Lecture,2026-03-09T05:13:40.543Z,CAF_FOOD_COURT,pending,2025-09-28T22:10:03.746Z
+RSVP_000162,EVT_0017,E100101,neha.kumar@iitg.ac.in,Seminar - nisi spoliatio,Seminar,2025-12-14T23:40:20.293Z,LIB_L2,confirmed,2025-10-15T20:36:08.518Z
+RSVP_000163,EVT_0017,E100040,pranav.saxena@iitg.ac.in,Research Presentation - vindico cernuus,Research Presentation,2026-02-22T18:14:24.691Z,GYM_MAIN,declined,2025-09-26T21:07:10.445Z
+RSVP_000164,EVT_0017,E100903,siya.modi@iitg.ac.in,Conference - tantillus coadunatio,Conference,2026-03-20T23:05:22.839Z,CAF_MAIN,confirmed,2025-10-19T22:19:50.137Z
+RSVP_000165,EVT_0017,E100916,shaurya.verma@iitg.ac.in,Guest Lecture - vito ultra,Guest Lecture,2026-01-23T20:49:58.379Z,CAF_MAIN,confirmed,2025-09-21T19:48:35.926Z
+RSVP_000166,EVT_0017,E100227,atharv.bansal@iitg.ac.in,Cultural Event - creator laudantium,Cultural Event,2026-03-03T19:20:51.273Z,LAB_102,confirmed,2025-10-19T02:24:27.859Z
+RSVP_000167,EVT_0017,E100140,shaurya.tiwari@iitg.ac.in,Cultural Event - tracto tergo,Cultural Event,2025-12-01T11:13:15.900Z,GYM_INDOOR,pending,2025-09-20T12:27:39.339Z
+RSVP_000168,EVT_0017,E100509,priya.shah@iitg.ac.in,Alumni Meet - coruscus ipsam,Alumni Meet,2026-01-16T04:45:41.119Z,HOSTEL_A,confirmed,2025-09-29T12:40:56.400Z
+RSVP_000169,EVT_0017,E100687,kavya.pandey@iitg.ac.in,Alumni Meet - corporis iusto,Alumni Meet,2026-02-21T16:09:16.151Z,LAB_301,pending,2025-09-22T09:42:53.848Z
+RSVP_000170,EVT_0017,E100209,myra.joshi@iitg.ac.in,Technical Workshop - ustilo cura,Technical Workshop,2026-04-17T06:47:16.935Z,HOSTEL_A,confirmed,2025-10-19T07:24:28.405Z
+RSVP_000171,EVT_0018,E100101,neha.kumar@iitg.ac.in,Festival Celebration - attonbitus deinde,Festival Celebration,2025-12-26T00:48:52.763Z,CC_LAB1,confirmed,2025-10-09T10:33:58.441Z
+RSVP_000172,EVT_0018,E100744,sana.kapoor@iitg.ac.in,Career Fair - acceptus vere,Career Fair,2026-04-25T08:17:28.499Z,AUD_MAIN,declined,2025-10-20T07:52:49.816Z
+RSVP_000173,EVT_0018,E100442,arjun.bansal@iitg.ac.in,Festival Celebration - solium valeo,Festival Celebration,2025-11-19T19:13:52.205Z,AC_201,pending,2025-10-04T05:29:12.805Z
+RSVP_000174,EVT_0018,E100686,tara.kapoor@iitg.ac.in,Technical Workshop - cumque vinum,Technical Workshop,2025-12-01T22:15:05.770Z,GYM_INDOOR,confirmed,2025-09-25T03:41:32.663Z
+RSVP_000175,EVT_0018,E100672,tara.mishra@iitg.ac.in,Guest Lecture - vitae degusto,Guest Lecture,2026-01-09T14:29:08.257Z,LIB_L1,confirmed,2025-10-15T04:35:51.332Z
+RSVP_000176,EVT_0018,E100043,myra.saxena@iitg.ac.in,Seminar - videlicet addo,Seminar,2026-01-16T19:01:33.485Z,ADMIN_OFFICE,confirmed,2025-10-23T09:57:57.129Z
+RSVP_000177,EVT_0018,E100163,ira.mehta@iitg.ac.in,Festival Celebration - adversus pecus,Festival Celebration,2025-11-16T16:10:29.749Z,HOSTEL_C,confirmed,2025-09-29T15:25:11.476Z
+RSVP_000178,EVT_0018,E100770,arjun.rao@iitg.ac.in,Festival Celebration - vilicus corrumpo,Festival Celebration,2025-10-28T16:04:48.572Z,LIB_L3,pending,2025-10-18T05:21:33.624Z
+RSVP_000179,EVT_0018,E100698,aditya.yadav@iitg.ac.in,Festival Celebration - cauda validus,Festival Celebration,2026-03-03T09:28:13.169Z,LAB_301,confirmed,2025-10-19T21:38:42.952Z
+RSVP_000180,EVT_0018,E100180,sana.gupta@iitg.ac.in,Alumni Meet - capto supplanto,Alumni Meet,2026-03-28T02:15:25.927Z,CAF_FOOD_COURT,confirmed,2025-10-20T21:54:26.180Z
+RSVP_000181,EVT_0019,E100119,siya.kapoor@iitg.ac.in,Alumni Meet - vinum cornu,Alumni Meet,2025-12-04T17:20:38.289Z,GYM_MAIN,confirmed,2025-10-20T15:53:24.088Z
+RSVP_000182,EVT_0019,E100792,ananya.jain@iitg.ac.in,Technical Workshop - adsum expedita,Technical Workshop,2025-11-16T22:52:21.116Z,HOSTEL_B,pending,2025-10-23T05:12:47.574Z
+RSVP_000183,EVT_0019,E100797,vivaan.singh@iitg.ac.in,Sports Tournament - debitis testimonium,Sports Tournament,2025-12-20T20:15:55.071Z,AUD_SEMINAR,declined,2025-10-02T17:07:56.219Z
+RSVP_000184,EVT_0019,E100813,kavya.shah@iitg.ac.in,Technical Workshop - commodo talio,Technical Workshop,2026-01-10T10:54:11.558Z,CC_LAB2,confirmed,2025-10-06T06:27:09.893Z
+RSVP_000185,EVT_0019,E100139,atharv.joshi@iitg.ac.in,Sports Tournament - coerceo conicio,Sports Tournament,2026-01-11T21:43:26.346Z,HOSTEL_B,confirmed,2025-10-22T14:08:46.134Z
+RSVP_000186,EVT_0019,E100741,aarav.jain@iitg.ac.in,Cultural Event - claustrum comes,Cultural Event,2026-03-25T05:49:09.210Z,AC_301,confirmed,2025-09-23T12:27:29.658Z
+RSVP_000187,EVT_0019,E100874,vihaan.mishra@iitg.ac.in,Research Presentation - quae ancilla,Research Presentation,2025-12-04T07:49:15.583Z,GYM_INDOOR,pending,2025-09-22T08:51:23.454Z
+RSVP_000188,EVT_0019,E100174,kavya.kapoor@iitg.ac.in,Research Presentation - denego voluptates,Research Presentation,2025-10-26T12:05:30.820Z,AUD_MAIN,confirmed,2025-10-14T22:26:56.418Z
+RSVP_000189,EVT_0019,E100108,myra.bansal@iitg.ac.in,Conference - tremo acquiro,Conference,2026-01-20T05:15:13.707Z,AUD_SEMINAR,confirmed,2025-10-15T19:45:19.699Z
+RSVP_000190,EVT_0019,E100133,sai.saxena@iitg.ac.in,Sports Tournament - attonbitus atque,Sports Tournament,2026-01-18T19:17:59.245Z,HOSTEL_B,confirmed,2025-10-18T07:04:04.520Z
+RSVP_000191,EVT_0020,E100139,atharv.joshi@iitg.ac.in,Conference - cum curatio,Conference,2026-01-29T15:40:05.824Z,LAB_201,pending,2025-09-28T13:59:29.936Z
+RSVP_000192,EVT_0020,E100028,priya.gupta@iitg.ac.in,Conference - ipsa sophismata,Conference,2025-11-05T03:34:40.582Z,CC_LAB1,declined,2025-10-04T13:41:11.154Z
+RSVP_000193,EVT_0020,E100717,riya.kapoor@iitg.ac.in,Career Fair - decimus defluo,Career Fair,2026-02-07T01:22:48.329Z,CC_LAB2,pending,2025-10-20T21:36:05.026Z
+RSVP_000194,EVT_0020,E100922,arjun.shah@iitg.ac.in,Research Presentation - sto confugo,Research Presentation,2026-03-21T16:36:35.253Z,CAF_MAIN,confirmed,2025-10-09T02:11:59.431Z
+RSVP_000195,EVT_0020,E100347,aarav.reddy@iitg.ac.in,Seminar - tricesimus appositus,Seminar,2026-04-11T04:35:46.918Z,LAB_102,confirmed,2025-10-03T16:28:10.848Z
+RSVP_000196,EVT_0020,E100865,pari.srivastava@iitg.ac.in,Festival Celebration - bardus appositus,Festival Celebration,2026-03-18T22:45:47.248Z,LAB_101,confirmed,2025-09-26T09:23:46.967Z
+RSVP_000197,EVT_0020,E100996,krishna.kumar@iitg.ac.in,Career Fair - adaugeo cubo,Career Fair,2026-04-09T11:47:15.785Z,CAF_FOOD_COURT,confirmed,2025-09-22T01:23:24.730Z
+RSVP_000198,EVT_0020,E100304,myra.mehta@iitg.ac.in,Research Presentation - occaecati modi,Research Presentation,2026-03-28T12:04:01.855Z,LIB_L3,confirmed,2025-10-16T08:59:27.388Z
+RSVP_000199,EVT_0020,E100374,vivaan.joshi@iitg.ac.in,Career Fair - denuo cursus,Career Fair,2026-02-18T00:28:22.359Z,ADMIN_OFFICE,confirmed,2025-10-13T09:56:38.274Z
+RSVP_000200,EVT_0020,E100804,ishaan.tiwari@iitg.ac.in,Sports Tournament - volva valetudo,Sports Tournament,2026-04-10T16:24:36.688Z,GYM_INDOOR,pending,2025-09-28T12:15:21.565Z
+RSVP_000201,EVT_0021,E100799,aarav.agarwal@iitg.ac.in,Festival Celebration - ait alveus,Festival Celebration,2026-01-03T04:37:32.764Z,LIB_L3,confirmed,2025-09-27T03:39:00.639Z
+RSVP_000202,EVT_0021,E100474,siya.chopra@iitg.ac.in,Alumni Meet - libero adamo,Alumni Meet,2025-11-20T23:18:28.113Z,LAB_101,confirmed,2025-10-04T08:41:15.859Z
+RSVP_000203,EVT_0021,E100446,nisha.chopra@iitg.ac.in,Conference - termes eaque,Conference,2026-02-17T23:21:57.496Z,LAB_301,pending,2025-10-24T09:17:01.300Z
+RSVP_000204,EVT_0021,E100012,myra.reddy@iitg.ac.in,Cultural Event - admoveo iusto,Cultural Event,2026-01-07T20:01:47.765Z,GYM_MAIN,confirmed,2025-10-21T03:41:15.599Z
+RSVP_000205,EVT_0021,E100263,pari.bansal@iitg.ac.in,Guest Lecture - aperio astrum,Guest Lecture,2025-12-18T14:41:40.974Z,GYM_INDOOR,confirmed,2025-10-25T12:05:29.018Z
+RSVP_000206,EVT_0021,E100054,aditya.reddy@iitg.ac.in,Career Fair - taceo atque,Career Fair,2025-11-16T15:51:28.552Z,CAF_FOOD_COURT,declined,2025-09-23T05:28:08.509Z
+RSVP_000207,EVT_0021,E100523,ishaan.rao@iitg.ac.in,Cultural Event - stillicidium maxime,Cultural Event,2025-12-21T09:40:18.985Z,AC_201,confirmed,2025-10-16T08:38:29.100Z
+RSVP_000208,EVT_0021,E100955,reyansh.agarwal@iitg.ac.in,Festival Celebration - appello pectus,Festival Celebration,2026-04-02T04:18:01.752Z,ADMIN_LOBBY,pending,2025-09-27T20:08:00.604Z
+RSVP_000209,EVT_0021,E100202,sana.sharma@iitg.ac.in,Alumni Meet - animadverto dicta,Alumni Meet,2026-01-09T04:09:09.590Z,HOSTEL_B,confirmed,2025-10-03T21:54:52.262Z
+RSVP_000210,EVT_0021,E100843,sana.chopra@iitg.ac.in,Technical Workshop - creo verto,Technical Workshop,2025-12-31T05:53:46.449Z,HOSTEL_A,pending,2025-10-05T23:46:21.552Z
+RSVP_000211,EVT_0022,E100070,vivaan.joshi@iitg.ac.in,Seminar - tardus curto,Seminar,2025-11-07T02:00:03.187Z,LIB_L2,pending,2025-10-03T15:49:05.734Z
+RSVP_000212,EVT_0022,E100731,myra.singh@iitg.ac.in,Alumni Meet - administratio vix,Alumni Meet,2026-04-17T09:59:38.012Z,GYM_MAIN,confirmed,2025-10-23T13:37:18.054Z
+RSVP_000213,EVT_0022,E100680,myra.singh@iitg.ac.in,Technical Workshop - tribuo territo,Technical Workshop,2025-12-26T06:44:06.686Z,AUD_SEMINAR,confirmed,2025-09-26T06:44:07.565Z
+RSVP_000214,EVT_0022,E100989,atharv.agarwal@iitg.ac.in,Conference - aliqua solum,Conference,2026-04-24T22:17:14.346Z,LIB_ENT,confirmed,2025-10-04T23:29:11.775Z
+RSVP_000215,EVT_0022,E100800,pranav.malhotra@iitg.ac.in,Alumni Meet - perspiciatis comitatus,Alumni Meet,2026-04-07T14:22:57.696Z,CAF_FOOD_COURT,confirmed,2025-09-21T18:44:20.934Z
+RSVP_000216,EVT_0022,E100937,aditya.chopra@iitg.ac.in,Alumni Meet - accusamus ait,Alumni Meet,2026-01-21T10:42:44.992Z,LAB_301,pending,2025-09-19T10:21:01.767Z
+RSVP_000217,EVT_0022,E100679,ishaan.mishra@iitg.ac.in,Festival Celebration - deludo video,Festival Celebration,2026-01-14T04:15:54.027Z,ADMIN_LOBBY,pending,2025-10-04T10:21:00.622Z
+RSVP_000218,EVT_0022,E100946,saanvi.srivastava@iitg.ac.in,Alumni Meet - sursum audacia,Alumni Meet,2025-11-09T21:25:01.398Z,AUD_MAIN,pending,2025-10-10T10:47:00.581Z
+RSVP_000219,EVT_0022,E100257,aditya.gupta@iitg.ac.in,Seminar - arcesso curia,Seminar,2026-03-15T13:07:05.070Z,AUD_SEMINAR,confirmed,2025-10-01T14:13:37.504Z
+RSVP_000220,EVT_0022,E100140,shaurya.tiwari@iitg.ac.in,Guest Lecture - usus voluntarius,Guest Lecture,2025-12-12T06:25:53.778Z,LAB_101,confirmed,2025-09-25T16:38:16.942Z
+RSVP_000221,EVT_0023,E100312,vivaan.kapoor@iitg.ac.in,Guest Lecture - sumo tempore,Guest Lecture,2026-02-08T06:52:59.457Z,CC_SERVER,confirmed,2025-10-18T10:45:09.498Z
+RSVP_000222,EVT_0023,E100451,diya.pandey@iitg.ac.in,Sports Tournament - speculum vix,Sports Tournament,2026-04-24T21:45:40.039Z,LAB_101,confirmed,2025-09-29T03:56:40.776Z
+RSVP_000223,EVT_0023,E100166,riya.bansal@iitg.ac.in,Technical Workshop - suscipit vergo,Technical Workshop,2026-01-03T03:38:56.818Z,GYM_INDOOR,pending,2025-10-10T16:00:30.302Z
+RSVP_000224,EVT_0023,E100113,neha.bansal@iitg.ac.in,Festival Celebration - virga studio,Festival Celebration,2025-11-10T05:29:00.946Z,HOSTEL_C,confirmed,2025-10-17T17:58:57.163Z
+RSVP_000225,EVT_0023,E100914,atharv.verma@iitg.ac.in,Conference - qui arbitro,Conference,2026-01-19T15:57:24.811Z,GYM_MAIN,confirmed,2025-10-04T00:28:10.267Z
+RSVP_000226,EVT_0023,E100215,nisha.malhotra@iitg.ac.in,Guest Lecture - vitae adulescens,Guest Lecture,2026-03-15T20:17:03.868Z,HOSTEL_B,confirmed,2025-10-02T11:57:45.188Z
+RSVP_000227,EVT_0023,E100051,ishaan.arora@iitg.ac.in,Technical Workshop - voluptates auctor,Technical Workshop,2025-12-25T18:30:43.321Z,HOSTEL_B,confirmed,2025-09-20T08:59:20.638Z
+RSVP_000228,EVT_0023,E100460,nisha.yadav@iitg.ac.in,Career Fair - dignissimos validus,Career Fair,2026-03-09T21:30:06.690Z,CAF_MAIN,confirmed,2025-10-13T01:11:13.221Z
+RSVP_000229,EVT_0023,E100903,siya.modi@iitg.ac.in,Guest Lecture - adicio corporis,Guest Lecture,2025-11-22T05:52:32.138Z,AC_201,confirmed,2025-09-27T14:27:20.927Z
+RSVP_000230,EVT_0023,E100879,saanvi.singh@iitg.ac.in,Conference - socius neque,Conference,2025-11-29T15:38:59.920Z,CC_LAB1,confirmed,2025-10-12T17:40:50.726Z
+RSVP_000231,EVT_0024,E100420,nisha.bansal@iitg.ac.in,Guest Lecture - abstergo demo,Guest Lecture,2025-11-19T12:19:34.402Z,HOSTEL_A,declined,2025-10-02T06:14:08.122Z
+RSVP_000232,EVT_0024,E100329,krishna.kapoor@iitg.ac.in,Conference - ultio coruscus,Conference,2025-11-25T05:35:21.463Z,LIB_ENT,confirmed,2025-10-08T04:48:55.800Z
+RSVP_000233,EVT_0024,E100800,pranav.malhotra@iitg.ac.in,Technical Workshop - harum demulceo,Technical Workshop,2025-10-27T23:07:30.745Z,CC_LAB1,pending,2025-10-22T03:35:51.345Z
+RSVP_000234,EVT_0024,E100981,tara.joshi@iitg.ac.in,Research Presentation - angelus tripudio,Research Presentation,2026-01-18T04:13:07.012Z,LIB_L3,confirmed,2025-10-24T04:10:09.039Z
+RSVP_000235,EVT_0024,E100784,pari.kapoor@iitg.ac.in,Seminar - desolo alter,Seminar,2025-11-29T05:01:19.011Z,LAB_201,declined,2025-10-23T10:42:34.880Z
+RSVP_000236,EVT_0024,E100379,siya.sharma@iitg.ac.in,Cultural Event - adipisci defessus,Cultural Event,2026-04-05T16:54:44.655Z,ADMIN_LOBBY,confirmed,2025-10-13T06:31:38.595Z
+RSVP_000237,EVT_0024,E100373,ananya.reddy@iitg.ac.in,Career Fair - aedificium blanditiis,Career Fair,2026-02-19T17:43:57.644Z,HOSTEL_A,pending,2025-09-19T17:00:32.199Z
+RSVP_000238,EVT_0024,E100054,aditya.reddy@iitg.ac.in,Sports Tournament - absorbeo corona,Sports Tournament,2026-03-17T23:39:07.537Z,AC_201,confirmed,2025-10-08T15:16:40.721Z
+RSVP_000239,EVT_0024,E100502,riya.joshi@iitg.ac.in,Research Presentation - laborum voluptates,Research Presentation,2026-01-08T16:33:25.178Z,LIB_L2,pending,2025-09-22T05:16:04.322Z
+RSVP_000240,EVT_0024,E100116,ishaan.patel@iitg.ac.in,Cultural Event - somnus suffoco,Cultural Event,2025-12-06T09:26:02.415Z,LAB_102,pending,2025-09-28T04:11:27.232Z
+RSVP_000241,EVT_0025,E100782,pranav.pandey@iitg.ac.in,Research Presentation - charisma commodi,Research Presentation,2026-01-02T15:50:56.984Z,AC_102,pending,2025-10-15T10:01:07.589Z
+RSVP_000242,EVT_0025,E100573,aarav.jain@iitg.ac.in,Guest Lecture - cumque sui,Guest Lecture,2026-04-15T09:42:35.929Z,GYM_MAIN,confirmed,2025-10-01T08:34:08.232Z
+RSVP_000243,EVT_0025,E100664,priya.srivastava@iitg.ac.in,Festival Celebration - arma usque,Festival Celebration,2025-12-21T13:24:48.946Z,LIB_L1,confirmed,2025-09-30T23:45:54.758Z
+RSVP_000244,EVT_0025,E100874,vihaan.mishra@iitg.ac.in,Research Presentation - dolorum conturbo,Research Presentation,2026-01-13T13:14:40.036Z,ADMIN_OFFICE,confirmed,2025-10-24T18:24:30.939Z
+RSVP_000245,EVT_0025,E100262,arjun.gupta@iitg.ac.in,Conference - tonsor aedificium,Conference,2026-03-09T21:00:01.525Z,GYM_INDOOR,confirmed,2025-10-01T17:54:23.658Z
+RSVP_000246,EVT_0025,E100710,sana.joshi@iitg.ac.in,Cultural Event - theca appono,Cultural Event,2026-01-04T06:40:57.653Z,LAB_201,confirmed,2025-09-22T03:40:01.175Z
+RSVP_000247,EVT_0025,E100367,diya.tiwari@iitg.ac.in,Seminar - casus pauci,Seminar,2026-02-19T03:34:50.866Z,ADMIN_LOBBY,confirmed,2025-10-10T18:33:56.719Z
+RSVP_000248,EVT_0025,E100052,arjun.sharma@iitg.ac.in,Seminar - deficio recusandae,Seminar,2026-01-23T15:10:55.251Z,LAB_201,confirmed,2025-10-23T07:58:29.386Z
+RSVP_000249,EVT_0025,E100793,diya.rao@iitg.ac.in,Research Presentation - vobis dolores,Research Presentation,2025-11-13T03:30:43.216Z,GYM_MAIN,confirmed,2025-09-29T15:17:37.714Z
+RSVP_000250,EVT_0025,E100877,kavya.shah@iitg.ac.in,Alumni Meet - mollitia tergo,Alumni Meet,2025-11-19T15:35:42.548Z,AC_201,confirmed,2025-09-20T10:41:06.917Z
+RSVP_000251,EVT_0026,E100390,aditya.singh@iitg.ac.in,Technical Workshop - amet cunae,Technical Workshop,2025-11-09T19:31:30.338Z,AC_102,confirmed,2025-10-23T20:12:50.635Z
+RSVP_000252,EVT_0026,E100263,pari.bansal@iitg.ac.in,Guest Lecture - socius spes,Guest Lecture,2025-12-31T06:03:48.718Z,LAB_201,confirmed,2025-10-14T05:08:39.952Z
+RSVP_000253,EVT_0026,E100582,vihaan.srivastava@iitg.ac.in,Conference - adipisci arbitro,Conference,2026-03-28T04:06:13.737Z,LIB_L1,confirmed,2025-09-21T02:30:25.864Z
+RSVP_000254,EVT_0026,E100529,sana.srivastava@iitg.ac.in,Festival Celebration - villa labore,Festival Celebration,2025-11-24T14:41:57.916Z,LIB_ENT,confirmed,2025-10-15T08:21:53.786Z
+RSVP_000255,EVT_0026,E100731,myra.singh@iitg.ac.in,Festival Celebration - vehemens vesco,Festival Celebration,2026-03-28T17:28:01.696Z,CAF_FOOD_COURT,pending,2025-09-22T15:50:52.689Z
+RSVP_000256,EVT_0026,E100985,nisha.agarwal@iitg.ac.in,Sports Tournament - xiphias vinculum,Sports Tournament,2026-01-04T21:36:59.717Z,GYM_INDOOR,confirmed,2025-10-21T00:30:41.670Z
+RSVP_000257,EVT_0026,E100343,diya.modi@iitg.ac.in,Technical Workshop - cupio angelus,Technical Workshop,2025-12-05T08:43:55.561Z,GYM_MAIN,confirmed,2025-10-12T05:21:54.247Z
+RSVP_000258,EVT_0026,E100255,saanvi.kapoor@iitg.ac.in,Career Fair - volutabrum decerno,Career Fair,2025-11-18T17:12:25.967Z,GYM_MAIN,declined,2025-09-28T19:28:44.898Z
+RSVP_000259,EVT_0026,E100735,sai.tiwari@iitg.ac.in,Alumni Meet - crux dedico,Alumni Meet,2026-01-24T11:59:15.318Z,LAB_301,confirmed,2025-10-04T21:20:22.632Z
+RSVP_000260,EVT_0026,E100181,diya.joshi@iitg.ac.in,Technical Workshop - corroboro campana,Technical Workshop,2025-11-04T07:59:05.299Z,LAB_102,confirmed,2025-10-01T03:24:07.917Z
+RSVP_000261,EVT_0027,E100275,ira.rao@iitg.ac.in,Cultural Event - arceo sit,Cultural Event,2026-02-09T21:33:37.819Z,LAB_201,confirmed,2025-09-21T23:50:58.494Z
+RSVP_000262,EVT_0027,E100334,reyansh.patel@iitg.ac.in,Festival Celebration - commodi tyrannus,Festival Celebration,2026-03-16T16:24:30.115Z,LAB_102,confirmed,2025-10-07T19:49:03.662Z
+RSVP_000263,EVT_0027,E100147,saanvi.patel@iitg.ac.in,Career Fair - uxor careo,Career Fair,2025-12-06T17:18:01.656Z,AC_201,confirmed,2025-10-02T03:44:42.410Z
+RSVP_000264,EVT_0027,E100237,tara.chopra@iitg.ac.in,Guest Lecture - colo cado,Guest Lecture,2025-11-05T14:06:29.604Z,AC_101,confirmed,2025-10-02T23:46:49.035Z
+RSVP_000265,EVT_0027,E100762,riya.agarwal@iitg.ac.in,Research Presentation - certus solium,Research Presentation,2026-01-08T22:06:33.958Z,LIB_L3,confirmed,2025-10-08T00:54:26.449Z
+RSVP_000266,EVT_0027,E100151,kavya.kumar@iitg.ac.in,Festival Celebration - tempora delego,Festival Celebration,2026-02-06T05:59:49.244Z,CAF_FOOD_COURT,confirmed,2025-09-28T07:51:02.111Z
+RSVP_000267,EVT_0027,E100053,vivaan.joshi@iitg.ac.in,Festival Celebration - contigo totam,Festival Celebration,2025-12-29T01:22:34.062Z,AC_101,pending,2025-10-13T16:19:21.795Z
+RSVP_000268,EVT_0027,E100602,siya.saxena@iitg.ac.in,Guest Lecture - rem teres,Guest Lecture,2026-02-02T13:05:24.377Z,HOSTEL_C,pending,2025-09-26T17:53:13.803Z
+RSVP_000269,EVT_0027,E100535,aditya.tiwari@iitg.ac.in,Sports Tournament - aetas talus,Sports Tournament,2026-03-06T11:20:55.359Z,CC_LAB1,confirmed,2025-10-14T20:15:26.532Z
+RSVP_000270,EVT_0027,E100741,aarav.jain@iitg.ac.in,Research Presentation - corroboro considero,Research Presentation,2026-03-02T23:43:37.670Z,AUD_MAIN,confirmed,2025-09-25T20:48:07.051Z
+RSVP_000271,EVT_0028,E100055,ananya.malhotra@iitg.ac.in,Research Presentation - studio quam,Research Presentation,2026-02-01T03:05:35.115Z,LAB_201,declined,2025-09-29T18:06:51.990Z
+RSVP_000272,EVT_0028,E100724,vihaan.gupta@iitg.ac.in,Festival Celebration - caveo adduco,Festival Celebration,2026-02-26T14:45:39.351Z,AC_101,declined,2025-10-05T13:35:42.768Z
+RSVP_000273,EVT_0028,E100681,priya.singh@iitg.ac.in,Conference - despecto cupressus,Conference,2025-12-11T13:35:47.604Z,LAB_201,declined,2025-10-14T21:05:18.022Z
+RSVP_000274,EVT_0028,E100038,vihaan.jain@iitg.ac.in,Seminar - villa aut,Seminar,2026-02-04T11:24:40.562Z,LAB_301,confirmed,2025-10-16T08:09:59.334Z
+RSVP_000275,EVT_0028,E100863,krishna.bansal@iitg.ac.in,Sports Tournament - clibanus tertius,Sports Tournament,2025-12-20T16:22:55.130Z,HOSTEL_B,pending,2025-10-01T06:56:50.944Z
+RSVP_000276,EVT_0028,E100973,anika.reddy@iitg.ac.in,Technical Workshop - coniuratio deficio,Technical Workshop,2025-10-30T18:04:50.187Z,AC_102,confirmed,2025-10-19T15:33:20.853Z
+RSVP_000277,EVT_0028,E100631,siya.joshi@iitg.ac.in,Technical Workshop - totidem amo,Technical Workshop,2026-04-13T17:10:16.043Z,CC_LAB2,pending,2025-10-24T23:08:40.826Z
+RSVP_000278,EVT_0028,E100669,aarav.sharma@iitg.ac.in,Research Presentation - amaritudo celebrer,Research Presentation,2026-03-09T03:19:06.374Z,AC_101,confirmed,2025-10-23T02:06:35.684Z
+RSVP_000279,EVT_0028,E100719,siya.tiwari@iitg.ac.in,Research Presentation - dignissimos vorago,Research Presentation,2026-03-28T08:40:39.908Z,CC_LAB1,confirmed,2025-10-05T13:43:47.088Z
+RSVP_000280,EVT_0028,E100546,tara.yadav@iitg.ac.in,Career Fair - vae totidem,Career Fair,2026-01-05T09:56:04.195Z,CC_LAB2,pending,2025-10-06T17:28:19.185Z
+RSVP_000281,EVT_0029,E100822,ira.singh@iitg.ac.in,Research Presentation - damnatio vulnus,Research Presentation,2025-11-13T17:29:09.676Z,AC_301,confirmed,2025-10-21T15:46:47.423Z
+RSVP_000282,EVT_0029,E100643,neha.saxena@iitg.ac.in,Guest Lecture - substantia pauper,Guest Lecture,2026-04-04T14:37:14.030Z,LIB_L3,confirmed,2025-10-19T16:30:07.067Z
+RSVP_000283,EVT_0029,E100522,saanvi.arora@iitg.ac.in,Guest Lecture - degusto crebro,Guest Lecture,2026-04-12T04:13:39.966Z,GYM_MAIN,confirmed,2025-10-21T18:59:24.604Z
+RSVP_000284,EVT_0029,E100592,aarav.mishra@iitg.ac.in,Festival Celebration - tametsi somnus,Festival Celebration,2025-12-28T18:36:53.512Z,ADMIN_OFFICE,confirmed,2025-10-17T05:15:56.607Z
+RSVP_000285,EVT_0029,E100888,arjun.tiwari@iitg.ac.in,Sports Tournament - assumenda cresco,Sports Tournament,2025-12-17T23:40:48.740Z,HOSTEL_B,pending,2025-10-16T07:41:54.228Z
+RSVP_000286,EVT_0029,E100762,riya.agarwal@iitg.ac.in,Alumni Meet - rerum adiuvo,Alumni Meet,2025-12-28T16:31:02.286Z,AC_201,pending,2025-10-13T15:58:06.316Z
+RSVP_000287,EVT_0029,E100159,sai.kumar@iitg.ac.in,Technical Workshop - conservo valeo,Technical Workshop,2026-03-09T00:26:52.786Z,LIB_L3,declined,2025-09-21T00:37:06.175Z
+RSVP_000288,EVT_0029,E100764,riya.desai@iitg.ac.in,Alumni Meet - surculus dapifer,Alumni Meet,2025-12-27T22:36:10.775Z,AC_301,confirmed,2025-10-24T19:55:44.946Z
+RSVP_000289,EVT_0029,E100376,saanvi.patel@iitg.ac.in,Seminar - commemoro brevis,Seminar,2026-02-05T13:20:14.453Z,CC_SERVER,confirmed,2025-10-06T11:14:37.855Z
+RSVP_000290,EVT_0029,E100794,saanvi.shah@iitg.ac.in,Guest Lecture - totidem demum,Guest Lecture,2025-12-25T02:06:24.105Z,HOSTEL_B,confirmed,2025-09-20T06:51:29.482Z
+RSVP_000291,EVT_0030,E100024,aditya.malhotra@iitg.ac.in,Seminar - colo sopor,Seminar,2026-01-22T07:26:08.277Z,LIB_L1,confirmed,2025-09-19T14:11:53.227Z
+RSVP_000292,EVT_0030,E100139,atharv.joshi@iitg.ac.in,Career Fair - capto cohaero,Career Fair,2025-11-15T07:00:58.043Z,LIB_ENT,confirmed,2025-10-23T01:22:31.789Z
+RSVP_000293,EVT_0030,E100385,ishaan.bansal@iitg.ac.in,Technical Workshop - vito tribuo,Technical Workshop,2026-01-20T11:24:31.685Z,GYM_MAIN,pending,2025-09-29T08:19:13.452Z
+RSVP_000294,EVT_0030,E100605,ishaan.shah@iitg.ac.in,Seminar - corrigo adversus,Seminar,2025-12-12T11:37:05.199Z,LAB_102,pending,2025-10-20T14:48:24.019Z
+RSVP_000295,EVT_0030,E100380,pranav.joshi@iitg.ac.in,Seminar - valde tricesimus,Seminar,2025-11-10T06:19:30.834Z,LIB_L3,confirmed,2025-10-21T23:21:19.577Z
+RSVP_000296,EVT_0030,E100935,pari.joshi@iitg.ac.in,Alumni Meet - amissio utroque,Alumni Meet,2025-12-25T01:03:18.229Z,LAB_101,confirmed,2025-09-23T13:25:06.330Z
+RSVP_000297,EVT_0030,E100958,aarav.sharma@iitg.ac.in,Guest Lecture - aspicio tunc,Guest Lecture,2026-03-11T03:28:26.229Z,AC_102,confirmed,2025-10-21T16:21:53.871Z
+RSVP_000298,EVT_0030,E100702,ayaan.arora@iitg.ac.in,Sports Tournament - et cibo,Sports Tournament,2026-01-23T18:41:01.640Z,LAB_102,confirmed,2025-10-11T06:03:10.591Z
+RSVP_000299,EVT_0030,E100603,advik.kapoor@iitg.ac.in,Cultural Event - usus confido,Cultural Event,2026-01-30T12:50:00.261Z,AUD_MAIN,confirmed,2025-09-29T17:37:59.652Z
+RSVP_000300,EVT_0030,E100036,pari.yadav@iitg.ac.in,Technical Workshop - deripio caste,Technical Workshop,2025-12-31T07:28:32.580Z,HOSTEL_C,confirmed,2025-10-04T05:57:11.324Z
+RSVP_000301,EVT_0031,E100115,shaurya.pandey@iitg.ac.in,Sports Tournament - demergo velit,Sports Tournament,2025-12-27T14:32:27.600Z,CAF_FOOD_COURT,confirmed,2025-10-15T15:47:03.724Z
+RSVP_000302,EVT_0031,E100227,atharv.bansal@iitg.ac.in,Conference - adficio summa,Conference,2025-11-13T06:50:05.638Z,CC_SERVER,confirmed,2025-10-25T09:43:33.387Z
+RSVP_000303,EVT_0031,E100213,ira.agarwal@iitg.ac.in,Cultural Event - aliquam vulpes,Cultural Event,2025-12-20T08:57:37.545Z,GYM_INDOOR,confirmed,2025-10-22T01:03:53.735Z
+RSVP_000304,EVT_0031,E100005,tara.kapoor@iitg.ac.in,Alumni Meet - suppono cohibeo,Alumni Meet,2026-04-24T17:34:30.515Z,ADMIN_LOBBY,confirmed,2025-10-11T21:11:04.434Z
+RSVP_000305,EVT_0031,E100856,ayaan.arora@iitg.ac.in,Cultural Event - confero cresco,Cultural Event,2026-02-21T11:37:13.912Z,CAF_FOOD_COURT,confirmed,2025-10-08T01:06:56.790Z
+RSVP_000306,EVT_0031,E100266,aarav.kumar@iitg.ac.in,Conference - territo saepe,Conference,2026-01-05T21:10:10.188Z,CC_LAB2,confirmed,2025-10-15T08:15:00.898Z
+RSVP_000307,EVT_0031,E100198,ira.shah@iitg.ac.in,Cultural Event - curis atqui,Cultural Event,2026-01-28T03:10:16.835Z,GYM_INDOOR,confirmed,2025-09-22T05:19:01.305Z
+RSVP_000308,EVT_0031,E100620,neha.chopra@iitg.ac.in,Guest Lecture - balbus reprehenderit,Guest Lecture,2026-01-15T04:40:29.090Z,ADMIN_LOBBY,pending,2025-09-25T07:45:43.193Z
+RSVP_000309,EVT_0031,E100534,reyansh.pandey@iitg.ac.in,Research Presentation - sed sublime,Research Presentation,2026-02-20T02:04:43.573Z,LAB_102,pending,2025-10-05T23:58:26.533Z
+RSVP_000310,EVT_0031,E100652,ananya.kumar@iitg.ac.in,Guest Lecture - veritas acer,Guest Lecture,2026-01-18T16:45:52.114Z,AC_201,confirmed,2025-09-23T00:48:50.909Z
+RSVP_000311,EVT_0032,E100658,saanvi.modi@iitg.ac.in,Career Fair - accendo cribro,Career Fair,2026-04-21T10:32:14.715Z,ADMIN_LOBBY,declined,2025-10-04T11:56:46.264Z
+RSVP_000312,EVT_0032,E100269,diya.mishra@iitg.ac.in,Guest Lecture - arcesso ab,Guest Lecture,2026-01-02T15:38:08.884Z,LAB_101,confirmed,2025-10-18T09:27:06.666Z
+RSVP_000313,EVT_0032,E100548,advik.modi@iitg.ac.in,Research Presentation - tamquam angelus,Research Presentation,2026-04-20T19:55:21.399Z,LIB_L3,confirmed,2025-09-20T04:48:34.312Z
+RSVP_000314,EVT_0032,E100847,kavya.pandey@iitg.ac.in,Career Fair - subseco uxor,Career Fair,2026-03-15T14:13:51.810Z,AC_201,confirmed,2025-10-16T20:59:21.318Z
+RSVP_000315,EVT_0032,E100382,vivaan.reddy@iitg.ac.in,Seminar - ciminatio sopor,Seminar,2026-02-11T13:54:00.305Z,AUD_MAIN,confirmed,2025-10-12T20:51:48.702Z
+RSVP_000316,EVT_0032,E100381,pari.kumar@iitg.ac.in,Technical Workshop - ager quaerat,Technical Workshop,2026-01-01T11:03:24.125Z,AC_201,confirmed,2025-10-21T14:39:34.100Z
+RSVP_000317,EVT_0032,E100899,anika.kumar@iitg.ac.in,Conference - coruscus dolorem,Conference,2025-12-19T22:53:18.672Z,HOSTEL_A,confirmed,2025-10-07T19:01:57.583Z
+RSVP_000318,EVT_0032,E100583,krishna.saxena@iitg.ac.in,Alumni Meet - vinculum virgo,Alumni Meet,2025-11-26T03:33:54.467Z,LIB_L3,confirmed,2025-10-13T17:26:38.551Z
+RSVP_000319,EVT_0032,E100865,pari.srivastava@iitg.ac.in,Festival Celebration - deporto viridis,Festival Celebration,2025-11-04T22:37:33.007Z,LIB_ENT,confirmed,2025-10-10T21:58:00.712Z
+RSVP_000320,EVT_0032,E100766,pari.joshi@iitg.ac.in,Conference - triumphus bellicus,Conference,2025-11-20T17:52:58.789Z,LAB_101,confirmed,2025-10-17T12:16:53.402Z
+RSVP_000321,EVT_0033,E100662,myra.desai@iitg.ac.in,Career Fair - arca vergo,Career Fair,2025-10-28T04:24:50.758Z,AC_301,confirmed,2025-10-15T15:13:58.484Z
+RSVP_000322,EVT_0033,E100200,myra.srivastava@iitg.ac.in,Festival Celebration - consequatur adsidue,Festival Celebration,2025-12-05T14:04:34.880Z,CC_LAB2,confirmed,2025-10-11T03:39:43.126Z
+RSVP_000323,EVT_0033,E100960,nisha.pandey@iitg.ac.in,Research Presentation - sordeo bene,Research Presentation,2026-01-29T20:04:30.684Z,LAB_101,confirmed,2025-10-06T20:32:24.396Z
+RSVP_000324,EVT_0033,E100358,vihaan.patel@iitg.ac.in,Career Fair - suffragium tergiversatio,Career Fair,2025-12-29T12:13:39.883Z,LAB_101,declined,2025-10-10T11:49:44.244Z
+RSVP_000325,EVT_0033,E100725,pari.malhotra@iitg.ac.in,Career Fair - bellicus vestigium,Career Fair,2026-02-14T22:37:25.340Z,LAB_201,confirmed,2025-10-08T16:12:24.105Z
+RSVP_000326,EVT_0033,E100426,siya.agarwal@iitg.ac.in,Alumni Meet - tredecim adipiscor,Alumni Meet,2025-11-06T16:05:25.517Z,LIB_L2,confirmed,2025-09-25T22:19:57.986Z
+RSVP_000327,EVT_0033,E100795,ananya.chopra@iitg.ac.in,Research Presentation - aequitas vis,Research Presentation,2025-11-19T13:28:38.616Z,LIB_L2,confirmed,2025-09-22T14:39:35.934Z
+RSVP_000328,EVT_0033,E100937,aditya.chopra@iitg.ac.in,Research Presentation - supplanto depereo,Research Presentation,2026-02-06T04:58:20.444Z,CAF_FOOD_COURT,confirmed,2025-10-14T17:30:12.218Z
+RSVP_000329,EVT_0033,E100888,arjun.tiwari@iitg.ac.in,Cultural Event - comitatus cubitum,Cultural Event,2026-01-22T09:12:46.932Z,LAB_201,confirmed,2025-09-22T20:38:43.289Z
+RSVP_000330,EVT_0033,E100339,ayaan.malhotra@iitg.ac.in,Guest Lecture - suffoco cibus,Guest Lecture,2026-01-29T23:43:25.304Z,GYM_MAIN,confirmed,2025-09-20T08:32:35.496Z
+RSVP_000331,EVT_0034,E100127,ayaan.bansal@iitg.ac.in,Conference - conqueror approbo,Conference,2026-01-19T12:28:55.278Z,HOSTEL_A,confirmed,2025-10-07T22:49:20.469Z
+RSVP_000332,EVT_0034,E100283,myra.singh@iitg.ac.in,Career Fair - decimus cito,Career Fair,2026-01-12T00:39:00.059Z,LAB_201,pending,2025-09-23T19:46:35.145Z
+RSVP_000333,EVT_0034,E100769,advik.desai@iitg.ac.in,Alumni Meet - somniculosus tondeo,Alumni Meet,2026-02-27T11:10:22.465Z,LAB_102,pending,2025-10-25T08:46:57.664Z
+RSVP_000334,EVT_0034,E100233,shaurya.patel@iitg.ac.in,Guest Lecture - tabernus acidus,Guest Lecture,2025-11-03T04:59:52.730Z,GYM_INDOOR,confirmed,2025-09-28T01:41:22.783Z
+RSVP_000335,EVT_0034,E100332,myra.bansal@iitg.ac.in,Technical Workshop - tribuo sol,Technical Workshop,2026-04-22T05:29:58.305Z,CAF_MAIN,confirmed,2025-10-05T06:02:09.895Z
+RSVP_000336,EVT_0034,E100289,vivaan.chopra@iitg.ac.in,Cultural Event - viduo defero,Cultural Event,2026-03-25T10:27:18.030Z,HOSTEL_A,pending,2025-09-25T01:49:28.229Z
+RSVP_000337,EVT_0034,E100869,ananya.sharma@iitg.ac.in,Career Fair - vivo aufero,Career Fair,2025-11-23T04:21:04.841Z,CAF_MAIN,declined,2025-10-24T04:06:52.173Z
+RSVP_000338,EVT_0034,E100018,myra.joshi@iitg.ac.in,Career Fair - ademptio dapifer,Career Fair,2026-04-05T00:02:05.423Z,CC_LAB1,confirmed,2025-10-06T00:16:08.494Z
+RSVP_000339,EVT_0034,E100810,aarav.yadav@iitg.ac.in,Seminar - nobis volo,Seminar,2026-04-03T11:38:24.726Z,AUD_MAIN,confirmed,2025-10-03T02:36:26.004Z
+RSVP_000340,EVT_0034,E100124,sai.sharma@iitg.ac.in,Festival Celebration - demitto ante,Festival Celebration,2026-02-13T10:25:18.018Z,HOSTEL_C,confirmed,2025-09-28T21:53:09.920Z
+RSVP_000341,EVT_0035,E100292,ishaan.tiwari@iitg.ac.in,Guest Lecture - ars provident,Guest Lecture,2025-11-26T10:38:14.164Z,HOSTEL_A,confirmed,2025-10-21T06:45:27.161Z
+RSVP_000342,EVT_0035,E100011,atharv.tiwari@iitg.ac.in,Festival Celebration - vir canto,Festival Celebration,2026-04-25T17:37:26.898Z,LIB_L3,confirmed,2025-10-21T20:26:03.746Z
+RSVP_000343,EVT_0035,E100367,diya.tiwari@iitg.ac.in,Cultural Event - color cotidie,Cultural Event,2025-12-16T10:14:52.962Z,ADMIN_LOBBY,confirmed,2025-10-16T18:38:27.603Z
+RSVP_000344,EVT_0035,E100262,arjun.gupta@iitg.ac.in,Guest Lecture - adstringo aestivus,Guest Lecture,2026-02-13T07:27:22.954Z,LIB_L1,confirmed,2025-09-19T19:28:28.639Z
+RSVP_000345,EVT_0035,E100348,sana.tiwari@iitg.ac.in,Career Fair - adulescens facilis,Career Fair,2025-12-11T11:05:35.318Z,AC_301,confirmed,2025-09-20T10:45:08.111Z
+RSVP_000346,EVT_0035,E100441,neha.malhotra@iitg.ac.in,Research Presentation - cunctatio vergo,Research Presentation,2025-11-14T08:13:46.043Z,LIB_L3,confirmed,2025-10-20T06:36:18.563Z
+RSVP_000347,EVT_0035,E100651,vihaan.chopra@iitg.ac.in,Career Fair - umerus magnam,Career Fair,2026-01-25T20:44:56.425Z,AUD_MAIN,confirmed,2025-10-11T11:28:58.449Z
+RSVP_000348,EVT_0035,E100191,arjun.singh@iitg.ac.in,Technical Workshop - quia tres,Technical Workshop,2025-11-25T02:35:05.958Z,LAB_102,declined,2025-10-05T08:54:39.974Z
+RSVP_000349,EVT_0035,E100890,priya.srivastava@iitg.ac.in,Guest Lecture - ustulo tero,Guest Lecture,2025-11-30T14:42:06.848Z,AC_102,confirmed,2025-10-21T20:58:34.620Z
+RSVP_000350,EVT_0035,E100807,ananya.yadav@iitg.ac.in,Career Fair - clamo cattus,Career Fair,2026-01-20T15:50:55.954Z,CAF_MAIN,confirmed,2025-10-18T08:37:46.725Z
+RSVP_000351,EVT_0036,E100686,tara.kapoor@iitg.ac.in,Technical Workshop - aggero ustulo,Technical Workshop,2025-12-14T06:43:22.291Z,HOSTEL_A,pending,2025-10-13T05:44:13.842Z
+RSVP_000352,EVT_0036,E100764,riya.desai@iitg.ac.in,Alumni Meet - vinitor suffragium,Alumni Meet,2026-04-14T08:54:43.337Z,ADMIN_OFFICE,confirmed,2025-09-19T23:50:59.376Z
+RSVP_000353,EVT_0036,E100097,myra.modi@iitg.ac.in,Technical Workshop - demulceo cenaculum,Technical Workshop,2025-10-27T10:01:49.580Z,HOSTEL_C,confirmed,2025-10-02T18:06:47.989Z
+RSVP_000354,EVT_0036,E100996,krishna.kumar@iitg.ac.in,Guest Lecture - damnatio solum,Guest Lecture,2025-12-18T16:23:49.115Z,LIB_L2,confirmed,2025-10-19T23:55:41.888Z
+RSVP_000355,EVT_0036,E100752,diya.modi@iitg.ac.in,Alumni Meet - stabilis eum,Alumni Meet,2026-02-20T04:34:53.601Z,AC_201,confirmed,2025-09-23T20:03:51.100Z
+RSVP_000356,EVT_0036,E100158,advik.saxena@iitg.ac.in,Seminar - valens virga,Seminar,2025-12-01T23:57:42.187Z,LIB_L3,pending,2025-09-30T23:17:03.507Z
+RSVP_000357,EVT_0036,E100127,ayaan.bansal@iitg.ac.in,Guest Lecture - unde triumphus,Guest Lecture,2025-12-10T18:28:25.722Z,HOSTEL_C,pending,2025-10-23T21:05:07.604Z
+RSVP_000358,EVT_0036,E100000,riya.modi@iitg.ac.in,Guest Lecture - tyrannus amaritudo,Guest Lecture,2025-11-23T06:19:15.347Z,LAB_102,confirmed,2025-09-21T10:03:34.544Z
+RSVP_000359,EVT_0036,E100672,tara.mishra@iitg.ac.in,Technical Workshop - vorago venustas,Technical Workshop,2025-12-19T02:21:53.672Z,LIB_ENT,confirmed,2025-10-23T19:58:31.369Z
+RSVP_000360,EVT_0036,E100156,diya.shah@iitg.ac.in,Technical Workshop - dens civis,Technical Workshop,2026-02-01T10:24:57.075Z,HOSTEL_B,confirmed,2025-10-07T02:16:16.548Z
+RSVP_000361,EVT_0037,E100159,sai.kumar@iitg.ac.in,Cultural Event - aduro currus,Cultural Event,2025-12-04T04:01:08.224Z,LAB_201,pending,2025-09-29T03:44:47.275Z
+RSVP_000362,EVT_0037,E100264,sai.malhotra@iitg.ac.in,Technical Workshop - voluptatem speculum,Technical Workshop,2025-12-23T09:35:50.679Z,LIB_ENT,confirmed,2025-09-19T21:21:02.441Z
+RSVP_000363,EVT_0037,E100029,advik.pandey@iitg.ac.in,Festival Celebration - capio adeptio,Festival Celebration,2026-01-27T08:32:38.957Z,ADMIN_LOBBY,declined,2025-10-22T11:10:51.278Z
+RSVP_000364,EVT_0037,E100324,nisha.arora@iitg.ac.in,Sports Tournament - somnus utrum,Sports Tournament,2026-01-08T07:24:24.479Z,HOSTEL_A,declined,2025-10-09T23:17:27.711Z
+RSVP_000365,EVT_0037,E100152,krishna.singh@iitg.ac.in,Alumni Meet - suppellex blanditiis,Alumni Meet,2026-02-14T07:23:51.977Z,HOSTEL_B,pending,2025-10-01T17:13:39.403Z
+RSVP_000366,EVT_0037,E100420,nisha.bansal@iitg.ac.in,Festival Celebration - somniculosus balbus,Festival Celebration,2026-04-24T03:15:25.389Z,AUD_SEMINAR,confirmed,2025-09-26T20:49:39.906Z
+RSVP_000367,EVT_0037,E100413,saanvi.gupta@iitg.ac.in,Conference - vigilo adsuesco,Conference,2025-12-06T02:33:17.998Z,CAF_FOOD_COURT,confirmed,2025-10-20T06:21:42.777Z
+RSVP_000368,EVT_0037,E100609,atharv.agarwal@iitg.ac.in,Research Presentation - valeo turbo,Research Presentation,2026-03-23T23:51:17.474Z,HOSTEL_B,confirmed,2025-10-10T06:41:57.757Z
+RSVP_000369,EVT_0037,E100247,sai.reddy@iitg.ac.in,Sports Tournament - taedium aperte,Sports Tournament,2025-12-14T07:36:25.740Z,CAF_MAIN,declined,2025-10-15T17:32:51.844Z
+RSVP_000370,EVT_0037,E100527,atharv.kapoor@iitg.ac.in,Festival Celebration - cur cunctatio,Festival Celebration,2026-01-14T19:33:26.577Z,LAB_101,confirmed,2025-10-12T21:14:51.228Z
+RSVP_000371,EVT_0038,E100293,pari.tiwari@iitg.ac.in,Career Fair - volutabrum stultus,Career Fair,2026-01-18T16:11:25.128Z,LAB_201,confirmed,2025-10-18T18:47:37.887Z
+RSVP_000372,EVT_0038,E100486,ananya.yadav@iitg.ac.in,Career Fair - tepidus spes,Career Fair,2026-04-07T01:07:29.736Z,CC_LAB1,declined,2025-09-19T12:12:15.282Z
+RSVP_000373,EVT_0038,E100783,saanvi.arora@iitg.ac.in,Conference - defleo pecus,Conference,2026-01-10T20:52:13.971Z,HOSTEL_C,declined,2025-10-20T08:00:45.680Z
+RSVP_000374,EVT_0038,E100762,riya.agarwal@iitg.ac.in,Seminar - commodi cupiditate,Seminar,2026-03-01T14:20:31.866Z,LIB_L1,confirmed,2025-09-24T18:57:54.497Z
+RSVP_000375,EVT_0038,E100108,myra.bansal@iitg.ac.in,Conference - curatio tredecim,Conference,2026-02-11T23:52:45.800Z,CC_SERVER,pending,2025-10-25T08:24:17.520Z
+RSVP_000376,EVT_0038,E100225,ananya.patel@iitg.ac.in,Conference - tui optio,Conference,2025-11-11T07:27:38.367Z,HOSTEL_A,confirmed,2025-09-23T04:56:07.355Z
+RSVP_000377,EVT_0038,E100629,saanvi.verma@iitg.ac.in,Cultural Event - expedita modi,Cultural Event,2026-01-18T14:21:56.185Z,AC_201,confirmed,2025-09-20T15:28:33.469Z
+RSVP_000378,EVT_0038,E100457,advik.mehta@iitg.ac.in,Guest Lecture - tantum corporis,Guest Lecture,2026-03-31T09:19:40.237Z,HOSTEL_C,confirmed,2025-10-19T10:04:18.264Z
+RSVP_000379,EVT_0038,E100235,sai.patel@iitg.ac.in,Sports Tournament - tabula civis,Sports Tournament,2026-01-08T17:26:07.829Z,HOSTEL_A,pending,2025-10-23T11:20:12.062Z
+RSVP_000380,EVT_0038,E100152,krishna.singh@iitg.ac.in,Conference - adeptio cernuus,Conference,2025-11-10T01:02:52.273Z,GYM_MAIN,confirmed,2025-10-02T15:23:10.878Z
+RSVP_000381,EVT_0039,E100143,ishaan.mehta@iitg.ac.in,Festival Celebration - comitatus non,Festival Celebration,2026-04-03T14:36:52.460Z,LIB_ENT,pending,2025-10-18T14:08:26.695Z
+RSVP_000382,EVT_0039,E100061,nisha.chopra@iitg.ac.in,Conference - officiis absque,Conference,2025-11-24T10:05:34.540Z,CC_LAB1,confirmed,2025-10-09T11:41:33.649Z
+RSVP_000383,EVT_0039,E100302,tara.agarwal@iitg.ac.in,Festival Celebration - quae conor,Festival Celebration,2026-01-08T23:46:43.447Z,CC_LAB1,confirmed,2025-10-05T08:47:29.394Z
+RSVP_000384,EVT_0039,E100264,sai.malhotra@iitg.ac.in,Research Presentation - tempore usque,Research Presentation,2025-11-17T20:09:59.239Z,AUD_SEMINAR,confirmed,2025-10-02T03:07:55.500Z
+RSVP_000385,EVT_0039,E100374,vivaan.joshi@iitg.ac.in,Research Presentation - calco alius,Research Presentation,2025-12-11T20:18:28.357Z,ADMIN_OFFICE,pending,2025-10-14T02:05:12.800Z
+RSVP_000386,EVT_0039,E100378,myra.malhotra@iitg.ac.in,Festival Celebration - tergo deprimo,Festival Celebration,2025-12-28T11:46:05.911Z,LAB_101,confirmed,2025-10-20T18:57:17.400Z
+RSVP_000387,EVT_0039,E100088,saanvi.verma@iitg.ac.in,Conference - caries quam,Conference,2026-02-03T09:37:29.787Z,GYM_MAIN,confirmed,2025-10-08T07:32:57.575Z
+RSVP_000388,EVT_0039,E100533,ira.joshi@iitg.ac.in,Technical Workshop - nam omnis,Technical Workshop,2025-11-23T14:28:58.483Z,GYM_MAIN,pending,2025-10-23T13:00:39.022Z
+RSVP_000389,EVT_0039,E100140,shaurya.tiwari@iitg.ac.in,Career Fair - corrigo terminatio,Career Fair,2026-02-02T23:46:46.701Z,LIB_L3,confirmed,2025-10-24T20:01:17.287Z
+RSVP_000390,EVT_0039,E100732,shaurya.mishra@iitg.ac.in,Guest Lecture - sordeo vitae,Guest Lecture,2026-04-12T20:37:00.009Z,LAB_101,confirmed,2025-10-19T13:05:11.304Z
+RSVP_000391,EVT_0040,E100253,saanvi.malhotra@iitg.ac.in,Festival Celebration - vere triumphus,Festival Celebration,2026-04-10T11:28:49.749Z,LAB_102,confirmed,2025-10-10T06:33:44.809Z
+RSVP_000392,EVT_0040,E100162,diya.srivastava@iitg.ac.in,Guest Lecture - alii sapiente,Guest Lecture,2026-01-24T05:04:45.074Z,LIB_L2,declined,2025-09-21T15:14:21.124Z
+RSVP_000393,EVT_0040,E100517,saanvi.malhotra@iitg.ac.in,Cultural Event - distinctio tibi,Cultural Event,2026-02-21T10:12:54.395Z,AUD_MAIN,declined,2025-09-19T22:33:58.553Z
+RSVP_000394,EVT_0040,E100972,ananya.bansal@iitg.ac.in,Festival Celebration - acervus condico,Festival Celebration,2025-10-26T09:58:17.868Z,AC_301,confirmed,2025-10-13T19:15:16.612Z
+RSVP_000395,EVT_0040,E100894,priya.pandey@iitg.ac.in,Seminar - somniculosus sapiente,Seminar,2026-03-13T13:35:02.382Z,HOSTEL_C,confirmed,2025-09-21T10:45:42.025Z
+RSVP_000396,EVT_0040,E100648,ananya.modi@iitg.ac.in,Festival Celebration - amplexus vulgo,Festival Celebration,2026-04-22T06:46:40.070Z,LAB_201,confirmed,2025-10-19T23:56:35.706Z
+RSVP_000397,EVT_0040,E100099,pranav.kapoor@iitg.ac.in,Research Presentation - corrumpo nesciunt,Research Presentation,2026-02-24T02:57:36.109Z,HOSTEL_C,confirmed,2025-09-23T22:09:45.725Z
+RSVP_000398,EVT_0040,E100220,nisha.saxena@iitg.ac.in,Seminar - temporibus cultura,Seminar,2025-11-13T03:46:28.400Z,LAB_101,confirmed,2025-09-26T12:07:21.722Z
+RSVP_000399,EVT_0040,E100190,pari.sharma@iitg.ac.in,Alumni Meet - cinis totidem,Alumni Meet,2026-02-28T07:41:47.377Z,CAF_MAIN,confirmed,2025-10-03T17:13:56.521Z
+RSVP_000400,EVT_0040,E100454,ananya.arora@iitg.ac.in,Conference - carcer uredo,Conference,2025-11-28T18:10:33.634Z,HOSTEL_C,confirmed,2025-10-15T04:03:40.359Z
+RSVP_000401,EVT_0041,E100976,aarav.gupta@iitg.ac.in,Career Fair - voluptatem annus,Career Fair,2026-03-06T21:46:04.289Z,HOSTEL_A,confirmed,2025-09-25T20:43:07.049Z
+RSVP_000402,EVT_0041,E100796,tara.pandey@iitg.ac.in,Cultural Event - suffoco adamo,Cultural Event,2025-11-18T16:21:52.214Z,AC_101,confirmed,2025-10-18T18:35:44.921Z
+RSVP_000403,EVT_0041,E100282,pranav.srivastava@iitg.ac.in,Conference - tempora veritatis,Conference,2026-03-15T19:50:31.909Z,ADMIN_LOBBY,pending,2025-09-21T16:41:05.230Z
+RSVP_000404,EVT_0041,E100980,anika.sharma@iitg.ac.in,Research Presentation - cura adhaero,Research Presentation,2026-03-12T02:45:32.436Z,ADMIN_LOBBY,declined,2025-09-28T20:44:12.782Z
+RSVP_000405,EVT_0041,E100608,sana.malhotra@iitg.ac.in,Sports Tournament - auctor concido,Sports Tournament,2026-04-23T20:23:47.683Z,GYM_INDOOR,confirmed,2025-10-20T04:15:11.208Z
+RSVP_000406,EVT_0041,E100521,ananya.arora@iitg.ac.in,Festival Celebration - volo cribro,Festival Celebration,2026-03-19T18:43:06.399Z,CAF_FOOD_COURT,confirmed,2025-10-10T17:23:04.896Z
+RSVP_000407,EVT_0041,E100169,shaurya.joshi@iitg.ac.in,Seminar - vestrum vomica,Seminar,2026-01-07T02:07:14.635Z,CC_LAB1,confirmed,2025-10-13T21:18:25.738Z
+RSVP_000408,EVT_0041,E100542,atharv.kapoor@iitg.ac.in,Conference - tamen amet,Conference,2025-12-20T17:54:12.718Z,LAB_101,pending,2025-10-19T06:50:20.773Z
+RSVP_000409,EVT_0041,E100792,ananya.jain@iitg.ac.in,Seminar - ventito subseco,Seminar,2025-12-05T22:54:22.740Z,HOSTEL_B,confirmed,2025-10-05T20:18:30.537Z
+RSVP_000410,EVT_0041,E100951,anika.agarwal@iitg.ac.in,Guest Lecture - cribro angelus,Guest Lecture,2026-01-31T05:44:20.255Z,CC_LAB2,confirmed,2025-10-12T14:35:41.204Z
+RSVP_000411,EVT_0042,E100865,pari.srivastava@iitg.ac.in,Sports Tournament - cur xiphias,Sports Tournament,2026-01-11T06:32:33.767Z,HOSTEL_A,confirmed,2025-10-23T10:19:14.781Z
+RSVP_000412,EVT_0042,E100589,kavya.malhotra@iitg.ac.in,Research Presentation - maiores voluptates,Research Presentation,2026-01-25T03:48:38.139Z,LAB_102,confirmed,2025-10-21T21:41:31.517Z
+RSVP_000413,EVT_0042,E100547,neha.tiwari@iitg.ac.in,Conference - terminatio cilicium,Conference,2026-04-01T21:36:30.537Z,LIB_L1,confirmed,2025-10-16T17:40:48.461Z
+RSVP_000414,EVT_0042,E100954,atharv.kumar@iitg.ac.in,Sports Tournament - carbo cursus,Sports Tournament,2025-12-31T07:21:10.393Z,CC_SERVER,pending,2025-10-21T00:02:00.206Z
+RSVP_000415,EVT_0042,E100750,aarav.desai@iitg.ac.in,Technical Workshop - speciosus uter,Technical Workshop,2026-02-02T17:38:36.759Z,ADMIN_LOBBY,confirmed,2025-09-30T03:41:16.172Z
+RSVP_000416,EVT_0042,E100425,arjun.arora@iitg.ac.in,Cultural Event - accusamus asperiores,Cultural Event,2026-01-31T06:50:28.017Z,AC_201,confirmed,2025-10-20T04:26:39.620Z
+RSVP_000417,EVT_0042,E100229,arjun.singh@iitg.ac.in,Technical Workshop - quibusdam una,Technical Workshop,2026-01-11T10:33:39.601Z,LIB_L3,confirmed,2025-10-23T03:05:32.282Z
+RSVP_000418,EVT_0042,E100560,atharv.pandey@iitg.ac.in,Alumni Meet - abstergo callide,Alumni Meet,2026-02-13T09:48:09.621Z,HOSTEL_C,confirmed,2025-10-09T13:42:35.832Z
+RSVP_000419,EVT_0042,E100316,aarav.mishra@iitg.ac.in,Cultural Event - omnis delibero,Cultural Event,2026-02-20T11:14:18.443Z,AC_102,confirmed,2025-10-22T01:43:17.351Z
+RSVP_000420,EVT_0042,E100820,pranav.srivastava@iitg.ac.in,Cultural Event - charisma addo,Cultural Event,2026-01-23T06:26:57.847Z,AC_102,confirmed,2025-10-13T01:25:44.602Z
+RSVP_000421,EVT_0043,E100128,pranav.joshi@iitg.ac.in,Seminar - creta custodia,Seminar,2026-02-10T03:04:50.612Z,AC_301,pending,2025-09-29T18:08:25.880Z
+RSVP_000422,EVT_0043,E100042,vihaan.saxena@iitg.ac.in,Guest Lecture - agnitio conventus,Guest Lecture,2026-04-17T02:59:57.431Z,LIB_L2,confirmed,2025-10-06T21:14:29.698Z
+RSVP_000423,EVT_0043,E100170,sai.tiwari@iitg.ac.in,Guest Lecture - officiis curto,Guest Lecture,2026-02-14T02:17:54.553Z,AC_101,confirmed,2025-10-20T09:24:28.071Z
+RSVP_000424,EVT_0043,E100317,diya.kapoor@iitg.ac.in,Festival Celebration - eum deserunt,Festival Celebration,2026-03-19T23:37:24.798Z,HOSTEL_C,confirmed,2025-10-24T23:45:51.646Z
+RSVP_000425,EVT_0043,E100854,tara.joshi@iitg.ac.in,Alumni Meet - delectus pel,Alumni Meet,2026-01-31T19:22:19.243Z,AC_101,confirmed,2025-09-30T12:46:48.661Z
+RSVP_000426,EVT_0043,E100703,sana.joshi@iitg.ac.in,Conference - abutor desino,Conference,2026-01-18T16:09:40.615Z,CAF_MAIN,confirmed,2025-09-19T13:06:27.105Z
+RSVP_000427,EVT_0043,E100160,atharv.desai@iitg.ac.in,Career Fair - verecundia nemo,Career Fair,2026-04-25T13:25:16.780Z,AC_102,confirmed,2025-10-10T08:04:50.351Z
+RSVP_000428,EVT_0043,E100684,atharv.joshi@iitg.ac.in,Seminar - agnosco conforto,Seminar,2026-01-08T02:22:17.376Z,CAF_FOOD_COURT,confirmed,2025-10-24T13:27:33.864Z
+RSVP_000429,EVT_0043,E100911,aarav.chopra@iitg.ac.in,Research Presentation - curto temperantia,Research Presentation,2025-12-12T08:31:18.005Z,AUD_MAIN,confirmed,2025-09-28T10:38:19.700Z
+RSVP_000430,EVT_0043,E100742,vivaan.srivastava@iitg.ac.in,Festival Celebration - coepi valetudo,Festival Celebration,2025-10-30T16:01:46.765Z,GYM_MAIN,pending,2025-09-21T21:39:29.535Z
+RSVP_000431,EVT_0044,E100949,priya.bansal@iitg.ac.in,Guest Lecture - acquiro canis,Guest Lecture,2026-03-06T17:13:49.604Z,AC_201,confirmed,2025-10-06T21:39:59.005Z
+RSVP_000432,EVT_0044,E100126,atharv.tiwari@iitg.ac.in,Seminar - cum voro,Seminar,2025-12-17T07:31:54.871Z,HOSTEL_C,confirmed,2025-10-06T04:57:08.540Z
+RSVP_000433,EVT_0044,E100717,riya.kapoor@iitg.ac.in,Alumni Meet - tergiversatio contabesco,Alumni Meet,2025-11-12T11:24:34.783Z,AC_201,declined,2025-10-25T03:03:21.373Z
+RSVP_000434,EVT_0044,E100159,sai.kumar@iitg.ac.in,Festival Celebration - dapifer delectatio,Festival Celebration,2026-04-09T13:34:47.274Z,GYM_INDOOR,confirmed,2025-09-23T21:21:19.712Z
+RSVP_000435,EVT_0044,E100487,anika.verma@iitg.ac.in,Guest Lecture - aliqua adipiscor,Guest Lecture,2025-12-08T11:38:34.948Z,LAB_102,confirmed,2025-10-03T20:21:04.782Z
+RSVP_000436,EVT_0044,E100421,sana.rao@iitg.ac.in,Technical Workshop - absum defessus,Technical Workshop,2025-12-19T00:57:30.450Z,LAB_201,pending,2025-09-28T13:32:31.678Z
+RSVP_000437,EVT_0044,E100674,ananya.mehta@iitg.ac.in,Guest Lecture - delectatio pauper,Guest Lecture,2026-01-20T04:12:02.167Z,CC_LAB2,pending,2025-10-24T00:41:35.045Z
+RSVP_000438,EVT_0044,E100104,vivaan.mishra@iitg.ac.in,Cultural Event - contego barba,Cultural Event,2026-04-17T05:00:03.979Z,CAF_MAIN,confirmed,2025-10-02T23:13:39.355Z
+RSVP_000439,EVT_0044,E100060,riya.shah@iitg.ac.in,Research Presentation - accommodo inventore,Research Presentation,2026-02-09T19:01:01.109Z,ADMIN_LOBBY,declined,2025-10-15T10:17:34.213Z
+RSVP_000440,EVT_0044,E100189,priya.pandey@iitg.ac.in,Alumni Meet - suppellex armarium,Alumni Meet,2026-04-01T16:07:31.958Z,CC_LAB2,pending,2025-10-25T09:47:46.348Z
+RSVP_000441,EVT_0045,E100367,diya.tiwari@iitg.ac.in,Alumni Meet - cultellus administratio,Alumni Meet,2026-03-18T01:27:30.244Z,LIB_ENT,declined,2025-09-22T13:54:36.918Z
+RSVP_000442,EVT_0045,E100928,saanvi.patel@iitg.ac.in,Guest Lecture - molestias thesaurus,Guest Lecture,2026-03-23T05:55:52.109Z,AC_101,confirmed,2025-10-15T16:21:30.484Z
+RSVP_000443,EVT_0045,E100628,diya.bansal@iitg.ac.in,Career Fair - versus beatae,Career Fair,2026-01-11T18:10:39.776Z,CC_LAB1,confirmed,2025-10-10T13:48:35.290Z
+RSVP_000444,EVT_0045,E100909,shaurya.arora@iitg.ac.in,Festival Celebration - adsidue admiratio,Festival Celebration,2026-02-26T14:02:51.376Z,AC_102,confirmed,2025-10-25T04:03:00.947Z
+RSVP_000445,EVT_0045,E100214,sai.agarwal@iitg.ac.in,Alumni Meet - spes solium,Alumni Meet,2025-10-29T17:30:35.206Z,LIB_ENT,confirmed,2025-10-01T10:13:53.351Z
+RSVP_000446,EVT_0045,E100180,sana.gupta@iitg.ac.in,Alumni Meet - clibanus arceo,Alumni Meet,2025-11-02T03:06:44.274Z,LAB_102,confirmed,2025-09-29T10:52:25.077Z
+RSVP_000447,EVT_0045,E100564,nisha.chopra@iitg.ac.in,Festival Celebration - deinde adfero,Festival Celebration,2026-04-11T17:42:10.350Z,AC_301,pending,2025-10-14T15:38:59.831Z
+RSVP_000448,EVT_0045,E100104,vivaan.mishra@iitg.ac.in,Sports Tournament - accusamus curo,Sports Tournament,2026-04-15T03:34:43.059Z,HOSTEL_B,confirmed,2025-10-08T03:13:24.827Z
+RSVP_000449,EVT_0045,E100171,shaurya.joshi@iitg.ac.in,Seminar - cetera deinde,Seminar,2025-11-16T05:19:58.981Z,HOSTEL_B,pending,2025-09-23T08:33:11.663Z
+RSVP_000450,EVT_0045,E100212,advik.pandey@iitg.ac.in,Technical Workshop - civis caelestis,Technical Workshop,2025-12-21T17:11:30.562Z,AC_101,confirmed,2025-09-21T12:48:24.781Z
+RSVP_000451,EVT_0046,E100129,sai.saxena@iitg.ac.in,Technical Workshop - tracto careo,Technical Workshop,2026-04-14T09:04:18.130Z,LIB_L2,pending,2025-10-15T14:50:33.934Z
+RSVP_000452,EVT_0046,E100147,saanvi.patel@iitg.ac.in,Festival Celebration - spoliatio sordeo,Festival Celebration,2026-04-04T00:02:14.020Z,ADMIN_LOBBY,confirmed,2025-09-21T09:19:13.640Z
+RSVP_000453,EVT_0046,E100079,riya.patel@iitg.ac.in,Cultural Event - utique utrimque,Cultural Event,2025-12-13T17:41:31.894Z,ADMIN_OFFICE,confirmed,2025-10-14T18:45:51.278Z
+RSVP_000454,EVT_0046,E100243,sai.arora@iitg.ac.in,Career Fair - adsum tero,Career Fair,2025-11-23T03:20:47.179Z,CAF_FOOD_COURT,confirmed,2025-10-07T11:18:38.332Z
+RSVP_000455,EVT_0046,E100438,kavya.modi@iitg.ac.in,Career Fair - temeritas vindico,Career Fair,2026-04-05T20:36:23.373Z,LIB_ENT,confirmed,2025-10-04T13:51:10.851Z
+RSVP_000456,EVT_0046,E100693,neha.verma@iitg.ac.in,Guest Lecture - concedo suadeo,Guest Lecture,2026-01-09T04:34:57.850Z,GYM_INDOOR,pending,2025-09-27T19:54:14.515Z
+RSVP_000457,EVT_0046,E100001,siya.malhotra@iitg.ac.in,Sports Tournament - ara bibo,Sports Tournament,2026-04-24T16:27:53.167Z,CAF_FOOD_COURT,confirmed,2025-10-23T10:40:16.492Z
+RSVP_000458,EVT_0046,E100481,ira.kapoor@iitg.ac.in,Career Fair - congregatio chirographum,Career Fair,2025-12-22T12:14:01.893Z,AC_102,confirmed,2025-09-21T00:28:29.062Z
+RSVP_000459,EVT_0046,E100870,atharv.saxena@iitg.ac.in,Alumni Meet - comitatus causa,Alumni Meet,2026-02-09T23:42:33.008Z,GYM_INDOOR,confirmed,2025-10-10T17:02:33.156Z
+RSVP_000460,EVT_0046,E100776,aditya.yadav@iitg.ac.in,Conference - triumphus statim,Conference,2026-04-13T08:28:30.023Z,LIB_ENT,confirmed,2025-10-01T14:57:52.857Z
+RSVP_000461,EVT_0047,E100428,saanvi.verma@iitg.ac.in,Sports Tournament - complectus dicta,Sports Tournament,2026-03-24T15:30:42.368Z,AC_301,confirmed,2025-10-04T01:48:33.559Z
+RSVP_000462,EVT_0047,E100579,pranav.sharma@iitg.ac.in,Seminar - decipio cui,Seminar,2026-01-04T10:35:26.483Z,LAB_201,confirmed,2025-10-01T10:29:25.612Z
+RSVP_000463,EVT_0047,E100275,ira.rao@iitg.ac.in,Alumni Meet - creator talus,Alumni Meet,2026-03-16T00:36:05.048Z,LAB_201,confirmed,2025-10-01T15:52:57.478Z
+RSVP_000464,EVT_0047,E100865,pari.srivastava@iitg.ac.in,Research Presentation - ars angustus,Research Presentation,2026-01-05T19:19:35.701Z,LIB_L2,confirmed,2025-09-26T00:04:51.734Z
+RSVP_000465,EVT_0047,E100119,siya.kapoor@iitg.ac.in,Festival Celebration - cavus comptus,Festival Celebration,2025-11-13T02:40:33.323Z,CAF_FOOD_COURT,confirmed,2025-09-19T19:03:30.861Z
+RSVP_000466,EVT_0047,E100052,arjun.sharma@iitg.ac.in,Sports Tournament - cognatus absum,Sports Tournament,2026-03-14T04:41:59.637Z,LAB_301,pending,2025-09-30T08:19:37.339Z
+RSVP_000467,EVT_0047,E100755,tara.yadav@iitg.ac.in,Festival Celebration - cuius vos,Festival Celebration,2025-11-27T11:35:13.015Z,ADMIN_LOBBY,pending,2025-10-15T07:41:20.511Z
+RSVP_000468,EVT_0047,E100793,diya.rao@iitg.ac.in,Alumni Meet - amplus ut,Alumni Meet,2026-01-04T11:10:43.214Z,HOSTEL_C,declined,2025-09-19T06:58:08.325Z
+RSVP_000469,EVT_0047,E100828,pari.shah@iitg.ac.in,Career Fair - tamquam beneficium,Career Fair,2026-02-24T16:17:42.939Z,LIB_ENT,confirmed,2025-09-19T08:16:37.069Z
+RSVP_000470,EVT_0047,E100444,siya.joshi@iitg.ac.in,Sports Tournament - coerceo ultra,Sports Tournament,2026-03-08T05:43:09.428Z,AC_201,pending,2025-10-15T05:31:09.238Z
+RSVP_000471,EVT_0048,E100469,arjun.mehta@iitg.ac.in,Guest Lecture - ait urbs,Guest Lecture,2025-11-26T13:51:08.132Z,LIB_L2,declined,2025-10-17T08:48:28.565Z
+RSVP_000472,EVT_0048,E100962,kavya.bansal@iitg.ac.in,Research Presentation - comprehendo beatae,Research Presentation,2026-02-26T10:44:05.120Z,LIB_L3,confirmed,2025-10-01T15:47:32.557Z
+RSVP_000473,EVT_0048,E100614,vivaan.sharma@iitg.ac.in,Research Presentation - victoria cogito,Research Presentation,2026-01-18T10:43:48.147Z,GYM_MAIN,confirmed,2025-09-19T17:13:12.714Z
+RSVP_000474,EVT_0048,E100059,aarav.mishra@iitg.ac.in,Guest Lecture - sollicito quia,Guest Lecture,2026-04-12T16:11:56.155Z,LIB_L3,pending,2025-10-19T23:33:21.701Z
+RSVP_000475,EVT_0048,E100223,aditya.saxena@iitg.ac.in,Seminar - crur deorsum,Seminar,2025-11-29T09:14:58.285Z,LIB_L3,confirmed,2025-10-24T22:37:33.986Z
+RSVP_000476,EVT_0048,E100187,ananya.tiwari@iitg.ac.in,Conference - cuppedia crastinus,Conference,2026-01-31T03:27:22.033Z,GYM_INDOOR,pending,2025-09-24T05:48:01.563Z
+RSVP_000477,EVT_0048,E100796,tara.pandey@iitg.ac.in,Sports Tournament - accusamus decumbo,Sports Tournament,2025-10-28T23:19:40.852Z,LAB_201,confirmed,2025-10-23T18:39:02.858Z
+RSVP_000478,EVT_0048,E100905,nisha.verma@iitg.ac.in,Conference - depulso tum,Conference,2026-02-16T15:52:10.024Z,HOSTEL_A,confirmed,2025-09-20T00:29:17.543Z
+RSVP_000479,EVT_0048,E100784,pari.kapoor@iitg.ac.in,Technical Workshop - coruscus verbera,Technical Workshop,2025-12-13T16:22:53.427Z,LAB_101,confirmed,2025-09-25T03:06:03.441Z
+RSVP_000480,EVT_0048,E100285,pranav.chopra@iitg.ac.in,Technical Workshop - decet ambitus,Technical Workshop,2025-11-18T05:29:25.805Z,LAB_301,pending,2025-09-21T16:25:44.159Z
+RSVP_000481,EVT_0049,E100870,atharv.saxena@iitg.ac.in,Research Presentation - capillus utpote,Research Presentation,2026-01-03T16:12:20.113Z,ADMIN_OFFICE,declined,2025-10-12T03:31:12.363Z
+RSVP_000482,EVT_0049,E100448,vivaan.joshi@iitg.ac.in,Research Presentation - viriliter verumtamen,Research Presentation,2026-01-22T14:33:48.010Z,LAB_301,declined,2025-10-06T09:42:53.417Z
+RSVP_000483,EVT_0049,E100118,nisha.tiwari@iitg.ac.in,Sports Tournament - cariosus vestigium,Sports Tournament,2026-02-22T02:27:07.179Z,CAF_MAIN,confirmed,2025-10-23T22:55:10.513Z
+RSVP_000484,EVT_0049,E100609,atharv.agarwal@iitg.ac.in,Sports Tournament - voluptatum coerceo,Sports Tournament,2026-02-20T23:36:34.958Z,HOSTEL_C,confirmed,2025-10-05T14:11:09.374Z
+RSVP_000485,EVT_0049,E100166,riya.bansal@iitg.ac.in,Technical Workshop - alius vilis,Technical Workshop,2025-12-23T06:22:28.412Z,LIB_ENT,confirmed,2025-10-17T02:37:32.606Z
+RSVP_000486,EVT_0049,E100345,riya.srivastava@iitg.ac.in,Technical Workshop - acsi conatus,Technical Workshop,2026-01-05T06:17:41.656Z,AC_201,confirmed,2025-10-18T04:15:30.287Z
+RSVP_000487,EVT_0049,E100286,aditya.yadav@iitg.ac.in,Festival Celebration - accusator commodo,Festival Celebration,2026-01-30T10:12:02.825Z,CC_SERVER,confirmed,2025-10-16T16:27:40.768Z
+RSVP_000488,EVT_0049,E100670,kavya.sharma@iitg.ac.in,Festival Celebration - crapula tricesimus,Festival Celebration,2026-01-11T16:55:19.239Z,CC_LAB1,confirmed,2025-10-07T03:24:00.697Z
+RSVP_000489,EVT_0049,E100453,reyansh.srivastava@iitg.ac.in,Guest Lecture - bene adversus,Guest Lecture,2025-11-19T07:08:17.156Z,CAF_MAIN,confirmed,2025-09-28T10:05:16.104Z
+RSVP_000490,EVT_0049,E100382,vivaan.reddy@iitg.ac.in,Guest Lecture - vindico somniculosus,Guest Lecture,2026-03-15T05:55:55.914Z,AC_101,confirmed,2025-10-03T20:13:57.555Z
+RSVP_000491,EVT_0050,E100142,aarav.rao@iitg.ac.in,Festival Celebration - animadverto arguo,Festival Celebration,2026-01-23T12:46:06.820Z,LIB_ENT,confirmed,2025-10-03T15:52:19.533Z
+RSVP_000492,EVT_0050,E100010,nisha.mehta@iitg.ac.in,Sports Tournament - accusantium ciminatio,Sports Tournament,2025-12-03T22:31:48.591Z,LIB_L2,pending,2025-10-23T14:24:28.896Z
+RSVP_000493,EVT_0050,E100994,pranav.shah@iitg.ac.in,Guest Lecture - valens spargo,Guest Lecture,2025-12-27T17:38:19.700Z,CC_LAB2,confirmed,2025-10-18T11:19:39.766Z
+RSVP_000494,EVT_0050,E100119,siya.kapoor@iitg.ac.in,Conference - viridis aeternus,Conference,2026-04-16T10:51:20.918Z,CC_LAB1,pending,2025-09-25T05:06:13.691Z
+RSVP_000495,EVT_0050,E100942,advik.desai@iitg.ac.in,Alumni Meet - alter acidus,Alumni Meet,2026-02-02T07:47:15.449Z,AC_101,confirmed,2025-09-21T17:00:03.697Z
+RSVP_000496,EVT_0050,E100445,atharv.gupta@iitg.ac.in,Technical Workshop - sulum cohaero,Technical Workshop,2025-12-29T05:25:27.979Z,AC_102,confirmed,2025-10-19T04:58:11.800Z
+RSVP_000497,EVT_0050,E100376,saanvi.patel@iitg.ac.in,Conference - distinctio bestia,Conference,2026-03-28T15:39:25.634Z,LAB_301,confirmed,2025-09-20T06:59:35.534Z
+RSVP_000498,EVT_0050,E100241,atharv.shah@iitg.ac.in,Guest Lecture - laudantium ipsam,Guest Lecture,2026-03-11T18:22:34.911Z,ADMIN_LOBBY,declined,2025-10-09T19:49:00.997Z
+RSVP_000499,EVT_0050,E100280,ishaan.tiwari@iitg.ac.in,Sports Tournament - acerbitas sint,Sports Tournament,2026-02-08T08:21:00.115Z,AUD_SEMINAR,confirmed,2025-10-14T12:23:33.031Z
+RSVP_000500,EVT_0050,E100895,ananya.patel@iitg.ac.in,Alumni Meet - uberrime vomito,Alumni Meet,2026-04-16T10:15:32.316Z,LIB_L1,confirmed,2025-10-24T00:32:16.685Z
+RSVP_000501,EVT_0051,E100945,pranav.kumar@iitg.ac.in,Seminar - audeo amitto,Seminar,2026-04-07T20:22:26.005Z,LAB_201,confirmed,2025-10-17T01:50:31.496Z
+RSVP_000502,EVT_0051,E100961,pari.srivastava@iitg.ac.in,Conference - absque damnatio,Conference,2025-11-18T17:08:15.136Z,GYM_MAIN,confirmed,2025-09-22T02:22:45.777Z
+RSVP_000503,EVT_0051,E100601,ishaan.rao@iitg.ac.in,Technical Workshop - suggero tametsi,Technical Workshop,2025-11-04T05:04:37.479Z,LAB_201,confirmed,2025-09-22T13:49:58.055Z
+RSVP_000504,EVT_0051,E100108,myra.bansal@iitg.ac.in,Cultural Event - colo cervus,Cultural Event,2026-01-31T05:54:04.649Z,LIB_L1,pending,2025-09-30T04:58:58.407Z
+RSVP_000505,EVT_0051,E100359,ishaan.bansal@iitg.ac.in,Cultural Event - tenuis consuasor,Cultural Event,2026-01-10T08:27:44.855Z,AC_102,confirmed,2025-09-25T22:56:54.092Z
+RSVP_000506,EVT_0051,E100080,sana.malhotra@iitg.ac.in,Alumni Meet - adhaero tonsor,Alumni Meet,2026-02-15T14:02:08.330Z,LAB_201,confirmed,2025-10-22T21:37:09.603Z
+RSVP_000507,EVT_0051,E100127,ayaan.bansal@iitg.ac.in,Seminar - cohaero via,Seminar,2026-04-03T06:46:13.423Z,CAF_MAIN,confirmed,2025-09-29T13:08:46.383Z
+RSVP_000508,EVT_0051,E100273,shaurya.verma@iitg.ac.in,Sports Tournament - umerus substantia,Sports Tournament,2026-02-11T14:44:25.501Z,CC_LAB2,confirmed,2025-10-12T21:48:06.578Z
+RSVP_000509,EVT_0051,E100225,ananya.patel@iitg.ac.in,Technical Workshop - valens apud,Technical Workshop,2025-12-08T02:56:36.968Z,LAB_301,pending,2025-09-29T00:04:45.124Z
+RSVP_000510,EVT_0051,E100344,vihaan.tiwari@iitg.ac.in,Career Fair - vetus aspicio,Career Fair,2025-11-05T14:50:56.267Z,CC_LAB2,pending,2025-10-23T04:39:44.363Z
+RSVP_000511,EVT_0052,E100986,diya.yadav@iitg.ac.in,Seminar - molestiae cognomen,Seminar,2025-12-31T04:29:26.991Z,LIB_ENT,declined,2025-10-15T01:13:08.299Z
+RSVP_000512,EVT_0052,E100573,aarav.jain@iitg.ac.in,Alumni Meet - decimus totidem,Alumni Meet,2025-11-20T03:56:19.601Z,AUD_MAIN,pending,2025-09-29T14:40:10.571Z
+RSVP_000513,EVT_0052,E100486,ananya.yadav@iitg.ac.in,Guest Lecture - cresco cunctatio,Guest Lecture,2026-04-24T05:15:27.614Z,ADMIN_OFFICE,confirmed,2025-09-22T13:26:59.362Z
+RSVP_000514,EVT_0052,E100098,myra.tiwari@iitg.ac.in,Research Presentation - agnitio uredo,Research Presentation,2026-04-16T10:32:58.798Z,AC_201,confirmed,2025-10-18T07:44:57.656Z
+RSVP_000515,EVT_0052,E100760,saanvi.jain@iitg.ac.in,Seminar - ascisco unus,Seminar,2026-01-08T05:03:29.435Z,AC_301,pending,2025-10-12T12:38:10.794Z
+RSVP_000516,EVT_0052,E100120,ayaan.mishra@iitg.ac.in,Cultural Event - distinctio aperiam,Cultural Event,2026-02-27T16:02:38.564Z,GYM_MAIN,confirmed,2025-10-14T19:38:55.045Z
+RSVP_000517,EVT_0052,E100068,vihaan.saxena@iitg.ac.in,Technical Workshop - turba tibi,Technical Workshop,2025-11-23T15:14:17.990Z,AUD_MAIN,confirmed,2025-10-10T20:33:52.234Z
+RSVP_000518,EVT_0052,E100482,ira.agarwal@iitg.ac.in,Festival Celebration - vobis excepturi,Festival Celebration,2026-03-28T19:49:05.575Z,LIB_L2,confirmed,2025-10-08T10:45:37.005Z
+RSVP_000519,EVT_0052,E100353,myra.gupta@iitg.ac.in,Conference - incidunt turpis,Conference,2026-04-01T07:10:50.981Z,AC_101,confirmed,2025-09-19T15:41:40.671Z
+RSVP_000520,EVT_0052,E100824,vihaan.singh@iitg.ac.in,Guest Lecture - in corrupti,Guest Lecture,2026-02-15T10:51:57.172Z,LIB_L2,pending,2025-10-22T08:45:35.161Z
+RSVP_000521,EVT_0053,E100436,kavya.arora@iitg.ac.in,Alumni Meet - cogito conculco,Alumni Meet,2025-12-30T23:20:29.473Z,LIB_ENT,pending,2025-09-26T08:25:39.562Z
+RSVP_000522,EVT_0053,E100650,arjun.singh@iitg.ac.in,Cultural Event - celebrer in,Cultural Event,2026-01-25T22:28:31.462Z,CC_SERVER,confirmed,2025-09-22T08:05:09.813Z
+RSVP_000523,EVT_0053,E100751,arjun.agarwal@iitg.ac.in,Career Fair - ter verbum,Career Fair,2025-12-31T00:11:58.225Z,LIB_L1,confirmed,2025-09-30T08:32:08.977Z
+RSVP_000524,EVT_0053,E100900,sai.patel@iitg.ac.in,Seminar - conforto caelum,Seminar,2025-11-26T18:58:02.304Z,LIB_L2,confirmed,2025-10-17T01:24:30.781Z
+RSVP_000525,EVT_0053,E100943,aditya.chopra@iitg.ac.in,Guest Lecture - sunt quam,Guest Lecture,2026-01-20T06:33:06.784Z,LAB_101,pending,2025-09-21T05:08:09.650Z
+RSVP_000526,EVT_0053,E100832,vihaan.joshi@iitg.ac.in,Cultural Event - mollitia curso,Cultural Event,2025-11-19T11:20:25.199Z,GYM_INDOOR,confirmed,2025-10-15T10:47:42.418Z
+RSVP_000527,EVT_0053,E100538,sai.srivastava@iitg.ac.in,Alumni Meet - cimentarius verto,Alumni Meet,2026-02-07T10:50:46.136Z,CAF_FOOD_COURT,declined,2025-10-09T02:11:35.306Z
+RSVP_000528,EVT_0053,E100373,ananya.reddy@iitg.ac.in,Sports Tournament - adopto incidunt,Sports Tournament,2026-04-08T03:19:49.674Z,CC_LAB1,pending,2025-09-25T12:17:11.471Z
+RSVP_000529,EVT_0053,E100749,pari.saxena@iitg.ac.in,Alumni Meet - cornu reiciendis,Alumni Meet,2026-03-29T02:36:41.612Z,LIB_L3,pending,2025-10-14T17:22:24.618Z
+RSVP_000530,EVT_0053,E100430,atharv.kapoor@iitg.ac.in,Festival Celebration - succedo casus,Festival Celebration,2026-01-29T22:51:07.119Z,ADMIN_OFFICE,declined,2025-09-27T10:46:31.337Z
+RSVP_000531,EVT_0054,E100497,saanvi.reddy@iitg.ac.in,Seminar - communis ulciscor,Seminar,2025-11-27T15:31:15.478Z,LIB_L3,confirmed,2025-09-21T15:20:45.507Z
+RSVP_000532,EVT_0054,E100929,shaurya.modi@iitg.ac.in,Career Fair - pecus adsum,Career Fair,2025-12-06T01:40:37.914Z,AC_102,confirmed,2025-10-21T19:20:23.765Z
+RSVP_000533,EVT_0054,E100873,pari.joshi@iitg.ac.in,Conference - acervus victus,Conference,2025-11-18T14:07:31.971Z,LAB_301,confirmed,2025-10-16T15:25:30.941Z
+RSVP_000534,EVT_0054,E100361,reyansh.jain@iitg.ac.in,Career Fair - torqueo curvo,Career Fair,2025-12-16T11:12:59.902Z,HOSTEL_B,confirmed,2025-09-21T19:24:10.119Z
+RSVP_000535,EVT_0054,E100371,advik.rao@iitg.ac.in,Guest Lecture - apparatus officiis,Guest Lecture,2026-02-22T12:06:26.422Z,GYM_INDOOR,confirmed,2025-09-19T16:34:24.606Z
+RSVP_000536,EVT_0054,E100591,arjun.mishra@iitg.ac.in,Guest Lecture - defleo caterva,Guest Lecture,2025-12-19T17:34:22.451Z,AC_301,pending,2025-10-10T07:27:48.256Z
+RSVP_000537,EVT_0054,E100892,arjun.sharma@iitg.ac.in,Research Presentation - conqueror arbor,Research Presentation,2025-12-26T06:05:33.546Z,LAB_101,confirmed,2025-10-08T15:15:30.487Z
+RSVP_000538,EVT_0054,E100730,priya.rao@iitg.ac.in,Guest Lecture - creo cogito,Guest Lecture,2025-11-16T05:47:32.656Z,CC_SERVER,confirmed,2025-10-11T00:22:53.633Z
+RSVP_000539,EVT_0054,E100612,nisha.bansal@iitg.ac.in,Sports Tournament - territo textilis,Sports Tournament,2025-11-06T17:32:59.312Z,LAB_301,confirmed,2025-10-22T02:18:59.682Z
+RSVP_000540,EVT_0054,E100415,anika.yadav@iitg.ac.in,Festival Celebration - supellex terminatio,Festival Celebration,2026-02-27T16:30:11.679Z,LAB_101,pending,2025-10-10T16:30:48.855Z
+RSVP_000541,EVT_0055,E100578,pranav.tiwari@iitg.ac.in,Guest Lecture - cultellus artificiose,Guest Lecture,2026-02-22T06:53:19.095Z,LAB_201,confirmed,2025-10-14T02:25:00.528Z
+RSVP_000542,EVT_0055,E100447,vihaan.shah@iitg.ac.in,Sports Tournament - cognomen universe,Sports Tournament,2026-02-24T20:52:01.299Z,AC_301,confirmed,2025-09-27T02:57:39.587Z
+RSVP_000543,EVT_0055,E100033,myra.pandey@iitg.ac.in,Conference - amor beatae,Conference,2026-04-24T08:06:32.134Z,GYM_MAIN,confirmed,2025-10-19T21:03:23.085Z
+RSVP_000544,EVT_0055,E100814,atharv.reddy@iitg.ac.in,Alumni Meet - derelinquo laboriosam,Alumni Meet,2025-12-13T02:29:19.348Z,AUD_MAIN,confirmed,2025-10-08T03:55:02.702Z
+RSVP_000545,EVT_0055,E100683,ananya.bansal@iitg.ac.in,Research Presentation - depromo tribuo,Research Presentation,2026-02-15T11:00:11.197Z,GYM_MAIN,confirmed,2025-10-17T07:12:26.245Z
+RSVP_000546,EVT_0055,E100860,ayaan.verma@iitg.ac.in,Sports Tournament - solum amplus,Sports Tournament,2026-04-04T01:00:30.531Z,ADMIN_OFFICE,confirmed,2025-10-25T03:14:30.727Z
+RSVP_000547,EVT_0055,E100974,nisha.malhotra@iitg.ac.in,Guest Lecture - terra texo,Guest Lecture,2026-04-21T19:33:32.540Z,LAB_101,confirmed,2025-10-07T16:15:02.577Z
+RSVP_000548,EVT_0055,E100186,shaurya.yadav@iitg.ac.in,Technical Workshop - tener torqueo,Technical Workshop,2026-04-23T05:52:58.893Z,LAB_301,confirmed,2025-10-17T12:13:33.710Z
+RSVP_000549,EVT_0055,E100136,tara.kumar@iitg.ac.in,Festival Celebration - cito vito,Festival Celebration,2025-12-02T03:22:34.330Z,AC_301,pending,2025-10-16T05:04:34.522Z
+RSVP_000550,EVT_0055,E100672,tara.mishra@iitg.ac.in,Festival Celebration - crepusculum beneficium,Festival Celebration,2025-12-27T08:41:58.456Z,AUD_SEMINAR,confirmed,2025-09-24T20:07:03.406Z
+RSVP_000551,EVT_0056,E100493,atharv.modi@iitg.ac.in,Alumni Meet - crebro confugo,Alumni Meet,2026-02-04T07:45:14.463Z,HOSTEL_B,confirmed,2025-09-20T07:36:55.593Z
+RSVP_000552,EVT_0056,E100727,neha.chopra@iitg.ac.in,Cultural Event - demens suppellex,Cultural Event,2026-03-09T15:55:19.102Z,CAF_MAIN,confirmed,2025-09-27T03:51:16.781Z
+RSVP_000553,EVT_0056,E100210,sai.verma@iitg.ac.in,Sports Tournament - harum infit,Sports Tournament,2026-04-23T20:38:38.592Z,CC_SERVER,confirmed,2025-09-30T11:07:00.927Z
+RSVP_000554,EVT_0056,E100089,diya.sharma@iitg.ac.in,Sports Tournament - suppellex uxor,Sports Tournament,2026-01-22T01:09:36.304Z,CC_LAB2,pending,2025-10-23T12:08:30.417Z
+RSVP_000555,EVT_0056,E100679,ishaan.mishra@iitg.ac.in,Career Fair - paulatim ambulo,Career Fair,2026-02-02T12:34:54.498Z,AC_301,confirmed,2025-09-28T17:24:55.457Z
+RSVP_000556,EVT_0056,E100410,nisha.kapoor@iitg.ac.in,Seminar - vinculum summa,Seminar,2025-11-20T10:28:42.471Z,ADMIN_LOBBY,declined,2025-10-20T05:11:58.219Z
+RSVP_000557,EVT_0056,E100066,reyansh.singh@iitg.ac.in,Seminar - clibanus tamdiu,Seminar,2025-11-03T19:50:28.500Z,CC_LAB2,confirmed,2025-09-30T10:07:42.974Z
+RSVP_000558,EVT_0056,E100063,kavya.tiwari@iitg.ac.in,Seminar - ara speciosus,Seminar,2025-12-03T13:51:36.787Z,GYM_INDOOR,confirmed,2025-10-01T23:52:29.846Z
+RSVP_000559,EVT_0056,E100951,anika.agarwal@iitg.ac.in,Seminar - iure adsum,Seminar,2026-04-08T03:07:44.388Z,LIB_L1,declined,2025-10-06T22:15:26.225Z
+RSVP_000560,EVT_0056,E100513,nisha.reddy@iitg.ac.in,Cultural Event - viridis vinco,Cultural Event,2026-02-19T08:19:23.749Z,AUD_MAIN,pending,2025-09-23T01:59:40.133Z
+RSVP_000561,EVT_0057,E100487,anika.verma@iitg.ac.in,Seminar - cedo acceptus,Seminar,2025-11-24T20:01:26.601Z,LIB_L3,pending,2025-09-22T00:17:20.070Z
+RSVP_000562,EVT_0057,E100971,advik.tiwari@iitg.ac.in,Guest Lecture - pax ubi,Guest Lecture,2026-01-05T12:05:08.512Z,HOSTEL_C,confirmed,2025-09-19T22:36:20.297Z
+RSVP_000563,EVT_0057,E100105,ayaan.chopra@iitg.ac.in,Sports Tournament - subnecto congregatio,Sports Tournament,2026-01-12T16:13:54.834Z,CC_SERVER,confirmed,2025-10-03T03:59:05.809Z
+RSVP_000564,EVT_0057,E100303,ayaan.tiwari@iitg.ac.in,Research Presentation - defessus totam,Research Presentation,2026-03-20T20:13:52.521Z,CAF_FOOD_COURT,confirmed,2025-09-19T09:32:08.614Z
+RSVP_000565,EVT_0057,E100327,myra.patel@iitg.ac.in,Technical Workshop - vester theca,Technical Workshop,2026-04-03T20:57:37.008Z,HOSTEL_B,confirmed,2025-09-21T20:50:13.631Z
+RSVP_000566,EVT_0057,E100207,ananya.chopra@iitg.ac.in,Festival Celebration - ago sulum,Festival Celebration,2025-12-09T14:30:53.751Z,GYM_MAIN,confirmed,2025-09-27T13:05:21.485Z
+RSVP_000567,EVT_0057,E100426,siya.agarwal@iitg.ac.in,Cultural Event - perferendis commemoro,Cultural Event,2026-03-01T22:05:27.211Z,CC_LAB1,confirmed,2025-10-20T21:22:42.472Z
+RSVP_000568,EVT_0057,E100943,aditya.chopra@iitg.ac.in,Career Fair - convoco admitto,Career Fair,2025-12-05T15:10:56.113Z,HOSTEL_B,confirmed,2025-09-24T14:17:19.185Z
+RSVP_000569,EVT_0057,E100340,krishna.rao@iitg.ac.in,Career Fair - crastinus vergo,Career Fair,2026-04-03T19:56:16.982Z,HOSTEL_C,confirmed,2025-10-12T09:44:27.563Z
+RSVP_000570,EVT_0057,E100494,riya.mehta@iitg.ac.in,Seminar - admoveo dedecor,Seminar,2026-03-21T12:40:50.711Z,LAB_102,confirmed,2025-09-26T03:43:07.000Z
+RSVP_000571,EVT_0058,E100962,kavya.bansal@iitg.ac.in,Cultural Event - ex adaugeo,Cultural Event,2025-11-24T12:00:55.684Z,LAB_301,confirmed,2025-09-30T12:58:10.738Z
+RSVP_000572,EVT_0058,E100782,pranav.pandey@iitg.ac.in,Career Fair - crastinus tubineus,Career Fair,2026-03-22T15:46:24.928Z,HOSTEL_B,pending,2025-09-21T13:16:47.821Z
+RSVP_000573,EVT_0058,E100571,sai.mehta@iitg.ac.in,Research Presentation - officiis conculco,Research Presentation,2025-11-17T09:12:21.546Z,HOSTEL_A,confirmed,2025-10-16T17:40:30.335Z
+RSVP_000574,EVT_0058,E100222,shaurya.tiwari@iitg.ac.in,Career Fair - utroque tendo,Career Fair,2026-01-06T15:54:59.534Z,LAB_301,declined,2025-10-21T23:34:48.363Z
+RSVP_000575,EVT_0058,E100384,siya.arora@iitg.ac.in,Cultural Event - cupiditate et,Cultural Event,2025-11-27T06:36:57.284Z,CAF_FOOD_COURT,confirmed,2025-10-04T06:03:49.174Z
+RSVP_000576,EVT_0058,E100773,saanvi.chopra@iitg.ac.in,Sports Tournament - voveo ubi,Sports Tournament,2025-10-29T17:58:33.372Z,HOSTEL_A,confirmed,2025-10-20T21:42:35.736Z
+RSVP_000577,EVT_0058,E100246,anika.patel@iitg.ac.in,Alumni Meet - claustrum ustilo,Alumni Meet,2026-03-13T12:15:15.351Z,AC_101,confirmed,2025-10-03T02:04:27.793Z
+RSVP_000578,EVT_0058,E100135,aarav.reddy@iitg.ac.in,Guest Lecture - denuo iusto,Guest Lecture,2025-12-07T02:32:02.305Z,CAF_MAIN,pending,2025-09-23T06:35:38.328Z
+RSVP_000579,EVT_0058,E100121,kavya.tiwari@iitg.ac.in,Sports Tournament - veritas pecco,Sports Tournament,2026-01-28T09:16:37.826Z,LAB_201,confirmed,2025-10-24T06:08:17.352Z
+RSVP_000580,EVT_0058,E100017,ayaan.shah@iitg.ac.in,Research Presentation - nam in,Research Presentation,2026-01-05T11:02:42.642Z,GYM_INDOOR,confirmed,2025-09-30T11:37:12.492Z
+RSVP_000581,EVT_0059,E100404,anika.joshi@iitg.ac.in,Conference - congregatio turpis,Conference,2026-03-17T04:12:45.425Z,LIB_L1,pending,2025-10-20T19:15:53.860Z
+RSVP_000582,EVT_0059,E100333,diya.desai@iitg.ac.in,Festival Celebration - universe sufficio,Festival Celebration,2026-03-10T09:48:02.127Z,CC_LAB1,confirmed,2025-10-05T22:53:18.137Z
+RSVP_000583,EVT_0059,E100177,aarav.sharma@iitg.ac.in,Festival Celebration - via torqueo,Festival Celebration,2026-01-07T02:47:45.478Z,LAB_301,declined,2025-10-09T01:41:44.302Z
+RSVP_000584,EVT_0059,E100846,tara.srivastava@iitg.ac.in,Technical Workshop - victoria acidus,Technical Workshop,2026-03-04T03:52:28.850Z,LIB_L1,confirmed,2025-09-30T04:00:10.680Z
+RSVP_000585,EVT_0059,E100731,myra.singh@iitg.ac.in,Cultural Event - autus quos,Cultural Event,2025-11-13T14:03:24.066Z,GYM_MAIN,confirmed,2025-10-08T21:44:46.188Z
+RSVP_000586,EVT_0059,E100066,reyansh.singh@iitg.ac.in,Alumni Meet - usitas adopto,Alumni Meet,2025-10-28T09:52:11.572Z,CC_LAB2,confirmed,2025-10-22T02:56:10.677Z
+RSVP_000587,EVT_0059,E100982,ishaan.verma@iitg.ac.in,Research Presentation - suadeo soleo,Research Presentation,2025-12-11T21:59:21.216Z,CC_LAB2,confirmed,2025-09-29T16:04:29.621Z
+RSVP_000588,EVT_0059,E100127,ayaan.bansal@iitg.ac.in,Festival Celebration - facere dedecor,Festival Celebration,2026-01-09T03:42:06.054Z,LIB_L1,confirmed,2025-10-07T00:32:47.016Z
+RSVP_000589,EVT_0059,E100400,krishna.mishra@iitg.ac.in,Technical Workshop - teres advoco,Technical Workshop,2025-11-11T20:14:45.541Z,CAF_FOOD_COURT,confirmed,2025-10-05T10:59:48.862Z
+RSVP_000590,EVT_0059,E100076,riya.chopra@iitg.ac.in,Career Fair - esse valetudo,Career Fair,2026-01-15T15:49:36.319Z,AUD_MAIN,confirmed,2025-10-16T14:52:58.562Z
+RSVP_000591,EVT_0060,E100052,arjun.sharma@iitg.ac.in,Technical Workshop - tum tactus,Technical Workshop,2026-04-06T05:21:21.552Z,LIB_L3,pending,2025-09-26T11:32:45.351Z
+RSVP_000592,EVT_0060,E100907,sana.tiwari@iitg.ac.in,Cultural Event - vulticulus somnus,Cultural Event,2026-04-10T19:50:04.619Z,AC_101,confirmed,2025-10-24T14:47:11.943Z
+RSVP_000593,EVT_0060,E100948,anika.patel@iitg.ac.in,Sports Tournament - corpus caput,Sports Tournament,2026-02-01T16:08:05.867Z,LIB_L1,confirmed,2025-09-22T12:46:53.893Z
+RSVP_000594,EVT_0060,E100831,saanvi.pandey@iitg.ac.in,Research Presentation - aegrotatio viridis,Research Presentation,2025-11-22T19:04:29.709Z,ADMIN_LOBBY,confirmed,2025-10-15T00:05:13.220Z
+RSVP_000595,EVT_0060,E100509,priya.shah@iitg.ac.in,Technical Workshop - esse explicabo,Technical Workshop,2026-01-28T02:34:15.455Z,LIB_L2,confirmed,2025-09-25T02:05:32.381Z
+RSVP_000596,EVT_0060,E100143,ishaan.mehta@iitg.ac.in,Sports Tournament - ratione ocer,Sports Tournament,2025-10-26T13:20:39.956Z,GYM_MAIN,confirmed,2025-10-08T01:51:02.690Z
+RSVP_000597,EVT_0060,E100782,pranav.pandey@iitg.ac.in,Conference - usus corrupti,Conference,2026-02-17T00:18:01.077Z,LIB_L3,confirmed,2025-10-01T13:26:56.935Z
+RSVP_000598,EVT_0060,E100099,pranav.kapoor@iitg.ac.in,Conference - subseco via,Conference,2026-03-24T07:19:31.494Z,ADMIN_OFFICE,confirmed,2025-10-10T20:17:46.945Z
+RSVP_000599,EVT_0060,E100027,sai.rao@iitg.ac.in,Research Presentation - utrum surculus,Research Presentation,2026-04-24T17:03:49.211Z,AUD_SEMINAR,confirmed,2025-09-25T07:25:47.850Z
+RSVP_000600,EVT_0060,E100224,saanvi.chopra@iitg.ac.in,Guest Lecture - carbo tenax,Guest Lecture,2025-12-29T03:38:40.685Z,CAF_MAIN,confirmed,2025-10-18T12:36:10.159Z
+RSVP_000601,EVT_0061,E100215,nisha.malhotra@iitg.ac.in,Festival Celebration - cresco adduco,Festival Celebration,2026-02-23T10:02:16.667Z,AC_201,confirmed,2025-10-08T09:27:26.290Z
+RSVP_000602,EVT_0061,E100622,vivaan.reddy@iitg.ac.in,Technical Workshop - cattus adhaero,Technical Workshop,2026-04-20T07:09:36.042Z,HOSTEL_B,confirmed,2025-09-26T00:52:23.631Z
+RSVP_000603,EVT_0061,E100315,sana.singh@iitg.ac.in,Technical Workshop - vulgaris accusator,Technical Workshop,2026-03-07T22:18:57.747Z,CC_LAB1,confirmed,2025-09-26T01:07:56.013Z
+RSVP_000604,EVT_0061,E100171,shaurya.joshi@iitg.ac.in,Conference - tollo adaugeo,Conference,2025-10-27T00:19:16.907Z,CAF_FOOD_COURT,confirmed,2025-10-13T16:45:12.713Z
+RSVP_000605,EVT_0061,E100622,vivaan.reddy@iitg.ac.in,Cultural Event - voluptate amoveo,Cultural Event,2026-03-04T10:45:49.473Z,GYM_INDOOR,pending,2025-10-12T05:50:34.208Z
+RSVP_000606,EVT_0061,E100688,nisha.agarwal@iitg.ac.in,Festival Celebration - sortitus ex,Festival Celebration,2025-12-07T08:25:17.117Z,HOSTEL_B,confirmed,2025-10-02T18:05:32.093Z
+RSVP_000607,EVT_0061,E100856,ayaan.arora@iitg.ac.in,Alumni Meet - deludo adulatio,Alumni Meet,2026-01-29T00:51:50.500Z,AUD_MAIN,confirmed,2025-10-14T23:49:27.256Z
+RSVP_000608,EVT_0061,E100383,priya.mishra@iitg.ac.in,Cultural Event - apostolus campana,Cultural Event,2025-12-01T20:23:21.882Z,GYM_MAIN,confirmed,2025-09-25T07:52:29.904Z
+RSVP_000609,EVT_0061,E100438,kavya.modi@iitg.ac.in,Sports Tournament - amissio cursim,Sports Tournament,2025-12-10T12:20:42.563Z,AUD_SEMINAR,confirmed,2025-10-23T03:20:54.528Z
+RSVP_000610,EVT_0061,E100895,ananya.patel@iitg.ac.in,Research Presentation - ulterius succurro,Research Presentation,2026-01-27T06:13:53.934Z,HOSTEL_A,pending,2025-09-21T16:25:02.128Z
+RSVP_000611,EVT_0062,E100208,tara.jain@iitg.ac.in,Technical Workshop - desipio tamen,Technical Workshop,2026-02-11T21:31:44.635Z,CC_LAB1,confirmed,2025-10-03T11:47:34.247Z
+RSVP_000612,EVT_0062,E100519,krishna.gupta@iitg.ac.in,Seminar - depereo cohibeo,Seminar,2026-01-30T12:02:47.628Z,CC_LAB1,confirmed,2025-10-04T01:36:07.695Z
+RSVP_000613,EVT_0062,E100370,anika.shah@iitg.ac.in,Guest Lecture - cubicularis tantillus,Guest Lecture,2026-02-27T18:21:22.508Z,AC_102,confirmed,2025-10-19T05:33:50.763Z
+RSVP_000614,EVT_0062,E100765,sana.malhotra@iitg.ac.in,Sports Tournament - acervus demonstro,Sports Tournament,2026-03-15T14:53:47.284Z,AC_201,confirmed,2025-09-30T08:31:47.555Z
+RSVP_000615,EVT_0062,E100002,arjun.jain@iitg.ac.in,Alumni Meet - coma odit,Alumni Meet,2026-02-24T04:56:58.331Z,CAF_MAIN,confirmed,2025-09-24T18:33:57.737Z
+RSVP_000616,EVT_0062,E100046,reyansh.pandey@iitg.ac.in,Alumni Meet - pecco aiunt,Alumni Meet,2026-02-03T12:38:17.431Z,HOSTEL_C,confirmed,2025-10-18T02:22:55.758Z
+RSVP_000617,EVT_0062,E100679,ishaan.mishra@iitg.ac.in,Career Fair - ex verecundia,Career Fair,2026-04-21T18:58:39.070Z,AC_201,confirmed,2025-09-30T04:24:42.620Z
+RSVP_000618,EVT_0062,E100784,pari.kapoor@iitg.ac.in,Cultural Event - volaticus cunctatio,Cultural Event,2026-03-29T04:14:57.875Z,LAB_102,confirmed,2025-10-17T17:18:59.791Z
+RSVP_000619,EVT_0062,E100502,riya.joshi@iitg.ac.in,Alumni Meet - consectetur laborum,Alumni Meet,2026-04-16T02:51:37.312Z,CAF_MAIN,confirmed,2025-09-29T12:15:02.689Z
+RSVP_000620,EVT_0062,E100760,saanvi.jain@iitg.ac.in,Seminar - tergiversatio collum,Seminar,2025-11-01T15:05:58.462Z,LAB_102,pending,2025-10-14T01:29:45.910Z
+RSVP_000621,EVT_0063,E100096,diya.mehta@iitg.ac.in,Conference - voluptates timor,Conference,2026-01-31T07:15:03.414Z,LAB_201,confirmed,2025-09-28T23:05:45.757Z
+RSVP_000622,EVT_0063,E100451,diya.pandey@iitg.ac.in,Conference - corrupti benevolentia,Conference,2025-10-27T20:02:22.042Z,CC_LAB1,confirmed,2025-10-20T08:17:51.675Z
+RSVP_000623,EVT_0063,E100211,arjun.patel@iitg.ac.in,Alumni Meet - tabesco deorsum,Alumni Meet,2026-03-06T07:18:13.027Z,LIB_ENT,confirmed,2025-10-04T15:24:10.456Z
+RSVP_000624,EVT_0063,E100240,shaurya.chopra@iitg.ac.in,Alumni Meet - vociferor adfectus,Alumni Meet,2026-04-15T16:18:51.111Z,LIB_L1,confirmed,2025-10-15T06:37:31.687Z
+RSVP_000625,EVT_0063,E100050,reyansh.rao@iitg.ac.in,Research Presentation - vallum necessitatibus,Research Presentation,2026-03-21T17:48:50.374Z,LAB_301,pending,2025-10-07T19:10:37.421Z
+RSVP_000626,EVT_0063,E100468,riya.chopra@iitg.ac.in,Alumni Meet - copia illum,Alumni Meet,2025-12-22T18:04:29.354Z,LIB_L3,confirmed,2025-10-13T20:56:24.346Z
+RSVP_000627,EVT_0063,E100479,anika.shah@iitg.ac.in,Festival Celebration - incidunt anser,Festival Celebration,2026-03-10T12:18:30.016Z,CC_LAB2,confirmed,2025-09-24T03:49:43.623Z
+RSVP_000628,EVT_0063,E100406,tara.shah@iitg.ac.in,Career Fair - auxilium labore,Career Fair,2025-12-16T06:59:16.692Z,HOSTEL_C,confirmed,2025-09-23T01:40:26.990Z
+RSVP_000629,EVT_0063,E100349,riya.sharma@iitg.ac.in,Conference - suffoco absque,Conference,2026-03-10T12:18:25.845Z,LIB_L3,confirmed,2025-10-18T06:22:46.085Z
+RSVP_000630,EVT_0063,E100319,tara.jain@iitg.ac.in,Cultural Event - infit ipsum,Cultural Event,2025-12-16T17:38:13.905Z,HOSTEL_B,pending,2025-09-26T03:29:29.693Z
+RSVP_000631,EVT_0064,E100670,kavya.sharma@iitg.ac.in,Sports Tournament - repudiandae coadunatio,Sports Tournament,2026-02-20T22:20:20.809Z,LIB_L2,confirmed,2025-10-14T23:02:12.202Z
+RSVP_000632,EVT_0064,E100776,aditya.yadav@iitg.ac.in,Conference - curo temporibus,Conference,2026-04-23T21:52:12.722Z,AUD_SEMINAR,confirmed,2025-10-18T14:00:27.585Z
+RSVP_000633,EVT_0064,E100710,sana.joshi@iitg.ac.in,Guest Lecture - appono rem,Guest Lecture,2026-03-20T13:33:54.465Z,LAB_201,confirmed,2025-09-22T04:50:59.305Z
+RSVP_000634,EVT_0064,E100002,arjun.jain@iitg.ac.in,Seminar - labore crepusculum,Seminar,2025-11-18T15:54:28.326Z,CC_LAB2,declined,2025-10-18T01:40:12.278Z
+RSVP_000635,EVT_0064,E100634,saanvi.tiwari@iitg.ac.in,Cultural Event - cunctatio una,Cultural Event,2026-03-11T20:45:03.647Z,LAB_301,declined,2025-10-04T20:23:18.121Z
+RSVP_000636,EVT_0064,E100601,ishaan.rao@iitg.ac.in,Festival Celebration - theca corroboro,Festival Celebration,2025-12-18T07:59:17.096Z,AC_201,confirmed,2025-10-15T22:07:44.129Z
+RSVP_000637,EVT_0064,E100977,sai.agarwal@iitg.ac.in,Festival Celebration - sordeo harum,Festival Celebration,2025-12-09T23:29:22.021Z,LAB_301,pending,2025-10-01T20:19:14.747Z
+RSVP_000638,EVT_0064,E100002,arjun.jain@iitg.ac.in,Alumni Meet - una deleniti,Alumni Meet,2025-11-09T03:57:42.937Z,AC_101,confirmed,2025-10-17T09:09:24.260Z
+RSVP_000639,EVT_0064,E100785,aarav.pandey@iitg.ac.in,Seminar - spero defluo,Seminar,2026-01-12T07:33:16.321Z,AUD_SEMINAR,pending,2025-10-05T07:38:00.078Z
+RSVP_000640,EVT_0064,E100054,aditya.reddy@iitg.ac.in,Seminar - bis videlicet,Seminar,2026-01-03T23:12:02.292Z,AC_102,confirmed,2025-10-19T06:26:56.375Z
+RSVP_000641,EVT_0065,E100296,saanvi.rao@iitg.ac.in,Guest Lecture - quam strues,Guest Lecture,2026-01-27T01:52:36.162Z,ADMIN_OFFICE,pending,2025-09-24T16:16:28.087Z
+RSVP_000642,EVT_0065,E100750,aarav.desai@iitg.ac.in,Career Fair - expedita venio,Career Fair,2026-02-18T09:54:44.334Z,ADMIN_LOBBY,confirmed,2025-09-24T07:03:41.881Z
+RSVP_000643,EVT_0065,E100276,kavya.modi@iitg.ac.in,Cultural Event - virga undique,Cultural Event,2025-11-15T13:27:57.412Z,AC_102,confirmed,2025-10-23T19:55:20.679Z
+RSVP_000644,EVT_0065,E100538,sai.srivastava@iitg.ac.in,Festival Celebration - admoneo texo,Festival Celebration,2026-01-26T21:37:43.542Z,CAF_MAIN,confirmed,2025-09-28T17:56:26.714Z
+RSVP_000645,EVT_0065,E100084,saanvi.joshi@iitg.ac.in,Technical Workshop - despecto illum,Technical Workshop,2026-02-13T23:26:01.206Z,LIB_L3,confirmed,2025-10-02T18:15:34.106Z
+RSVP_000646,EVT_0065,E100165,tara.patel@iitg.ac.in,Conference - aegrus cito,Conference,2026-01-13T18:12:22.959Z,LAB_101,confirmed,2025-10-06T15:42:47.589Z
+RSVP_000647,EVT_0065,E100849,neha.malhotra@iitg.ac.in,Alumni Meet - animi aestivus,Alumni Meet,2026-04-19T04:23:11.220Z,AC_201,confirmed,2025-10-17T23:41:04.589Z
+RSVP_000648,EVT_0065,E100829,myra.singh@iitg.ac.in,Seminar - tabesco comes,Seminar,2026-01-22T23:35:42.181Z,AC_101,confirmed,2025-10-13T02:04:18.306Z
+RSVP_000649,EVT_0065,E100606,neha.patel@iitg.ac.in,Research Presentation - tui uterque,Research Presentation,2026-02-20T10:50:10.358Z,ADMIN_LOBBY,pending,2025-10-04T03:02:15.721Z
+RSVP_000650,EVT_0065,E100633,krishna.malhotra@iitg.ac.in,Cultural Event - comedo defero,Cultural Event,2026-04-16T16:26:17.821Z,AC_301,pending,2025-10-24T12:43:21.580Z
+RSVP_000651,EVT_0066,E100578,pranav.tiwari@iitg.ac.in,Technical Workshop - ultio copia,Technical Workshop,2026-04-22T03:29:28.721Z,GYM_MAIN,confirmed,2025-09-21T18:10:47.482Z
+RSVP_000652,EVT_0066,E100161,saanvi.pandey@iitg.ac.in,Career Fair - cunae bis,Career Fair,2025-11-16T11:28:33.386Z,LAB_102,pending,2025-10-09T18:34:29.735Z
+RSVP_000653,EVT_0066,E100958,aarav.sharma@iitg.ac.in,Research Presentation - sub consuasor,Research Presentation,2026-04-26T01:12:47.245Z,LAB_201,confirmed,2025-10-16T08:00:33.710Z
+RSVP_000654,EVT_0066,E100066,reyansh.singh@iitg.ac.in,Guest Lecture - speculum atrox,Guest Lecture,2026-02-08T03:36:04.533Z,LAB_101,confirmed,2025-10-02T14:11:58.067Z
+RSVP_000655,EVT_0066,E100702,ayaan.arora@iitg.ac.in,Alumni Meet - vapulus tricesimus,Alumni Meet,2025-11-29T23:36:08.107Z,LAB_101,confirmed,2025-10-12T06:39:28.184Z
+RSVP_000656,EVT_0066,E100370,anika.shah@iitg.ac.in,Alumni Meet - arma itaque,Alumni Meet,2025-12-31T05:44:12.502Z,LIB_ENT,confirmed,2025-10-19T10:32:56.839Z
+RSVP_000657,EVT_0066,E100449,nisha.chopra@iitg.ac.in,Seminar - ustilo correptius,Seminar,2025-11-28T08:30:57.880Z,AUD_MAIN,confirmed,2025-09-28T17:37:30.147Z
+RSVP_000658,EVT_0066,E100286,aditya.yadav@iitg.ac.in,Alumni Meet - veniam succedo,Alumni Meet,2025-11-15T06:21:18.156Z,ADMIN_LOBBY,pending,2025-09-22T03:17:58.765Z
+RSVP_000659,EVT_0066,E100113,neha.bansal@iitg.ac.in,Career Fair - vinculum vorax,Career Fair,2025-12-09T13:35:54.425Z,GYM_INDOOR,confirmed,2025-09-21T22:06:48.816Z
+RSVP_000660,EVT_0066,E100878,ayaan.kapoor@iitg.ac.in,Festival Celebration - bellum tener,Festival Celebration,2026-03-02T22:33:01.124Z,LAB_101,confirmed,2025-10-06T02:07:09.625Z
+RSVP_000661,EVT_0067,E100100,ayaan.mehta@iitg.ac.in,Technical Workshop - officia studio,Technical Workshop,2025-11-23T15:56:24.502Z,AC_301,confirmed,2025-09-23T06:43:36.566Z
+RSVP_000662,EVT_0067,E100099,pranav.kapoor@iitg.ac.in,Cultural Event - adicio aufero,Cultural Event,2025-11-02T13:51:47.697Z,HOSTEL_C,confirmed,2025-10-24T19:27:44.889Z
+RSVP_000663,EVT_0067,E100255,saanvi.kapoor@iitg.ac.in,Career Fair - succurro curia,Career Fair,2025-10-25T21:07:59.441Z,AUD_SEMINAR,confirmed,2025-09-20T11:41:08.485Z
+RSVP_000664,EVT_0067,E100779,kavya.shah@iitg.ac.in,Sports Tournament - vulariter aeger,Sports Tournament,2026-03-21T14:59:58.662Z,LAB_201,confirmed,2025-10-01T10:13:27.449Z
+RSVP_000665,EVT_0067,E100181,diya.joshi@iitg.ac.in,Sports Tournament - officiis tollo,Sports Tournament,2026-04-01T00:35:46.671Z,ADMIN_LOBBY,declined,2025-10-09T19:56:38.409Z
+RSVP_000666,EVT_0067,E100376,saanvi.patel@iitg.ac.in,Research Presentation - cavus tamquam,Research Presentation,2025-11-12T21:28:58.778Z,AUD_MAIN,confirmed,2025-10-20T01:11:32.253Z
+RSVP_000667,EVT_0067,E100857,ananya.pandey@iitg.ac.in,Career Fair - altus vel,Career Fair,2026-04-03T12:36:19.366Z,AUD_SEMINAR,confirmed,2025-10-15T09:29:10.458Z
+RSVP_000668,EVT_0067,E100831,saanvi.pandey@iitg.ac.in,Guest Lecture - candidus aequus,Guest Lecture,2025-11-25T07:57:09.368Z,GYM_MAIN,confirmed,2025-10-02T10:20:41.508Z
+RSVP_000669,EVT_0067,E100549,pari.arora@iitg.ac.in,Conference - abutor collum,Conference,2026-02-13T10:48:48.875Z,AC_301,confirmed,2025-10-01T15:57:25.768Z
+RSVP_000670,EVT_0067,E100024,aditya.malhotra@iitg.ac.in,Sports Tournament - denique absorbeo,Sports Tournament,2026-03-24T16:30:25.591Z,HOSTEL_C,confirmed,2025-09-21T16:38:12.759Z
+RSVP_000671,EVT_0068,E100857,ananya.pandey@iitg.ac.in,Alumni Meet - tantum auxilium,Alumni Meet,2025-12-15T22:18:12.175Z,HOSTEL_A,pending,2025-10-02T04:45:33.917Z
+RSVP_000672,EVT_0068,E100892,arjun.sharma@iitg.ac.in,Sports Tournament - nobis canis,Sports Tournament,2026-02-16T06:37:21.518Z,CC_LAB1,confirmed,2025-09-26T19:47:50.984Z
+RSVP_000673,EVT_0068,E100798,ananya.shah@iitg.ac.in,Research Presentation - claro voluptatum,Research Presentation,2026-01-27T17:12:45.699Z,HOSTEL_C,confirmed,2025-10-25T04:24:40.991Z
+RSVP_000674,EVT_0068,E100181,diya.joshi@iitg.ac.in,Cultural Event - degero nobis,Cultural Event,2025-11-12T16:23:19.890Z,ADMIN_OFFICE,confirmed,2025-10-18T21:00:17.896Z
+RSVP_000675,EVT_0068,E100911,aarav.chopra@iitg.ac.in,Alumni Meet - combibo apud,Alumni Meet,2026-03-17T04:21:25.435Z,HOSTEL_C,confirmed,2025-09-28T03:15:49.066Z
+RSVP_000676,EVT_0068,E100279,shaurya.patel@iitg.ac.in,Technical Workshop - incidunt videlicet,Technical Workshop,2026-04-20T07:48:42.947Z,AC_301,declined,2025-09-30T02:17:55.765Z
+RSVP_000677,EVT_0068,E100018,myra.joshi@iitg.ac.in,Sports Tournament - tempus sollers,Sports Tournament,2026-01-21T13:10:29.510Z,AC_102,pending,2025-09-27T08:50:40.068Z
+RSVP_000678,EVT_0068,E100666,arjun.patel@iitg.ac.in,Cultural Event - tristis delectus,Cultural Event,2025-11-29T01:07:28.638Z,AC_301,confirmed,2025-10-14T12:20:53.220Z
+RSVP_000679,EVT_0068,E100896,vihaan.rao@iitg.ac.in,Seminar - tibi suasoria,Seminar,2026-02-07T11:46:01.270Z,GYM_MAIN,confirmed,2025-10-12T17:36:16.019Z
+RSVP_000680,EVT_0068,E100785,aarav.pandey@iitg.ac.in,Seminar - decor supra,Seminar,2026-01-15T13:09:11.650Z,CAF_MAIN,confirmed,2025-09-22T22:29:54.191Z
+RSVP_000681,EVT_0069,E100220,nisha.saxena@iitg.ac.in,Alumni Meet - surgo utroque,Alumni Meet,2026-03-18T23:11:43.917Z,LIB_ENT,confirmed,2025-10-07T15:59:40.844Z
+RSVP_000682,EVT_0069,E100751,arjun.agarwal@iitg.ac.in,Technical Workshop - carpo vesper,Technical Workshop,2025-12-15T06:20:12.704Z,HOSTEL_B,confirmed,2025-10-01T05:47:58.245Z
+RSVP_000683,EVT_0069,E100698,aditya.yadav@iitg.ac.in,Guest Lecture - cerno cribro,Guest Lecture,2026-04-09T23:10:31.119Z,LAB_201,declined,2025-10-04T14:34:05.776Z
+RSVP_000684,EVT_0069,E100454,ananya.arora@iitg.ac.in,Research Presentation - deorsum vetus,Research Presentation,2025-12-14T04:37:12.423Z,LAB_301,confirmed,2025-09-29T13:18:01.769Z
+RSVP_000685,EVT_0069,E100739,reyansh.joshi@iitg.ac.in,Career Fair - aliquid deduco,Career Fair,2026-04-23T04:46:42.709Z,AUD_SEMINAR,confirmed,2025-10-08T22:15:48.455Z
+RSVP_000686,EVT_0069,E100715,ayaan.malhotra@iitg.ac.in,Seminar - dens constans,Seminar,2026-01-15T08:50:28.912Z,LIB_L1,pending,2025-09-26T12:31:42.012Z
+RSVP_000687,EVT_0069,E100625,vivaan.srivastava@iitg.ac.in,Festival Celebration - pariatur caput,Festival Celebration,2026-04-02T23:05:26.987Z,GYM_INDOOR,pending,2025-10-18T07:52:47.174Z
+RSVP_000688,EVT_0069,E100837,siya.gupta@iitg.ac.in,Seminar - vulnus defero,Seminar,2026-01-13T02:17:08.758Z,LIB_L3,pending,2025-10-19T03:29:38.383Z
+RSVP_000689,EVT_0069,E100619,sai.desai@iitg.ac.in,Alumni Meet - solus spero,Alumni Meet,2026-02-23T15:23:48.830Z,LAB_301,confirmed,2025-10-10T13:15:07.422Z
+RSVP_000690,EVT_0069,E100750,aarav.desai@iitg.ac.in,Sports Tournament - ante at,Sports Tournament,2025-10-29T14:33:33.964Z,LAB_102,declined,2025-10-11T22:11:25.591Z
+RSVP_000691,EVT_0070,E100603,advik.kapoor@iitg.ac.in,Guest Lecture - subiungo vilis,Guest Lecture,2026-02-19T18:21:11.266Z,CAF_FOOD_COURT,confirmed,2025-10-19T07:47:53.020Z
+RSVP_000692,EVT_0070,E100044,kavya.modi@iitg.ac.in,Career Fair - deputo admoneo,Career Fair,2026-03-17T01:45:31.974Z,CAF_MAIN,confirmed,2025-09-27T05:08:12.763Z
+RSVP_000693,EVT_0070,E100442,arjun.bansal@iitg.ac.in,Sports Tournament - sophismata synagoga,Sports Tournament,2025-12-25T20:09:15.658Z,AC_102,confirmed,2025-10-15T15:13:17.630Z
+RSVP_000694,EVT_0070,E100332,myra.bansal@iitg.ac.in,Conference - tepidus dolor,Conference,2026-04-15T01:12:04.708Z,CC_SERVER,confirmed,2025-10-12T07:43:06.347Z
+RSVP_000695,EVT_0070,E100267,ananya.sharma@iitg.ac.in,Research Presentation - aegrus dedecor,Research Presentation,2025-11-18T11:42:37.581Z,HOSTEL_B,pending,2025-10-17T03:51:46.715Z
+RSVP_000696,EVT_0070,E100068,vihaan.saxena@iitg.ac.in,Research Presentation - caterva aestivus,Research Presentation,2026-03-10T00:34:28.403Z,HOSTEL_B,confirmed,2025-10-07T21:58:54.118Z
+RSVP_000697,EVT_0070,E100596,pranav.malhotra@iitg.ac.in,Conference - comes argentum,Conference,2026-03-16T17:54:00.947Z,AUD_MAIN,confirmed,2025-10-13T04:50:57.623Z
+RSVP_000698,EVT_0070,E100760,saanvi.jain@iitg.ac.in,Alumni Meet - demergo nihil,Alumni Meet,2025-11-05T18:45:04.571Z,LIB_L1,confirmed,2025-09-21T02:47:18.589Z
+RSVP_000699,EVT_0070,E100409,sai.malhotra@iitg.ac.in,Alumni Meet - caput aperio,Alumni Meet,2026-01-01T11:53:31.401Z,CC_LAB2,declined,2025-10-19T04:20:14.926Z
+RSVP_000700,EVT_0070,E100844,shaurya.patel@iitg.ac.in,Festival Celebration - solum eius,Festival Celebration,2026-03-14T10:13:10.978Z,AC_301,confirmed,2025-10-22T23:55:18.526Z
+RSVP_000701,EVT_0071,E100008,anika.agarwal@iitg.ac.in,Seminar - beatae vos,Seminar,2026-01-30T07:39:26.471Z,AC_102,pending,2025-10-22T12:55:23.517Z
+RSVP_000702,EVT_0071,E100916,shaurya.verma@iitg.ac.in,Conference - iusto defendo,Conference,2026-03-27T11:59:07.504Z,GYM_MAIN,pending,2025-10-23T20:16:03.794Z
+RSVP_000703,EVT_0071,E100314,kavya.srivastava@iitg.ac.in,Cultural Event - vito quidem,Cultural Event,2026-02-27T08:25:36.655Z,GYM_INDOOR,confirmed,2025-09-21T07:29:34.027Z
+RSVP_000704,EVT_0071,E100510,anika.reddy@iitg.ac.in,Conference - acer tribuo,Conference,2025-11-19T17:54:46.373Z,CC_SERVER,confirmed,2025-09-20T08:54:39.826Z
+RSVP_000705,EVT_0071,E100506,vihaan.mishra@iitg.ac.in,Technical Workshop - adaugeo tempore,Technical Workshop,2026-01-26T01:42:26.322Z,LIB_L2,confirmed,2025-10-04T11:02:29.063Z
+RSVP_000706,EVT_0071,E100612,nisha.bansal@iitg.ac.in,Research Presentation - venia usque,Research Presentation,2026-02-27T10:13:45.815Z,LAB_301,confirmed,2025-10-03T08:06:44.783Z
+RSVP_000707,EVT_0071,E100067,atharv.modi@iitg.ac.in,Guest Lecture - theologus terror,Guest Lecture,2026-02-20T12:04:24.586Z,LIB_L2,confirmed,2025-09-21T10:09:20.850Z
+RSVP_000708,EVT_0071,E100174,kavya.kapoor@iitg.ac.in,Research Presentation - ex adflicto,Research Presentation,2026-03-25T08:55:02.404Z,GYM_MAIN,confirmed,2025-10-18T20:28:54.584Z
+RSVP_000709,EVT_0071,E100231,pari.rao@iitg.ac.in,Conference - atqui deduco,Conference,2026-02-18T01:28:22.278Z,HOSTEL_C,confirmed,2025-10-18T06:24:14.635Z
+RSVP_000710,EVT_0071,E100892,arjun.sharma@iitg.ac.in,Sports Tournament - neque veritas,Sports Tournament,2025-12-20T03:07:30.431Z,CC_LAB2,pending,2025-10-01T07:20:25.610Z
+RSVP_000711,EVT_0072,E100488,reyansh.agarwal@iitg.ac.in,Guest Lecture - ratione vitium,Guest Lecture,2026-03-13T23:07:48.975Z,AUD_MAIN,pending,2025-09-30T17:37:10.108Z
+RSVP_000712,EVT_0072,E100386,sana.jain@iitg.ac.in,Festival Celebration - uredo ancilla,Festival Celebration,2025-12-02T21:42:05.835Z,ADMIN_LOBBY,pending,2025-10-10T01:43:03.852Z
+RSVP_000713,EVT_0072,E100651,vihaan.chopra@iitg.ac.in,Cultural Event - decumbo arcesso,Cultural Event,2025-12-06T17:25:06.713Z,CC_LAB1,confirmed,2025-10-25T12:41:40.703Z
+RSVP_000714,EVT_0072,E100474,siya.chopra@iitg.ac.in,Conference - illum itaque,Conference,2026-01-14T17:57:34.104Z,CC_SERVER,pending,2025-10-15T18:33:19.428Z
+RSVP_000715,EVT_0072,E100965,sana.desai@iitg.ac.in,Seminar - caelum adficio,Seminar,2025-11-22T02:49:13.548Z,LIB_L2,pending,2025-10-16T06:28:54.299Z
+RSVP_000716,EVT_0072,E100910,tara.singh@iitg.ac.in,Career Fair - delicate tumultus,Career Fair,2025-11-25T08:44:00.271Z,CC_LAB1,pending,2025-10-10T08:22:51.317Z
+RSVP_000717,EVT_0072,E100099,pranav.kapoor@iitg.ac.in,Career Fair - tempore tertius,Career Fair,2026-01-12T02:12:14.868Z,LIB_L3,pending,2025-09-27T20:34:20.738Z
+RSVP_000718,EVT_0072,E100405,aarav.joshi@iitg.ac.in,Research Presentation - decipio civitas,Research Presentation,2026-02-10T11:41:20.713Z,AC_102,declined,2025-10-05T05:27:36.233Z
+RSVP_000719,EVT_0072,E100882,siya.jain@iitg.ac.in,Sports Tournament - callide quo,Sports Tournament,2026-03-24T10:59:18.161Z,LAB_101,confirmed,2025-10-01T07:26:37.102Z
+RSVP_000720,EVT_0072,E100444,siya.joshi@iitg.ac.in,Guest Lecture - debilito vesco,Guest Lecture,2025-10-27T20:05:38.455Z,CAF_FOOD_COURT,confirmed,2025-09-26T21:41:40.040Z
+RSVP_000721,EVT_0073,E100053,vivaan.joshi@iitg.ac.in,Conference - ambulo solium,Conference,2026-02-17T12:32:57.252Z,LAB_301,declined,2025-09-29T11:41:06.080Z
+RSVP_000722,EVT_0073,E100105,ayaan.chopra@iitg.ac.in,Seminar - calculus advenio,Seminar,2026-03-22T19:16:56.002Z,GYM_MAIN,declined,2025-10-17T20:19:09.328Z
+RSVP_000723,EVT_0073,E100508,atharv.pandey@iitg.ac.in,Cultural Event - studio facilis,Cultural Event,2026-01-18T02:18:47.682Z,HOSTEL_A,confirmed,2025-10-24T05:47:01.689Z
+RSVP_000724,EVT_0073,E100860,ayaan.verma@iitg.ac.in,Alumni Meet - verus decens,Alumni Meet,2026-01-06T21:06:03.263Z,ADMIN_LOBBY,confirmed,2025-09-23T14:34:35.165Z
+RSVP_000725,EVT_0073,E100133,sai.saxena@iitg.ac.in,Career Fair - coma defaeco,Career Fair,2026-02-25T15:43:59.481Z,LIB_L2,confirmed,2025-10-19T12:19:25.953Z
+RSVP_000726,EVT_0073,E100727,neha.chopra@iitg.ac.in,Seminar - thesaurus recusandae,Seminar,2025-11-04T09:54:31.631Z,CAF_FOOD_COURT,confirmed,2025-09-25T01:39:13.673Z
+RSVP_000727,EVT_0073,E100272,aditya.desai@iitg.ac.in,Alumni Meet - aperte curso,Alumni Meet,2025-12-31T19:04:03.409Z,AC_101,confirmed,2025-10-12T10:24:11.778Z
+RSVP_000728,EVT_0073,E100890,priya.srivastava@iitg.ac.in,Festival Celebration - aqua cras,Festival Celebration,2026-01-13T22:16:56.943Z,GYM_INDOOR,confirmed,2025-09-25T14:27:08.645Z
+RSVP_000729,EVT_0073,E100780,aarav.verma@iitg.ac.in,Research Presentation - curiositas creta,Research Presentation,2025-12-06T11:52:20.830Z,LAB_201,confirmed,2025-09-30T16:21:15.703Z
+RSVP_000730,EVT_0073,E100475,pari.desai@iitg.ac.in,Technical Workshop - capillus atrox,Technical Workshop,2026-01-06T18:40:28.573Z,LAB_301,confirmed,2025-09-20T21:55:34.184Z
+RSVP_000731,EVT_0074,E100651,vihaan.chopra@iitg.ac.in,Festival Celebration - amo audentia,Festival Celebration,2026-01-08T14:37:48.432Z,ADMIN_OFFICE,pending,2025-10-15T12:57:18.573Z
+RSVP_000732,EVT_0074,E100247,sai.reddy@iitg.ac.in,Cultural Event - viscus exercitationem,Cultural Event,2025-10-26T18:41:32.972Z,LIB_L2,confirmed,2025-10-24T12:34:52.691Z
+RSVP_000733,EVT_0074,E100712,ayaan.verma@iitg.ac.in,Career Fair - aureus clementia,Career Fair,2025-12-09T23:29:45.326Z,LIB_L1,confirmed,2025-10-05T12:31:13.165Z
+RSVP_000734,EVT_0074,E100410,nisha.kapoor@iitg.ac.in,Guest Lecture - iusto conservo,Guest Lecture,2025-12-27T15:07:14.316Z,AC_102,confirmed,2025-10-01T15:14:55.692Z
+RSVP_000735,EVT_0074,E100745,reyansh.gupta@iitg.ac.in,Festival Celebration - deporto natus,Festival Celebration,2026-01-16T21:00:44.568Z,HOSTEL_C,confirmed,2025-10-18T09:40:35.003Z
+RSVP_000736,EVT_0074,E100034,tara.gupta@iitg.ac.in,Alumni Meet - sit adopto,Alumni Meet,2026-04-04T21:44:18.748Z,CC_LAB2,pending,2025-09-29T16:17:32.958Z
+RSVP_000737,EVT_0074,E100197,atharv.singh@iitg.ac.in,Conference - suffoco minus,Conference,2025-12-12T22:00:02.063Z,LIB_L2,confirmed,2025-10-04T08:55:27.656Z
+RSVP_000738,EVT_0074,E100029,advik.pandey@iitg.ac.in,Career Fair - ducimus cunctatio,Career Fair,2025-11-15T23:22:34.010Z,ADMIN_LOBBY,confirmed,2025-10-25T04:20:46.528Z
+RSVP_000739,EVT_0074,E100509,priya.shah@iitg.ac.in,Conference - convoco atqui,Conference,2026-03-06T22:07:40.077Z,CC_SERVER,confirmed,2025-09-24T23:14:24.714Z
+RSVP_000740,EVT_0074,E100128,pranav.joshi@iitg.ac.in,Guest Lecture - tutamen cilicium,Guest Lecture,2025-10-28T18:08:58.207Z,LAB_201,declined,2025-10-09T07:01:02.270Z
+RSVP_000741,EVT_0075,E100344,vihaan.tiwari@iitg.ac.in,Conference - abutor veniam,Conference,2025-11-05T23:48:09.834Z,HOSTEL_A,confirmed,2025-10-19T01:10:05.069Z
+RSVP_000742,EVT_0075,E100637,pari.patel@iitg.ac.in,Conference - virga dignissimos,Conference,2026-02-17T10:12:30.618Z,LIB_L2,confirmed,2025-10-16T11:21:07.075Z
+RSVP_000743,EVT_0075,E100670,kavya.sharma@iitg.ac.in,Festival Celebration - conatus claro,Festival Celebration,2025-10-26T08:32:04.065Z,LIB_L2,confirmed,2025-09-21T18:43:23.915Z
+RSVP_000744,EVT_0075,E100430,atharv.kapoor@iitg.ac.in,Research Presentation - denuncio vallum,Research Presentation,2025-10-26T05:18:53.924Z,LIB_ENT,confirmed,2025-10-16T18:09:32.147Z
+RSVP_000745,EVT_0075,E100985,nisha.agarwal@iitg.ac.in,Cultural Event - capillus alo,Cultural Event,2026-03-21T05:30:20.737Z,LAB_102,confirmed,2025-10-01T17:23:01.049Z
+RSVP_000746,EVT_0075,E100580,kavya.modi@iitg.ac.in,Guest Lecture - depromo spiculum,Guest Lecture,2025-10-30T01:13:14.916Z,LIB_L2,confirmed,2025-09-29T19:19:23.958Z
+RSVP_000747,EVT_0075,E100856,ayaan.arora@iitg.ac.in,Technical Workshop - appono creator,Technical Workshop,2026-04-15T16:20:02.884Z,CC_SERVER,confirmed,2025-09-28T13:56:08.527Z
+RSVP_000748,EVT_0075,E100518,aditya.tiwari@iitg.ac.in,Guest Lecture - confero clamo,Guest Lecture,2026-01-17T17:47:33.118Z,CAF_FOOD_COURT,confirmed,2025-10-19T23:41:54.551Z
+RSVP_000749,EVT_0075,E100537,ayaan.patel@iitg.ac.in,Guest Lecture - debeo solutio,Guest Lecture,2025-11-07T23:49:58.714Z,LAB_201,confirmed,2025-09-23T19:07:33.992Z
+RSVP_000750,EVT_0075,E100603,advik.kapoor@iitg.ac.in,Sports Tournament - cotidie comparo,Sports Tournament,2026-02-20T10:40:33.991Z,CAF_FOOD_COURT,confirmed,2025-09-25T06:38:51.127Z
+RSVP_000751,EVT_0076,E100317,diya.kapoor@iitg.ac.in,Technical Workshop - adopto asper,Technical Workshop,2026-03-05T23:52:51.642Z,GYM_MAIN,confirmed,2025-10-21T06:52:09.466Z
+RSVP_000752,EVT_0076,E100981,tara.joshi@iitg.ac.in,Technical Workshop - conor textus,Technical Workshop,2025-11-26T10:39:13.463Z,LIB_L2,pending,2025-10-12T05:14:37.510Z
+RSVP_000753,EVT_0076,E100584,neha.arora@iitg.ac.in,Technical Workshop - ustulo cunae,Technical Workshop,2026-03-22T06:30:19.712Z,AUD_SEMINAR,confirmed,2025-10-17T09:13:23.857Z
+RSVP_000754,EVT_0076,E100026,diya.malhotra@iitg.ac.in,Seminar - amicitia cunabula,Seminar,2026-01-15T23:54:07.246Z,LIB_L1,declined,2025-10-14T13:17:11.479Z
+RSVP_000755,EVT_0076,E100584,neha.arora@iitg.ac.in,Sports Tournament - deludo caste,Sports Tournament,2025-11-25T19:05:10.403Z,LAB_201,confirmed,2025-09-28T02:12:08.518Z
+RSVP_000756,EVT_0076,E100752,diya.modi@iitg.ac.in,Sports Tournament - denuo arcesso,Sports Tournament,2026-04-08T08:57:33.744Z,HOSTEL_A,confirmed,2025-10-15T09:50:08.250Z
+RSVP_000757,EVT_0076,E100445,atharv.gupta@iitg.ac.in,Career Fair - volubilis ut,Career Fair,2026-04-14T19:17:34.316Z,AC_201,confirmed,2025-10-01T19:49:21.385Z
+RSVP_000758,EVT_0076,E100001,siya.malhotra@iitg.ac.in,Conference - suppellex somniculosus,Conference,2026-03-31T13:19:41.512Z,HOSTEL_A,confirmed,2025-10-03T02:29:43.083Z
+RSVP_000759,EVT_0076,E100098,myra.tiwari@iitg.ac.in,Sports Tournament - antepono voluptas,Sports Tournament,2025-12-21T21:36:42.009Z,CAF_MAIN,confirmed,2025-10-10T01:46:05.764Z
+RSVP_000760,EVT_0076,E100469,arjun.mehta@iitg.ac.in,Alumni Meet - distinctio comitatus,Alumni Meet,2025-11-15T10:11:48.000Z,LIB_ENT,confirmed,2025-10-20T23:07:37.839Z
+RSVP_000761,EVT_0077,E100421,sana.rao@iitg.ac.in,Sports Tournament - trepide turbo,Sports Tournament,2025-10-31T09:59:29.292Z,HOSTEL_C,confirmed,2025-10-04T02:07:00.270Z
+RSVP_000762,EVT_0077,E100987,priya.singh@iitg.ac.in,Conference - quam curia,Conference,2026-02-17T10:02:21.940Z,HOSTEL_C,pending,2025-10-21T14:59:07.441Z
+RSVP_000763,EVT_0077,E100263,pari.bansal@iitg.ac.in,Sports Tournament - eligendi degero,Sports Tournament,2025-11-06T19:19:02.139Z,AC_201,confirmed,2025-09-25T00:46:44.665Z
+RSVP_000764,EVT_0077,E100393,pranav.mishra@iitg.ac.in,Cultural Event - artificiose cubitum,Cultural Event,2025-11-12T00:52:07.787Z,CC_SERVER,pending,2025-10-22T15:35:43.764Z
+RSVP_000765,EVT_0077,E100948,anika.patel@iitg.ac.in,Conference - verbera spiritus,Conference,2026-03-04T06:46:47.228Z,AC_301,confirmed,2025-10-06T13:35:47.221Z
+RSVP_000766,EVT_0077,E100218,sai.shah@iitg.ac.in,Guest Lecture - theatrum deputo,Guest Lecture,2026-03-17T22:07:09.335Z,AC_301,declined,2025-09-29T18:54:53.873Z
+RSVP_000767,EVT_0077,E100265,arjun.rao@iitg.ac.in,Conference - amita blanditiis,Conference,2026-04-06T14:38:48.354Z,LAB_301,pending,2025-09-22T00:28:17.400Z
+RSVP_000768,EVT_0077,E100441,neha.malhotra@iitg.ac.in,Career Fair - patrocinor crinis,Career Fair,2026-01-25T19:13:49.904Z,AC_101,confirmed,2025-10-09T05:17:14.807Z
+RSVP_000769,EVT_0077,E100315,sana.singh@iitg.ac.in,Research Presentation - degusto claudeo,Research Presentation,2026-03-17T07:57:56.213Z,CAF_FOOD_COURT,confirmed,2025-10-23T16:37:51.018Z
+RSVP_000770,EVT_0077,E100819,siya.tiwari@iitg.ac.in,Conference - cavus theca,Conference,2026-04-21T12:39:20.417Z,CC_SERVER,confirmed,2025-09-26T18:45:52.256Z
+RSVP_000771,EVT_0078,E100641,shaurya.verma@iitg.ac.in,Research Presentation - veritatis conculco,Research Presentation,2025-11-28T20:16:11.072Z,GYM_INDOOR,confirmed,2025-09-22T10:17:46.901Z
+RSVP_000772,EVT_0078,E100066,reyansh.singh@iitg.ac.in,Research Presentation - tepesco volup,Research Presentation,2026-01-06T20:16:29.818Z,CC_SERVER,confirmed,2025-10-04T22:00:30.948Z
+RSVP_000773,EVT_0078,E100922,arjun.shah@iitg.ac.in,Technical Workshop - tunc uxor,Technical Workshop,2026-02-24T04:18:03.879Z,HOSTEL_B,confirmed,2025-09-21T17:53:15.011Z
+RSVP_000774,EVT_0078,E100009,myra.sharma@iitg.ac.in,Conference - tribuo apostolus,Conference,2026-01-19T02:04:33.073Z,AUD_MAIN,confirmed,2025-10-08T14:27:40.917Z
+RSVP_000775,EVT_0078,E100307,atharv.shah@iitg.ac.in,Sports Tournament - deripio sit,Sports Tournament,2026-03-16T08:23:26.532Z,HOSTEL_A,declined,2025-10-15T03:04:42.636Z
+RSVP_000776,EVT_0078,E100041,nisha.verma@iitg.ac.in,Research Presentation - sordeo ex,Research Presentation,2026-02-10T15:06:03.072Z,HOSTEL_C,pending,2025-10-19T10:40:48.766Z
+RSVP_000777,EVT_0078,E100697,shaurya.jain@iitg.ac.in,Sports Tournament - volutabrum vulnero,Sports Tournament,2025-12-16T18:49:29.213Z,LAB_201,confirmed,2025-10-17T17:48:21.976Z
+RSVP_000778,EVT_0078,E100594,ishaan.kumar@iitg.ac.in,Guest Lecture - capio concido,Guest Lecture,2026-04-24T16:52:31.784Z,LAB_102,confirmed,2025-09-24T05:53:20.619Z
+RSVP_000779,EVT_0078,E100444,siya.joshi@iitg.ac.in,Festival Celebration - rerum caterva,Festival Celebration,2026-03-08T15:20:52.043Z,AC_101,confirmed,2025-10-02T11:35:44.853Z
+RSVP_000780,EVT_0078,E100553,nisha.malhotra@iitg.ac.in,Seminar - tempora vester,Seminar,2026-03-03T18:14:47.011Z,GYM_MAIN,pending,2025-10-03T05:45:40.038Z
+RSVP_000781,EVT_0079,E100068,vihaan.saxena@iitg.ac.in,Seminar - qui communis,Seminar,2025-11-03T11:27:21.510Z,LAB_102,confirmed,2025-10-13T07:12:47.313Z
+RSVP_000782,EVT_0079,E100142,aarav.rao@iitg.ac.in,Sports Tournament - appello est,Sports Tournament,2026-01-10T08:26:56.390Z,CC_LAB1,confirmed,2025-10-21T18:47:10.168Z
+RSVP_000783,EVT_0079,E100836,anika.pandey@iitg.ac.in,Alumni Meet - magnam cado,Alumni Meet,2026-01-11T20:17:48.591Z,AC_201,pending,2025-09-29T14:17:47.620Z
+RSVP_000784,EVT_0079,E100572,krishna.gupta@iitg.ac.in,Cultural Event - maiores curiositas,Cultural Event,2025-12-17T00:46:31.082Z,LAB_102,confirmed,2025-10-11T15:15:24.513Z
+RSVP_000785,EVT_0079,E100795,ananya.chopra@iitg.ac.in,Sports Tournament - cura arca,Sports Tournament,2026-02-22T18:45:41.425Z,GYM_MAIN,confirmed,2025-10-06T15:25:18.935Z
+RSVP_000786,EVT_0079,E100237,tara.chopra@iitg.ac.in,Technical Workshop - tepidus minus,Technical Workshop,2026-01-19T05:12:33.369Z,GYM_MAIN,confirmed,2025-10-15T03:11:47.482Z
+RSVP_000787,EVT_0079,E100465,nisha.gupta@iitg.ac.in,Conference - utrum solutio,Conference,2026-02-01T05:28:06.646Z,CC_LAB2,declined,2025-09-22T18:06:43.031Z
+RSVP_000788,EVT_0079,E100075,siya.verma@iitg.ac.in,Career Fair - villa spero,Career Fair,2025-12-02T10:14:27.342Z,HOSTEL_B,pending,2025-09-30T12:27:16.357Z
+RSVP_000789,EVT_0079,E100407,reyansh.chopra@iitg.ac.in,Guest Lecture - pecto vesco,Guest Lecture,2025-12-12T06:44:22.055Z,HOSTEL_B,confirmed,2025-09-24T13:29:10.735Z
+RSVP_000790,EVT_0079,E100072,aarav.bansal@iitg.ac.in,Alumni Meet - amplitudo avarus,Alumni Meet,2026-02-17T04:27:07.011Z,LIB_L3,confirmed,2025-09-25T22:52:22.448Z
+RSVP_000791,EVT_0080,E100507,shaurya.desai@iitg.ac.in,Technical Workshop - celer adsidue,Technical Workshop,2026-03-08T10:00:42.678Z,AUD_MAIN,confirmed,2025-10-21T15:40:27.745Z
+RSVP_000792,EVT_0080,E100925,vihaan.malhotra@iitg.ac.in,Technical Workshop - explicabo templum,Technical Workshop,2026-04-22T17:23:58.410Z,AC_101,confirmed,2025-10-25T12:57:23.691Z
+RSVP_000793,EVT_0080,E100141,neha.joshi@iitg.ac.in,Festival Celebration - adsidue coaegresco,Festival Celebration,2026-03-15T14:39:22.703Z,ADMIN_OFFICE,pending,2025-09-22T19:01:07.010Z
+RSVP_000794,EVT_0080,E100526,siya.jain@iitg.ac.in,Cultural Event - aegrotatio tamen,Cultural Event,2025-11-01T02:25:39.091Z,AUD_SEMINAR,confirmed,2025-10-21T09:30:44.123Z
+RSVP_000795,EVT_0080,E100845,diya.tiwari@iitg.ac.in,Alumni Meet - conqueror suadeo,Alumni Meet,2025-12-21T22:21:02.320Z,GYM_MAIN,confirmed,2025-10-22T22:18:02.411Z
+RSVP_000796,EVT_0080,E100839,sai.shah@iitg.ac.in,Research Presentation - sapiente cubo,Research Presentation,2026-04-09T00:14:21.971Z,AC_102,confirmed,2025-10-09T18:14:51.009Z
+RSVP_000797,EVT_0080,E100759,shaurya.kumar@iitg.ac.in,Festival Celebration - centum ullus,Festival Celebration,2026-01-07T11:18:17.221Z,AC_102,confirmed,2025-09-27T05:30:28.410Z
+RSVP_000798,EVT_0080,E100187,ananya.tiwari@iitg.ac.in,Sports Tournament - commodo certus,Sports Tournament,2026-01-16T21:11:16.112Z,ADMIN_OFFICE,confirmed,2025-10-19T20:38:40.331Z
+RSVP_000799,EVT_0080,E100006,shaurya.mehta@iitg.ac.in,Conference - cruentus credo,Conference,2026-01-04T21:03:38.948Z,LAB_102,confirmed,2025-09-30T22:10:15.606Z
+RSVP_000800,EVT_0080,E100510,anika.reddy@iitg.ac.in,Career Fair - urbanus cursus,Career Fair,2025-11-24T23:40:21.734Z,AUD_SEMINAR,declined,2025-10-11T07:33:34.432Z

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# IIT Guwahati Campus Security System
+# Internal security application
+Sitemap: /sitemap.xml
