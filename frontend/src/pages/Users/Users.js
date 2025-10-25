@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { usersAPI, handleAPIError } from '../../services/api';
 import { useAlert } from '../../contexts/AlertContext';
 import { useAuth } from '../../contexts/AuthContext';
+import { useLocation } from 'react-router-dom';
 import LoadingSpinner from '../../components/Common/LoadingSpinner';
 import ProfilePhoto from '../../components/Common/ProfilePhoto';
 import {
@@ -19,6 +20,7 @@ import {
   UsersIcon,
   XMarkIcon
 } from '@heroicons/react/24/outline';
+import AuditLogs from '../Audit/AuditLogs';
 
 const Users = () => {
   const [users, setUsers] = useState([]);
@@ -38,6 +40,8 @@ const Users = () => {
     total: 0,
     hasMore: false
   });
+  const [activeTab, setActiveTab] = useState('users'); // 'users' | 'audit'
+  const location = useLocation();
 
   const { showError, showSuccess } = useAlert();
   const { user: currentUser } = useAuth();
@@ -97,6 +101,10 @@ const Users = () => {
   }, [pagination.page, pagination.limit, searchTerm, roleFilter, statusFilter, showError]);
 
   useEffect(() => {
+    // If navigation state indicates a tab, apply it (e.g., returning from other pages)
+    if (location?.state?.activeTab) {
+      setActiveTab(location.state.activeTab);
+    }
     loadUsers();
   }, [loadUsers]);
 
@@ -227,8 +235,25 @@ const Users = () => {
         </div>
       </div>
 
-      {/* Stats Cards */}
-      {stats && (
+      {/* Top-level Tabs: Users / Audit Logs */}
+      <div className="bg-white dark:bg-gray-800 shadow rounded-lg p-4">
+        <nav className="-mb-px flex space-x-2">
+          <button
+            onClick={() => setActiveTab('users')}
+            className={`py-2 px-4 text-sm font-medium rounded-t-md ${activeTab === 'users' ? 'bg-blue-50 text-blue-700 dark:bg-blue-900 dark:text-blue-200' : 'text-gray-500 hover:text-gray-700 dark:text-gray-300'}`}>
+            Users
+          </button>
+          <button
+            onClick={() => setActiveTab('audit')}
+            className={`py-2 px-4 text-sm font-medium rounded-t-md ${activeTab === 'audit' ? 'bg-blue-50 text-blue-700 dark:bg-blue-900 dark:text-blue-200' : 'text-gray-500 hover:text-gray-700 dark:text-gray-300'}`}>
+            Audit Logs
+          </button>
+        </nav>
+      </div>
+
+  {/* Stats Cards */}
+  {activeTab === 'users' ? ( <>
+  {stats && (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Total Users */}
           <div className="bg-white dark:bg-gray-800 overflow-hidden shadow-lg rounded-xl border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-all duration-200 transform hover:-translate-y-1">
@@ -534,6 +559,13 @@ const Users = () => {
           >
             Load More Users
           </button>
+        </div>
+      )}
+
+  {/* end users view */}
+  </> ) : (
+        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 p-6">
+          <AuditLogs embedded={true} />
         </div>
       )}
 

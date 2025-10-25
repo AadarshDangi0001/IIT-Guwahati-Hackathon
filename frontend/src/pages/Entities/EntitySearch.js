@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { entitiesAPI, handleAPIError } from '../../services/api';
 import { useAlert } from '../../contexts/AlertContext';
 import LoadingSpinner from '../../components/Common/LoadingSpinner';
@@ -12,6 +12,7 @@ import {
   FunnelIcon,
   EyeIcon
 } from '@heroicons/react/24/outline';
+import Cctv from '../Cctv/Cctv';
 
 const EntitySearch = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -31,6 +32,8 @@ const EntitySearch = () => {
   });
   const [searchHistory, setSearchHistory] = useState([]);
   const [initialLoad, setInitialLoad] = useState(true);
+  const [activeTab, setActiveTab] = useState('entities'); // 'entities' | 'recognition' | 'frames'
+  const location = useLocation();
 
   const { showError } = useAlert();
 
@@ -111,6 +114,11 @@ const EntitySearch = () => {
 
   // Single effect to handle all search scenarios
   useEffect(() => {
+    // If navigation state set an active tab (e.g., returning from an embedded CCTV view), apply it
+    if (location?.state?.activeTab) {
+      setActiveTab(location.state.activeTab);
+    }
+
     if (initialLoad) {
       // Initial load - fetch entities without query/filters
       searchEntities('', {
@@ -224,8 +232,30 @@ const EntitySearch = () => {
         </div>
       </div>
 
-      {/* Search Bar */}
-      <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 p-6">
+      {/* Tab navigation */}
+      <div className="bg-white dark:bg-gray-800 shadow rounded-lg p-4">
+        <nav className="-mb-px flex space-x-2">
+          <button
+            onClick={() => setActiveTab('entities')}
+            className={`py-2 px-4 text-sm font-medium rounded-t-md ${activeTab === 'entities' ? 'bg-blue-50 text-blue-700 dark:bg-blue-900 dark:text-blue-200' : 'text-gray-500 hover:text-gray-700 dark:text-gray-300'}`}>
+            Entities
+          </button>
+          <button
+            onClick={() => setActiveTab('recognition')}
+            className={`py-2 px-4 text-sm font-medium rounded-t-md ${activeTab === 'recognition' ? 'bg-blue-50 text-blue-700 dark:bg-blue-900 dark:text-blue-200' : 'text-gray-500 hover:text-gray-700 dark:text-gray-300'}`}>
+            Face Recognition
+          </button>
+          <button
+            onClick={() => setActiveTab('frames')}
+            className={`py-2 px-4 text-sm font-medium rounded-t-md ${activeTab === 'frames' ? 'bg-blue-50 text-blue-700 dark:bg-blue-900 dark:text-blue-200' : 'text-gray-500 hover:text-gray-700 dark:text-gray-300'}`}>
+            CCTV Frames
+          </button>
+        </nav>
+      </div>
+
+      {/* Search Bar (only for Entities tab) */}
+      {activeTab === 'entities' && (
+        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 p-6">
         <div className="relative">
           <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
             <MagnifyingGlassIcon className="h-5 w-5 text-gray-400" />
@@ -313,148 +343,155 @@ const EntitySearch = () => {
             </button>
           </div>
         </div>
-      </div>
+        </div>
+      )}
 
       {/* Results */}
-      <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700">
-        {loading && (!entities || entities.length === 0) ? (
-          <div className="p-8 text-center">
-            <LoadingSpinner size="large" text={initialLoad ? "Loading entities..." : "Searching entities..."} />
-          </div>
-        ) : (!entities || entities.length === 0) ? (
-          <div className="p-8 text-center">
-            <UserIcon className="mx-auto h-12 w-12 text-gray-400" />
-            <h3 className="mt-2 text-sm font-medium text-gray-900 dark:text-white">
-              {searchQuery || Object.values(filters).some(v => v) ? 'No entities found' : 'No entities available'}
-            </h3>
-            <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
-              {searchQuery || Object.values(filters).some(v => v) 
-                ? 'Try adjusting your search query or filters' 
-                : 'No entities have been registered in the system yet'}
-            </p>
-            {!searchQuery && !Object.values(filters).some(v => v) && (
-              <div className="mt-4">
-                <p className="text-xs text-gray-400 dark:text-gray-500">
-                  Entities will appear here once they are added to the campus security system
-                </p>
-              </div>
-            )}
-          </div>
-        ) : (
-          <>
-            {/* Results header */}
-            <div className="px-6 py-4 border-b border-gray-200 dark:border-gray-700">
-              <div className="flex items-center justify-between">
-                <p className="text-sm text-gray-700 dark:text-gray-300">
-                  {searchQuery || Object.values(filters).some(v => v) 
-                    ? `Found ${pagination.total} entities` 
-                    : `Showing ${entities.length} of ${pagination.total} entities`}
-                </p>
-                {entities.length > 0 && (
-                  <div className="flex items-center space-x-4 text-xs text-gray-500 dark:text-gray-400">
-                    {/* Quick type counts */}
-                    {(() => {
-                      const typeCounts = entities.reduce((acc, entity) => {
-                        const type = entity.type || entity.profile?.entity_type || 'unknown';
-                        acc[type] = (acc[type] || 0) + 1;
-                        return acc;
-                      }, {});
-                      
-                      return Object.entries(typeCounts).map(([type, count]) => (
-                        <span key={type} className="capitalize">
-                          {type}: {count}
-                        </span>
-                      ));
-                    })()}
-                  </div>
-                )}
-              </div>
+      {activeTab !== 'entities' ? (
+        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 p-6">
+          <Cctv initialTab={activeTab === 'recognition' ? 'recognition' : 'frames'} embedded={true} />
+        </div>
+      ) : (
+        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700">
+          {loading && (!entities || entities.length === 0) ? (
+            <div className="p-8 text-center">
+              <LoadingSpinner size="large" text={initialLoad ? "Loading entities..." : "Searching entities..."} />
             </div>
-
-            {/* Results list */}
-            <div className="divide-y divide-gray-200 dark:divide-gray-700">
-              {(entities || []).map((entity) => (
-                <div key={entity._id} className="p-6 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
-                  <div className="flex items-center justify-between">
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center space-x-3">
-                        <div className="flex-shrink-0">
-                          <ProfilePhoto
-                            entityId={entity._id}
-                            size="sm"
-                            className="h-8 w-8"
-                            alt={`${entity.profile?.name || 'Entity'} profile photo`}
-                            fallbackIcon={UserIcon}
-                          />
-                        </div>
-                        <div className="flex-1 min-w-0">
-                          <p className="text-sm font-medium text-gray-900 dark:text-white truncate">
-                            {entity.profile?.name || 'Unknown Name'}
-                          </p>
-                          <p className="text-sm text-gray-500 dark:text-gray-400 truncate">
-                            ID: {entity._id}
-                          </p>
-                        </div>
-                      </div>
-                      
-                      <div className="mt-2 flex items-center space-x-4 text-sm text-gray-500 dark:text-gray-400">
-                        <span className="flex items-center">
-                          <UserIcon className="h-4 w-4 mr-1" />
-                          {entity.profile?.entity_type || entity.type || 'Unknown'}
-                        </span>
-                        
-                        {entity.profile?.department && (
-                          <span className="flex items-center">
-                            <MapPinIcon className="h-4 w-4 mr-1" />
-                            {entity.profile.department}
-                          </span>
-                        )}
-                        
-                        <span className="flex items-center">
-                          <ClockIcon className="h-4 w-4 mr-1" />
-                          Last seen: {formatLastSeen(entity.metadata?.last_seen || entity.last_seen)}
-                        </span>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-center space-x-3">
-                      <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${getStatusColor(entity.metadata?.status)}`}>
-                        {entity.metadata?.status || 'unknown'}
-                      </span>
-                      
-                      <Link
-                        to={`/entities/${entity._id}`}
-                        state={{ from: '/entities' }}
-                        className="inline-flex items-center px-3 py-2 border border-gray-300 dark:border-gray-600 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-                      >
-                        <EyeIcon className="h-4 w-4 mr-1" />
-                        View Details
-                      </Link>
-                    </div>
-                  </div>
+          ) : (!entities || entities.length === 0) ? (
+            <div className="p-8 text-center">
+              <UserIcon className="mx-auto h-12 w-12 text-gray-400" />
+              <h3 className="mt-2 text-sm font-medium text-gray-900 dark:text-white">
+                {searchQuery || Object.values(filters).some(v => v) ? 'No entities found' : 'No entities available'}
+              </h3>
+              <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+                {searchQuery || Object.values(filters).some(v => v) 
+                  ? 'Try adjusting your search query or filters' 
+                  : 'No entities have been registered in the system yet'}
+              </p>
+              {!searchQuery && !Object.values(filters).some(v => v) && (
+                <div className="mt-4">
+                  <p className="text-xs text-gray-400 dark:text-gray-500">
+                    Entities will appear here once they are added to the campus security system
+                  </p>
                 </div>
-              ))}
+              )}
             </div>
-
-            {/* Load more */}
-            {pagination.hasMore && (
-              <div className="px-6 py-4 border-t border-gray-200 dark:border-gray-700">
-                <button
-                  onClick={loadMore}
-                  disabled={loading}
-                  className="w-full flex justify-center items-center px-4 py-2 border border-gray-300 dark:border-gray-600 shadow-sm text-sm font-medium rounded-md text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50"
-                >
-                  {loading ? (
-                    <LoadingSpinner size="small" />
-                  ) : (
-                    `Load More (${pagination.total - (entities?.length || 0)} remaining)`
+          ) : (
+            <>
+              {/* Results header */}
+              <div className="px-6 py-4 border-b border-gray-200 dark:border-gray-700">
+                <div className="flex items-center justify-between">
+                  <p className="text-sm text-gray-700 dark:text-gray-300">
+                    {searchQuery || Object.values(filters).some(v => v) 
+                      ? `Found ${pagination.total} entities` 
+                      : `Showing ${entities.length} of ${pagination.total} entities`}
+                  </p>
+                  {entities.length > 0 && (
+                    <div className="flex items-center space-x-4 text-xs text-gray-500 dark:text-gray-400">
+                      {/* Quick type counts */}
+                      {(() => {
+                        const typeCounts = entities.reduce((acc, entity) => {
+                          const type = entity.type || entity.profile?.entity_type || 'unknown';
+                          acc[type] = (acc[type] || 0) + 1;
+                          return acc;
+                        }, {});
+                        
+                        return Object.entries(typeCounts).map(([type, count]) => (
+                          <span key={type} className="capitalize">
+                            {type}: {count}
+                          </span>
+                        ));
+                      })()}
+                    </div>
                   )}
-                </button>
+                </div>
               </div>
-            )}
-          </>
-        )}
-      </div>
+
+              {/* Results list */}
+              <div className="divide-y divide-gray-200 dark:divide-gray-700">
+                {(entities || []).map((entity) => (
+                  <div key={entity._id} className="p-6 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                    <div className="flex items-center justify-between">
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center space-x-3">
+                          <div className="flex-shrink-0">
+                            <ProfilePhoto
+                              entityId={entity._id}
+                              size="sm"
+                              className="h-8 w-8"
+                              alt={`${entity.profile?.name || 'Entity'} profile photo`}
+                              fallbackIcon={UserIcon}
+                            />
+                          </div>
+                          <div className="flex-1 min-w-0">
+                            <p className="text-sm font-medium text-gray-900 dark:text-white truncate">
+                              {entity.profile?.name || 'Unknown Name'}
+                            </p>
+                            <p className="text-sm text-gray-500 dark:text-gray-400 truncate">
+                              ID: {entity._id}
+                            </p>
+                          </div>
+                        </div>
+                        
+                        <div className="mt-2 flex items-center space-x-4 text-sm text-gray-500 dark:text-gray-400">
+                          <span className="flex items-center">
+                            <UserIcon className="h-4 w-4 mr-1" />
+                            {entity.profile?.entity_type || entity.type || 'Unknown'}
+                          </span>
+                          
+                          {entity.profile?.department && (
+                            <span className="flex items-center">
+                              <MapPinIcon className="h-4 w-4 mr-1" />
+                              {entity.profile.department}
+                            </span>
+                          )}
+                          
+                          <span className="flex items-center">
+                            <ClockIcon className="h-4 w-4 mr-1" />
+                            Last seen: {formatLastSeen(entity.metadata?.last_seen || entity.last_seen)}
+                          </span>
+                        </div>
+                      </div>
+                      
+                      <div className="flex items-center space-x-3">
+                        <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${getStatusColor(entity.metadata?.status)}`}>
+                          {entity.metadata?.status || 'unknown'}
+                        </span>
+                        
+                        <Link
+                          to={`/entities/${entity._id}`}
+                          state={{ from: '/entities' }}
+                          className="inline-flex items-center px-3 py-2 border border-gray-300 dark:border-gray-600 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                        >
+                          <EyeIcon className="h-4 w-4 mr-1" />
+                          View Details
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Load more */}
+              {pagination.hasMore && (
+                <div className="px-6 py-4 border-t border-gray-200 dark:border-gray-700">
+                  <button
+                    onClick={loadMore}
+                    disabled={loading}
+                    className="w-full flex justify-center items-center px-4 py-2 border border-gray-300 dark:border-gray-600 shadow-sm text-sm font-medium rounded-md text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50"
+                  >
+                    {loading ? (
+                      <LoadingSpinner size="small" />
+                    ) : (
+                      `Load More (${pagination.total - (entities?.length || 0)} remaining)`
+                    )}
+                  </button>
+                </div>
+              )}
+            </>
+          )}
+        </div>
+      )}
     </div>
   );
 };

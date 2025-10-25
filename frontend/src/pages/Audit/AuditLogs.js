@@ -18,7 +18,7 @@ import {
   ArrowDownTrayIcon
 } from '@heroicons/react/24/outline';
 
-const AuditLogs = () => {
+const AuditLogs = ({ embedded = false } = {}) => {
   const [auditLogs, setAuditLogs] = useState([]);
   const [loading, setLoading] = useState(true);
   const [filters, setFilters] = useState({
@@ -210,34 +210,36 @@ const AuditLogs = () => {
 
   return (
     <div className="space-y-6">
-      {/* Header */}
-      <div className="bg-white dark:bg-gray-800 shadow rounded-lg p-6">
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-          <div className="flex items-center space-x-3">
-            <div className="flex-shrink-0">
-              <DocumentTextIcon className="h-8 w-8 text-blue-600 dark:text-blue-400" />
+      {/* Header (omit when embedded to avoid duplicate headings) */}
+      {!embedded && (
+        <div className="bg-white dark:bg-gray-800 shadow rounded-lg p-6">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+            <div className="flex items-center space-x-3">
+              <div className="flex-shrink-0">
+                <DocumentTextIcon className="h-8 w-8 text-blue-600 dark:text-blue-400" />
+              </div>
+              <div>
+                <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
+                  Audit Logs
+                </h1>
+                <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+                  System access and activity audit trail
+                </p>
+              </div>
             </div>
-            <div>
-              <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
-                Audit Logs
-              </h1>
-              <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
-                System access and activity audit trail
-              </p>
-            </div>
-          </div>
 
-          <div className="mt-4 sm:mt-0">
-            <button
-              onClick={handleExport}
-              className="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:bg-blue-500 dark:hover:bg-blue-600"
-            >
-              <ArrowDownTrayIcon className="h-4 w-4 mr-2" />
-              Export Logs
-            </button>
+            <div className="mt-4 sm:mt-0">
+              <button
+                onClick={handleExport}
+                className="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:bg-blue-500 dark:hover:bg-blue-600"
+              >
+                <ArrowDownTrayIcon className="h-4 w-4 mr-2" />
+                Export Logs
+              </button>
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
       {/* Filters */}
       <div className="bg-white dark:bg-gray-800 shadow-lg rounded-xl border border-gray-200 dark:border-gray-700 p-6">

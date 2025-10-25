@@ -89,7 +89,14 @@ const EntityDetails = () => {
     const from = location.state?.from;
     
     if (from) {
-      // Navigate back to the page they came from
+      // If they came from the EntitySearch embedded CCTV, preserve the requested tab
+      if (from.includes('/entities')) {
+        const fromTab = location.state?.fromTab || location.state?.activeTab || 'entities';
+        navigate('/entities', { state: { activeTab: fromTab } });
+        return;
+      }
+
+      // Otherwise navigate back to the path they came from
       navigate(from);
     } else if (window.history.length > 2) {
       // If there's browser history, go back

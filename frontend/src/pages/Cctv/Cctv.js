@@ -5,14 +5,14 @@ import LoadingSpinner from '../../components/Common/LoadingSpinner';
 import { useAlert } from '../../contexts/AlertContext';
 import { CameraIcon, EyeIcon, CalendarIcon, MapPinIcon } from '@heroicons/react/24/outline';
 
-const Cctv = () => {
+const Cctv = ({ initialTab, embedded = false } = {}) => {
   const navigate = useNavigate();
   const [file, setFile] = useState(null);
   const [preview, setPreview] = useState(null);
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
   const [photoUrl, setPhotoUrl] = useState(null);
-  const [activeTab, setActiveTab] = useState('recognition'); // 'recognition' or 'frames'
+  const [activeTab, setActiveTab] = useState(initialTab || 'recognition'); // 'recognition' or 'frames'
   
   // CCTV Frames state
   const [frames, setFrames] = useState([]);
@@ -120,6 +120,13 @@ const Cctv = () => {
     }
   }, [activeTab]);
 
+  // respond to prop changes
+  useEffect(() => {
+    if (initialTab && initialTab !== activeTab) {
+      setActiveTab(initialTab);
+    }
+  }, [initialTab]);
+
   const loadEntityPhoto = async (entityId) => {
     try {
       const token = getToken();
@@ -200,39 +207,41 @@ const Cctv = () => {
 
   return (
     <div className="space-y-6">
-      {/* Tab Navigation */}
-      <div className="bg-white dark:bg-gray-800 shadow rounded-lg">
-        <div className="border-b border-gray-200 dark:border-gray-700">
-          <nav className="-mb-px flex">
-            <button
-              onClick={() => setActiveTab('recognition')}
-              className={`py-4 px-6 text-sm font-medium border-b-2 ${
-                activeTab === 'recognition'
-                  ? 'border-blue-500 text-blue-600 dark:text-blue-400'
-                  : 'border-transparent text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300'
-              }`}
-            >
-              <div className="flex items-center space-x-2">
-                <CameraIcon className="w-4 h-4" />
-                <span>Face Recognition</span>
-              </div>
-            </button>
-            <button
-              onClick={() => setActiveTab('frames')}
-              className={`py-4 px-6 text-sm font-medium border-b-2 ${
-                activeTab === 'frames'
-                  ? 'border-blue-500 text-blue-600 dark:text-blue-400'
-                  : 'border-transparent text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300'
-              }`}
-            >
-              <div className="flex items-center space-x-2">
-                <EyeIcon className="w-4 h-4" />
-                <span>CCTV Frames</span>
-              </div>
-            </button>
-          </nav>
+      {/* Tab Navigation (hidden when embedded to avoid duplicate tabs) */}
+      {!embedded && (
+        <div className="bg-white dark:bg-gray-800 shadow rounded-lg">
+          <div className="border-b border-gray-200 dark:border-gray-700">
+            <nav className="-mb-px flex">
+              <button
+                onClick={() => setActiveTab('recognition')}
+                className={`py-4 px-6 text-sm font-medium border-b-2 ${
+                  activeTab === 'recognition'
+                    ? 'border-blue-500 text-blue-600 dark:text-blue-400'
+                    : 'border-transparent text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300'
+                }`}
+              >
+                <div className="flex items-center space-x-2">
+                  <CameraIcon className="w-4 h-4" />
+                  <span>Face Recognition</span>
+                </div>
+              </button>
+              <button
+                onClick={() => setActiveTab('frames')}
+                className={`py-4 px-6 text-sm font-medium border-b-2 ${
+                  activeTab === 'frames'
+                    ? 'border-blue-500 text-blue-600 dark:text-blue-400'
+                    : 'border-transparent text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300'
+                }`}
+              >
+                <div className="flex items-center space-x-2">
+                  <EyeIcon className="w-4 h-4" />
+                  <span>CCTV Frames</span>
+                </div>
+              </button>
+            </nav>
+          </div>
         </div>
-      </div>
+      )}
 
       {/* Face Recognition Tab */}
       {activeTab === 'recognition' && (
@@ -293,8 +302,11 @@ const Cctv = () => {
                       <p className="text-sm text-gray-500">ID: {result.entity._id}</p>
                       <p className="text-sm text-gray-500">Face ID: {result.match?.face_id || 'N/A'}</p>
                       <p className="text-sm text-gray-500">Confidence: {(result.confidence * 100).toFixed(1)}%</p>
-                      <button 
-                        onClick={() => navigate(`/entities/${result.entity._id}`, { state: { from: '/cctv' } })} 
+                      <button
+                        onClick={() => navigate(
+                          `/entities/${result.entity._id}`,
+                          { state: { from: embedded ? '/entities' : '/cctv', fromTab: activeTab } }
+                        )}
                         className="text-sm text-blue-600 hover:underline"
                       >
                         View Details

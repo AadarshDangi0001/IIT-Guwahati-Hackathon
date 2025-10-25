@@ -28,9 +28,9 @@ const Sidebar = ({ isOpen, onClose }) => {
   
     { name: 'Timeline', href: '/timeline', icon: ClockIcon, current: location.pathname === '/timeline' },
     { name: 'Campus Map', href: '/map', icon: MapIcon, current: location.pathname === '/map' },
-    { name: 'Alerts', href: '/alerts', icon: ExclamationTriangleIcon, current: location.pathname === '/alerts' },
-    { name: 'Advanced Alerts', href: '/alert2', icon: ShieldExclamationIcon, current: location.pathname === '/alert2' },
-  { name: 'CCTV', href: '/cctv', icon: CameraIcon, current: location.pathname === '/cctv' },
+    // { name: 'Alerts', href: '/alerts', icon: ExclamationTriangleIcon, current: location.pathname === '/alerts' },
+    { name: 'Advanced Alerts', href: '/alert2', icon: ExclamationTriangleIcon, current: location.pathname === '/alert2' },
+  // { name: 'CCTV', href: '/cctv', icon: CameraIcon, current: location.pathname === '/cctv' },
    { name: 'Notes', href: '/notes', icon: DocumentTextIcon, current: location.pathname === '/notes' },
   ];
 
@@ -53,23 +53,14 @@ const Sidebar = ({ isOpen, onClose }) => {
     });
   }
 
-  if (canViewAuditLogs()) {
-    navigation.push({
-      name: 'Audit Logs',
-      href: '/audit',
-      icon: DocumentTextIcon,
-      current: location.pathname === '/audit'
-    });
-  }
-
-  if (canManagePrivacy()) {
-    navigation.push({
-      name: 'Privacy Settings',
-      href: '/privacy',
-      icon: EyeSlashIcon,
-      current: location.pathname === '/privacy'
-    });
-  }
+  // if (canViewAuditLogs()) {
+  //   navigation.push({
+  //     name: 'Audit Logs',
+  //     href: '/audit',
+  //     icon: DocumentTextIcon,
+  //     current: location.pathname === '/audit'
+  //   });
+  // }
 
   navigation.push({
     name: 'Settings',
