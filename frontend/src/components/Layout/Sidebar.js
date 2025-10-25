@@ -31,7 +31,7 @@ const Sidebar = ({ isOpen, onClose }) => {
     // { name: 'Alerts', href: '/alerts', icon: ExclamationTriangleIcon, current: location.pathname === '/alerts' },
     { name: 'Advanced Alerts', href: '/alert2', icon: ExclamationTriangleIcon, current: location.pathname === '/alert2' },
   // { name: 'CCTV', href: '/cctv', icon: CameraIcon, current: location.pathname === '/cctv' },
-   { name: 'Notes', href: '/notes', icon: DocumentTextIcon, current: location.pathname === '/notes' },
+  // { name: 'Notes', href: '/notes', icon: DocumentTextIcon, current: location.pathname === '/notes' },
   ];
 
   // Add conditional navigation items based on permissions

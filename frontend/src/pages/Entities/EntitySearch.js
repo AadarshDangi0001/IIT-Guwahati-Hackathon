@@ -13,6 +13,7 @@ import {
   EyeIcon
 } from '@heroicons/react/24/outline';
 import Cctv from '../Cctv/Cctv';
+import Notes from '../Notes/Notes';
 
 const EntitySearch = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -250,6 +251,11 @@ const EntitySearch = () => {
             className={`py-2 px-4 text-sm font-medium rounded-t-md ${activeTab === 'frames' ? 'bg-blue-50 text-blue-700 dark:bg-blue-900 dark:text-blue-200' : 'text-gray-500 hover:text-gray-700 dark:text-gray-300'}`}>
             CCTV Frames
           </button>
+          <button
+            onClick={() => setActiveTab('notes')}
+            className={`py-2 px-4 text-sm font-medium rounded-t-md ${activeTab === 'notes' ? 'bg-blue-50 text-blue-700 dark:bg-blue-900 dark:text-blue-200' : 'text-gray-500 hover:text-gray-700 dark:text-gray-300'}`}>
+            Tokens
+          </button>
         </nav>
       </div>
 
@@ -349,7 +355,11 @@ const EntitySearch = () => {
       {/* Results */}
       {activeTab !== 'entities' ? (
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 p-6">
-          <Cctv initialTab={activeTab === 'recognition' ? 'recognition' : 'frames'} embedded={true} />
+          {activeTab === 'recognition' || activeTab === 'frames' ? (
+            <Cctv initialTab={activeTab === 'recognition' ? 'recognition' : 'frames'} embedded={true} />
+          ) : activeTab === 'notes' ? (
+            <Notes embedded={true} />
+          ) : null}
         </div>
       ) : (
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700">

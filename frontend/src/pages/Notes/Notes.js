@@ -8,7 +8,7 @@ import {
   FunnelIcon
 } from '@heroicons/react/24/outline';
 
-const Notes = () => {
+const Notes = ({ embedded = false } = {}) => {
   const [notes, setNotes] = useState([]);
   const [loading, setLoading] = useState(false);
   const [filters, setFilters] = useState({ category: '', entity_id: '', q: '', date_from: '', date_to: '' });
@@ -55,26 +55,28 @@ const Notes = () => {
 
   return (
     <div className="space-y-6">
-      {/* Header */}
-      <div className="bg-white dark:bg-gray-800 shadow rounded-lg p-6">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-3">
-            <div className="flex-shrink-0">
-              <DocumentTextIcon className="h-8 w-8 text-blue-600 dark:text-blue-400" />
+      {/* Header (omit when embedded) */}
+      {!embedded && (
+        <div className="bg-white dark:bg-gray-800 shadow rounded-lg p-6">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center space-x-3">
+              <div className="flex-shrink-0">
+                <DocumentTextIcon className="h-8 w-8 text-blue-600 dark:text-blue-400" />
+              </div>
+              <div>
+                <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Free Text Notes</h1>
+                <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">Notes imported from the on-disk CSV. Use filters to narrow results.</p>
+              </div>
             </div>
-            <div>
-              <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Free Text Notes</h1>
-              <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">Notes imported from the on-disk CSV. Use filters to narrow results.</p>
-            </div>
+            {!loading && pagination.total > 0 && (
+              <div className="text-right">
+                <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">{pagination.total.toLocaleString()}</div>
+                <div className="text-sm text-gray-500 dark:text-gray-400">Total Notes</div>
+              </div>
+            )}
           </div>
-          {!loading && pagination.total > 0 && (
-            <div className="text-right">
-              <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">{pagination.total.toLocaleString()}</div>
-              <div className="text-sm text-gray-500 dark:text-gray-400">Total Notes</div>
-            </div>
-          )}
         </div>
-      </div>
+      )}
 
       {/* Search & Filters */}
       <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 p-6">
